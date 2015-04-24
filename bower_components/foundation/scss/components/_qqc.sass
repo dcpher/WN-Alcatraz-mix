@@ -1,0 +1,134 @@
+// QQC
+@import functions 
+
+#wnqqcalculator 
+  padding: 16px
+  padding-bottom: 50px
+  .input-group
+  @media all and (min-width: 935px)
+    .tooltip
+      bottom: -90px
+  @media all and (max-width: 935px)
+    .tooltip
+      bottom: -114px
+  @media all and (max-width: 720px)
+    .tooltip
+      bottom: -138px
+  @media all and (max-width: 650px)
+    .tooltip
+      bottom: -162px
+  @media all and (max-width: 641px)
+    .tooltip
+      bottom: -90px
+  @media all and (max-width: 552px)
+    .tooltip
+      bottom: -115px
+  .trustedby
+    width: 100%
+    display: block
+    padding-top: 8px
+    p, img
+      margin-right: 3%
+      float: left
+    p 
+      color: $color-dark-grey
+      font-size: 12px
+      margin-top: 12px
+    img
+      width: auto
+      max-width: 80px
+      margin-top: 10px
+      cursor: pointer
+      &.natgeo
+        padding-top: 10px
+      &.vt
+        padding-top: 6px
+      @media all and (max-width: 1110px)
+        &.natgeo
+          display: none
+      @media all and (max-width: 775px)
+        &.intrep
+          display: none
+      @media all and (max-width: 640px)
+        &.intrep, &.natgeo
+          display: block
+      @media all and (max-width: 565px)
+        &.natgeo
+          display: none
+      @media all and (max-width: 460px)
+        &.vt
+          display: none
+      @media all and (max-width: 445px)
+        &.rg
+          display: none
+  // white
+  &.white 
+    background-color: rgba($color-light-grey, 0.8)
+    h1, h5
+      color: $color-dark-grey
+    h1 
+      line-height: 40px
+      font-size: 40px
+      margin-bottom: 0
+    .qqc-container 
+      input[type='text'], input[type='number']
+        border: $color-dark-grey 1px solid
+  //All
+  .qqc-container 
+    width: 100%
+    max-width: 100%
+    min-width: 100%
+    .legacy-travellers
+      label
+        line-height: 36px
+  #wn-insurance-quote-editor, .qqc-container-wrapper, .traveller-inputs-wrapper 
+    margin-bottom: 0
+  #qqc
+    margin: 0
+    h1
+      display: none
+      line-height: 0
+      margin-bottom: 0
+      padding: 0
+    h5
+      font-size: 14px
+      margin-top: 4px
+      margin-bottom: 2px
+    .continue
+      padding: 2px 15px 0
+      border: 1px solid rgba(0,0,0,0.2)
+      line-height: 32px
+      font-size: 18px
+    .qqc-background 
+      background: none
+      padding: 0
+      margin-bottom: 0
+    .destinations-wrapper 
+      margin-bottom: 6px
+    .input-group
+      margin: 3px 0 0
+      .icon
+        &:after
+          font-size: 16px
+          left: 8px
+          bottom: -3px
+      &.destination, &.country-of-residence, &.traveller-age, &.departure-date, &.return-date, &.province
+        input
+          padding-left: 40px
+          font-size: 14px
+          line-height: 20px 
+    .province
+      h5 
+        min-height: 32px
+      @media all and (max-width: 660px)
+        h5
+          min-height: 16px
+
+  @media all and (max-width: 660px)
+    .traveller-inputs-wrapper
+      margin-bottom: 16px
+.datepicker 
+  .datepicker-calendar
+    display: none
+    &:nth-child(3)
+      display: block

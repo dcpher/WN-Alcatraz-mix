@@ -1,0 +1,154 @@
+//Feature Box
+.feature-box, .feature-box-right-panel
+  background-position: left top
+  background-size: cover
+  min-height: 460px
+  position: relative
+  background-repeat: no-repeat
+  background-color: #f5f5f5
+  margin-bottom: 20px
+  &:hover
+    background-color: rgba(0,0,0,0.3)
+    z-index: 900
+  ul.breadcrumb
+    padding: 20px 20px 0
+    margin-top: 0
+  a
+    h4
+      margin-top: 20px
+      padding: 0 40px 0 20px
+      color: #ffffff
+      font-size: 32px
+      &:hover
+        text-decoration: none
+        color: $color-light-grey
+        background-position: center top
+  .bottom
+    bottom: 0
+    min-height: 200px
+    width: 100%
+    margin-bottom: 0
+    padding: 20px 0
+    opacity: 0.9
+    filter: alpha(opacity=90)
+    position: absolute
+    @media all and (max-width: 640px) 
+      min-height: 10px
+    .feature-link-title
+      font-size: 12px
+      color: #ffffff
+      margin-bottom: 12px
+      line-height: 16px
+      display: inline-block
+      padding: 0 20px
+    p
+      padding: 0 20px
+      a
+        color: #ffffff
+        font-size: 16px
+        margin-bottom: 8px
+        line-height: 20px
+        &:after         
+          font-family: WNI
+          content: '\e60d'
+          margin: 0px 2px 0px
+          display: inline-block  
+    &.orange
+      background-color: $color-orange
+    &.teal
+      background-color: $color-teal
+    &.purple
+      background-color: $color-purple
+    &.blue
+      background-color: $color-blue
+    &.red
+      background-color: $color-mid-grey
+    &.yellow
+      background-color: $color-yellow
+      
+.small-feature-box
+  min-height: 160px
+  position: relative
+  background-position: left top
+  background-size: cover
+  background-repeat: no-repeat
+  .bottom
+    min-height: 45px
+    position: absolute
+    width: 100%
+    bottom: 0
+    color: #ffffff
+    margin: 0
+    padding: rem-calc(10)
+    opacity: 0.9
+    p
+      padding: 0px
+      margin: 0
+      a
+        color: $color-inverse
+  
+      
+// Feature Box with Right Panel      
+.feature-box-right-panel
+  min-height: rem-calc(260px)
+  background-position: center top
+  a
+    h4
+      width: rem-calc(250px)
+    
+  .right
+    position: absolute
+    right: 0px
+    top: 0px
+    width: rem-calc(280px)
+    min-height: inherit
+    color: #ffffff
+    margin: 0
+    padding: rem-calc(20)
+    p
+      padding: 0 0 8px 0
+      margin: 0
+      
+    // insert quote marks
+    .feature-quote
+      background-image: url(//cdn.worldnomads.net/Media/Default/icons/wnquotemarks.png)
+      background-repeat: no-repeat
+      height: 16px
+      width: 100%
+      display: block
+      background-size: 44px 16px
+      margin-bottom: rem-calc(8)
+    
+    &.orange
+      background-color: rgba($color-orange, 0.85)
+    &.teal
+      background-color: rgba($color-teal, 0.85)
+    &.purple
+      background-color: rgba($color-purple, 0.85)
+    &.blue
+      background-color: rgba($color-blue, 0.85)
+    &.red
+      background-color: rgba($color-mid-grey, 0.85)
+    &.yellow
+      background-color: rgba($color-yellow, 0.85)
+        
+  @media all and (max-width: 860px) 
+    min-height: 320px
+
+    a
+      h4
+        width: 100%
+
+    .right
+      position: absolute
+      top: auto
+      bottom: 0px
+      width: 100%
+      min-height: initial
+      color: #ffffff
+      margin: 0
+
+      
+
+
+    

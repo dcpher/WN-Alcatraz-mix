@@ -1,0 +1,149 @@
+// typography
+@import functions
+
+
+// Font Sizes
+
+// We use these to control font styles
+$default-font-family: "Ubuntu", Helvetica, Arial, sans-serif
+$default-font-weight: 300
+$bold-font-weight: 600
+$default-font-style: normal
+$default-font-color: $color-dark-grey
+$default-line-height: 1.1
+$default-top-margin: .2rem
+$default-bottom-margin: .5rem
+$default-text-rendering: optimizeLegibility
+
+// We use these to control header font sizes
+$h1-font-size: rem-calc(54)
+$h2-font-size: rem-calc(44)
+$h3-font-size: rem-calc(32)
+$h4-font-size: rem-calc(28)
+$h5-font-size: rem-calc(22)
+$h6-font-size: 1rem
+
+// We use these to control paragraph font sizes
+$p-font-size: 1rem
+$p-line-height: rem-calc(20)
+$p-margin-bottom: rem-calc(8)
+
+
+  
+// Main Header Styles
+h1, h2, h3, h4, h5, h6, p
+  line-height: $default-line-height
+  font-family: $default-font-family
+  text-rendering: $default-text-rendering
+  font-style: $default-font-style
+  font-weight: $default-font-weight
+  margin-bottom: $default-bottom-margin
+
+h1, .hero-content-panel h1
+  font-size: $h1-font-size
+  line-height: $default-line-height
+  letter-spacing: -1px
+  margin: rem-calc(4) 0 1rem 0
+  position: initial
+
+h2, .hero-content-panel h2
+  font-size: $h2-font-size
+  line-height: $default-line-height
+  letter-spacing: -1px
+  margin: rem-calc(8) 0 rem-calc(24) 0
+h2 a
+  font-size: $h2-font-size
+  float: none
+h3 
+  font-size: $h3-font-size
+  line-height: $default-line-height
+  margin: rem-calc(24) 0 rem-calc(8) 0
+
+h4 
+  font-size: $h4-font-size
+
+h5 
+  font-size: $h5-font-size 
+
+h6 
+  font-size: $h6-font-size
+p
+  font-size: $p-font-size
+  line-height: $p-line-height
+  margin-bottom: rem-calc(16)
+    
+// resize fonts for mobile
+@media (max-width: 700px)
+  h1, .hero-content-panel h1
+    font-size: rem-calc(36)
+    letter-spacing: -1px
+    margin: rem-calc(4) 0 1rem 0
+    position: initial
+    
+  h2, .hero-content-panel h2
+    font-size: rem-calc(28)
+    letter-spacing: 0px
+    margin: rem-calc(4) 0 rem-calc(24) 0
+  h2 a
+  font-size: rem-calc(28)
+  float: none
+
+  h3 
+    font-size: rem-calc(24) 
+    margin: rem-calc(24) 0 rem-calc(8) 0
+
+  h4 
+    font-size: rem-calc(22) 
+
+    
+
+// Header Panel Typography
+.article
+  .hero-content
+    h1
+      color: $color-inverse
+      padding-top: 5px
+      clear: both
+
+    p 
+      font-size: rem-calc(24)
+      line-height: rem-calc(28)
+      color: $color-inverse
+
+#home 
+  h2, h3
+    font-size: rem-calc(48)
+    line-height: rem-calc(48)
+    color: $color-inverse
+    margin-bottom: rem-calc(8)
+    position: initial
+  p
+    font-size: rem-calc(24)
+    line-height: rem-calc(32)
+    color: $color-inverse
+    margin-bottom: rem-calc(24)
+
+      
+// Body Content
+
+#article-content, .normal-content
+  p.highlight 
+    font-size: rem-calc(24)
+    line-height: rem-calc(28)
+    margin-bottom: 16px
+    
+  .section, &.section
+    margin-bottom: rem-calc(64)
+    
+@media (max-width: 700px)
+  .normal-content
+    p.highlight 
+      font-size: rem-calc(22)
+      line-height: rem-calc(26)
+      margin-bottom: 16px
+
+  p.small 
+    font-size: 14px
+    margin-top: 16px
+    
+    

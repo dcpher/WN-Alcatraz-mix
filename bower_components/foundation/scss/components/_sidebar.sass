@@ -1,0 +1,48 @@
+// sidebar
+
+.right-column
+  border-left: 1px solid 
+  border-left-color: $color-light-grey
+  @media all and (max-width: 640px) 
+    border-left: none
+    margin-left: 0px
+    width: 100%
+
+
+  // Tab colour bar
+  h4
+    &.tabcolour 
+      background: $color-teal
+      font-size: 20px
+      font-weight: 300
+      line-height: 26px
+      margin-top: 0
+      margin-bottom: 20px
+      padding-left: 20px
+      padding-bottom: 4px
+      padding-top: 4px
+      color: #ffffff
+      clear: both
+
+        
+  // Related Items
+  ul
+    &.related
+      margin: 0 20px
+
+      li
+        margin-left: 0
+        margin-bottom: 20px
+        list-style-type: none
+
+        label
+          display: block
+          color: $link-color
+          font-size: rem-calc(13px)
+
+        img
+          margin-bottom: 8px
+          
+          
+  .subscribe-input
+    margin-bottom: rem-calc(8)

@@ -1,0 +1,42 @@
+// breadcrumb
+// Nav For Header Block
+
+ul.breadcrumb 
+  list-style: none
+  padding: 0
+  margin: 90px 0 0 0
+  clear: both
+  float: left
+  width: 100%
+  z-index: 500
+
+  li 
+    list-style: none
+    padding: 0 
+    padding-left: 0
+    display: inline-block
+
+  li:after, a
+    color: #ffffff
+    font-weight: 300
+    font-size: 14px
+    line-height: $default-line-height
+    float: left
+    margin-bottom: 8px
+    &:hover
+      text-decoration: underline
+    
+  li:after  
+    font-family: WNI
+    content: '\e60d'
+    margin: 1px 4px 7px 4px
+    display: inline-block
+
+  li:last-child:after
+    display: none
+
+//fix
+@media (max-width: 500px)  
+  .content 
+    .breadcrumb
+      display: block
