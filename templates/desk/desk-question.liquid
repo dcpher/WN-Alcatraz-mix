@@ -1,0 +1,222 @@
+{% layout "desk" %}
+{% block title %}Customer Service Information from TID{% endblock %}
+{% block content %}
+
+
+<!--begin:page_index-->
+
+
+<div id='main' role='main'>  
+
+
+<!--begin:question_show-->
+
+<section id="main-content">
+
+  <nav class="breadcrumbs">
+    <a href="/?b_id=755" rel="index up">Customer Service</a> »
+    <a href="/customer/portal/topics/277035-medical-conditions/questions?b_id=755" rel="up up">Medical Conditions</a> »
+    I Have just spent time in hosp...
+  </nav>
+
+  <article class="question">
+    <div class="question-details">
+      <h2 class="subject">
+        I Have just spent time in hospital with a Cardiac event - an arrhythmia
+      </h2>
+    
+      <div class="body">
+        I have just spent time in Cardio ward with an arrhythmia , I have been sent home with medication and follow up to determine cause. Can  I still get cover, what documentation is required from hospital/doctors in order for me to be covered. I booked my holiday last Thursday and was going to arrange travel insurance on the weekend. 
+      </div>
+    
+      <aside>
+        Asked on <time class="created-at">Mar 04, 2015</time> by <span class="name">Linda Caton</span>
+      </aside>
+    </div>
+  
+    
+      <div class="question-answers">
+        
+        
+        
+          <section class="all-answers">
+            <h3>
+              Answers
+            </h3>
+            <ul class="answers">
+              
+                <li class="answer">            
+                  
+                    <div class="answer-rating rating-false">
+                      <a id="increment-11486416" class="rate increment" data-remote="true" data-method="post" rel="nofollow" href="/customer/portal/questions/11486416/rate?rating=1">Up</a>
+                      <span class="score " id="score-11486416">0</span>
+                      <span class="dialog">Rated</span>
+                      <a id="decrement-11486416" class="rate decrement" data-remote="true" data-method="post" rel="nofollow" href="/customer/portal/questions/11486416/rate?rating=0">Down</a>
+                      </div>
+                  
+
+                  <div class="body">
+                    <p>Hi Linda,</p>
+<p>Thanks for getting in touch.</p>
+<p>We have a 3-step process to see if we can offer coverage for pre-existing medical conditions. We ask that all customers take the time to read through our PDS to confirm our coverage is right for them.</p>
+<p><a href="http://ins-admin.tidau.prod.wng.local/Document/OpenRegulatoryWording?RegulatoryWordingTypeId=1" title="PDS">Please click here</a> to view the PDS for full details. You will find the 3-step pre-existing medical process on pages 29-33.</p>
+<p>As you will see, under our Step 2 – “Pre-existing medical conditions which are not covered”, we do not cover your pre-existing medical condition if:</p>
+<ul>
+	<li>You have been diagnosed with any form of cardiovascular disease or received treatment for a related condition.</li>
+	<li>Any condition which arises from signs or symptoms that you are currently aware of, but:<br>
+a) you have not yet sought a medical opinion regarding the cause; or<br>
+b) you are currently under investigation to define a diagnosis; or<br>
+c) you are awaiting specialist opinion;</li>
+</ul>
+<p>If your pre-existing medical conditions are not covered under our policy, you are still welcome to purchase a standard policy with us, just keeping in mind your pre-existing medical conditions will not be covered under this policy.</p>
+<p>To get a quote, please visit our website; <a href="http://www.travelinsurancedirect.com.au/" title="website">www.tid.com.au</a>. If you continue through the quote to buy now, the system will take you through our 3-step process to cover pre-existing medical conditions.</p>
+<p>You may like to try SureSave: <a href="https://www.suresave.com.au/" title="website">www.suresave.com.au</a> who may be able to assist with covering your pre-existing medical condition.</p>
+<p>I hope this has helped. Please let me know if I can be of further assistance to you.</p>
+                  </div>
+              
+                  <aside>
+                    <span class="gravatar"><img class="gravatar" alt="" width="50" height="50" src="https://secure.gravatar.com/avatar/aca2ab44dc87ff7c055a6b26209e8676?rating=PG&amp;size=50&amp;default=https%3A%2F%2Fd218iqt4mo6adh.cloudfront.net%2Fassets%2Funknown_user_50-521aae04e00222d7dd814e72d7d869d0.png"></span>
+
+                    
+                  
+                    Answered on 
+                    <time class="updated-at">Mar 06, 2015</time> 
+                    by
+                    
+                      <span class="answered-by-agent">
+                        <img height="16" width="16" src="http://www.travelinsurancedirect.co.nz/Images/favicon.png"> TID Australia  
+                        (<span class="name">Taryn</span>)
+                      </span>
+                    
+                
+                  </aside>
+                </li>
+              
+            </ul>
+          </section>
+        
+      </div>
+    
+  
+    
+  </article>
+</section>
+
+<script>
+  // Function to wrap text links in anchors
+  (function() {
+    var URLRegex = /(?:\b|(?:http(?:s)?:\/\/))(?:[a-z0-9\-@]+\.)+(?:ly|eu|us|jp|uk|nz|aero|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|travel|cz|ar|it)(?:\.[a-z]{2,3})*(?:\/(?:\.?[:#@a-z0-9\-_A-Z%&+]+)*)*(?:\?[a-zA-Z:=&_%+\';0-9\*\.\,\-]*)?/gi;
+
+    window.linkifyElement = function(jQueryElement) {
+      // Don't search iframes or it will bug out, and obviously don't match the contents of existing anchors!
+      var textNodes = jQueryElement.find(":not(iframe, a)").andSelf().contents().filter(function() {
+        return this.nodeType == 3;
+      });
+
+      textNodes.each(function(i, textNode) {
+
+        var wrappedNode = $(textNode);
+        var currentText = wrappedNode.text();
+        var replacedText = currentText.replace(URLRegex, function(captured) {
+          if (captured.indexOf('http') == 0) {
+            var url = captured
+          } else {
+            var url = 'http://' + captured;
+          }
+
+          return "<a href='" + url + "'>" + captured + "</a>";
+        });
+
+        if (replacedText != currentText) {
+          var span = $('<span/>').html(replacedText);
+          wrappedNode.after(span).remove();  
+        }
+      });
+    }
+  })();
+  
+  $(function() {
+    linkifyElement($('.answer .body'));
+    linkifyElement($('.question .body'));
+  });
+</script><!--end:question_show-->
+
+  
+
+<aside class='aside'>
+  
+  <div class='small-search-bar'>
+    <form action='/customer/portal/articles/search' method='get' id='support-search' class='support-search-small'>
+      {{template_form_params}}
+      <input id='q' name='q' placeholder='Search or ask us' type='text' maxlength='100' value='{{ search_term }}' class='small-search-terms' />
+      <input class='small-search-submit base-button grey' type='submit' value='Search' />
+    </form>
+  </div>
+  <!-- Make sure autocompleter works -->
+  <script type='text/javascript'>
+  //<![CDATA[
+  jQuery(document).ready(function() {
+    $("#q").bind("autocompleteopen", function(event, ui) {
+      $('.ui-autocomplete').css('width','230px');
+    });
+  });
+  //]]>
+  </script>
+              
+  <section class='talk-to-us'>
+    <h4>
+      Talk to us
+    </h4>
+    <dl class='contact-number'>
+      <dt>From Australia</dt>
+      <dd>1300 843 843 &nbsp; (1300 TID TID)</dd>
+
+      <dt>From Overseas</dt>
+      <dd>+61 2 8263 0483</dd>
+    </dl>
+  
+    <dl class="open-hrs">
+      <dt>
+        Monday to Friday
+      </dt>
+      <dd>
+        8:00am - 8:00pm
+      </dd>
+      <dt>
+        Saturday and Sunday
+      </dt>
+      <dd>
+        10:00am - 2:00pm
+      </dd>
+    </dl>
+  </section>
+
+  <section class='emergencies'>
+    <h4>Emergencies</h4>
+    <p>Call +61 2 9234 3123</p>
+    <a href="http://www.travelinsurancedirect.com.au/in-an-emergency">more details</a> 
+  </section>
+  
+  <section class='contact-us'>
+    <h4>Contact us</h4>
+    
+    <ul class="desk-contact-list">
+      
+        <li><a href="/customer/portal/emails/new" data-tooltip aria-haspopup="true" class="has-tip [tip-bottom] [radius round]" title="Our customer service team will respond to you privately."><span class="fa fa-envelope"></span>Email us</a></li>
+      
+        <li><a href="/customer/portal/questions/new" data-tooltip aria-haspopup="true" class="has-tip [tip-bottom] [radius round]" title="This will be visible on the public forum for the benefit of everyone."><span class="fa  fa-comment"></span>Post a question</a></li>
+      
+        <li><a href="https://www.facebook.com/TIDaustralia"><span class="fa fa-facebook"></span>Facebook</a></li>
+
+        <li><a href="https://twitter.com/TIDaustralia"><span class="fa fa-twitter"></span>Twitter</a></li>
+
+        <li><a href="https://plus.google.com/+travelinsurancedirect"><span class="fa fa-google-plus"></span>Google+</a></li>
+
+      </ul>
+  </section>
+  
+  
+</aside>
+</div>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+// extend Panels
+  
+.blue-panel
+  //@include panel($bg: $color-blue, $adjust: true)  
+  +panel($bg: $color-blue, $adjust: true)
+
+.orange-panel
+  +panel($bg: $color-orange, $adjust: true)
+
+.purple-panel
+  +panel($bg: $color-purple, $adjust: true)
+  
+.teal-panel
+  +panel($bg: $color-teal, $adjust: true)
+  
+.red-panel
+  +panel($bg: $color-red, $adjust: true)
+  
+.yellow-panel
+  +panel($bg: $color-yellow, $adjust: true)
+  
+.blue-panel, .orange-panel, .purple-panel, .teal-panel, .red-panel
+  a, &a, a:visited 
+    color: $color-white
+  
+// Additional Panel colours
+
+.grey-panel
+  +panel($bg: $color-light-grey, $adjust: false)
+  //@include grid-row($behavior: nest)
+
+.dark-grey-panel
+  +panel($bg: $color-dark-grey, $adjust: true)
+
+//make sure all panel buttons have white anchor text
+.panel
+  .base-button
+    a, &a, a:visited 
+      color: $color-white

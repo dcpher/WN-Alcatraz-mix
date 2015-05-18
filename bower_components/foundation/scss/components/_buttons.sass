@@ -93,6 +93,7 @@
   display: inline-block
   margin-bottom: 0
   text-align: left
+  
   &:after
     content: '\e60d'
     font-family: WNI
@@ -100,7 +101,7 @@
     position: absolute
     top: 4px
     right: 6px
-  &:hover 
+  &:hover, &:visited 
     color: #ffffff
     text-decoration: none
   // full width button    
@@ -146,5 +147,14 @@
     &:hover
       +gradient-button(darken($color-teal, 10%))
         
-  a
+  &a, &a:visited, a, a:visited 
     color: $color-inverse
+    
+// overwrite default cta styles  
+//.cta-button-primary
+  +gradient-button($color-orange)
+  border: 1px solid darken($color-orange, 10%)
+  &:hover 
+    +gradient-button(darken($color-orange, 10%))
+  span:before
+    display: none
