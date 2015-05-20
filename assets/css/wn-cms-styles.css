@@ -2503,6 +2503,9 @@ p {
     font-size: 14px;
     margin-top: 16px; } }
 
+footer .disclaimer {
+  padding: 20px 10px; }
+
 ul.breadcrumb {
   list-style: none;
   padding: 0;

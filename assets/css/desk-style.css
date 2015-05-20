@@ -2504,6 +2504,9 @@ p {
     font-size: 14px;
     margin-top: 16px; } }
 
+footer .disclaimer {
+  padding: 20px 10px; }
+
 .searchform .answers .button-primary {
   background: #e54132;
   background: -moz-linear-gradient(top, #e54132 0%, #c43325 100%);
