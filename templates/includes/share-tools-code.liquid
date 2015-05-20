@@ -1,0 +1,108 @@
+  <!-- Share bits -->
+<script>
+jQuery.sharedCount = function(url, fn) {
+   url = encodeURIComponent(url || location.href);
+   var domain = "//free.sharedcount.com/"; /* SET DOMAIN */
+   var apikey = "8e4b7187bcfca463ceeca1577105f710bf47edd1" /*API KEY HERE*/
+   var arg = {
+    data: {
+     url : url,
+     apikey : apikey
+    },
+    url: domain,
+    cache: true,
+    dataType: "json"
+   };
+   if ('withCredentials' in new XMLHttpRequest) {
+    arg.success = fn;
+   }
+   else {
+    var cb = "sc_" + url.replace(/\W/g, '');
+    window[cb] = fn;
+    arg.jsonpCallback = cb;
+    arg.dataType += "p";
+   }
+   return jQuery.ajax(arg);
+  };
+
+  jQuery(document).ready(function($){
+   var targetUrl = "http://" + location.host + location.pathname;
+
+   $.sharedCount(targetUrl, function(data){
+    var totalShares = data.Twitter + data.Facebook.like_count + data.GooglePlusOne + data.Facebook.share_count + data.Pinterest + data.LinkedIn + data.StumbleUpon;
+    if (totalShares <= 15) {
+     totalShares = 16;
+    }
+    var kFormatter = function (num) {
+      return num > 999 ? (num/1000).toFixed(1) + 'k' : num
+    }
+    $("#tweetscount").text(data.Twitter);    
+    $("#likescount").text(data.Facebook.like_count);
+    $("#facebooksharecount").text(data.Facebook.share_count);
+    $("#plusonescount").text(data.GooglePlusOne);
+    $("#stumbleuponcount").text(data.StumbleUpon);
+    $("#pintrestcount").text(data.Pinterest);
+    $("#linkedincount").text(data.LinkedIn);
+    $("#total").html(kFormatter(totalShares));
+    $("#sharedcount").fadeIn();
+   });
+  });
+</script>
+
+<script>
+  // Build the target srcs for the icons on click.
+  var socialMedialUrl          = window.location;
+  
+  var facebookParamU           = "http://bit.ly/1FeHQl0";
+
+  var twitterParamText         = "Win a 10-day road trip across the USA with @WorldNomads and be mentored by a @lonelyplanet author! Apply now: http://bit.ly/1N5C7lK";
+
+  var pinParamDescription      = "Win a 10-day road trip across the USA with World Nomads";
+  var pinParamMedia            = "http://www.worldnomads.com/Media/Default/LearnImages/writing2015/wn-writing-2015-pintrest.jpg";
+  
+  var linkedParamTitle         = "Are you an aspiring travel writer?";
+  var linkedParamDescription   = "Be mentored by a Lonely Planet author in San Francisco and go on a 10-day road trip across the U.S. with World Nomads.";
+
+  $(function() {
+    var $plus = $(".plus");
+    var $toggleableButtons = $(".pinterest, .gplus, .linkedin, .stumbleupon").hide();
+    $plus.on("click", function() {
+      var $this = $(this);
+      $toggleableButtons.toggle();
+      $plus.toggleClass("open");
+    });
+  });
+  
+  $(function() {
+    var $si = $(".socialicon");
+    var targetUrl = "";
+    $si.on("click", function() {
+      var $this = $(this);
+      if ($this.hasClass("facebook")) {
+        targetUrl = "http://www.facebook.com/share.php?u=" + facebookParamU;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+      else if ($this.hasClass("twitter")) {
+        targetUrl = "https://twitter.com/intent/tweet?text=" + twitterParamText;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+      else if ($this.hasClass("pinterest")) {
+        targetUrl = "http://pinterest.com/pin/create/button?description=" + pinParamDescription + "&media=" + pinParamMedia; + "&url=" + socialMedialUrl; 
+        window.open(targetUrl, 'name', 'width=755,height=400,scrollbars=no');
+      }
+      else if ($this.hasClass("gplus")) {
+        targetUrl = "https://plus.google.com/share?url=" + socialMedialUrl;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+      else if ($this.hasClass("linkedin")) {
+        targetUrl = "https://www.linkedin.com/shareArticle?mini=true&url=" + socialMedialUrl + "&title=" + linkedParamTitle + "&summary=" + linkedParamDescription;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+      else if ($this.hasClass("stumbleupon")) {
+        targetUrl = "http://www.stumbleupon.com/badge/?url=" + socialMedialUrl;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+    });
+  });
+</script>
+<!-- Share bits -->
