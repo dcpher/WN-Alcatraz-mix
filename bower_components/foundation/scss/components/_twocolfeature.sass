@@ -1,12 +1,13 @@
 #twofeature
+  //TODO: Background image ref need rewriting to use panel component
   background-image: url("https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_red.jpg")
-  margin-bottom: 0
+  //margin-bottom: 0
   background-size: cover
   background-position: center
   width: 100%
-  display: inline-block
+  display: block
   padding-top: 16px
-  margin-bottom: -6px
+  margin-bottom: 0px
   ul.breadcrumb
     margin-top: 40px
   a
@@ -23,9 +24,19 @@
     font-size: 24px
     margin-bottom: 40px
     line-height: 28px
+    
   .form-input-button-pair
     input
       font-size: 16px
-      line-height: 18px
+      line-height: 22px
       @media all and (max-width: 905px)
         width: 100%
+        
+  .searchform
+    .button-primary
+      &.red
+        +gradient-button($color-red)
+        border: 1px solid darken($color-red, 10%)
+        margin-bottom: 0
+        &:hover
+          +gradient-button(darken($color-red, 10%))

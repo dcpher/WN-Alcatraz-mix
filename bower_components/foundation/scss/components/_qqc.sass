@@ -1,9 +1,7 @@
 // QQC
-@import functions 
 
 #wnqqcalculator 
   padding: 16px
-  padding-bottom: 50px
   .input-group
   @media all and (min-width: 935px)
     .tooltip
@@ -26,14 +24,14 @@
   .trustedby
     width: 100%
     display: block
-    padding-top: 8px
+    padding-top: 16px
     p, img
       margin-right: 3%
-      float: left
     p 
       color: $color-dark-grey
       font-size: 12px
-      margin-top: 12px
+      margin: 0px
+      line-height: rem-calc(1)
     img
       width: auto
       max-width: 80px
@@ -51,7 +49,7 @@
           display: none
       @media all and (max-width: 640px)
         &.intrep, &.natgeo
-          display: block
+          display: inline-block
       @media all and (max-width: 565px)
         &.natgeo
           display: none
@@ -96,9 +94,15 @@
       margin-bottom: 2px
     .continue
       padding: 2px 15px 0
-      border: 1px solid rgba(0,0,0,0.2)
-      line-height: 32px
-      font-size: 18px
+      border: 1px solid darken($color-orange, 10%)
+      line-height: 36px
+      span
+        line-height: 34px
+      &:hover
+        +gradient-button(darken($color-orange, 5%))
+      &:after
+        display: none // turn off base-button arw 
+      
     .qqc-background 
       background: none
       padding: 0
