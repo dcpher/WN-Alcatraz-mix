@@ -2367,6 +2367,8 @@ div img.auto-size-img, div a > img.auto-size-img {
   color: #444642; }
   #gear-cover a h5, #gear-cover a h3 {
     color: #297ac6; }
+  #gear-cover a .content-box {
+    margin-bottom: 1.25rem; }
   #gear-cover a .content-box:hover {
     background-color: #e0e0e0; }
 
@@ -2518,6 +2520,8 @@ ul.breadcrumb {
   text-align: center; }
 #article-header.light {
   color: #ffffff; }
+  #article-header.light h1 {
+    color: #ffffff; }
 #article-header.dark {
   color: #444642; }
 #article-header #wnqqcalculator {
@@ -2580,22 +2584,22 @@ ul.qlinks {
   padding: 16px; }
   @media all and (min-width: 935px) {
     #wnqqcalculator .tooltip {
-      bottom: -90px; } }
+      bottom: -70px; } }
   @media all and (max-width: 935px) {
     #wnqqcalculator .tooltip {
-      bottom: -114px; } }
+      bottom: -94px; } }
   @media all and (max-width: 720px) {
     #wnqqcalculator .tooltip {
-      bottom: -138px; } }
+      bottom: -118px; } }
   @media all and (max-width: 650px) {
     #wnqqcalculator .tooltip {
-      bottom: -162px; } }
+      bottom: -118px; } }
   @media all and (max-width: 641px) {
     #wnqqcalculator .tooltip {
-      bottom: -90px; } }
+      bottom: -70px; } }
   @media all and (max-width: 552px) {
     #wnqqcalculator .tooltip {
-      bottom: -115px; } }
+      bottom: -94px; } }
   #wnqqcalculator .trustedby {
     width: 100%;
     display: block;
@@ -2695,6 +2699,9 @@ ul.qlinks {
         padding-left: 40px;
         font-size: 14px;
         line-height: 20px; }
+      #wnqqcalculator #qqc .input-group .tool-tip {
+        top: 4.375rem;
+        bottom: inherit !important; }
     #wnqqcalculator #qqc .province h5 {
       min-height: 32px; }
     @media all and (max-width: 660px) {
@@ -2708,6 +2715,8 @@ ul.qlinks {
   display: none; }
   .datepicker .datepicker-calendar:nth-child(3) {
     display: block; }
+  .datepicker .datepicker-calendar .datepicker-calendar-title {
+    padding-bottom: 1.25rem; }
 
 .right-column {
   border-left: 1px solid;
@@ -2816,7 +2825,8 @@ ul.qlinks {
   position: relative;
   background-position: left top;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 1.25rem; }
   .small-feature-box .bottom {
     min-height: 45px;
     position: absolute;
@@ -3131,7 +3141,8 @@ div.faq h4 {
     color: #ffffff;
     text-decoration: none; }
   .base-button.expand {
-    width: 100%; }
+    width: 100%;
+    padding: 4px 44px 4px 15px; }
   .base-button.orange {
     background: #ff9c00;
     background: -moz-linear-gradient(top, #ffa20f 0%, #f09300 100%);
@@ -3902,6 +3913,8 @@ div.orange-pattern, div.teal-pattern, div.purple-pattern, div.blue-pattern, div.
   color: #ffffff;
   background-position: center;
   background-size: cover; }
+  div.orange-pattern h1, div.orange-pattern h2, div.orange-pattern h3, div.orange-pattern h4, div.orange-pattern h5, div.teal-pattern h1, div.teal-pattern h2, div.teal-pattern h3, div.teal-pattern h4, div.teal-pattern h5, div.purple-pattern h1, div.purple-pattern h2, div.purple-pattern h3, div.purple-pattern h4, div.purple-pattern h5, div.blue-pattern h1, div.blue-pattern h2, div.blue-pattern h3, div.blue-pattern h4, div.blue-pattern h5, div.red-pattern h1, div.red-pattern h2, div.red-pattern h3, div.red-pattern h4, div.red-pattern h5, div.yellow-pattern h1, div.yellow-pattern h2, div.yellow-pattern h3, div.yellow-pattern h4, div.yellow-pattern h5, div.grey-pattern h1, div.grey-pattern h2, div.grey-pattern h3, div.grey-pattern h4, div.grey-pattern h5 {
+    color: #ffffff; }
 div.orange-pattern {
   background-image: url(//www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_orange.jpg); }
 div.teal-pattern {

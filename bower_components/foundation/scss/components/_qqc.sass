@@ -5,22 +5,22 @@
   .input-group
   @media all and (min-width: 935px)
     .tooltip
-      bottom: -90px
+      bottom: -70px
   @media all and (max-width: 935px)
     .tooltip
-      bottom: -114px
+      bottom: -94px
   @media all and (max-width: 720px)
     .tooltip
-      bottom: -138px
+      bottom: -118px
   @media all and (max-width: 650px)
     .tooltip
-      bottom: -162px
+      bottom: -118px
   @media all and (max-width: 641px)
     .tooltip
-      bottom: -90px
+      bottom: -70px
   @media all and (max-width: 552px)
     .tooltip
-      bottom: -115px
+      bottom: -94px
   .trustedby
     width: 100%
     display: block
@@ -121,6 +121,10 @@
           padding-left: 40px
           font-size: 14px
           line-height: 20px 
+      .tool-tip
+        top: rem-calc(70)
+        bottom: inherit !important    
+      
     .province
       h5 
         min-height: 32px
@@ -136,3 +140,6 @@
     display: none
     &:nth-child(3)
       display: block
+    
+    .datepicker-calendar-title
+      padding-bottom: rem-calc(20)
