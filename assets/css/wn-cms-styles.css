@@ -2508,6 +2508,9 @@ ul.breadcrumb {
   .content .breadcrumb {
     display: block; } }
 
+#article-header p.highlight {
+  font-size: 1.5rem;
+  line-height: 1.2; }
 #article-header p.small {
   font-size: 14px;
   margin-top: 16px;
@@ -2881,7 +2884,7 @@ ul.qlinks {
       background-color: rgba(248, 219, 70, 0.85); }
   @media all and (max-width: 860px) {
     .feature-box-right-panel {
-      min-height: 320px; }
+      min-height: 420px; }
       .feature-box-right-panel a h4 {
         width: 100%; }
       .feature-box-right-panel .right {
@@ -3374,9 +3377,10 @@ div.faq h4 {
     #benefits-bar li.medical-icon, #benefits-bar li.evacuation-icon, #benefits-bar li.cancellation-icon, #benefits-bar li.lost-stolen-icon, #benefits-bar li.interruption-icon, #benefits-bar li.return-icon {
       padding-left: 4rem;
       padding-right: 1rem;
+      padding-bottom: 0;
       background-position: 5px -10px;
       background-repeat: no-repeat;
-      height: 64px; }
+      min-height: 50px; }
     #benefits-bar li a {
       color: #ffffff; }
   #benefits-bar .medical-icon {

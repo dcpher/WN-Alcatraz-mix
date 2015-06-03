@@ -1,72 +1,99 @@
 {% block content %}
 
-<!-- Header Content -->
-<div class="dark-grey-panel hero-content-panel photo header">
-
-  <div class="hero-content row">
-    
-    <div class="small-12 medium-5 large-6 columns">
-      <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-        <ul class="breadcrumb">
-          <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-            <a href="/"><span itemprop="title">World Nomads</span></a>
-          </li>
-          <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-            <a href="/change-lives/"><span itemprop="title">Change lives</span></a>
-          </li>
-        </ul>
-      </div>
-      <h1>Our World Nomads give back</h1>
-      <p class="intro">Thank you to the 1 million travellers that helped changed lives - one micro-donation at a time.</p>
-    
-      <div class="cta">
-        <button class="base-button orange">Find out more</button>
-      </div>
+<!-- Video Test -->
+<div class="hero-content-panel video header light" id="hero-video">
+  <div class="hero-video-holder"></div>
+  <div class="video-content">
+  
+    <div class="row">
+      <div class="small-12 medium-8 large-6 columns">
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+          <ul class="breadcrumb">
+            <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+              <a href="/"><span itemprop="title">World Nomads</span></a>
+            </li>
+            <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+              <a href="/change-lives/"><span itemprop="title">Change lives</span></a>
+            </li>
+          </ul>
+        </div>
+        <h1 class="text-left">Our World Nomads give back</h1>
+        <p class="intro">Thank you to the 1 million travellers that helped changed lives - one micro-donation at a time.</p>
+        <div class="cta-wrap">
+          <button class="base-button orange"><a href="#give-back">Find out more</a></button>
+        </div>
+      </div>  
     </div>
-    
+  
   </div>
   
 </div>
+<!-- include video script -->
+{{ "/Media/Default/scripts/js/jquery.videoBG.js" | asset_url | script_tag }}
+<script>
+  $(function() {
+    $('.hero-video-holder').videoBG({
+        mp4:'/Media/Default/ChangeLives/footprints_header_intro.mp4',
+        ogv:'/Media/Default/ChangeLives/footprints_header_intro.ogv',
+        webm:'/Media/Default/ChangeLives/footprints_header_intro.webm',
+        poster:'/Media/Default/ChangeLives/kenya-footy-large.jpg',
+        scale:true,
+        zIndex:0
+    });
+
+    $(".hero-video-holder").find(".videoBG, .videoBG_wrapper").css("width", "100%");
+  });
+</script>
 
 <style>
+.hero-video-holder{ min-height: 460px; z-index: 10; }  
+  
 @media all and (min-width: 860px) {
-body .hero-content-panel.photo.header {
-    background-image: url('/Media/Default/ChangeLives/kenya-footy-large.jpg');
+body .hero-content-panel.video {
+    background-image: url('/Media/Default/ChangeLives/footprints-header-large.jpg');
     background-position: bottom left;
     background-size: cover;
   }
 }
 @media all and (max-width: 860px) {
-body .hero-content-panel.photo.header {
+body .hero-content-panel.video {
     background-image: url('/Media/Default/ChangeLives/kenya-footy-large.jpg');
   }
 
 }
 @media all and (max-width: 500px) {
-  body .hero-content-panel.photo.header {
+  body .hero-content-panel.video {
     background-image: url('/Media/Default/ChangeLives/kenya-footy-large.jpg');
   }
 }
 .hero-content-panel {
-  margin-bottom: 0px; 
+  margin-bottom: 0px;
+  min-height: 460px;
 }
-.hero-content-panel.photo:first-child {
-  min-height: 520px;
+.video-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 460px;
+  width: 100%;
+  z-index: 20;
 }
-.hero-content-panel.photo:first-child h1 {
-  margin-top: 70px; 
-}
-.hero-content-panel.photo .cta {
+.hero-content-panel.video .cta-wrap {
   margin-bottom: 2.5rem;
   margin-top: 0.5rem;
 }
-.hero-content-panel.photo p.intro {
-  font-size: 1.25rem; 
+.hero-content-panel.video p.intro {
+  font-size: 1.25rem;
+  color: #FFF;
+}
+.hero-content-panel.video h1 {
+  color: #FFF;
 }
 .content-panel {
   padding: 40px 0;
   margin-bottom:0;
 }
+
 </style>
 <!-- End Header Content -->
 
@@ -81,7 +108,7 @@ body .hero-content-panel.photo.header {
   <div class="row">
     <div class="small-12 medium-7 large-6 columns">
       <div class="flex-video widescreen vimeo">
-        <iframe class="video" src="//player.vimeo.com/video/103967475?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe class="video" src="//player.vimeo.com/108209483?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
       <label><span class="tablet-up"></span><a href="/people/christy-mccarthy">Christy McCarthy</a> Co-Founder, Footprints </label>
     </div>
@@ -96,7 +123,7 @@ body .hero-content-panel.photo.header {
 <!-- CP 1 END -->
 
 <!-- CP 2 -->
-<div class="purple-panel purple-pattern">
+<div class="purple-panel purple-pattern" id="give-back">
   
   <div class="hero-content row">
     <div class="small-12 columns">
@@ -147,16 +174,7 @@ body .hero-content-panel.photo.header {
       <p>Make a difference to those communities in need in a simple, easy and transparent way when you travel.</p>
       <p>Next time you buy travel insurance with us, join the million strong who believe that they are small enough to change the world.</p>
       
-        <div class="trustedby">
-          <div>Trusted by:</div>
-          <ul class="large-block-grid-5">
-            <li><a href="http://www.lonelyplanet.com/travel-insurance" target="_blank"><img src="http://www.worldnomads.com/Media/Default/TravelInsuranceImages/PartnerLogos/lonley-planet-logo-dark.png" alt="Lonely Planet" class="lp" /></a></li>
-            <li><img src="http://www.worldnomads.com/Media/Default/TravelInsuranceImages/PartnerLogos/nat-geo-logo-dark.png" alt="Nat Geo Adventure"  class="natgeo" /></li>
-            <li><a href="http://www.roughguides.com/travel-insurance/" target="_blank"><img src="http://www.worldnomads.com/Media/Default/TravelInsuranceImages/PartnerLogos/rough-guide-logo-dark.png" alt="Rough Guides" class="rg" /></a></li>
-            <li><img src="http://www.worldnomads.com/Media/Default/TravelInsuranceImages/PartnerLogos/intrepid-logo-dark.png" alt="Intrepid" class="intrep" /></li>
-            <li><a href="http://www.virtualtourist.com/travel-insurance/" target="_blank"><img src="http://www.worldnomads.com/Media/Default/TravelInsuranceImages/PartnerLogos/v-tourist-logo-dark.png" alt="Virtual Tourist" class="vt" /></a></li>
-          </ul>
-        </div>
+        
     </div>
     <div class="small-12 medium-6 large-6 columns">
       <div id="wnqqcalculator" class="white">
