@@ -1,0 +1,51 @@
+{% block content %} 
+
+<div class="hero-content-panel light orange-pattern" id="article-header">
+  <div class="row">
+    <div class="large-12 medium-12 small-12 column">
+      <div>
+        <ul class="breadcrumb">
+          <li>
+            <a href="/"><span>World Nomads</span></a>
+          </li>
+
+          <li>
+            <a href="/search"><span>Search</span></a>
+          </li>
+
+          <li>
+            <a href="/search-results"><span>Search Results</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-panel light" id="article-header">
+  <!-- Main Content START -->
+
+  <div class="row" id="article-content">
+    <div class="large-9 medium-12 small-12 columns">
+      <div class="section">
+        
+        <script>
+          (function() {
+            var cx = '016598410852319007988:ymzl3vno0va';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:searchresults-only></gcse:searchresults-only>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
