@@ -2697,6 +2697,10 @@ footer .disclaimer {
 .panel .base-button a, .panel .base-buttona, .panel .base-button a:visited {
   color: #ffffff; }
 
+.content-panel {
+  margin: 0;
+  padding: 1.25rem 0; }
+
 div.orange {
   background-color: #ff9c00; }
 div.teal {
@@ -2987,7 +2991,8 @@ body {
   #main .article ol, #main .article ul {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    list-style: inherit; }
     #main .article ol li, #main .article ul li {
       margin-bottom: 0.5rem; }
   #main .article .author {
