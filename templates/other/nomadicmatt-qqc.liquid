@@ -1,0 +1,113 @@
+{% block content %}
+
+<script type='text/javascript' src='//www.worldnomads.com/Partner/GetPartnerWidget?partnerCode=nmts&source=&loadWithPanelExpanded=true&cssVariant=landscape' async ></script>
+<div id='wn-insurance-quote-editor'></div>
+  
+<style>
+#wn-insurance-quote-editor { 	
+	max-width: 680px;
+	background: #028cbd;
+	padding: 30px 20px 0;
+}
+#wn-insurance-quote-editor #qqc .qqc-background {
+	background: none;
+	padding: 0;
+	padding-bottom: 68px;
+}
+#wn-insurance-quote-editor #qqc .input-group input[type="text"], #wn-insurance-quote-editor #qqc .cta-button-primary {
+	border: none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+#wn-insurance-quote-editor .destinations-wrapper, #wn-insurance-quote-editor #qqc .input-group.country-of-residence {
+	width: 49%;
+	display: inline-block;
+}
+
+#wn-insurance-quote-editor #qqc .input-group.country-of-residence {  
+  display: block;
+  position: absolute;
+  right: -20px;
+  top: 66px;
+}
+#wn-insurance-quote-editor .qqc-container.province-shown #qqc .input-group.country-of-residence {
+	margin-right: 20px;
+}
+#wn-insurance-quote-editor .qqc-container.province-shown #qqc .input-group.province {
+	width: 100%;
+}
+#wn-insurance-quote-editor #qqc h5 { margin-bottom: 8px;
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+}
+#quote-destination h5:after {
+  content:"\A(If your unsure where just enter Worldwide.)";
+    white-space: pre; /* or pre-wrap */
+}
+#wn-insurance-quote-editor #qqc h1:after {
+  background:url(http://dev.nomadicmatt.com/wp-content/themes/nomadicmatt/images/nomadic_matt_logo.png) no-repeat scroll left top / 100% auto transparent;
+  content:"";
+  height:60px;
+  max-width: 210px;
+  position:absolute;
+  right: 30px;
+  top:0;
+  width:100%
+}
+#wn-insurance-quote-editor #qqc .qqc-background:after {
+    bottom: 0px;
+  top: auto;
+  left: auto;
+  right: 70px;
+  max-width: 170px;
+}
+#wn-insurance-quote-editor #qqc .cta-button-primary {
+	text-align: center;
+	text-shadow: none;
+}
+#wn-insurance-quote-editor #qqc .cta-button-primary:after {
+	position: relative;
+}
+#wn-insurance-quote-editor #qqc h1 {
+	line-height: 40px;
+	margin-bottom: 10px;
+	font-family: 'FjallaOne', sans-serif;
+	font-weight: 500;
+	color: #ffffff;
+}
+#wn-insurance-quote-editor #qqc .input-group.action button {
+	margin-top: 24px;
+}
+#wn-insurance-quote-editor button.cta-button-primary {
+	line-height: 28px;
+}
+@media screen and (max-width: 670px) {
+	#wn-insurance-quote-editor #qqc h1:after {
+		display: none;
+	}
+	#wn-insurance-quote-editor .destinations-wrapper, #wn-insurance-quote-editor #qqc .input-group.country-of-residence, #wn-insurance-quote-editor .qqc-container.province-shown #qqc .input-group.country-of-residence {
+		width: 100%;
+		margin-right: 0px;			
+	}
+	#wn-insurance-quote-editor #qqc .input-group.country-of-residence {
+		position: relative;
+		right: 0;
+		top: 0;
+	}
+}
+@media screen and (max-width: 380px) {
+	#wn-insurance-quote-editor #qqc .legacy-travellers, #wn-insurance-quote-editor #qqc .traveller-age, #wn-insurance-quote-editor #qqc .input-group.action {
+		width: 100%;
+		margin-right: 0px;
+	}
+	#wn-insurance-quote-editor #qqc .input-group.action button {
+		margin-top: 8px
+	}
+	#wn-insurance-quote-editor #qqc h1 {
+		line-height: 34px;
+	}
+}
+</style>
+
+{% endblock %}
