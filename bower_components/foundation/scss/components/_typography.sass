@@ -71,6 +71,11 @@ p
   font-size: $p-font-size
   line-height: $p-line-height
   margin-bottom: rem-calc(16)
+
+// override for default screen css
+ol
+  &.number
+    list-style-type: decimal
     
 // resize fonts for mobile
 @media (max-width: 700px)
@@ -95,7 +100,6 @@ p
   h4 
     font-size: rem-calc(22) 
 
-    
 
 // Header Panel Typography
 .article

@@ -1,6 +1,6 @@
 //Feature Box
 .feature-box, .feature-box-right-panel
-  background-position: left top
+  background-position: center top
   background-size: cover
   min-height: 460px
   position: relative
@@ -17,7 +17,7 @@
     h4
       margin-top: 20px
       padding: 0 40px 0 20px
-      color: #ffffff
+      color: $color-white
       font-size: 32px
       &:hover
         text-decoration: none
@@ -36,7 +36,7 @@
       min-height: 10px
     .feature-link-title
       font-size: 12px
-      color: #ffffff
+      color: $color-white
       margin-bottom: 12px
       line-height: 16px
       display: inline-block
@@ -44,7 +44,7 @@
     p
       padding: 0 20px
       a
-        color: #ffffff
+        color: $color-white
         font-size: 16px
         margin-bottom: 8px
         line-height: 20px
@@ -52,7 +52,18 @@
           font-family: WNI
           content: '\e60d'
           margin: 0px 2px 0px
-          display: inline-block  
+          display: inline-block
+    ol, ul
+      list-style-position: inside
+      color: $color-white 
+      li 
+        &:hover
+          text-decoration: underline
+    a
+      color: $color-white
+      &:hover
+        text-decoration: underline
+        
     &.orange
       background-color: $color-orange
     &.teal
