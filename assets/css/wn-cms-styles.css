@@ -742,7 +742,8 @@ ul.qlinks {
     margin-top: 20px;
     padding: 0 40px 0 20px;
     color: #ffffff;
-    font-size: 32px; }
+    font-size: 32px;
+    text-shadow: 1px 1px 8px rgba(68, 70, 66, 0.25); }
     .feature-box a h4:hover, .feature-box-right-panel a h4:hover {
       text-decoration: none;
       color: #ededed;
@@ -796,7 +797,7 @@ ul.qlinks {
     .feature-box .bottom.blue, .feature-box-right-panel .bottom.blue {
       background-color: #297ac6; }
     .feature-box .bottom.red, .feature-box-right-panel .bottom.red {
-      background-color: #8c8c8c; }
+      background-color: #de5346; }
     .feature-box .bottom.yellow, .feature-box-right-panel .bottom.yellow {
       background-color: #F8DB46; }
 
