@@ -1,5 +1,7 @@
 
 {{ "/assets/js/foundation.js" | asset_url | script_tag }}
+<!--  Include Foundation top-bar script  -->
+{{ "/assets/js/foundation.topbar.js" | asset_url | script_tag }}
 <script>
 $(document).foundation();
 </script>
