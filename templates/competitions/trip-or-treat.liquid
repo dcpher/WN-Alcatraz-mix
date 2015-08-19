@@ -16,6 +16,9 @@
       <form action="/learn/travel-writing/travel-film-scholarship-2015" method="get">
         <button class="base-button orange">Apply now</button>
       </form>
+     
+        <p class="small">This is open to US and Canadian residents only.</p>
+    
     </div>    
 
   </div>
@@ -24,25 +27,42 @@
 <style>
 @media all and (min-width: 860px) {
   #travelfilm {
-    background-image: url('');
+    background-image: url('/Media/Default/triportreat/header-image.jpg');
     background-color: #999999;
     background-size: cover;
     background-position: center;
-    min-height: 550px;
+    min-height: 500px;
   }
+  
+  #article-header p.highlight {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+   
+  }
+    #article-header p.small {
+    font-style: italic;
+    color:#d5d5d5;
+     -webkit-font-smoothing: antialiased;
+    margin-top: 60px;
+   
+    }
 }
 @media all and (max-width: 860px) {
   #travelfilm {
-    background-image: url('/Media/Default/LearnImages/film2015/travel-film-2015-medium.jpg');
-    min-height: 550px;
+    background-image: url('/Media/Default/triportreat/header-image.jpg');
+    min-height: 500px;
     background-position: center right;
   }
 }
 @media all and (max-width: 500px) {
   #travelfilm {
-    background-image: url('/Media/Default/LearnImages/film2015/travel-film-2015-small.jpg');
+    background-image: url('/Media/Default/triportreat/header-image.jpg');
     background-position: center;
   }
+  
+
 }
 </style>
 <!-- Header END -->
@@ -104,7 +124,7 @@
     }
 
     /* countdown style */
-      #sidepannel #partnership #countbox #days, #sidepannel #countbox #hours, #sidepannel #countbox #mins { color: #61398b; }
+      #sidepannel #countbox #days, #sidepannel #countbox #hours, #sidepannel #countbox #mins { color: #61398b; }
       .importantdate .date { background-color: #61398b; }
       
       #partnership ul li{
@@ -127,7 +147,7 @@
 
 
     <div class="row panels-wrapper">
-      <div class="large-4 medium-6 small-12 columns">
+      <div class="large-4 medium-12 small-12 columns">
         <div class="feature-box cuba">
             <ul class="breadcrumb">
             </ul>
@@ -141,7 +161,7 @@
         </div>
       </div> 
 
-      <div class="large-4 medium-6 small-12 columns">
+      <div class="large-4 medium-12 small-12 columns">
         <div class="feature-box transylvania">
           <ul class="breadcrumb">
           </ul>
@@ -153,7 +173,7 @@
         </div>
       </div> 
 
-      <div class="large-4 medium-6 small-12 columns">
+      <div class="large-4 medium-12 small-12 columns">
         <div class="feature-box india">
           <ul class="breadcrumb">
           </ul>
@@ -192,7 +212,7 @@
     <div class="panel" id="partnership">
       <h4>In partnership with:</h4>
       <div class="row panel">
-           <ul class="small-block-grid-3">
+           <ul class="large-block-grid-3">
             <li><img src="/Media/Default/triportreat/logo-1.jpg" /></li>
             <li><img src="/Media/Default/triportreat/logo-2.jpg" /></li>
             <li><img src="/Media/Default/triportreat/logo-3.jpg" /></li>
@@ -202,7 +222,7 @@
        <p class="small">Other Trip or Treat partners:</p>
       </div>
            <div class="row panel">
-           <ul class="small-block-grid-4">
+           <ul class="large-block-grid-4 medium-block-grid-3">
               <li><img src="/Media/Default/triportreat/logo-s-1.jpg" /></li>
               <li><img src="/Media/Default/triportreat/logo-s-2.jpg" /></li>
               <li><img src="/Media/Default/triportreat/logo-s-3.jpg" /></li>
@@ -246,44 +266,53 @@
       background-color: #c6b7d5;
     }
      
-      .steps1 .icon{
-        background: url(/Media/Default/triportreat/arrow-1.png) no-repeat top right;
-        float: left;
-        width: 30px;
-        height: 90px;
-        margin: 0 2px;
-        padding: 0;
-        position: absolute;
-        top: -83px;
-    }
-     
-       .steps2 .icon{
-        background: url(/Media/Default/triportreat/arrow-2.png) no-repeat top right;
-        float: left;
-        width: 30px;
-        height: 90px;
-        margin: 0 2px;
-        padding: 0;
-        position: absolute;
-        top: -83px;
-    }
+
       .steps3 {
       background-color: #b09cc5;
     }
-     .steps0, .steps1, .steps2, .steps3 {
+    .steps0, .steps1, .steps2, .steps3 {
         margin-bottom: 1.25rem;
-        padding: 1.7rem 2rem 0.5rem;
+        padding: 0rem;
         color: #333;
         min-height: 90px;
         margin-bottom: 0px;
      }
+     
+      .steps0 .row, .steps1 .row, .steps2 .row, .steps3 .row{
+    
+        padding: 1.6rem 3rem 0.5rem;
+        height: 90px;
+       
+     }
+     
+     
+     
+     
 
-     .steps1 .row .large-3 p, .steps2 .row .large-3 p, .steps3 .row .large-3 p{
+    .steps1 .row .large-3 p, .steps2 .row .large-3 p, .steps3 .row .large-3 p{
         font-size: 3em;
         font-weight: 300;
         line-height: 2.4rem;
         margin-bottom: 0;
      }
+     
+    .steps2::before{
+        
+      content: url(/Media/Default/triportreat/arrow-1.png);
+      float: left;
+      width: 30px;
+      height: 90px;
+      
+    }
+    
+    .steps3::before{
+        
+      content: url(/Media/Default/triportreat/arrow-2.png);
+      float: left;
+      width: 30px;
+      height: 90px;
+      
+    }
      
     .form {
       background-color: #f4f4f4;
@@ -294,6 +323,18 @@
       font-size: 3em;
     }
      
+    .arrow{
+     margin:-7px 0; 
+    }
+     
+    span.arrow-number{
+      position: absolute;
+      padding: 0.3rem 0.9rem;
+      font-size: 1.65em;
+      color: #ffffff;
+    }
+     
+
      
     </style>
 
@@ -301,7 +342,9 @@
   <div class="row steps">
     <div class="large-12 columns">
       <div class="large-3 medium-12 columns steps0">
-        <h4>Steps to apply:</h4>
+        <div class="row">
+          <h4>Steps to apply:</h4>
+        </div>
       </div>
 
       <div class="large-3 medium-12 columns steps1">
@@ -349,96 +392,173 @@
 
 <div class="content-panel">
   <div class="row">
-      <div class="large-12 columns form">
-      <div class="large-offset-1 large-10 columns">
-        <h3>Ready to apply?</h3>
-      <form>
-  <div class="row">
-    <div class="large-offset-1 large-10 columns panel">
-     <h4>Select where you want to go</h4>
-        <div clss="">
-         <ul class="small-block-grid-3">
-            <li><img src="/Media/Default/triportreat/cuba-select.png" /></li>
-            <li><img src="/Media/Default/triportreat/transylvania.png" /></li>
-            <li><img src="/Media/Default/triportreat/india.png" /></li>
-         </ul>
-        </div>
-    </div>
-  </div>
-  <hr class="large-offset-1 large-10">
-        
-  <div class="row">
-    <div class="large-offset-1 large-10 columns panel">
-     <h4>Why do you want to go there?</h4>
-     <p>In 100 words or less, tell us why this trip destination bewitches you.*</p>
-      <label>
-        <textarea placeholder="small-12.columns"></textarea>
-      </label>
-    </div>
-  </div>
-  <hr class="large-offset-1 large-10">
-
-        
-  <div class="row">
-    <div class="large-offset-1 large-10 columns panel">
-      <h4>About you, the traveller</h4>
-        <div class="row">
-          <div class="large-6 columns">
-              <label>Your Name*
-                <input type="text" placeholder="large-12.columns" />
-              </label>
+      <div class="large-12 columns panel">
+        <div class="row form">
+          <div class="large-offset-1 large-10 columns">
+         <div class="row">
+           <div class="large-12 columns">
+            <h3>Ready to apply?</h3>
+           </div>
+         </div>
+         
+    <form>
+      
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="row">
+          <div class="large-12 columns">
+             <div class="row">
+              <div class="large-1 columns arrow">
+                <span class="arrow-number">1.</span>
+                <img src="/Media/Default/triportreat/arrow.png" />
+              </div>
+              <div class="large-11 columns">
+                <h4>Select where you want to go</h4>
+              </div>
+            </div>
           </div>
+        </div>
+          <div class="row">
+          <div class="large-offset-1 large-10 columns panel">
           
-          <div class="large-6 medium-6 small-12 columns">
-              <label for="fieldchitdr">Date of Birth</label>
-                <div class="large-4 columns">
-        <select id="fieldchitdrdy" name="cm-fd-chitdr-dy"><option value="">DD</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
-            </div>
-                <div class="large-4 columns">
-        <select id="fieldchitdr" name="cm-fd-chitdr-mn"><option value="">MM</option><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select>
-            </div>
-                <div class="large-4 columns">
-        <select id="fieldchitdryr" name="cm-fd-chitdr-yr"><option value="">YYYY</option><option value="1949">1949</option><option value="1950">1950</option><option value="1951">1951</option><option value="1952">1952</option><option value="1953">1953</option><option value="1954">1954</option><option value="1955">1955</option><option value="1956">1956</option><option value="1957">1957</option><option value="1958">1958</option><option value="1959">1959</option><option value="1960">1960</option><option value="1961">1961</option><option value="1962">1962</option><option value="1963">1963</option><option value="1964">1964</option><option value="1965">1965</option><option value="1966">1966</option><option value="1967">1967</option><option value="1968">1968</option><option value="1969">1969</option><option value="1970">1970</option><option value="1971">1971</option><option value="1972">1972</option><option value="1973">1973</option><option value="1974">1974</option><option value="1975">1975</option><option value="1976">1976</option><option value="1977">1977</option><option value="1978">1978</option><option value="1979">1979</option><option value="1980">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option></select>
-            </div>
-          </div>
-          </div>
-        <div class="row">
-            <div class="large-6 columns">
-                <label>Zipcode
-                  <input type="text" placeholder="large-12.columns" />
-                </label>
-            </div>
-            <div class="large-6 columns">
-              <label>State/Providence
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </label>
-            </div>
-      </div>
-        <div class="row">
-          <div class="large-12 columns panel">
-           <ul class="small-block-grid-4">
-              <li><img src="/Media/Default/triportreat/cuba-select.png" /></li>
-              <li><img src="/Media/Default/triportreat/transylvania.png" /></li>
-              <li><img src="/Media/Default/triportreat/india.png" /></li>
-              <li><img src="/Media/Default/triportreat/india.png" /></li>
-           </ul>
+              <div class="">
+               <ul class="small-block-grid-3">
+                  <li><img src="/Media/Default/triportreat/cuba-select.png" /></li>
+                  <li><img src="/Media/Default/triportreat/transylvania.png" /></li>
+                  <li><img src="/Media/Default/triportreat/india.png" /></li>
+               </ul>
+              </div>
           </div>
         </div>
-    </div>
-  <hr class="large-offset-1 large-10">
-  </div>
+        </div>
+      </div>
+        <hr class="large-offset-1 large-10">
+
+      
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="row">
+          <div class="large-12 columns">
+             <div class="row">
+              <div class="large-1 columns arrow">
+                <span class="arrow-number">2.</span>
+                <img src="/Media/Default/triportreat/arrow.png" />
+              </div>
+              <div class="large-11 columns">
+                  <h4>Why do you want to go there?</h4>              
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="row">
+          <div class="large-offset-1 large-10 columns panel">
+           
+           <p>In 100 words or less, tell us why this trip destination bewitches you.*</p>
+            <label>
+              <textarea placeholder="small-12.columns"></textarea>
+            </label>
+          </div>
+        </div>
+        </div>
+      </div>
+        <hr class="large-offset-1 large-10">
+
+      <div class="row">
+        <div class="large-12 columns">
+         <div class="row">
+          <div class="large-12 columns">
+             <div class="row">
+              <div class="large-1 columns arrow">
+                <span class="arrow-number">3.</span>
+                <img src="/Media/Default/triportreat/arrow.png" />
+              </div>
+              <div class="large-11 columns">
+                <h4>About you, the traveller</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="row">
+          <div class="large-offset-1 large-10 columns panel">
         
+              <div class="row">
+                <div class="large-6 columns">
+                    <label>Your Name*
+                      <input type="text" placeholder="large-12.columns" />
+                    </label>
+                </div>
+
+                <div class="large-6 medium-6 small-12 columns">
+                    <label for="fieldchitdr">Date of Birth</label>
+                      <div class="large-4 columns">
+              <select id="fieldchitdrdy" name="cm-fd-chitdr-dy"><option value="">DD</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+                  </div>
+                      <div class="large-4 columns">
+              <select id="fieldchitdr" name="cm-fd-chitdr-mn"><option value="">MM</option><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select>
+                  </div>
+                      <div class="large-4 columns">
+              <select id="fieldchitdryr" name="cm-fd-chitdr-yr"><option value="">YYYY</option><option value="1949">1949</option><option value="1950">1950</option><option value="1951">1951</option><option value="1952">1952</option><option value="1953">1953</option><option value="1954">1954</option><option value="1955">1955</option><option value="1956">1956</option><option value="1957">1957</option><option value="1958">1958</option><option value="1959">1959</option><option value="1960">1960</option><option value="1961">1961</option><option value="1962">1962</option><option value="1963">1963</option><option value="1964">1964</option><option value="1965">1965</option><option value="1966">1966</option><option value="1967">1967</option><option value="1968">1968</option><option value="1969">1969</option><option value="1970">1970</option><option value="1971">1971</option><option value="1972">1972</option><option value="1973">1973</option><option value="1974">1974</option><option value="1975">1975</option><option value="1976">1976</option><option value="1977">1977</option><option value="1978">1978</option><option value="1979">1979</option><option value="1980">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option></select>
+                  </div>
+                </div>
+                </div>
+              <div class="row">
+                  <div class="large-6 columns">
+                      <label>Zipcode
+                        <input type="text" placeholder="large-12.columns" />
+                      </label>
+                  </div>
+                  <div class="large-6 columns">
+                    <label>State/Providence
+                      <select>
+                        <option value="husker">Husker</option>
+                        <option value="starbuck">Starbuck</option>
+                        <option value="hotdog">Hot Dog</option>
+                        <option value="apollo">Apollo</option>
+                      </select>
+                    </label>
+                  </div>
+            </div>
+
+              <div class="row">
+                <div class="large-12 columns panel">
+                  <div class="">
+                       <p>Select one or more travel categories that interest you* </p>
+                       <ul class="small-block-grid-4">
+                          <li><img src="/Media/Default/triportreat/gear-select.png" /></li>
+                          <li><img src="/Media/Default/triportreat/map.png" /></li>
+                          <li><img src="/Media/Default/triportreat/flight.png" /></li>
+                          <li><img src="/Media/Default/triportreat/activity.png" /></li>
+                       </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+    
+    <hr class="large-offset-1 large-10">
+      
+    <div class="large-offset-1 large-10 columns panel"> 
+      <div class="row">
+        <div class="large-6 columns">
+          <p><input id="checkbox1" type="checkbox"><label for="checkbox1">I have read &amp; accepted the <a href="#">Terms and Conditions</a></label></p>
+          <p><input id="checkbox2" type="checkbox"><label for="checkbox2">I would like to hear more from WorldNomads partners</label></p>
+        </div>
+        <div class="large-offset-2 large-4 columns">
+          <form action="/learn/travel-writing/travel-film-scholarship-2015" method="get">
+            <button class="base-button orange">Submit your application</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+      </div>
         
         
 </form>
       
     
       </div>
+        </div>
   </div>
 </div>
 </div>
@@ -460,7 +580,7 @@
   <div class="large-8 medium-8 small-12 columns">
 
       <div id="cuba">
-          <p><img src="/Media/Default/LearnImages/film2015/Bleakney-Colombia-Adv-021.jpg" /></p>
+          <p><img src="/Media/Default/triportreat/big-cuba.jpg" /></p>
         <h3>Cuba</h3>
         <h6>American Citizens</h6>
         <p>For the first time in decades, Cuba’s doors are open to American travellers. Be one of the first to experience this faded Caribbean gem – a cobblestoned communist isle where the rum is plentiful, the smiles infectious and the dancing encouraged. On our new 9-day Hola Cuba adventure, wind your way from sultry Havana’s crumbling churches, through the valleys and farms of Pinar del Rio and on to the Afro-inspired beats of Trinidad. Along the way we’ve assembled a cast of Cuban characters to give you a proper welcome: tobacco farmers, expert chefs, local artists, historians and salsa dancers that understand where Cuba came from, where the country sits now and, more importantly, where it’s going.
@@ -489,7 +609,7 @@
       </div>
     
       <div id="transylvania">
-            <p><img src="/Media/Default/LearnImages/film2015/Bleakney-Colombia-Adv-021.jpg" /></p>
+            <p><img src="/Media/Default/triportreat/big-transylvania.jpg" /></p>
             <h3>Transylvania</h3>
             <p>From the beautiful Baroque churches of Budapest to the haunted castles of Transylvania, this ten-day journey across Hungary and Romania provides a fascinating insight into an intriguing region. Learn about the failed Turkish invasion of Eger and take a wine cellar tour in the Valley of the Beautiful Women. Become acquainted with traditional Romanian culture and customs in Maramures. Tour the medieval churches of Brasov, dine with a local family on an overnight homestay in Viscri and visit Bucharest's 12-storey Palace of Parliament. This jam-packed journey makes for a perfect introduction to two Eastern European treasures.
             </p>
@@ -513,7 +633,7 @@
         </div>
 
       <div id="india">
-            <p><img src="/Media/Default/LearnImages/film2015/Bleakney-Colombia-Adv-021.jpg" /></p>
+            <p><img src="/Media/Default/triportreat/big-india.jpg" /></p>
             <h3>India</h3>
             <p>Spend two fabulous weeks discovering the sights, sounds and flavours of India. From Delhi to Goa and via the ethereal beauty of Rajasthan, experience the best street food in Delhi, the beautiful sight of the Taj Mahal in Agra, the delightful taste of Rajasthan’s traditional cuisine in Jaipur and Udaipur, the colours of India’s markets and bazaars and how to cook up delicious regional Indian dishes in a number of inspiring cooking classes. Relax on Goa’s beaches, see Jaipur’s breathtaking Palace of the Wind, explore the vibrant food scene of Mumbai and spend time in rural Rajasthan living it up in a 17th-century fort. This unforgettable journey into the cultural and gastronomic heart of India will satisfy every appetite.
             </p>
