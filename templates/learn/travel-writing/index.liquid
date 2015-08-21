@@ -1,0 +1,607 @@
+
+{% block content %}
+
+<!-- Header -->
+
+<div class="header-panel blue-panel" id="travelfilm">
+  <div class="row" id="article-header">  
+    <div class="small-12 medium-6 large-6 columns">
+      <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <ul class="breadcrumb">
+          <li><a href="/">World Nomads</a></li>
+          <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/learn" itemprop="url"><span itemprop="title">Learn</span></a></li>
+          <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/learn/travel-writing" itemprop="url"><span itemprop="title">Travel Writing Scholarships</span></a></li>
+        </ul>
+      </div>
+      <h1>Are you an aspiring travel writer?</h1>
+      <p class="highlight">Learn how to hone your storytelling skills and turn your passion into a profession.</p>
+      <!-- <a class="cta-button-primary orange" href="">Find out more</a> -->
+    </div>    
+
+  </div>
+</div>
+
+<style>
+@media all and (min-width: 860px) {
+  #travelfilm {
+    background-image: url('/Media/Default/LearnImages/writing2015/hero_roadtrip2_full.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+  }
+}
+@media all and (max-width: 860px) {
+  #travelfilm {
+    background-image: url('/Media/Default/LearnImages/writing2015/hero_roadtrip2_tablet.jpg');
+    min-height: 550px;
+    background-position: center right;
+  }
+}
+@media all and (max-width: 500px) {
+  #travelfilm {
+    background-image: url('/Media/Default/LearnImages/film2015/hero_roadtrip2_mobile.jpg');
+    background-position: center;
+  }
+}
+</style>
+<!-- Header END -->
+
+<!-- Panel 1 -->
+<div id="sharetools-long">
+  <div class="row">
+    <div class="small-12 columns">
+      <div id="socialarea">     
+        <div id="sharedcount">
+          <div id="total"></div>
+          <p>Shares</p> 
+        </div>
+        <div id="share-icons">
+          <a class="facebook" target="_blank"><span>Share on Facebook</span>&#xe607;</a>
+          <a class="twitter" target="_blank"><span>Share on Twitter</span>&#xe602;</a>
+          <a class="pinterest">&#xe603;</a>
+          <a class="gplus" target="_blank">&#xe605;</a>
+          <a class="linkedin" target="_blank"><img src="//www.worldnomads.com/Media/Default/shareimages/linkedin-share-icon.png" /></a>
+          <a class="stumbleupon" target="_blank"><img src="//www.worldnomads.com/Media/Default/shareimages/stumble-share-icon.png" /></a>
+          <a class="plus"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Panel 1 END -->
+
+
+<!-- Panel 2 -->
+
+<div class="row" id="article-content">
+  <div class="large-7 medium-8 small-12 columns">
+    <h2>Travel Writing Scholarships</h2>
+    <p class="highlight">Whether you keep a travel journal or want to launch a career in travel writing, you still must master the art of storytelling.</p>
+    <p>For the last 8 years, we have been teaming up with the likes of Rough Guides and Lonely Planet to create money-can’t-buy opportunities for aspiring writers to be mentored by industry travel authors. With these scholarships, we hope to not only provide a platform to share travel stories and improve skills, but also to give a few talented writers a foot in the door of one of the most notoriously difficult businesses to break in to.</p>
+    <p>Sharing our stories and our experiences is not only the natural human condition, but it is also the way that we learn about each other, spread knowledge and inspire wanderlust. So to all writers out there, keep writing, whether it is for yourself, for a travel blog or a for major publication because the one thing the world will never tire of is a great story. </p>
+
+  
+  </div> 
+  <div class="small-12 medium-4 large-4 large-offset-1 columns">
+
+    <div class="panel blue-panel blue-pattern">
+
+        <h3>Keep me informed</h3>
+        <p>Subscribe to our scholarships newsletter and we'll keep you updated on all our up coming programs.</p>
+
+        <form action="http://worldnomadsgroup.createsend.com/t/y/s/aiifi/" method="post" class="scholarship-subscription-form">
+
+          <input id="fieldEmail" name="cm-aiifi-aiifi" type="email" placeholder="Enter your email " required="">
+          <ul class="small-block-grid-2 medium-block-grid-1 large-block-grid-2 checkbox-grid">
+            <li>
+              <input id="fieldmhyft" name="cm-f-mhyft" type="checkbox" value="yes">
+              <label for="fieldmhyft">Food</label>
+            </li>
+
+            <li>
+              <input id="fieldmhyfi" name="cm-f-mhyfi" type="checkbox" value="yes">
+              <label for="fieldmhyfi">Film</label>
+            </li>
+
+            <li>
+              <input id="fieldmhyfd" name="cm-f-mhyfd" type="checkbox" value="yes">
+              <label for="fieldmhyfd">Photography</label>
+            </li>
+
+            <li>
+              <input id="fieldmhyfh" name="cm-f-mhyfh" type="checkbox" value="yes" checked>
+              <label for="fieldmhyfh">Writing</label>
+            </li>
+
+            <li>
+              <input id="fieldmhyfk" name="cm-f-mhyfk" type="checkbox" value="yes">
+              <label for="fieldmhyfk">Language</label>
+            </li>
+
+            <li>
+              <input id="subscribe-all" type="checkbox" value="yes">
+              <label for="subscribe-all">All</label>
+            </li>
+          </ul>
+          <button class="base-button grey expand">Subscribe Now</button>
+          <style> .checkbox-grid { padding-bottom: 0.5rem;} .checkbox-grid li { padding: 0.5rem .625rem 0; } </style>
+        </form>
+
+        <script>
+
+$(function () {
+    var $form = $(".scholarship-subscription-form");
+
+    $form.find("#subscribe-all").on("click", function() {
+      var $this = $(this);
+      if ($this.is(":checked")) {
+        $form.find("input[type='checkbox']").not("#subscribe-all").prop('checked', true);
+      } else {
+        $form.find("input[type='checkbox']").not("#subscribe-all").prop('checked', false);
+      }
+      });
+
+    $form.submit(function (e) {
+      var $form = $(this);
+      $.getJSON(this.action + "?callback=?&cm-f-mthdyk=yes", $form.serialize(), function (data) {
+        if (data.Status === 400) {
+          $form.find('.error').remove();
+          $form.append("<label class='error'>" + data.Message + "</label>");
+        } else { // 200
+          wng.googleAnalytics.trackEvent('Content', 'Join Scholarships List');
+          $form.html("<label class='success'>" + data.Message + "</label>");
+        }
+        });
+      e.preventDefault();
+      });
+    });
+
+        </script>
+
+      </div>
+    
+  </div>
+</div>
+<!-- Panel 2 END -->
+
+
+<!-- Panel 3 -->
+<style>
+.feature-box .bottom {
+  min-height: 100px 
+}
+.feature-box .bottom p {
+  margin-bottom: 0;
+}
+.feature-box.euro {
+  background-image: url('/Media/Default/LearnImages/writing2015/2014-Winners.jpg');
+}
+.feature-box.china {
+  background-image: url('/Media/Default/LearnImages/writing2015/2013-Winner-Andrew_tablet.jpg');
+}
+.feature-box.sea {
+  background-image: url('/Media/Default/LearnImages/writing2015/2012-Winner-Hannah_tablet.jpg');
+}
+.feature-box.turkey {
+  background-image: url('/Media/Default/LearnImages/writing2015/2011-Winner-Zoe_tablet.jpg');
+  background-position: bottom center;
+}
+.feature-box.japan {
+  background-image: url('/Media/Default/LearnImages/writing2015/2010-Winner-Amy_tablet.jpg');
+}
+.feature-box.mojos {
+  background-image: url('/Media/Default/LearnImages/writing2015/Mojo-writing-feature.jpg');
+}
+.panels-wrapper {
+  margin-top: 40px; 
+  margin-bottom: 40px; 
+}
+
+</style>
+<div class="row">
+  <div class="large-12 medium-12 small-12 columns">
+    <h3>Winners of Travel Writing Scholarships</h3>
+  </div>
+  <div class="large-6 medium-12 small-12 columns">
+    <div class="feature-box euro">
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://journals.worldnomads.com/scholarships/story/117899/Worldwide/Travel-Writing-Scholarship-2014-Euro-Road-Trip-Winners-Announced">2014 Winner</a>
+        </li>
+      </ul>
+      <a href="http://journals.worldnomads.com/scholarships/story/117899/Worldwide/Travel-Writing-Scholarship-2014-Euro-Road-Trip-Winners-Announced" target="_blank"><h4>Andrew Commins</h4></a>
+      <div class="bottom blue">
+        <span class="feature-link-title">Europe Road Trip</span>
+        <p><a href="http://journals.worldnomads.com/scholarships/story/117899/Worldwide/Travel-Writing-Scholarship-2014-Euro-Road-Trip-Winners-Announced" target="_blank">Amanda Richardson, Rachel Ecklund and Jarryd Salem embarked on road trip assignments around Europe to document the summer festivals. <span></span></a></p>
+      </div>
+    </div>
+  </div> 
+
+  <div class="large-3 medium-6 small-12 columns">
+    <div class="feature-box china">
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://journals.worldnomads.com/scholarships/story/100965/China/Travel-Writing-Scholarship-2013-The-Winner">2013 Winner</a>
+        </li>
+      </ul>
+      <a href="http://journals.worldnomads.com/scholarships/story/100965/China/Travel-Writing-Scholarship-2013-The-Winner" target="_blank"><h4>Andrew Commins</h4></a>
+      <div class="bottom blue">
+        <span class="feature-link-title">Beijing, China</span>
+        <p><a href="http://journals.worldnomads.com/scholarships/story/100965/China/Travel-Writing-Scholarship-2013-The-Winner" target="_blank">Andrew explores Beijings vibrant cultural and food scenes.<span></span></a></p>
+      </div>
+    </div>
+  </div> 
+
+  <div class="large-3 medium-6 small-12 columns">
+    <div class="feature-box sea">
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://journals.worldnomads.com/scholarships/story/87485/Worldwide/Travel-Writing-Scholarship-2012-The-Winner">2012 Winner</a>
+        </li>
+      </ul>
+      <a href="http://journals.worldnomads.com/scholarships/story/87485/Worldwide/Travel-Writing-Scholarship-2012-The-Winner" target="_blank"><h4>Hanna Butler</h4></a>
+      <div class="bottom blue">
+        <span class="feature-link-title">Southeast Asia</span>
+        <p><a href="http://journals.worldnomads.com/scholarships/story/87485/Worldwide/Travel-Writing-Scholarship-2012-The-Winner" target="_blank">Hanna is off the beaten path in Singapore, Malaysia and Indonesia.<span></span></a></p>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 small-12 columns">
+    <div class="feature-box turkey">
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://journals.worldnomads.com/scholarships/story/72164/Worldwide/Travel-Writing-Scholarship-2011-Our-Winner">2011 Winner</a>
+        </li>
+      </ul>
+      <a href="http://journals.worldnomads.com/scholarships/story/72164/Worldwide/Travel-Writing-Scholarship-2011-Our-Winner" target="_blank"><h4>Zoe Smith</h4></a>
+      <div class="bottom blue">
+        <span class="feature-link-title">Turkey</span>
+        <p><a href="http://journals.worldnomads.com/scholarships/story/72164/Worldwide/Travel-Writing-Scholarship-2011-Our-Winner" target="_blank">Read more about Zoe Smith and her assignment to Turkey uncover the local delights of Istanbul.<span></span></a></p>
+      </div>
+    </div>
+  </div> 
+
+  <div class="large-6 medium-6 small-12 columns">
+    <div class="feature-box japan">
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://journals.worldnomads.com/scholarships/story/53217/Japan/2010-Travel-Writing-Scholarship-THE-WINNER">2010 Winner</a>
+        </li>
+      </ul>
+      <a href="http://journals.worldnomads.com/scholarships/story/53217/Japan/2010-Travel-Writing-Scholarship-THE-WINNER" target="_blank"><h4>Amy Palfreyman</h4></a>
+      <div class="bottom blue">
+        <span class="feature-link-title">Japan</span>
+        <p><a href="http://journals.worldnomads.com/scholarships/story/53217/Japan/2010-Travel-Writing-Scholarship-THE-WINNER" target="_blank">Amy travelled to Japan on assignment where she writes about her wacky experiences.<span></span></a></p>
+      </div>
+    </div>
+  </div> 
+
+
+</div>
+
+<!-- Panel 3 END -->
+
+
+
+
+
+<!-- Panel 4 END -->
+
+
+<!-- Panel 5 -->
+<!-- Application button Panel -->
+<!--
+<div class="panel">
+  <div class="row">
+    <div class="small-12 large-6 large-offset-1 columns"><h4>Apply now for the 2016 Writing Scholarship</h4></div>
+    <div class="small-12 large-3 end columns">
+        <a class="base-button orange expand" href="">Apply now</a>
+    </div> 
+  </div>
+</div>
+-->
+
+<div class="panels-wrapper">
+  <div class="row">
+    <div class="small-12 medium-6 large-7 columns">
+      <a href="http://mojos.travel/?utm_source=worldnomads&utm_medium=link&utm_content=travel-film"><h2>For more awesome opportunities, become a World Nomads Mojo</h2></a>
+      <p class="highlight">Sign up to become a World Nomads Mojo and we’ll connect you to awesome opportunities for travel filmmakers. </p>
+      <p>Work on real-life projects for World Nomads and our partners, and you'll build the skills you need to become a travel storyteller. </p>
+      <a class="base-button orange" href="http://mojos.travel/?utm_source=worldnomads&utm_medium=link&utm_content=travel-film">Become a Mojo</a>
+    </div> 
+    <div class="small-12 medium-6 large-5 columns">
+      <img src="/Media/Default/LearnImages/mojo-500x298.jpg">
+    </div>
+  </div>
+</div>  
+<!-- Panel 5 END --> 	
+
+
+
+<!-- Panel 6 -->
+<!-- Fixing the markup for comments -->
+<script type="text/javascript">
+$(function () {
+	$("h2.comment-count, h2 + ul.comments, #comment-form-beacon + form").wrapAll("<div id='comment-wrapper' />")
+});
+</script>
+<!-- Fixing the markup END -->
+
+<!-- Style Overrides for comments -->
+<style>
+ #comment-wrapper {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 71.875rem;
+    padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  margin-bottom: 90px;
+  }
+  #comment-wrapper:before {
+  	content: "Got a question? Post it below!";
+  	padding-bottom: 32px;
+  	font-size: 32px;
+  	width: 100%;
+  	float: left;
+  }
+  #comment-wrapper .comment-count {
+  	display: none;
+  }
+  #comment-wrapper ul.comments {
+	list-style: none;
+	border-bottom: 1px solid #eeeeee;
+	margin-left: 0;
+  }
+  #comment-wrapper ul.comments li {
+	border-bottom: 1px solid #eeeeee;
+padding-top:8px;
+  }
+  #comment-wrapper ul.comments li.last {
+  	border-bottom: none;
+  }  
+  #comment-wrapper ul.comments p {
+  	font-size: 15px;
+  	line-height: 20px;
+  }
+  #comment-wrapper #add-comment {
+  	font-size: 24px;
+  	margin-bottom: 8px;
+  }
+  #comment-wrapper ol {
+  	list-style: none;
+  	max-width: 540px;
+  	margin-left: 0;
+  }
+  #comment-wrapper ol li {
+  	list-style: none;
+  }
+  #comment-wrapper .primaryAction {
+  	font-size: 18px;
+  	right: 5px;
+  	top: 4px;
+  	padding: 4px 36px 4px 15px;
+  	position: relative;
+  	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  	box-sizing: border-box;
+  	font-weight: 300;
+  	background: #73b4f2;
+  	color: #ffffff;
+  }
+  #comment-wrapper .edit-item-content {
+  	clear: both;
+  }
+    #comment-wrapper .primaryAction:after {
+    	content: "";
+    	font-family: WNI;
+    	font-size: 32px;
+    	position: absolute;
+    	right:5px;
+    	top: 4px;
+    }
+   #comment-wrapper .primaryAction:hover {
+    background: none repeat scroll 0 0 #52a3ef;
+    }
+    #comment-wrapper h4 {
+    	margin-bottom: 8px;
+    }
+    h2#commenter {
+      font-size: 1.4em;
+    }
+    #comment-wrapper, #judges, #apply, #professional, #who, #brief, #faqs, #doing, .panels-wrapper {
+      margin-top: 40px; 
+      margin-bottom: 40px; 
+    }
+</style>
+<!-- Panel 6 END -->
+
+<!-- Panel 7 -->
+
+<!-- Mobile Bit -->
+
+<div class="mobilesignup">
+  <div class="row">
+    <a class="mobileclose" href="#">&#xe641;</a>
+    <h3>We know this is going to be hard to complete on a mobile device, why not enter your email and we will send you a link so you don't forget to enter this great oppourtunity.</h3>
+    <form class="scholarship-mobile"  action="http://worldnomadsgroup.createsend.com/t/y/s/fuhdlk/" method="post">
+          <input id="fieldEmail" name="cm-fuhdlk-fuhdlk" type="email" placeholder="Enter your email" required style="width: 60%;" />
+          <button class="base-button orange" style="width: 38%; margin-left: 2%;">Apply</button>
+        </form>
+
+        <script>
+              $(function () {
+                $('.scholarship-mobile').submit(function (e) {
+                  var form = $(this);
+                  $.getJSON(this.action + "?callback=?", form.serialize(), function (data) {
+                    if (data.Status === 400) {
+                     form.find('.error').remove();
+                      form.append("&amp;lt;p class='error'&amp;gt;" + data.Message + "&amp;lt;/p&amp;gt;");
+                  } else { // 200
+                            wng.googleAnalytics.trackEvent('Scholarship', 'Mobile Reminder');
+                            form.html("Thank you, we will email so you dont forget to enter.");
+                    }
+                });
+                e.preventDefault();
+              });
+            });
+        </script>
+  </div>
+<script>
+$( ".mobilesignup" ).show();
+$( "a.mobileclose" ).click(function( event ) {
+  event.preventDefault();
+  $( ".mobilesignup" ).hide();
+});
+</script>
+</div>
+<style>
+.mobilesignup {
+  display: none;
+}
+@media all and (max-width: 500px) {
+  .mobilesignup {
+  display: block;
+  width: 100%;
+  clear: both;
+  background: url('http://cdn.worldnomads.net/Content/styles/i/wn/backgrounds/hero_bg_color_blue.jpg');
+  position: fixed;
+  padding-bottom: 20px;
+  bottom: 0;
+  margin-bottom: 0;
+  z-index: 5000
+}
+.mobilesignup h3 {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 20px;
+  padding-bottom: 8px;
+}
+.mobilesignup a.mobileclose {
+  color: #ffffff;
+  float: right;
+}
+.mobileclose {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "WNI";
+  line-height: 24px;
+  margin-bottom: 10px;
+  padding: 12px 0;
+}
+}
+</style>
+
+<!-- Mobile Bit END -->
+<script>
+jQuery.sharedCount = function(url, fn) {
+ url = encodeURIComponent(url || location.href);
+ var domain = "//free.sharedcount.com/"; /* SET DOMAIN */
+ var apikey = "8e4b7187bcfca463ceeca1577105f710bf47edd1" /*API KEY HERE*/
+ var arg = {
+  data: {
+   url : url,
+   apikey : apikey
+  },
+  url: domain,
+  cache: true,
+  dataType: "json"
+ };
+ if ('withCredentials' in new XMLHttpRequest) {
+  arg.success = fn;
+ }
+ else {
+  var cb = "sc_" + url.replace(/\W/g, '');
+  window[cb] = fn;
+  arg.jsonpCallback = cb;
+  arg.dataType += "p";
+ }
+ return jQuery.ajax(arg);
+};
+
+jQuery(document).ready(function($){
+ var targetUrl = "http://" + location.host + location.pathname;
+
+ $.sharedCount(targetUrl, function(data){
+  var totalShares = data.Twitter + data.Facebook.like_count + data.GooglePlusOne + data.Facebook.share_count + data.Pinterest + data.LinkedIn + data.StumbleUpon;
+  if (totalShares <= 1) {
+   totalShares = 1;
+  }
+  $("#tweetscount").text(data.Twitter);    
+  $("#likescount").text(data.Facebook.like_count);
+  $("#facebooksharecount").text(data.Facebook.share_count);
+  $("#plusonescount").text(data.GooglePlusOne);
+  $("#stumbleuponcount").text(data.StumbleUpon);
+  $("#pintrestcount").text(data.Pinterest);
+  $("#linkedincount").text(data.LinkedIn);
+  $("#total").text(totalShares);
+  $("#sharedcount").fadeIn();
+
+ });
+});
+</script>
+<!-- Panel 7 END -->
+
+<!-- Panel 8 -->
+<script>
+
+  // Build the target srcs for the icons on click.
+  var socialMedialUrl          = window.location;
+  
+  var facebookParamU           = "http://bit.ly/1AWyF12";
+
+  var twitterParamText         = "Go on a 10-day filmmaking assignment to capture Colombia with @WorldNomads and be mentored by a professional filmmaker (bitly) #wnfilm";
+
+  var pinParamDescription      = "Go on a filmmaking assignment to Colombia!";
+  var pinParamMedia            = "http://www.worldnomads.com/Media/Default/LearnImages/film2015/film-2015-Pintrest.jpg";
+  
+  var linkedParamTitle         = "Go on a filmmaking assignment to Colombia!";
+  var linkedParamDescription   = "Win a 10-day filmmaking assignment to capture Colombia and be mentored by veteran filmmaker and director, Brian Rapsey.";
+
+  $(function() {
+    var $plus = $(".plus");
+    var $toggleableButtons = $(".pinterest, .gplus, .linkedin, .stumbleupon").hide();
+    $plus.on("click", function() {
+      var $this = $(this);
+      $toggleableButtons.toggle();
+      $plus.toggleClass("open");
+    });
+  });
+  
+  $(function() {
+    var $si = $(".socialicon");
+    var targetUrl = "";
+    $si.on("click", function() {
+      var $this = $(this);
+      if ($this.hasClass("facebook")) {
+        targetUrl = "http://www.facebook.com/share.php?u=" + facebookParamU;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+      else if ($this.hasClass("twitter")) {
+        targetUrl = "https://twitter.com/intent/tweet?text=" + twitterParamText;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+      else if ($this.hasClass("pinterest")) {
+        targetUrl = "http://pinterest.com/pin/create/button?description=" + pinParamDescription + "&media=" + pinParamMedia; + "&url=" + socialMedialUrl; 
+        window.open(targetUrl, 'name', 'width=755,height=400,scrollbars=no');
+      }
+      else if ($this.hasClass("gplus")) {
+        targetUrl = "https://plus.google.com/share?url=" + socialMedialUrl;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+      else if ($this.hasClass("linkedin")) {
+        targetUrl = "https://www.linkedin.com/shareArticle?mini=true&url=" + socialMedialUrl + "&title=" + linkedParamTitle + "&summary=" + linkedParamDescription;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+      else if ($this.hasClass("stumbleupon")) {
+        targetUrl = "http://www.stumbleupon.com/badge/?url=" + socialMedialUrl;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+    });
+  });
+</script>
+<!-- Panel 8 END  -->
+
+{% endblock %}
