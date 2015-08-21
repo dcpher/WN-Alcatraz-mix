@@ -2,9 +2,9 @@
   "name": "foundation",
   "version": "5.4.7",
   "main": [
+    "js/foundation.js"
     "css/foundation.css",
     "css/foundation.css.map",
-    "js/foundation.js"
   ],
   "ignore": [
   ],
@@ -21,3 +21,12 @@
   },
   "private": true
 }
+
+
+
+/*
+
+    "css/foundation.css",
+    "css/foundation.css.map",
+    
+*/

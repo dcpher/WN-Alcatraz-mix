@@ -1,6 +1,7 @@
 {% block content %}
 
-<div class="header-panel red-panel" id="travelfilm">
+  
+<div class="header-panel red-panel red-pattern" id="travelfilm">
   <div class="row" id="article-header">  
     <div class="small-12 medium-6 large-6 columns">
       
@@ -23,43 +24,47 @@
     <h1>Thailand, Motorbikes &amp; Accidents</h1>
     
     <!-- Share tools -->
-    <div id="sharetools-article">
-      <div class="row">
-        <div class="small-12 columns">
-          <div id="socialarea">     
-            <div id="sharedcount">
-              <div id="total"></div>
-              <p>Shares</p> 
-            </div>
-            <div id="share-icons">
-              <a class="facebook" target="_blank"><span>Share on Facebook</span>&#xe607;</a>
-              <a class="twitter" target="_blank"><span>Share on Twitter</span>&#xe602;</a>
-<!--              <a class="email">&#xe603;</a>-->
-              <a class="pinterest">&#xe603;</a>
-              <a class="gplus" target="_blank">&#xe605;</a>
-              <a class="linkedin" target="_blank"><img src="//www.worldnomads.com/Media/Default/shareimages/linkedin-share-icon.png" /></a>
-              <a class="stumbleupon" target="_blank"><img src="//www.worldnomads.com/Media/Default/shareimages/stumble-share-icon.png" /></a>
-              <a class="plus"></a>
+    <div class="contain-to-grid sticky"> 
+      <div id="sharetools-article" data-topbar role="navigation" data-options="sticky_on: large">
+        <div class="row">
+          <div class="small-12 columns">
+            <div id="socialarea">     
+              <div id="sharedcount">
+                <div id="total"></div>
+                <p>Shares</p> 
+              </div>
+              <div id="share-icons">
+                <a class="facebook" target="_blank"><span>Share on Facebook</span>&#xe607;</a>
+                <a class="twitter" target="_blank"><span>Share on Twitter</span>&#xe602;</a>
+  <!--              <a class="email">&#xe603;</a>-->
+                <a class="pinterest">&#xe603;</a>
+                <a class="gplus" target="_blank">&#xe605;</a>
+                <a class="linkedin" target="_blank"><img src="//www.worldnomads.com/Media/Default/shareimages/linkedin-share-icon.png" /></a>
+                <a class="stumbleupon" target="_blank"><img src="//www.worldnomads.com/Media/Default/shareimages/stumble-share-icon.png" /></a>
+                <a class="plus"></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+
+    
     <!-- Share tools script -->
     <script>
       // Build the target srcs for the icons on click.
       var socialMedialUrl          = window.location;
 
-      var facebookParamU           = "http://bit.ly/1AWyF12";
+      var facebookParamU           = "";
 
-      var twitterParamText         = "Go on a 10-day filmmaking assignment to capture Colombia with @WorldNomads and be mentored by a professional filmmaker (bitly) #wnfilm";
+      var twitterParamText         = "";
 
-      var pinParamDescription      = "Go on a filmmaking assignment to Colombia!";
-      var pinParamMedia            = "http://www.worldnomads.com/Media/Default/LearnImages/film2015/film-2015-Pintrest.jpg";
+      var pinParamDescription      = "";
+      var pinParamMedia            = "";
 
-      var linkedParamTitle         = "Go on a filmmaking assignment to Colombia!";
-      var linkedParamDescription   = "Win a 10-day filmmaking assignment to capture Colombia and be mentored by veteran filmmaker and director, Brian Rapsey.";
+      var linkedParamTitle         = "";
+      var linkedParamDescription   = "";
     </script>
     {% include "share-tools-scripts"  %}
     
@@ -68,6 +73,17 @@
     <p>Make sure you read our advice on riding around Thailand before you take off…including our most popular question: Do I need travel insurance to ride a motorbike in Thailand? Yes yes YES!</p>
     
     <p><img src="http://d2ty3p0lzh1wfl.cloudfront.net/safetyhub_images/aaThailand%20Content/iStock_000005687562_monk_on_bike_610x400.jpg" alt="" /></p>
+    
+    <div class="article-link-summary">
+      <h4>Link summary</h4>
+      <ul class="no-bullet">
+        <li><a href="">Do I need a license to ride a motorbike in Thailand</a></li>
+        <li><a href="">Do I need travel insurance to ride a motorbike in Thailand </a></li>
+        <li><a href="">Am I covered if I injure myself on a motorbike?</a></li>
+        <li><a href="">Don't be an idiot when you ride</a></li>
+      </ul>
+    
+    </div>
     
     <h2>Do I need a license to ride a motorbike in Thailand</h2>
     <p>If you want to drive a car or ride a motorcycle in Thailand the most important thing to note is that you need to have absolute nerves of steel to survive emotionally and physically. The country has an appaling road safety regime and lots of accidents. In fact it's one of the worst places on Earth for fatalities per capita.</p>
@@ -83,14 +99,20 @@
     <p>Many travellers report ticking the motorcycle box on their International Driver’s Permit. If the policeman who stops you isn’t fooled, you’ll pay a “fine”, after which he’ll let you go on your merry way. This does not mean you are riding legally; you’ve just avoided the law by paying a bribe.</p>
     <p>You can keep on riding regardless, but what if you have a crash, and you need to call on your travel insurance? It’s pretty straightforward; no valid license means you’re riding illegally and you’re not covered.&nbsp;</p>
     <p>If you tried that "everyone's doing it!" stuff on your mother we're pretty sure she'd want to know if you were going to jump off a cliff if everyone else was doing it - listen to your mother.</p>
-    <h2><a name="do-i-need-travel-insurance-to-ride-a-motorbike-in-thailand"></a>Do I need travel insurance to ride a motorbike in Thailand</h2>
+    <h2 id="do-i-need-travel-insurance-to-ride-a-motorbike-in-thailand">Do I need travel insurance to ride a motorbike in Thailand</h2>
     <p><img src="http://d2ty3p0lzh1wfl.cloudfront.net/safetyhub_images/aaThailand Content/iStock_000004473956_little_biker_610x400.jpg"></p>
     <p>Sure you can keep on riding if you don't have a license, but what if you do have a crash, and you need to call on your travel insurance? It’s pretty straightforward; no valid license in the country where the accident happened, means you’re riding illegally and you’re not covered. If you're not sure give us a call.</p>
-    <p>You cannot insure against illegal activity. That also includes not wearing a helmet where it’s compulsory (Cambodia, Thailand, Bali), and not riding under the influence of drink or drugs (everywhere).</p>
+    
+    <blockquote class="tweet-quote">It's pretty straightforward; no valid license in the country where the accident happened, means you're riding illegally and you're not covered.
+    <span class="citation"><a href="">Phil Sylvester</a> - Travel Safety Expert</span>
+    <button class="base-button blue">Tweet it</button>
+    </blockquote>
+    
+    <p><span class="tweet-it">You cannot insure against illegal activity. That also includes not wearing a helmet where it’s compulsory</span> <span class="twitter-shares">4</span> (Cambodia, Thailand, Bali), and not riding under the influence of drink or drugs (everywhere).</p>
     <p>The fact that the shop rented you the bike without asking for your license doesn’t mean you don’t need one. It’s not their responsibility if you don’t check out local law.</p>
-    <h2><a name="am-i-covered-if-i-injure-myself-on-a-motorbike"></a>Am I covered if I injure myself on a motorbike?</h2>
-    <p>Injury from a motorcycle accident is one of the most common claims received by insurers. If it’s a bad one and you need medical evacuation, the cost could run to $100,000 or more. Don’t be fooled, the insurer will check if you have a valid license (forging that international permit isn’t looking so smart anymore).&nbsp;</p>
-    <h2><a name="dont-be-an-idiot-when-you-ride"></a>Don't be an idiot with your own safety</h2>
+    <h2 id="am-i-covered-if-i-injure-myself-on-a-motorbike">Am I covered if I injure myself on a motorbike?</h2>
+    <p>Injury from a motorcycle accident is one of the most common claims received by insurers. If it’s a bad one and you need medical evacuation, the cost could run to $100,000 or more. Don’t be fooled, the insurer will check if you have a valid license (forging that international permit isn’t looking so smart anymore).</p>
+    <h2 id="dont-be-an-idiot-when-you-ride">Don't be an idiot with your own safety</h2>
     <p>Here are a few tips to keep you safe while on the road (If you’re still tempted to roll the dice, (unlicensed and uninsured) do everything you can to make sure you don’t get hurt in a crash):</p>
     <ul>
     <li><em>Wear a helmet – preferably full-face.</em></li>
@@ -108,11 +130,10 @@
     <p>The protective clothing is the toughest one – it’s stinking hot and humid, you’re just zipping back from the beach to your room, you’re on holiday, who wants to follow rules! - We get it. Just ride really carefully!</p>
     <p>If you do end up in a crash, you will also wear the cost irrespective of if you were at fault or not. Basically, the law of the land goes like this: If you are a Farang (visitor or tourist), the accident is your fault. Don't fight it, but negotiate to keep the costs down.</p>
     <p><em><strong>Going to give the motorbike a miss now? There are plenty of <a href="thailand/transport-and-safety" title="Thai transport tips" target="_blank">other transport options</a> in Thailand.</strong></em></p>
-    <p></p>
-    <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><br>You are reading: <a href="/thailand/" itemprop="url"><span itemprop="title">Thailand Safety Guide</span></a> »&nbsp;<a href="/thailand/motorbikes" itemprop="url"><span itemprop="title">Riding Motorbikes in Thailand</span></a></div><div class="feature-image">
-
-      <img src="http://d2ty3p0lzh1wfl.cloudfront.net/safetyhub_images/aaThailand Content/iStock_000005687562_monk_on_bike_610x400.jpg">
-  
+    <p><br/></p>
+    <p><br/></p>
+    <p><br/></p>
+    
   </div>
   
   

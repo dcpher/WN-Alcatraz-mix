@@ -1,0 +1,114 @@
+// article page
+
+#article-header
+  min-height: 85px
+
+#article-content
+  ul.breadcrumb
+    margin-top: 20px
+    a, li:after
+      color: inherit
+  h2
+    font-size: rem-calc(36)
+    margin: rem-calc(48) 0 rem-calc(16)
+    
+    
+  // article share tools
+  #sharetools-article
+    margin-bottom: rem-calc(24)
+    #sharedcount 
+      #total
+        font-size: rem-calc(44)
+        &:after
+          content: "/"
+          color: $color-mid-grey
+          font-weight: 100
+          margin-left: rem-calc(4)
+          margin-right: rem-calc(-8)
+      p
+        margin-top: rem-calc(28)
+  
+  // In article Tweet Styles
+  .tweet-it
+    background-color: $color-light-grey
+    padding: 2px 4px
+    font-weight: 500
+    &:hover
+      background-color: $color-blue
+      color: $color-inverse
+      cursor: pointer
+  .twitter-shares
+    color: $color-blue
+    &:before
+      content: "\f099"
+      font: normal normal normal 12px/1 FontAwesome
+      font-size: inherit
+      text-rendering: auto
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
+      
+      
+      
+  //share tools sticky header      
+  .contain-to-grid.sticky.fixed 
+    width: 100%
+    left: 0
+    position: fixed
+    top: 0
+    z-index: 99
+    #sharetools-article
+      background-color: $color-light-grey
+      padding-top: rem-calc(10)
+      box-shadow: 0 1px 8px -2px $color-mid-grey;
+      -moz-box-shadow: 0 1px 8px -2px $color-mid-grey;
+      -webkit-box-shadow: 0 1px 8px -2px $color-mid-grey;
+      #sharedcount
+        padding-left: 240px
+        &:before
+          content: " "
+          background-image: url("/Media/Default/logos/world-nomads-logo-org-blk-x2.png")
+          background-size: contain
+          left: 20px
+          top: 10px
+          position: absolute
+          width: 164px
+          height: 32px
+         
+  .article-link-summary
+    margin: rem-calc(24) 0 rem-calc(16) rem-calc(32)
+    h4
+      border-bottom: 1px solid $color-light-grey
+      border-top: 4px solid $color-light-grey
+      padding: rem-calc(8) 0 rem-calc(8) 0
+      
+    @media #{$medium-up} 
+      //@include grid-column(4)
+      
+      float: right
+    @media #{$small-only} 
+      //@include grid-column(12)
+      margin: rem-calc(24) 0 rem-calc(16) 0
+      
+      
+  blockquote
+    &.tweet-quote
+      background-image: url(/Media/Default/icons/wnquotemarks.png)
+      background-repeat: no-repeat
+      background-size: 44px 16px
+      background-position: 40px 30px
+      position: relative
+      padding: rem-calc(60) rem-calc(40) rem-calc(40) rem-calc(40)
+      font-size: rem-calc(20)
+      line-height: 1.1
+      background-color: $color-light-grey
+      border-left: none
+      @media #{$small-only} 
+        padding: rem-calc(40) rem-calc(15) rem-calc(15) rem-calc(15)
+        background-position: 15px 15px
+      
+      span.citation
+        font-size: rem-calc(14)
+        display: block
+        padding: rem-calc(16) 0
+      button.base-button
+        margin-bottom: 0
