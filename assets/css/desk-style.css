@@ -2840,7 +2840,7 @@ ol.number {
 footer .disclaimer {
   padding: 20px 10px; }
 
-.base-button {
+.base-button, button, .button {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -2857,25 +2857,25 @@ footer .disclaimer {
   display: inline-block;
   margin-bottom: 0;
   text-align: left; }
-  .base-button:after {
+  .base-button:after, button:after, .button:after {
     content: '\e60d';
     font-family: WNI;
     font-size: 24px;
     position: absolute;
     top: 4px;
     right: 6px; }
-  .base-button:hover, .base-button:visited {
+  .base-button:hover, .base-button:visited, button:hover, button:visited, .button:hover, .button:visited {
     color: #ffffff;
     text-decoration: none; }
-  .base-button.large {
+  .base-button.large, button.large, .button.large {
     font-size: 1.5rem;
     padding: 12px 50px 12px 24px; }
-    .base-button.large:after {
+    .base-button.large:after, button.large:after, .button.large:after {
       top: 12px; }
-  .base-button.expand {
+  .base-button.expand, button.expand, .button.expand {
     width: 100%;
     padding: 4px 44px 4px 15px; }
-  .base-button.orange {
+  .base-button.orange, button.orange, .button.orange {
     background: #ff9c00;
     background: -moz-linear-gradient(top, #ffa20f 0%, #f09300 100%);
     background: -webkit-linear-gradient(top, #ffa20f 0%, #f09300 100%);
@@ -2884,7 +2884,7 @@ footer .disclaimer {
     background: linear-gradient(to bottom, #ffa20f 0%, #f09300 100%);
     border: 1px solid #cc7d00;
     border: 1px solid #cc7d00; }
-    .base-button.orange:hover {
+    .base-button.orange:hover, button.orange:hover, .button.orange:hover {
       background: #cc7d00;
       background: -moz-linear-gradient(top, #db8600 0%, #bd7300 100%);
       background: -webkit-linear-gradient(top, #db8600 0%, #bd7300 100%);
@@ -2892,7 +2892,7 @@ footer .disclaimer {
       background: -ms-linear-gradient(top, #db8600 0%, #bd7300 100%);
       background: linear-gradient(to bottom, #db8600 0%, #bd7300 100%);
       border: 1px solid #995e00; }
-  .base-button.light-grey {
+  .base-button.light-grey, button.light-grey, .button.light-grey {
     background: #ededed;
     background: -moz-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
     background: -webkit-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
@@ -2902,7 +2902,7 @@ footer .disclaimer {
     border: 1px solid lightgray;
     color: #444642;
     border: 1px solid lightgray; }
-    .base-button.light-grey:hover {
+    .base-button.light-grey:hover, button.light-grey:hover, .button.light-grey:hover {
       background: lightgray;
       background: -moz-linear-gradient(top, #dbdbdb 0%, #cccccc 100%);
       background: -webkit-linear-gradient(top, #dbdbdb 0%, #cccccc 100%);
@@ -2911,7 +2911,7 @@ footer .disclaimer {
       background: linear-gradient(to bottom, #dbdbdb 0%, #cccccc 100%);
       border: 1px solid #bababa;
       color: #444642; }
-  .base-button.grey {
+  .base-button.grey, button.grey, .button.grey {
     background: #444642;
     background: -moz-linear-gradient(top, #4c4e49 0%, #3c3e3b 100%);
     background: -webkit-linear-gradient(top, #4c4e49 0%, #3c3e3b 100%);
@@ -2920,7 +2920,7 @@ footer .disclaimer {
     background: linear-gradient(to bottom, #4c4e49 0%, #3c3e3b 100%);
     border: 1px solid #2b2c29;
     border: 1px solid #2b2c29; }
-    .base-button.grey:hover {
+    .base-button.grey:hover, button.grey:hover, .button.grey:hover {
       background: #2b2c29;
       background: -moz-linear-gradient(top, #323431 0%, #232422 100%);
       background: -webkit-linear-gradient(top, #323431 0%, #232422 100%);
@@ -2928,7 +2928,7 @@ footer .disclaimer {
       background: -ms-linear-gradient(top, #323431 0%, #232422 100%);
       background: linear-gradient(to bottom, #323431 0%, #232422 100%);
       border: 1px solid #111211; }
-  .base-button.blue {
+  .base-button.blue, button.blue, .button.blue {
     background: #297ac6;
     background: -moz-linear-gradient(top, #2c82d3 0%, #2672b9 100%);
     background: -webkit-linear-gradient(top, #2c82d3 0%, #2672b9 100%);
@@ -2937,7 +2937,7 @@ footer .disclaimer {
     background: linear-gradient(to bottom, #2c82d3 0%, #2672b9 100%);
     border: 1px solid #20609c;
     border: 1px solid #20609c; }
-    .base-button.blue:hover {
+    .base-button.blue:hover, button.blue:hover, .button.blue:hover {
       background: #20609c;
       background: -moz-linear-gradient(top, #2368a8 0%, #1e588f 100%);
       background: -webkit-linear-gradient(top, #2368a8 0%, #1e588f 100%);
@@ -2945,7 +2945,7 @@ footer .disclaimer {
       background: -ms-linear-gradient(top, #2368a8 0%, #1e588f 100%);
       background: linear-gradient(to bottom, #2368a8 0%, #1e588f 100%);
       border: 1px solid #184671; }
-  .base-button.red {
+  .base-button.red, button.red, .button.red {
     background: #de5346;
     background: -moz-linear-gradient(top, #e05f53 0%, #dc4739 100%);
     background: -webkit-linear-gradient(top, #e05f53 0%, #dc4739 100%);
@@ -2954,7 +2954,7 @@ footer .disclaimer {
     background: linear-gradient(to bottom, #e05f53 0%, #dc4739 100%);
     border: 1px solid #cd3324;
     border: 1px solid #cd3324; }
-    .base-button.red:hover {
+    .base-button.red:hover, button.red:hover, .button.red:hover {
       background: #cd3324;
       background: -moz-linear-gradient(top, #d93728 0%, #c03022 100%);
       background: -webkit-linear-gradient(top, #d93728 0%, #c03022 100%);
@@ -2962,7 +2962,7 @@ footer .disclaimer {
       background: -ms-linear-gradient(top, #d93728 0%, #c03022 100%);
       background: linear-gradient(to bottom, #d93728 0%, #c03022 100%);
       border: 1px solid #a1281d; }
-  .base-button.teal {
+  .base-button.teal, button.teal, .button.teal {
     background: #40c1ba;
     background: -moz-linear-gradient(top, #4cc5be 0%, #3bb6b0 100%);
     background: -webkit-linear-gradient(top, #4cc5be 0%, #3bb6b0 100%);
@@ -2971,7 +2971,7 @@ footer .disclaimer {
     background: linear-gradient(to bottom, #4cc5be 0%, #3bb6b0 100%);
     border: 1px solid #329c96;
     border: 1px solid #329c96; }
-    .base-button.teal:hover {
+    .base-button.teal:hover, button.teal:hover, .button.teal:hover {
       background: #329c96;
       background: -moz-linear-gradient(top, #36a7a1 0%, #2f908b 100%);
       background: -webkit-linear-gradient(top, #36a7a1 0%, #2f908b 100%);
@@ -2979,7 +2979,7 @@ footer .disclaimer {
       background: -ms-linear-gradient(top, #36a7a1 0%, #2f908b 100%);
       background: linear-gradient(to bottom, #36a7a1 0%, #2f908b 100%);
       border: 1px solid #267571; }
-  .base-button.purple {
+  .base-button.purple, button.purple, .button.purple {
     background: #61398b;
     background: -moz-linear-gradient(top, #693d96 0%, #593580 100%);
     background: -webkit-linear-gradient(top, #693d96 0%, #593580 100%);
@@ -2988,7 +2988,7 @@ footer .disclaimer {
     background: linear-gradient(to bottom, #693d96 0%, #593580 100%);
     border: 1px solid #482a67;
     border: 1px solid #482a67; }
-    .base-button.purple:hover {
+    .base-button.purple:hover, button.purple:hover, .button.purple:hover {
       background: #482a67;
       background: -moz-linear-gradient(top, #4f2f72 0%, #40265c 100%);
       background: -webkit-linear-gradient(top, #4f2f72 0%, #40265c 100%);
@@ -2996,7 +2996,7 @@ footer .disclaimer {
       background: -ms-linear-gradient(top, #4f2f72 0%, #40265c 100%);
       background: linear-gradient(to bottom, #4f2f72 0%, #40265c 100%);
       border: 1px solid #2f1b43; }
-  .base-buttona, .base-buttona:visited, .base-button a, .base-button a:visited {
+  .base-buttona, .base-buttona:visited, .base-button a, .base-button a:visited, buttona, buttona:visited, button a, button a:visited, .buttona, .buttona:visited, .button a, .button a:visited {
     color: #ffffff; }
 
 .cta-button-primary {
