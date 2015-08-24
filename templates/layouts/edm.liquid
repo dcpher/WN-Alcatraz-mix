@@ -386,7 +386,7 @@ h3 a,
 h4 a, 
 h5 a, 
 h6 a {
-  color: #00bae4;
+  color: #297ac6;
 }
 
 h1 a:active, 
@@ -395,7 +395,7 @@ h3 a:active,
 h4 a:active, 
 h5 a:active, 
 h6 a:active { 
-  color: #00bae4 !important; 
+  color: #297ac6 !important; 
 } 
 
 h1 a:visited, 
@@ -404,7 +404,7 @@ h3 a:visited,
 h4 a:visited, 
 h5 a:visited, 
 h6 a:visited { 
-  color: #00bae4 !important; 
+  color: #297ac6 !important; 
 } 
 
 /* Panels */
@@ -780,16 +780,19 @@ body.outlook p {
 
     /*  WN Styles  */
     .content-area {
-      background-color: #FFFfff;
+      background-color: #FFFFFF;
     }
     .pre-header td, span.note { font-size: 12px; color: #666666; }
     .disclaimer p { font-size: 11px; color: #666666;}
     .header .container, .nav { background-color: #FFFFFF; }
     .header .container #logo { padding: 10px 0 10px 0; }
+/*
     .nav.four-up td { font-size: 16px; font-weight: bold; text-align: center; padding: 16px 0 16px 0; margin: 0; letter-spacing: -0.5px; width: 25%; }
     .nav.four-up { border-top: 1px solid #f4f4f4; } 
     .nav.four-up td a { color: #999999!important; }
-    
+*/
+    .row.purple { background-color:#61398b; }
+    .row.purple .wrapper td { color: #FFFFFF; }
     img.feature { padding-bottom: 10px; }
     .social-element {
       display: inline-block;
@@ -831,6 +834,7 @@ body.outlook p {
       <td class="center" align="center" valign="top">
         <center>
 
+          
           <!-- Header -->
           <table class="row pre-header">
             <tr>
@@ -845,10 +849,10 @@ body.outlook p {
                           <tr>
                             <td class="nine sub-columns">
                               <!-- Can’t read this email? <a href="">View it on the web</a>-->
-                              <a href="http://www.worldnomads.com/learn/travel-film/travel-film-scholarship-2015">World Nomads - 2015 Travel Film Scholarship</a>
+                              <a href="http://www.worldnomads.com">World Nomads</a>
                             </td>
                             <td class="three sub-columns right" style="text-align: right;">
-                              July 2015
+                              Aug 2015
                             </td>
                             <td class="expander"></td>
                           </tr>
@@ -862,6 +866,8 @@ body.outlook p {
               </td>
             </tr>
           </table>
+          
+          
           <table class="row header">
             <tr>
               <td class="center" align="center">
@@ -889,94 +895,75 @@ body.outlook p {
               </td>
             </tr>
           </table>
-<!--
-          
-          <table class="container">
-            <tr>
-              <td>
-
-                <table class="block-grid four-up nav">
-                  <tr>
-                    <td>
-                      <a href="http://www.worldnomads.com/">Home</a>
-                    </td>
-                    <td>
-                      <a href="http://www.worldnomads.com/">Travel Insurance</a>
-                    </td>
-                    <td>
-                      <a href="http://www.worldnomads.com/">Learn</a>
-                    </td>
-                    <td>
-                      <a href="http://www.worldnomads.com/">Travel Smart</a>
-                    </td>
-                  </tr>
-                </table>
-
-              </td>
-            </tr>
-          </table>
-          
--->
           
   
 {% block content %}
   Main content
 {% endblock content %}
           
+          <table class="container content-area">
+            <tr>
+              <td>
+
+                <!-- footer  -->
+                <table class="row footer">
+                  <tr>
+                    <td class="last">
+                      <table class="twelve columns">
+                        <tr>
+                          <td style="background: #464743 url('http://www.worldnomads.com/Media/Default/email-images/default/footer-background-top.jpg') no-repeat center top; margin-bottom: 0;">
+                            <center>
+                              <h4 class="center">We&rsquo;re  a social bunch, join in:</h4>
+                            </center>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                
+              </td>
+            </tr>
+          </table>
+          
+          <table class="container content-area">
+            <tr>
+              <td>
+
+                <!-- footer  -->
+                <table class="row footer" style="background: #464743 url('http://www.worldnomads.com/Media/Default/email-images/default/footer-background-bottom.jpg') no-repeat center top;">
+                  <tr>
+                    <td class="wrapper last offset-by-one">
+                      <table class="ten columns">
+                        <tr>
+                          <td>
+                            <center>
+                              <a href="http://www.facebook.com/worldnomads" target="_blank" class="social-element"><img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-faceboook.png" alt="Facebook" /></a>
+                              <a href="http://twitter.com/WorldNomads" target="_blank" class="social-element"><img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-twitter.png" alt="Twitter" /></a>
+                              <a href="http://instagram.com/worldnomads" target="_blank" class="social-element"><img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-instagram.png" alt="Instagram" /></a>
+                              <a href="http://www.youtube.com/user/WorldNomadsTV" target="_blank" class="social-element"><img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-youtube.png" alt="Youtube" /></a>
+                              <a href="https://plus.google.com/102411813669197613553/posts" target="_blank" class="social-element"><img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-google-plus.png" alt="Google Plus" /></a>
+                              <a href="http://www.flickr.com/groups/worldnomads/" target="_blank" class="social-element"><img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-flickr.png" alt="Fickr" /></a>
+                            </center>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>         
+                    </td>
+                  </tr>
+                </table>
+                
+              </td>
+            </tr>
+          </table>
+                      
+          
           <table class="row footer" style="padding-top: 0;">
             <tr>
               <td class="center" align="center">
                 <center>
-                  
-                  <table class="container" style="padding-top: 0;">
-                    <tr>
-                      <td class="wrapper last" style="padding-top: 0; line-height: 0;">
-                        
-                        
-                
-                        <table class="twelve columns" style="padding-top: 0;">
-                          <tr>
-                            <td class="twelve columns center" style="background: #464743 url('http://www.worldnomads.com/Media/Default/email-images/default/footer-background-top.jpg') no-repeat center top; display: block; margin-bottom: 0;"> 
-                              <center>
-                                <h4 class="center">We&rsquo;re  a social bunch, join in:</h4>
-                              </center>
-                            </td> 
-                          </tr>
-                        </table>
-
-                      </td>
-                    </tr>
-                  </table>
-                  
-                  <table class="container">
-                    <tr>
-                      <td>
-
-                        <table class="block-grid eight-up" style="background: #464743 url('http://www.worldnomads.com/Media/Default/email-images/default/footer-background-bottom.jpg') no-repeat center top; display: block;">
-                          <tr>
-                            <td>
-                            </td><td> <!-- Make sure the tags are directly next to each other -->
-                            <a href="http://www.facebook.com/worldnomads" target="_blank" class="social-element"><img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-faceboook.png" alt="Facebook" /></a>
-                            </td><td> <!-- Make sure the tags are directly next to each other -->
-                            <a href="http://twitter.com/WorldNomads" target="_blank" class="social-element"><img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-twitter.png" alt="Twitter" /></a>
-                            </td><td> <!-- Make sure the tags are directly next to each other -->
-                            <a href="http://instagram.com/worldnomads" target="_blank" class="social-element"><img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-instagram.png" alt="Instagram" /></a>
-                            </td><td> <!-- Make sure the tags are directly next to each other -->
-                            <a href="http://www.youtube.com/user/WorldNomadsTV" target="_blank" class="social-element"><img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-youtube.png" alt="Youtube" /></a>
-                            </td><td> <!-- Make sure the tags are directly next to each other -->
-                            <a href="https://plus.google.com/102411813669197613553/posts" target="_blank" class="social-element"><img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-google-plus.png" alt="Google Plus" /></a>
-                            </td><td> <!-- Make sure the tags are directly next to each other -->
-                            <a href="http://www.flickr.com/groups/worldnomads/" target="_blank" class="social-element"><img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-flickr.png" alt="Fickr" /></a>
-                            </td><td> <!-- Make sure the tags are directly next to each other -->
-
-                            </td>
-                          </tr>
-                        </table>
-
-                      </td>
-                    </tr>
-                  </table>
-                  
+                                    
                   <table class="container" style="padding-top: 0;">
                     <tr>
                       <td class="wrapper last" style="padding-top: 0; line-height: 0;">
