@@ -11,8 +11,8 @@
           <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/learn" itemprop="url"><span itemprop="title">Competitions</span></a></li>
         </ul>
       </div>
-      <h1>Win a trip or treat!</h1>
-      <p class="highlight">This halloween choose one of three scary good trips to India, Cuba or Transylvania – and get a treat.</p>
+      <h1>Trip or treat for 2</h1>
+      <p class="highlight">Win one of three scary good Halloween trips to India, Cuba or Transylvania.</p>
       <form action="#form" method="get">
       <button class="base-button orange">Apply now</button>
       </form>
@@ -315,17 +315,25 @@
      
     .form {
       background-color: #f4f4f4;
+      overflow: hidden;
+    }
+     
+    .steps {
+      overflow:hidden;
+      
     }
      
     .first {
-      margin: 4rem 0 1rem!important;
+      margin-top: 3rem!important;
+      margin-bottom: 2rem!important;
     }
+     
     .form h3 {
       margin: 4rem 0 2rem;
       font-size: 3em;
     }
      
-    .small-12.columns.tick.tables{
+    .tables{
      display: table;
      width: 100%;
       
@@ -347,6 +355,14 @@
      vertical-align: middle;
     }
      
+     .checkbox .table-1 {
+       padding-right: 10px;
+     }
+     
+     .checkbox .table-2 {
+      vertical-align: top; 
+     }
+     
     .arrow .table-1 span{
       background-image: url('http://www.worldnomads.com/Media/Default/competitions/trip-or-treat/arrow.png');
       background-size: contain;
@@ -366,6 +382,7 @@
       min-width: 50px;
       position: absolute;
       vertical-align: middle;
+      margin-top: 6px;
     }
     
 
@@ -381,6 +398,7 @@
      .social #sharetools-long, #sharetools-long #share-icons, #sharetools-long div {
        padding-top:0px;
        margin-top:0px!important;
+       margin-bottom:0px!important;
        
      }
        
@@ -422,13 +440,6 @@
        border: 1px solid #cccccc;
      }
      
-     .checkbox{
-      display: block;
-      float: left;
-      padding:0 5px 10px 0; 
-      margin-bottom: 0px;
-       
-     }
      
      @media all and (max-width: 1225px) {
        
@@ -486,7 +497,13 @@
           margin-top: 4px;
         }
           
-      @media all and (max-width: 850px) {
+        .tick .table-1 span{
+        margin-top: 6px;
+        }
+          
+      }
+          
+      @media all and (max-width: 700px) {
         
         .arrow .table-1 span{
          margin-top:5px; 
@@ -495,27 +512,35 @@
         .table-1{
         padding-right: 64px;
         }
+        
+        .tick .table-1 span{
+        margin-top: -10px;
+        }
+
         span.arrow-number {
           padding: 0.2rem 0.7rem;
           font-size: 1.25em;
         }
+        
         .first {
-          margin: 2rem 0 2rem!important;
+        margin-top: 2rem!important;
+        margin-bottom: 2rem!important;
         }
         
         .trips .strong, .social .strong {
           padding: 1rem 0 1rem!important;
         }
         
-       
       }
 
      
     </style>
-<form>
-<div id="form" class="row">
- <div class="large-12 columns">
-  <div class="row steps">
+
+  
+<div id="form" class="row first">
+  <form>
+    <div class="large-12 columns">
+      <div class="steps">
       <div class="large-3 medium-12 columns steps0">
         <div class="row">
           <h4>Steps to apply:</h4>
@@ -558,9 +583,9 @@
         </div>
       </div>
     </div>
- </div>
- <div class="large-12 columns">
-    <div class="row form">
+    </div>
+    <div class="large-12 columns">
+      <div class="form">
         <div class="large-offset-1 large-10 columns">
          <div class="row">
            <div class="large-12 columns">
@@ -756,9 +781,11 @@
                  <hr class="large-12">
                  <div class="large-12 columns"> 
                  <div class="row">
-                  <div class="large-8 columns">
-                    <p class="checkbox"><input id="checkbox1" type="checkbox"><label for="checkbox1"></p><p>I have read &amp; accepted the <a href="#">Terms and Conditions</a></label></p>
-                    <p class="checkbox"><input id="checkbox2" type="checkbox"><label for="checkbox2"></p><p>I would like to hear more from WorldNomads partners</label></p><br/>
+                  <div class="large-12 columns checkbox tables">
+                    <p class="table-1"><input id="checkbox1" type="checkbox"><label for="checkbox1"></p><p class="table-2">I have read &amp; accepted the <a href="#">Terms and Conditions</a></label></p>
+                  </div>
+                  <div class="large-12 columns checkbox tables">
+                    <p class="table-1"><input id="checkbox2" type="checkbox"><label for="checkbox2"></p><p class="table-2">I would like to hear more from WorldNomads partners</label></p><br/>
                   </div>
                  </div>
                  <div class="row">
@@ -775,7 +802,11 @@
          </div>
          
          <hr class="large-12">
+  
+  
          <!-- Confirmation panel -->
+  
+  
          <div class="row">
           <div class="large-12 columns">
             <div class="row">
@@ -784,28 +815,21 @@
                   <span class=""></span>
                 </span>
                 <span class="table-2">
-                  <h4 class="">Thank's for applying!</h4> 
+                  <h2 class="">Thank's for applying!</h2> 
                 </span>
               </div>
-              <div class="large-11 medium-11 small-9 columns end">
-                             
+            </div>
+            
+            <div class="row">
+              <div class="large-offset-1 large-10 columns ">
+                <h4>The winner of a scary-good trip will be announced the 22 November. Treats for all competitors the 30 November.</h4>
               </div>
             </div>
+            
             <div class="row">
-              <div class="large-offset-1 large-10 columns">
-                <p>The winner of a scary-good trip will be announced the 22 November. Treats for all competitors the 30 November.</p>
-                <div class="trips large-8 medium-12 small-12 columns">
-                  <h5 class="strong">Read more about the trips on Intrepid's website</h5>
-                  <div class="">
-                            <ul class="medium-block-grid-3 small-block-grid-1">
-                              <li><div class="con feature-box cuba"><div class="bottom purple"><p><a href="#">Cuba</a></p></div></div></li>
-                              <li><div class="con feature-box transylvania"><div class="bottom purple"><p><a href="#">Transylvania</a></p></div></div></li>
-                              <li><div class="con feature-box india"><div class="bottom purple"><p><a href="#">India</a></p></div></div></li>
-                            </ul>
-                          </div>
-                </div>
-                <div class="social large-offset-1 large-3 medium-12 small-12 columns end">
-                  <h5 class="strong">Tell a friend</h5>
+              <div class="large-offset-1 large-10 columns ">
+                <div class="social">
+                  <h5 class="strong">Tell a friend about this spine-tingling competition</h5>
                   <div id="sharetools-long">
                     <div class="row">
                       <div class="small-12 columns">
@@ -822,14 +846,32 @@
                 </div>
               </div>
             </div>
+            
+                     <hr class="large-offset-1 large-10 columns">
+
+            <div class="row">
+              <div class="large-offset-1 large-10 columns ">
+                <div class="trips">
+                  <h5 class="strong">Read more about the trips on Intrepid's website</h5>
+                  <div class="">
+                      <ul class="medium-block-grid-3 small-block-grid-1">
+                         <li><div class="con feature-box cuba"><div class="bottom purple"><p><a href="#">Cuba</a></p></div></div></li>
+                         <li><div class="con feature-box transylvania"><div class="bottom purple"><p><a href="#">Transylvania</a></p></div></div></li>
+                         <li><div class="con feature-box india"><div class="bottom purple"><p><a href="#">India</a></p></div></div></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>    
 
         </div>
       </div>
-  </div>
+    </div>
+  </form>
 </div>
-</form>
+
 
 <!-- Panel 3 END -->
 
@@ -938,7 +980,7 @@
 
   </div>
 
-  <div class="large-3 medium-8 small-12 columns">
+  <div class="first large-3 medium-8 small-12 columns">
     <div id="sidePanel" class="panel">
       <h4>Important dates</h4>
       <!-- Date -->
