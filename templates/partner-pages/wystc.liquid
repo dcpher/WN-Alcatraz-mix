@@ -3,16 +3,21 @@
 {% block content %} 
 
 <!-- Hero Content Panel Start -->
-<div class="hero-content-panel" id="partner">
-  <div class="row">  
-    <div class="small-10 medium-6 large-5 columns left">
-      <div id="homeheropromo">
-        <h1>WYSTC Loves WorldNomads</h1>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.quia dolor sit amet, consectetur</p>
-        <a href="http://www.worldnomads.com/partner/affiliateapplication?referrer=WYSTC" class="base-button orange">Join today</a>
-        <div class="clear"></div>
-        <img src="//www.worldnomads.com/Media/Default/Partners/WYSTC2015-CapeTown-logo.png" class="partnerlogo" />
+<div class="header-panel purple-panel" id="partner">
+  <div class="row" id="article-header">  
+    <div class="small-12 medium-6 large-5 columns">
+      <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <ul class="breadcrumb">
+          <li><a href="/">World Nomads</a></li>
+          <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/wystc" itemprop="url"><span itemprop="title">WYSTC</span></a></li>
+        </ul>
       </div>
+      <h1>There are travel insurance companies. <br /><strong>Then there’s World Nomads.</strong></h1>
+      <p class="lead">For over 10 years, World Nomads has been helping travellers deal with all sorts of monkey business.</p>
+      <a href="http://www.worldnomads.com/partner/affiliateapplication?referrer=WYSTC" class="base-button orange">Join today</a>        
+    </div>
+    <div class="small-12 medium-4 large-3 columns" id="partner-logo">
+      <img src="//www.worldnomads.com/Media/Default/Partners/WYSTC2015-CapeTown-logo.png" height="128" width="260" />
     </div>
   </div>
 </div>
@@ -21,13 +26,14 @@
 <!-- Background Header Image CSS Start  -->
 <style>
   /* Add link to Desktop Image */
-  #homeheropromo h1, #homeheropromo p {
-  	color: #ffffff;
-  }
+  #partner { background-position: center; background-size: cover; }
+  #partner h1, #partner p { color: #ffffff; }
+  #partner .row { position: relative; } 
+  #partner-logo { position: absolute; bottom: 2rem; right: 1.5rem; }
+  #partner .base-button { margin-bottom: 2rem; }
   @media all and (min-width: 860px) {
     #partner {
-      background-image: url('//www.worldnomads.com/Media/Default/Hero/Hero_planschange_full.jpg');
-      background-position: top center;
+      background-image: url('//www.worldnomads.com/Media/Default/Hero/hero_wystc_full.jpg');
       min-height: 550px;
       color: #ffffff;
     }
@@ -35,23 +41,27 @@
   /* Add link to Tablet Image */
   @media all and (max-width: 860px) {
     #partner {
-      background-image: url('//www.worldnomads.com/Media/Default/Hero/Hero_planschange_tablet.jpg');
+      background-image: url('//www.worldnomads.com/Media/Default/Hero/hero_wystc_tablet.jpg');
       min-height: 540px;
     }
   }
   /* Add link to Mobile Image */
   @media all and (max-width: 640px) {
     #partner {
-      background-image: url('//www.worldnomads.com/Media/Default/Hero/Hero_planschange_mobile.jpg');
-      min-height: 600px;
+      background-image: url('//www.worldnomads.com/Media/Default/Hero/hero_wystc_mobile.jpg');
+      min-height: 860px;
     }
+    #partner-logo { position: relative; bottom: inherit; right: inherit; margin-top: 180px; }
+    #partner-logo img { width: initial; }
   }
 </style>
 <!-- Background Header Image CSS End -->
 <div class="row" id="partner-highlights">
   <div class="small-12 columns">
     <h2>10 Reasons to become a World Nomads Partner</h2>
+    <p class="highlight">We don’t monkey around when it comes to developing strong ancillary revenue channels for travel partners and travel insurance that’s designed for independent and adventurous travellers.</p>
   </div>
+
   <div class="medium-6 small-12 columns">
   	<h5>1. Earn income</h5>
   	<p>Generate a steady income by referring your travellers to World Nomads travel insurance. You earn money from every sale that you refer to us from your web site.</p>  
@@ -197,11 +207,6 @@
 }
 #screenshots p {
 	margin-bottom: 48px;
-}
-#partner .partnerlogo {
-	width: 260px;
-	height: 128px;
-	float: left;
 }
 .base-button.large {
     font-size: 1.5rem;
