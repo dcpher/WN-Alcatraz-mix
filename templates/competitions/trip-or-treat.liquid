@@ -234,7 +234,7 @@
     <div class="panel purple-panel purple-pattern">
       <h4>Not ready to enter yet? </h4>
       <p>Sign up to receive our reminder email 1 week before the entry deadline.</p>
-      <form class="scholarship-mobile" action="http://worldnomadsgroup.createsend.com/t/y/s/zdjbh/" method="post" id="subForm">
+      <form class="sidereminder" action="http://worldnomadsgroup.createsend.com/t/y/s/zdjbh/" method="post" id="subForm">
           <input id="fieldEmail" name="cm-zdjbh-zdjbh" type="email"placeholder="Enter your email" />
           <input id="fieldqkicj" name="cm-f-qkicj" type="hidden" value="yes" />
           <input id="fieldqkicy" name="cm-f-qkicy" type="hidden" value="yes" />
@@ -243,7 +243,7 @@
 
         <script>
               $(function () {
-                $('.scholarship-mobile').submit(function (e) {
+                $('.sidereminder').submit(function (e) {
                   var form = $(this);
                   $.getJSON(this.action + "?callback=?", form.serialize(), function (data) {
                     if (data.Status === 400) {
@@ -1216,9 +1216,6 @@
                       <hr class="large-12">
                       <div class="large-12 columns checkbox tables">
                         <p class="table-1"><input  id="fieldqkihtr" name="cm-f-qkihtr" type="checkbox"><label for="checkbox1"></p><p class="table-2">I have read &amp; accepted the <a href="#">Terms and Conditions</a></label></p>
-                      </div>
-                      <div class="large-12 columns checkbox tables">
-                        <p class="table-1"><input id="fieldqkihtl" name="cm-f-qkihtl" type="checkbox"><label for="checkbox2"></p><p class="table-2">I would like to hear more from competition partners.</label></p>
                       </div>
                       <div class="large-12 columns">
                         <button type="submit" class="base-button orange">Enter</button>
