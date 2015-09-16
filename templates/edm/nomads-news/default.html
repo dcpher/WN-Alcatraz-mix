@@ -1,0 +1,1940 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width"/>
+    <meta name="format-detection" content="telephone=no">
+	<style>
+/**********************************************
+* Ink v1.0.5 - Copyright 2013 ZURB Inc        *
+**********************************************/
+
+/* Client-specific Styles & Reset */
+
+#outlook a { 
+  padding:0; 
+} 
+
+body{ 
+  width:100% !important; 
+  min-width: 100%;
+  -webkit-text-size-adjust:100%; 
+  -ms-text-size-adjust:100%; 
+  margin:0; 
+  padding:0;
+}
+
+.ExternalClass { 
+  width:100%;
+} 
+
+.ExternalClass, 
+.ExternalClass p, 
+.ExternalClass span, 
+.ExternalClass font, 
+.ExternalClass td, 
+.ExternalClass div { 
+  line-height: 100%; 
+} 
+
+#backgroundTable { 
+  margin:0; 
+  padding:0; 
+  width:100% !important; 
+  line-height: 100% !important; 
+}
+
+img { 
+  outline:none; 
+  text-decoration:none; 
+  -ms-interpolation-mode: bicubic;
+  width: auto;
+  max-width: 100%; 
+  float: left; 
+  clear: both; 
+  display: block;
+}
+
+center {
+  width: 100%;
+  min-width: 580px;
+}
+
+a img { 
+  border: none;
+}
+
+p {
+  margin: 0 0 0 10px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td { 
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  border-collapse: collapse !important; 
+}
+
+table, tr, td {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+hr {
+  color: #d9d9d9; 
+  background-color: #d9d9d9; 
+  height: 1px; 
+  border: none;
+}
+
+/* Responsive Grid */
+
+table.body {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+table.container {
+  width: 580px;
+  padding: 0px;
+  margin: 0 auto;
+  text-align: inherit;
+}
+      
+table.row { 
+  padding: 0px; 
+  width: 100%;
+  position: relative;
+}
+
+table.container table.row {
+  display: block;
+}
+
+td.wrapper {
+  padding: 10px 20px 0px 0px;
+  position: relative;
+}
+
+table.columns,
+table.column {
+  margin: 0 auto;
+}
+
+table.columns td,
+table.column td {
+  padding: 0px 0px 10px; 
+}
+
+table.columns td.sub-columns,
+table.column td.sub-columns,
+table.columns td.sub-column,
+table.column td.sub-column {
+  padding-right: 10px;
+}
+
+td.sub-column, td.sub-columns {
+  min-width: 0px;
+}
+
+table.row td.last,
+table.container td.last {
+  padding-right: 0px;
+}
+
+table.one { width: 30px; }
+table.two { width: 80px; }
+table.three { width: 130px; }
+table.four { width: 180px; }
+table.five { width: 230px; }
+table.six { width: 280px; }
+table.seven { width: 330px; }
+table.eight { width: 380px; }
+table.nine { width: 430px; }
+table.ten { width: 480px; }
+table.eleven { width: 530px; }
+table.twelve { width: 580px; }
+
+table.one center { min-width: 30px; }
+table.two center { min-width: 80px; }
+table.three center { min-width: 130px; }
+table.four center { min-width: 180px; }
+table.five center { min-width: 230px; }
+table.six center { min-width: 280px; }
+table.seven center { min-width: 330px; }
+table.eight center { min-width: 380px; }
+table.nine center { min-width: 430px; }
+table.ten center { min-width: 480px; }
+table.eleven center { min-width: 530px; }
+table.twelve center { min-width: 580px; }
+
+table.one .panel center { min-width: 10px; }
+table.two .panel center { min-width: 60px; }
+table.three .panel center { min-width: 110px; }
+table.four .panel center { min-width: 160px; }
+table.five .panel center { min-width: 210px; }
+table.six .panel center { min-width: 260px; }
+table.seven .panel center { min-width: 310px; }
+table.eight .panel center { min-width: 360px; }
+table.nine .panel center { min-width: 410px; }
+table.ten .panel center { min-width: 460px; }
+table.eleven .panel center { min-width: 510px; }
+table.twelve .panel center { min-width: 560px; }
+
+.body .columns td.one,
+.body .column td.one { width: 8.333333%; }
+.body .columns td.two,
+.body .column td.two { width: 16.666666%; }
+.body .columns td.three,
+.body .column td.three { width: 25%; }
+.body .columns td.four,
+.body .column td.four { width: 33.333333%; }
+.body .columns td.five,
+.body .column td.five { width: 41.666666%; }
+.body .columns td.six,
+.body .column td.six { width: 50%; }
+.body .columns td.seven,
+.body .column td.seven { width: 58.333333%; }
+.body .columns td.eight,
+.body .column td.eight { width: 66.666666%; }
+.body .columns td.nine,
+.body .column td.nine { width: 75%; }
+.body .columns td.ten,
+.body .column td.ten { width: 83.333333%; }
+.body .columns td.eleven,
+.body .column td.eleven { width: 91.666666%; }
+.body .columns td.twelve,
+.body .column td.twelve { width: 100%; }
+
+td.offset-by-one { padding-left: 50px; }
+td.offset-by-two { padding-left: 100px; }
+td.offset-by-three { padding-left: 150px; }
+td.offset-by-four { padding-left: 200px; }
+td.offset-by-five { padding-left: 250px; }
+td.offset-by-six { padding-left: 300px; }
+td.offset-by-seven { padding-left: 350px; }
+td.offset-by-eight { padding-left: 400px; }
+td.offset-by-nine { padding-left: 450px; }
+td.offset-by-ten { padding-left: 500px; }
+td.offset-by-eleven { padding-left: 550px; }
+
+td.expander {
+  visibility: hidden;
+  width: 0px;
+  padding: 0 !important;
+}
+
+table.columns .text-pad,
+table.column .text-pad {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+table.columns .left-text-pad,
+table.columns .text-pad-left,
+table.column .left-text-pad,
+table.column .text-pad-left {
+  padding-left: 10px;
+}
+
+table.columns .right-text-pad,
+table.columns .text-pad-right,
+table.column .right-text-pad,
+table.column .text-pad-right {
+  padding-right: 10px;
+}
+
+/* Block Grid */
+
+.block-grid {
+  width: 100%;
+  max-width: 580px;
+}
+
+.block-grid td {
+  display: inline-block;
+  padding:10px;
+}
+
+.two-up td {
+  width:270px;
+}
+
+.three-up td {
+  width:173px;
+}
+
+.four-up td {
+  width:125px;
+}
+
+.five-up td {
+  width:96px;
+}
+
+.six-up td {
+  width:76px;
+}
+
+.seven-up td {
+  width:62px;
+}
+
+.eight-up td {
+  width:52px;
+}
+
+/* Alignment & Visibility Classes */
+
+table.center, td.center {
+  text-align: center;
+}
+
+h1.center,
+h2.center,
+h3.center,
+h4.center,
+h5.center,
+h6.center {
+  text-align: center;
+}
+
+span.center {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+img.center {
+  margin: 0 auto;
+  float: none;
+}
+
+.show-for-small,
+.hide-for-desktop {
+  display: none;
+}
+
+/* Typography */
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
+  color: #222222;
+  font-family: Arial,sans-serif;
+  font-weight: normal; 
+  padding:0; 
+  margin: 0 0 16px 0;
+  text-align: left; 
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  word-break: normal;
+  color: #464743;
+  font-weight: 200;
+  letter-spacing: -1px;
+}
+
+h1 {font-size: 40px;}
+h2 {font-size: 32px;}
+h3 {font-size: 24px;}
+h4 {font-size: 20px;}
+h5 {font-size: 16px;}
+h6 {font-size: 14px;}
+body, table.body, p, td {font-size: 16px;line-height:1.4;}
+
+p.lead, p.lede, p.leed {
+  font-size: 18px;
+  line-height:21px;
+}
+
+p { 
+  margin-bottom: 10px;
+}
+
+small {
+  font-size: 10px;
+}
+
+/*
+a {
+  color: #297ac6; 
+  text-decoration: none;
+}
+
+a:hover { 
+  color: #246bad !important;
+}
+
+a:active { 
+  color: #246bad !important;
+}
+
+a:visited { 
+  color: #297ac6 !important;
+}
+
+h1 a, 
+h2 a, 
+h3 a, 
+h4 a, 
+h5 a, 
+h6 a {
+  color: #297ac6;
+}
+
+
+h1 a:active, 
+h2 a:active,  
+h3 a:active, 
+h4 a:active, 
+h5 a:active, 
+h6 a:active { 
+  color: #297ac6 !important; 
+} 
+
+h1 a:visited, 
+h2 a:visited,  
+h3 a:visited, 
+h4 a:visited, 
+h5 a:visited, 
+h6 a:visited { 
+  color: #297ac6 !important; 
+} 
+		
+*/
+a.link, a.link:visited, a.link:active,
+p a.link, p a.link:visited, p a.link:active,
+h1 a.link,h1 a.link:visited,h1 a.link:active, 
+h2 a.link,h2 a.link:visited,h2 a.link:active, 
+h3 a.link,h3 a.link:visited,h3 a.link:active, 
+h4 a.link,h4 a.link:visited,h4 a.link:active, 
+h5 a.link,h5 a.link:visited,h5 a.link:active,
+h6 a.link,h6 a.link:visited,h6 a.link:active {
+  color: #ABADAF;
+  text-decoration: none!important;
+}
+		
+a.link:hover,
+p a.link:hover,
+h1 a.link:hover, 
+h2 a.link:hover,  
+h3 a.link:hover, 
+h4 a.link:hover,
+h5 a.link:hover, 
+h6 a.link:hover  { 
+  color: #919395 !important; 
+  text-decoration: none!important;
+} 
+
+a.inlinelink, a.inlinelink:active, a.inlinelink:visited{
+	color: #919395!important;
+    text-decoration: none!important;
+    border-bottom: 1px dotted #919395!important;
+}
+		
+a.inlinelink:hover{
+	color: #000000!important;
+    text-decoration: none!important;
+    border-bottom: 1px dotted #000000!important;
+}
+
+
+
+/* Panels */
+
+.panel {
+  background: #f2f2f2;
+  border: 1px solid #d9d9d9;
+  padding: 10px !important;
+}
+
+.sub-grid table {
+  width: 100%;
+}
+
+.sub-grid td.sub-columns {
+  padding-bottom: 0;
+}
+
+/* Buttons */
+
+table.button,
+table.tiny-button,
+table.small-button,
+table.medium-button,
+table.large-button {
+  width: 100%;
+  overflow: hidden;
+}
+
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  display: block;
+  width: auto !important;
+  text-align: center;
+  background: #ff9c00;
+  /*border: 1px solid #cc7e00;*/
+  color: #ffffff;
+  padding: 8px 0;
+}
+
+table.tiny-button td {
+  padding: 5px 0 4px;
+}
+
+table.small-button td {
+  padding: 8px 0 7px;
+}
+
+table.medium-button td {
+  padding: 12px 0 10px;
+}
+
+table.large-button td {
+  padding: 21px 0 18px;
+}
+
+table.button td a,
+table.tiny-button td a,
+table.small-button td a,
+table.medium-button td a,
+table.large-button td a {
+  font-weight: normal;
+  text-decoration: none;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+table.tiny-button td a {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+table.small-button td a {
+  font-size: 16px;
+}
+
+table.medium-button td a {
+  font-size: 20px;
+}
+
+table.large-button td a {
+  font-size: 24px;
+}
+
+table.button:hover td,
+table.button:visited td,
+table.button:active td {
+  background: #cc7e00 !important;
+}
+
+table.button:hover td a,
+table.button:visited td a,
+table.button:active td a {
+  color: #ffffff !important;
+}
+
+table.button:hover td,
+table.tiny-button:hover td,
+table.small-button:hover td,
+table.medium-button:hover td,
+table.large-button:hover td {
+  background: #cc7e00 !important;
+}
+
+table.button:hover td a,
+table.button:active td a,
+table.button td a:visited,
+table.tiny-button:hover td a,
+table.tiny-button:active td a,
+table.tiny-button td a:visited,
+table.small-button:hover td a,
+table.small-button:active td a,
+table.small-button td a:visited,
+table.medium-button:hover td a,
+table.medium-button:active td a,
+table.medium-button td a:visited,
+table.large-button:hover td a,
+table.large-button:active td a,
+table.large-button td a:visited {
+  color: #ffffff !important; 
+}
+
+table.secondary td {
+  background: #e9e9e9;
+  border-color: #d0d0d0;
+  color: #555;
+}
+
+table.secondary td a {
+  color: #555555;
+}
+
+table.secondary:hover td {
+  background: #d0d0d0 !important;
+  color: #555555;
+}
+
+table.secondary:hover td a,
+table.secondary td a:visited,
+table.secondary:active td a {
+  color: #555555 !important;
+}
+
+table.success td {
+  background: #5da423;
+  border-color: #457a1a;
+}
+
+table.success:hover td {
+  background: #457a1a !important;
+}
+
+table.alert td {
+  background: #c60f13;
+  border-color: #970b0e;
+}
+
+table.alert:hover td {
+  background: #970b0e !important;
+}
+
+table.radius td {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+table.round td {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+
+/* Outlook First */
+
+body.outlook p {
+  display: inline !important;
+}
+
+/*  Media Queries */
+
+@media only screen and (max-width: 600px) {
+
+  table[class="body"] img {
+    width: auto !important;
+    height: auto !important;
+  }
+
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+
+  table[class="body"] .row {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  table[class="body"] .wrapper {
+    display: block !important;
+    padding-right: 0 !important;
+  }
+
+  table[class="body"] .columns,
+  table[class="body"] .column {
+    table-layout: fixed !important;
+    float: none !important;
+    width: 100% !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    display: block !important;
+  }
+
+  table[class="body"] .wrapper.first .columns,
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+
+  table[class="body"] table.columns td,
+  table[class="body"] table.column td {
+    width: 100% !important;
+  }
+
+  table[class="body"] .columns td.one,
+  table[class="body"] .column td.one { width: 8.333333% !important; }
+  table[class="body"] .columns td.two,
+  table[class="body"] .column td.two { width: 16.666666% !important; }
+  table[class="body"] .columns td.three,
+  table[class="body"] .column td.three { width: 25% !important; }
+  table[class="body"] .columns td.four,
+  table[class="body"] .column td.four { width: 33.333333% !important; }
+  table[class="body"] .columns td.five,
+  table[class="body"] .column td.five { width: 41.666666% !important; }
+  table[class="body"] .columns td.six,
+  table[class="body"] .column td.six { width: 50% !important; }
+  table[class="body"] .columns td.seven,
+  table[class="body"] .column td.seven { width: 58.333333% !important; }
+  table[class="body"] .columns td.eight,
+  table[class="body"] .column td.eight { width: 66.666666% !important; }
+  table[class="body"] .columns td.nine,
+  table[class="body"] .column td.nine { width: 75% !important; }
+  table[class="body"] .columns td.ten,
+  table[class="body"] .column td.ten { width: 83.333333% !important; }
+  table[class="body"] .columns td.eleven,
+  table[class="body"] .column td.eleven { width: 91.666666% !important; }
+  table[class="body"] .columns td.twelve,
+  table[class="body"] .column td.twelve { width: 100% !important; }
+
+  table[class="body"] td.offset-by-one,
+  table[class="body"] td.offset-by-two,
+  table[class="body"] td.offset-by-three,
+  table[class="body"] td.offset-by-four,
+  table[class="body"] td.offset-by-five,
+  table[class="body"] td.offset-by-six,
+  table[class="body"] td.offset-by-seven,
+  table[class="body"] td.offset-by-eight,
+  table[class="body"] td.offset-by-nine,
+  table[class="body"] td.offset-by-ten,
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
+  }
+
+  table[class="body"] .right-text-pad,
+  table[class="body"] .text-pad-right {
+    padding-left: 10px !important;
+  }
+
+  table[class="body"] .left-text-pad,
+  table[class="body"] .text-pad-left {
+    padding-right: 10px !important;
+  }
+
+  table[class="body"] .hide-for-small,
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+
+  table[class="body"] .show-for-small,
+  table[class="body"] .hide-for-desktop {
+    display: inherit !important;
+  }
+	
+  p {
+  font-size: 16px!important;
+  line-height: 1.4;
+
+  }
+}
+
+  </style>
+  <style>
+
+    table.facebook td {
+      background: #3b5998;
+      border-color: #2d4473;
+    }
+
+    table.facebook:hover td {
+      background: #2d4473 !important;
+    }
+
+    table.twitter td {
+      background: #00acee;
+      border-color: #0087bb;
+    }
+
+    table.twitter:hover td {
+      background: #0087bb !important;
+    }
+
+    table.google-plus td {
+      background-color: #DB4A39;
+      border-color: #CC0000;
+    }
+
+    table.google-plus:hover td {
+      background: #CC0000 !important;
+    }
+
+    .template-label {
+      color: #ffffff;
+      font-weight: normal;
+      font-size: 11px;
+    }
+
+    .callout .panel {
+      background: #ECF8FF;
+      border-color: #b9e5ff;
+    }
+
+    .header {
+      background: #f4f4f4;
+    }
+    .footer {
+      background: #f4f4f4;
+    }
+
+    .footer .wrapper {
+    }
+
+    .footer h5 {
+      padding-bottom: 10px;
+    }
+
+    table.columns .text-pad {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    table.columns .left-text-pad {
+      padding-left: 20px;
+    }
+
+    table.columns .right-text-pad {
+      padding-right: 20px;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+      table[class="body"] .right-text-pad {
+        padding-left: 20px !important;
+      }
+
+      table[class="body"] .left-text-pad {
+        padding-right: 20px !important;
+      }
+    }
+
+    /*  WN Styles  */
+    .content-area {
+      background-color: #FFFFFF;
+    }
+    .pre-header td, span.note { font-size: 12px; color: #666666; }
+    .disclaimer p { font-size: 11px; color: #666666;}
+    .header .container, .nav { background-color: #FFFFFF; }
+    .header .container #logo { padding: 10px 0 10px 0; }
+	  
+	span.tags{
+	  font-size:12px; 
+	  color:#ffffff; 
+	  background-color:#AFAFAF; 
+	  padding:3px 2px 3px 6px; 
+	  margin-right:5px;
+	}
+
+/*
+    .nav.four-up td { font-size: 16px; font-weight: bold; text-align: center; padding: 16px 0 16px 0; margin: 0; letter-spacing: -0.5px; width: 25%; }
+    .nav.four-up { border-top: 1px solid #f4f4f4; } 
+    .nav.four-up td a { color: #999999!important; }
+*/
+
+    table.row.purple { background-color:#61398b; background: #61398b;}
+    table.row.purple.first { margin-top: 10px; padding-top: 30px;}
+    table.row.purple td.wrapper td { color: #FFFFFF; }
+
+    .row.purple { background-color:#61398b; background:#61398b;}
+    .row.purple.first { margin-top: 10px; padding-top: 30px;}
+    .row.purple .wrapper td { margin-bottom:0px; }
+    .row.purple .wrapper td p{ color: #FFFFFF; text-align: center;}
+    
+    .row.grey { background-color:#f7f7f7; background:#f7f7f7;}
+    .row.grey .wrapper td p{text-align: center;}
+    .row.grey.first { margin-top: 10px; padding-top: 10px;}
+    .row.dark-grey { background-color:#343333; background:#343333;}
+    .row.dark-grey .wrapper td p{ color: #e4e4e4; text-align: center;}
+    .row.fineprint .wrapper td p{ color: #999999;}
+
+    img.feature { padding-bottom: 10px; }
+    .social-element {
+      display: inline-block;
+       width: 70px;
+}
+    .footer {
+      background: #f4f4f4;
+    }
+    .footer p {
+      color: #6d6d6d;
+      font-size: 10px;
+      line-height: 14px;
+      text-align: center;
+      border-top: 1px solid #b5b5b5;
+      padding-top: 16px;
+      padding-bottom: 40px;
+      margin-top: 16px;
+    }
+    .footer h4 {
+      padding-top: 20px;
+      padding-bottom: 8px;
+      margin: 0px;
+      color: #FFFFFF;
+      display: block;
+    }
+    @media only screen and (max-width: 600px) {
+      .header .container #logo { padding: 10px 0 0 0; }
+      .nav.four-up td { width: auto; white-space: nowrap; padding: 10px 6px; font-size: 14px;   }
+    }
+    
+    
+  </style>
+</head>
+  
+
+<body>
+  <table class="body">
+    <tr>
+      <td class="center" 
+		  align="center" 
+		  valign="top">
+        <center>
+          
+          <!-- Pre-Header -->
+          <table class="container">
+            <tr>
+              <td>
+
+                <table class="row pre-header">
+                  <tr>
+                    <td class="wrapper last">
+
+                      <table class="twelve columns">
+                        <tr>
+                          <td AP:EDIT>
+
+                            <a href="http://www.worldnomads.com?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+							  World Nomads
+							</a>
+                            <span style="float: right;">
+						      Issue #1 2015
+							</span>
+
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
+          </table>
+          
+          <table class="container" 
+				 style="background-color: #ececec;">
+            <tr>
+              <td>
+
+                <!-- Header -->
+                <table class="row" 
+					   style="border-bottom:1px solid #ccc; background-color: #ffffff;">
+                  <tr>
+                    <td class="wrapper last" >
+
+                      <table class="twelve columns">
+                        <tr style="vertical-align:middle;">
+                          <td>
+                            
+                            <table style="width:100%;">
+                              <tr style="vertical-align:middle;">
+                                <td style="width:auto!important; padding:10px 10px 10px 20px;" 
+									rowspan="2" AP:EDIT>
+                                  <a href="http://www.worldnomads.com?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+                                    <img id="logo" src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/logo.jpg"alt="World Nomads" style="max-width:196px; width: 100% !important">
+                                  </a>
+                                </td>
+                                <td style="width:auto!important; padding:5px 0; vertical-align:bottom;" 
+									colspan="3">
+								  Follow us
+								</td>
+                               </tr>
+                                <tr style="vertical-align:middle;">
+                                  <td style="width:40px!important;" 
+									  width="40">
+                                    <a style="overflow:hidden;" 
+									   href="http://www.facebook.com/worldnomads">
+                                      <img src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/facebook.jpg" 
+										   height="30" 
+										   width="30" 
+										   style="width:30px;" 
+										   alt="Facebook">
+                                    </a>
+                                  </td>
+                                  <td style="width:40px!important;" 
+									  width="40">
+                                    <a style="overflow:hidden;" 
+									   href="http://twitter.com/WorldNomads">
+                                      <img src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/twitter.jpg" 
+										   height="30" 
+										   width="30" 
+										   style="width:30px;" 
+										   alt="Twitter">
+                                    </a>
+                                  </td>
+                                  <td style="width:50px!important;" 
+									  width="50">
+                                    <a style="overflow:hidden;" 
+									   href="http://instagram.com/worldnomads">
+                                      <img src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/instagram.jpg" 
+										   height="30" 
+										   width="30" 
+										   style="width:30px;" 
+										   alt="Instagram">
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                          </td>
+						  <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+                
+      
+
+
+         <!-- Intro -->
+			<table class="row" 
+				   style="border-bottom:1px solid #ccc; background-color: #ffffff;">
+			  <tr>
+				<td class="wrapper last" 
+					style="padding-top: 20px; margin-bottom:0px;">
+				  <table class="twelve columns">
+					<tr>
+					  <td class="left-text-pad right-text-pad" AP:EDIT>
+						  
+						<h3>
+						  <strong>
+							John, welcome to a brand new Nomads News
+						  </strong>
+						</h3>
+						  
+						<h3>
+						  We’re so excited to bring you the first edition of the freshly redesigned Nomads News! 
+						</h3>
+						  
+						<p>
+						  Get more of what you love with our exclusive World Nomads content delivered straight to your inbox every fortnight. There’s 
+							<a class="inlinelink" href="https://www.worldnomads.com/guides?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">destination guides</a> written by the locals, 
+							<a class="inlinelink" href="http://answers.worldnomads.com?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">trending travel stories</a>, 
+							<a class="inlinelink" href="https://www.worldnomads.com/travel-safety?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">travel tips and hacks</a> you need to know, 
+							<a class="inlinelink" href="https://www.youtube.com/user/WorldNomadsTV">inspiring video stories</a> and much more.<br><br>
+
+						  So take a look around and let us know what you think of our new layout and stories – we’d love to hear from you! 
+						  <br><br>
+
+						  Want more? Don’t forget to follow us on 
+						  <a class="inlinelink" 
+							 href="https://www.facebook.com/worldnomads">
+						    Social
+						  </a> 
+						  for more exclusive content and to share your adventures.
+						  <br><br>
+
+						  Keep travelling, 
+						  <br>
+						  World Nomads team
+						</p> 
+						  
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+				  </table>
+				</td>
+			  </tr>
+			</table>
+		<!-- Intro END -->
+
+		<!-- Articles 1-2 START -->
+			<table class="row" style="background-color: #ffffff; padding-top:10px;">
+			  <tr>
+
+				<td class="wrapper">
+				  <table class="six columns">
+
+					<tr>
+					  <td style="padding-bottom:0px; margin-bottom:0px" AP:EDIT>
+						<a href="http://www.worldnomads.com/learn/travel-food/winner-2015?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+						  <img width="280" 
+							   height="170" 
+							   style="width:280px; height:170px;" 
+							   src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/food.jpg"/>
+						</a>
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+
+					<tr>
+					  <td class="left-text-pad right-text-pad" 
+						  style="background-color:#60b7a9; padding-top:15px; padding-bottom: 20px;" AP:EDIT>
+						<p>
+						  <strong>
+							<a class="link" 
+							   style="color:#ffffff;" 
+							   href="http://www.worldnomads.com/learn/travel-food/winner-2015?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+							  Meet our 2015 Passport and Plate winners
+							</a>
+						  </strong>
+						</p>
+						<p style="font-size:12px; color:#ffffff; margin-bottom:15px;">
+						  Our three food explorers have just returned from Sri Lanka with some mouth-watering adventures to share. 
+						</p>
+
+						 <table class="button" >
+						   <tr>
+							 <td style="margin-bottom:0px;">
+							   <a href="http://www.worldnomads.com/learn/travel-food/winner-2015?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+								 Read more
+							   </a>
+							 </td>
+						   </tr>
+						 </table>
+
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+
+				  </table>
+				</td>
+
+				<td class="wrapper last">
+				  <table class="six columns">
+
+					<tr>
+					  <td style="padding-bottom:0px; margin-bottom:0px">
+						<a href="http://www.worldnomads.com/travel-insurance?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+						  <img width="280" 
+							   height="170" 
+							   style="width:280px; height:170px;" 
+							   src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/insurance.jpg"/>
+						</a>
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+
+					<tr>
+					  <td class="left-text-pad right-text-pad" 
+						  style="background-color:#de5346;padding-top:15px; padding-bottom: 20px;">
+						<p>
+						  <strong>
+							<a class="link" 
+							   style="color:#ffffff;"
+							   href="http://www.worldnomads.com/travel-insurance?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+							  Save 7% on your travel insurance
+							</a>
+						  </strong>
+						</p>
+						<p style="font-size:12px; color:#ffffff; margin-bottom:15px;">
+						  To get 7% off your next travel insurance policy, just enter the promo code MEMBERSEPT when purchasing* 
+						</p>
+
+						 <table class="button">
+						   <tr>
+							 <td style="margin-bottom:0px;">
+							   <a href="http://www.worldnomads.com/travel-insurance?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+							     Get a quote
+							   </a>
+							 </td>
+						   </tr>
+						 </table>
+
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+
+				  </table>
+				</td>
+
+			  </tr>
+			</table>
+			<!-- Articles 1-2 END -->
+
+			<!-- Articles 3-4 START -->
+			<table class="row" 
+				   style="border-bottom:1px solid #ccc; background-color: #ffffff; padding-bottom:20px; ">
+			  <tr>
+
+				<td class="wrapper">
+				  <table class="six columns">
+
+					<tr>
+					  <td style="padding-bottom:0px; margin-bottom:0px">
+						<a href="https://www.youtube.com/watch?v=TPFxfyaM6bU">
+						  <img width="280" 
+							   height="170" 
+							   style="width:280px; height:170px;" 
+							   src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/krishna.jpg"/>
+						</a>
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+
+					<tr>
+					  <td class="left-text-pad right-text-pad" 
+						  style="background-color:#444542; padding-top:15px;padding-bottom: 20px;">
+						<p>
+						  <strong>
+							<a class="link" 
+							   style="color:#ffffff;" 
+							   href="https://www.youtube.com/watch?v=TPFxfyaM6bU">
+							  WATCH: Modern day holy man – Goa, India.
+							</a>
+						  </strong>
+						</p>
+						<p style="font-size:12px; color:#ffffff; margin-bottom:15px;">
+						  World Nomads' Andre finds Krishna, a wandering Baba teaching the secrets of Yoga to travellers. </p>
+
+						 <table class="button">
+						   <tr>
+							 <td style="margin-bottom:0px;">
+							   <a href="https://www.youtube.com/watch?v=TPFxfyaM6bU">
+								 Watch now
+							   </a>
+							 </td>
+						   </tr>
+						 </table>
+
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+
+				  </table>
+				</td>
+
+				<td class="wrapper last">
+				  <table class="six columns">
+
+					<tr>
+					  <td style="padding-bottom:0px; margin-bottom:0px">
+						<a href="https://www.youtube.com/watch?v=YSpk45KkfR8">
+						  <img width="280" 
+							   height="170" 
+							   style="width:280px; height:170px;" 
+							   src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/dayofthedead.jpg"/>
+						</a>
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+
+					<tr>
+					  <td class="left-text-pad right-text-pad" 
+						  style="background-color:#444542; padding-top:15px; padding-bottom: 20px;">
+						<p>
+						  <strong>
+							<a class="link" 
+							   style="color:#ffffff;" 
+							   href="https://www.youtube.com/watch?v=YSpk45KkfR8">
+							  WATCH: Day of the Dead – San Luis Potosi Mexico.
+							</a>
+						  </strong>
+						</p>
+						<p style="font-size:12px; color:#ffffff; margin-bottom:15px;">
+						  Join World Nomads' Ben Hogarth in an intimate and heart-warming day of the dead ceremony.
+						</p>
+
+						 <table class="button">
+						   <tr>
+							 <td style="margin-bottom:0px;">
+							   <a href="https://www.youtube.com/watch?v=YSpk45KkfR8">
+								 Watch now
+							   </a>
+							 </td>
+						   </tr>
+						 </table>
+
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+
+				  </table>
+				</td>
+
+			  </tr>
+			</table>
+			<!-- Articles 3-4 END -->
+
+			<!-- Insiders Guides START -->
+
+			<table class="row" 
+				   style="margin-top:20px; background-color: #ffffff;">
+			  <tr>
+				<td class="wrapper last" 
+					style="padding-top:20px;">
+
+				  <table class="twelve columns">
+					<tr>
+					  <td class="left-text-pad right-text-pad">
+						<h4 class="center" 
+							style="margin-bottom:0px;">
+						  <strong>
+							Don’t leave home without our 
+							  <a style="color:#ABADAF;" 
+								 class="link" 
+								 href="https://www.worldnomads.com/guides?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+							  Insider Guides
+							  </a>
+						  </strong>
+						</h4>
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+				  </table>
+
+				</td>
+			  </tr>
+			</table>
+
+			<table class="row" 
+				   style="border-bottom:1px solid #ccc; background-color: #ffffff; padding-bottom:20px;">
+			  <tr>
+
+				<td class="wrapper last" 
+					style="margin-bottom:0px; padding-top:0px;">
+				  <table class="six columns">
+
+					<tr>
+					  <td class="left-text-pad right-text-pad last" 
+						  style="padding-bottom:0px;">
+						<a href="https://www.worldnomads.com/guides/rio-insiders-guide?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+						  <img width="260" 
+							   height="180" 
+							   style="width:260px; height:180px;" 
+							   src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/insiders_guide.jpg"/>
+						</a>                           
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+
+				  </table>
+				</td>
+
+				<td class="wrapper left-text-pad right-text-pad last" 
+					style="padding-top:0px; padding-right:20px;">							
+				  <table class="six columns" 
+						 style="background-color:#f4f2ef;">
+					<tr>
+					  <td class="left-text-pad right-text-pad" 
+						  style="padding-top:15px; padding-bottom:20px;">
+
+						<p>
+						  <strong>
+							Going to Rio? 
+						  </strong>
+						</p>
+						<p style="font-size:12px;"> 
+						  Whether you’re going for the Olympics, carnival or just to soak up the electric atmosphere, our 
+						  <a class="inlinelink" 
+						     href="https://www.worldnomads.com/guides/rio-insiders-guide?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+						   Ultimate Guide to Rio
+						</a> 
+						  will ensure you have the time of your life! 
+						</p>
+						<table class="button">
+						  <tr>    
+							<td style="margin-bottom:0px;">
+							  <a href="https://www.worldnomads.com/guides/rio-insiders-guide?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+								Download now
+							  </a> 
+							</td>
+						  </tr>
+						</table>  
+
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+				  </table>
+				</td>
+
+			  </tr>
+			</table>
+
+			<!-- Insiders Guides END -->
+
+			<!-- Top 3 START -->
+
+      <table class="row" 
+				   style="margin-top:20px; background-color: #ffffff; ">
+        <tr>
+          <td class="wrapper last" 
+					style="padding-top:20px;">
+            <table class="twelve columns">
+
+              <tr>
+                <td class="left-text-pad right-text-pad">
+                  <h4 class="center" 
+							style="margin-bottom:0px;">
+						  <strong>
+							Top 3 trending questions in our 
+							  <a style="color:#ABADAF" 
+								 class="link" 
+								 href="http://answers.worldnomads.com?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+							    community
+							  </a>
+						  </strong>
+                  </h4>
+                </td>
+                <td class="expander"></td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+      </table> 
+			
+			<!-- QUESTION 1 START -->
+      <table class="row" 
+				   style="background-color: #f4f2ef; border-bottom:1px solid #ccc;">
+        <tr>
+
+          <td class="wrapper" 
+					style="background-color: #f4f2ef; vertical-align:middle; margin-bottom:0; padding: 20px 0 0 0!important;">
+            <table class="eight columns">
+              <tr>
+
+                <td class="two sub-columns">
+                  <img width="auto" 
+							 style="height: 24px!important; margin-right: 0px;" 
+							 src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/quotation.jpg" />
+                </td>
+                <td class="expander"></td>
+
+                <td class="ten sub-columns" 
+						  style=" margin: 10px auto; padding: 0 10px 0 0;">
+
+                  <p style="line-height:1.2;">
+                  <strong>
+                  <em>
+                  <a class="link" 
+								 style="color:#343333;" 
+								 href="http://answers.worldnomads.com/questions/europe/3117/any-eating-recommendations-for-paris-and-rome-for-under-5-euro?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+								Best eats in Paris and Rome under 5 euros
+                  </a>
+                  </em>
+                  </strong>
+                  </p>
+
+                  <span class="tags">
+                  <a href="http://answers.worldnomads.com/locations/19352/map-of-paris?view=recent_activity?utm_campaign=nomadsnews-1-sep&utm_medium=emai&utm_source=worldnomads&utm_content=nomadsnews" 
+              style="color:#ffffff;text-decoration:none;" 
+              class="link">
+              Paris 
+                  </a>
+                  </span>
+
+                  <span class="tags">
+                  <a href="http://answers.worldnomads.com/locations/9337/map-of-rome?view=recent_activity?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews" 
+              style="color:#ffffff;text-decoration:none;" 
+              class="link">
+               Rome 
+                  </a>
+                  </span>
+                  <span style="font-size:12px;"> 4 answers, 291 views </span> 
+                  <p style="font-size:12px; margin-top:5px;"> - Asked by Tanya Rose</p> 
+
+                </td>
+                <td class="expander"></td>
+
+              </tr>
+            </table>
+          </td>
+
+          <td class="wrapper last" 
+					style="background-color: #f4f2ef; vertical-align:middle;">
+            <table class="four columns">
+              <tr>
+
+                <td class="left-text-pad right-text-pad">
+                  <table class="button">
+                    <tr>    
+                      <td style="margin-bottom:0px;">
+							  <a href="http://answers.worldnomads.com/questions/europe/3117/any-eating-recommendations-for-paris-and-rome-for-under-5-euro?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+								Read answers
+							  </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td class="expander"></td>
+
+              </tr>
+            </table>
+          </td>
+
+        </tr>
+      </table>
+			<!-- QUESTION 1 END -->
+
+			<!-- QUESTION 2 START -->
+      <table class="row" 
+				   style="background-color: #f4f2ef; border-bottom:1px solid #ccc;">
+			  <tr>
+
+				<td class="wrapper" 
+					style="background-color: #f4f2ef; vertical-align:middle; margin-bottom:0; padding: 20px 0 0 0!important;">
+				  <table class="eight columns">
+					<tr>
+						
+					  <td class="two sub-columns">
+						  <img width="auto" 
+							   style="height: 24px!important; margin-right: 0px;" 
+							   src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/quotation.jpg" />
+					  </td>
+					  <td class="expander"></td>
+						
+					  <td class="ten sub-columns" 
+						  style=" margin: 10px auto; padding: 0 10px 0 0;">
+						  
+						<p style="line-height:1.2;">
+						  <strong>
+							<em>
+							  <a class="link" 
+								 style="color:#343333;" 
+								 href="http://answers.worldnomads.com/questions/portugal/16001/can-you-recommend-some-vegetarian-restaurants-in-lisbon?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+								What are your favourite vegetarian restaurants in Lisbon?
+							  </a>
+							</em>
+						  </strong>
+						</p>
+						  
+						<span class="tags">
+						  <a href="http://answers.worldnomads.com/locations/24978/map-of-lisbon?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews" 
+						     style="color:#ffffff;text-decoration:none;" 
+						     class="link">
+						 	Lisbon 
+						 </a>
+						</span>
+						<span style="font-size:12px;"> 5 answers, 661 views </span> 
+						<p style="font-size:12px; margin-top:5px;"> - Asked by Ian C </p>    
+						  
+					  </td>
+					  <td class="expander"></td>
+						
+					</tr>
+				  </table>
+				</td>
+
+				<td class="wrapper last" 
+					style="background-color: #f4f2ef; vertical-align:middle;">
+				  <table class="four columns">
+					<tr>
+						
+					  <td class="left-text-pad right-text-pad">
+						<table class="button">
+						  <tr>    
+							<td style="margin-bottom:0px;">
+							  <a href="http://answers.worldnomads.com/questions/portugal/16001/can-you-recommend-some-vegetarian-restaurants-in-lisbon?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+								Read answers
+							  </a> 
+							</td>
+						  </tr>
+						</table>
+					  </td>
+					  <td class="expander"></td>
+						
+					</tr>
+				  </table>
+				</td>
+				  
+			  </tr>
+      </table>
+			<!-- QUESTION 2 END -->
+
+			<!-- QUESTION 3 START -->
+      <table class="row" 
+				   style="background-color: #f4f2ef; border-bottom:1px solid #ccc;">
+          <tr>
+
+				<td class="wrapper" 
+					style="background-color: #f4f2ef; vertical-align:middle; margin-bottom:0; padding: 20px 0 0 0!important;">
+				  <table class="eight columns">
+					<tr>
+
+					  <td class="two sub-columns">
+						<img width="auto" 
+							 style="height: 24px!important; margin-right: 0px;" 
+							 src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/quotation.jpg" />
+					  </td>
+					  <td class="expander"></td>
+
+					  <td class="ten sub-columns" 
+						  style=" margin: 10px auto; padding: 0 10px 0 0;">
+
+						<p style="line-height:1.2;">
+						  <strong>
+							<em>
+							  <a class="link" 
+								 style="color:#343333;"
+								 href="http://answers.worldnomads.com/questions/all-locations/1289/what-is-the-most-interesting-thing-you-have-eaten-in-asia?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+								What’s the most interesting thing you’ve eaten in Asia?
+							  </a>
+							</em>
+						  </strong>
+						</p>
+
+						<span class="tags"> 
+              <a href="http://answers.worldnomads.com/locations?id=472?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews" 
+              style="color:#ffffff;text-decoration:none;" 
+              class="link">
+              Asia 
+              </a>
+            </span>
+						<span style="font-size:12px;"> 6 answers, 252 views </span> 
+						<p style="font-size:12px; margin-top:5px;"> - Asked by Jaidev S </p>   
+
+					  </td>
+					  <td class="expander"></td>
+
+					</tr>
+				  </table>
+				</td>
+
+				<td class="wrapper last" 
+					style="background-color: #f4f2ef; vertical-align:middle;">
+				  <table class="four columns">
+					<tr>
+
+					  <td class="left-text-pad right-text-pad">
+						<table class="button">
+						  <tr>    
+							<td style="margin-bottom:0px;">
+							  <a href="http://answers.worldnomads.com/questions/all-locations/1289/what-is-the-most-interesting-thing-you-have-eaten-in-asia?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+								Read answers
+							  </a>
+							</td>
+						  </tr>
+						</table>
+					  </td>
+					  <td class="expander"></td>
+
+					</tr>
+				  </table>
+				</td>
+
+        </tr>
+      </table>
+			<!-- QUESTION 3 END -->
+			     <!-- Top 3 END -->
+
+			<!-- WHITE BOTTOM START -->
+
+			<table class="row" 
+				   style="background-color: #ffffff; border-bottom:1px solid #ccc;">
+			  <tr>
+			    <td class="wrapper last" 
+					style=" vertical-align:middle; padding-top:0; margin-bottom:0;">
+
+			      <table class="twelve columns">
+				    <tr>
+				      <td class="left-text-pad right-text-pad" 
+						  style="height:20px; width:100%; padding-bottom:0; ">
+
+				      </td>
+					    <td class="expander"></td>
+				    </tr>
+			      </table>
+
+			  </td>
+			  </tr>
+			</table>
+			<!-- WHITE BOTTOM END -->
+				
+			<!-- Pick of the week START -->
+	  
+			<table class="row" 
+				   style="margin-top:20px; background-color: #d9d9d9; border-top:1px solid #ccc;">
+			  <tr>
+				<td class="wrapper last" 
+					style="padding-top:20px; margin-bottom: 0;">
+				  <table class="twelve columns">
+					  
+				   <tr>
+					 <td class="left-text-pad right-text-pad">
+					   <h4 class="center" 
+						   style="margin-bottom:0px;">
+						 <strong>
+						   Plus, don't miss out on...
+						 </strong>
+					   </h4>
+					 </td>
+					 <td class="expander"></td>
+				   </tr>
+					  
+				  </table>
+				 </td>
+			   </tr>
+			 </table>  
+				  
+			<table class="row" 
+				   style="border-bottom:1px solid #ccc; background-color: #d9d9d9; padding-bottom:20px;">
+			  <tr>
+				  
+			    <!-- PICK 1 START -->  
+				<td class="wrapper">
+				  <table class="four columns">
+					  
+					<tr>
+					  <td style="padding-bottom:0px; margin-bottom:0px">
+						<a href="http://www.photoshelter.com/win-a-dream-photo-tour/?&utm_source=WorldNomads&utm_medium=Partners&utm_content=DreamPhotoTour&utm_campaign=">
+						  <img width="180" 
+							   height="109px" 
+							   style="width:180px; height:109px;" 
+							   src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/partner.jpg"/>
+						</a>
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+
+					<tr>
+					  <td class="left-text-pad right-text-pad" 
+						  style="background-color:#ffffff; padding-top:10px; height:100px;">
+						  
+						<p style="font-size:12px; margin-bottom: 6px;">
+						  <strong>
+							<a class="link" 
+							   href="http://www.photoshelter.com/win-a-dream-photo-tour/?&utm_source=WorldNomads&utm_medium=Partners&utm_content=DreamPhotoTour&utm_campaign=">
+							  Win a dream photo tour of Jordan
+							</a>
+						  </strong>
+						</p>
+						  
+						<p style="font-size:12px;"> 
+						  Submit your best travel photo for a chance to win.
+						</p>
+						  
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+					  
+				  </table>
+				</td>
+				<!-- PICK 1 END -->
+			
+				<!-- PICK 2 START -->
+				<td class="wrapper">
+				  <table class="four columns">
+					  
+					<tr>
+					  <td style="padding-bottom:0px; margin-bottom:0px">
+						<a href="http://www.worldnomads.com/travel-insurance/what-to-do-if-your-luggage-is-delayed?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+						  <img width="180" 
+							   height="109" 
+							   style="width:180px; height:109px;" 
+							   src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/luggage.jpg"/>
+						</a>
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+
+					<tr>
+					  <td class="left-text-pad right-text-pad" 
+						  style="background-color:#ffffff; padding-top:10px; height:100px;">
+						  
+						<p style="font-size:12px; margin-bottom: 6px;">
+						  <strong>
+							<a class="link" 
+							   href="http://www.worldnomads.com/travel-insurance/what-to-do-if-your-luggage-is-delayed?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+							  Luggage delayed? 
+							</a>
+						  </strong>
+						</p>
+						  
+						<p style="font-size:12px;"> 
+						  What to do when your bag is taking a detour.
+						</p>
+						  
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+					  
+				  </table>
+				</td>
+				<!-- PICK 2 END -->
+			
+				<!-- PICK 3 START -->
+
+				<td class="wrapper last">
+				  <table class="four columns">
+					  
+					<tr>
+					  <td style="padding-bottom:0px;margin-bottom:0px">
+						<a href="https://www.worldnomads.com/travel-safety/Germany/Ticket-Scams-Fake-Inspectors-and-Pickpockets?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+						  <img width="180" 
+							   height="109" 
+							   style="width:180px; height:109px;" 
+							   src="http://www.worldnomads.com/Media/Default/email-images/nn-issue-1-2015/germany.jpg"/>
+						</a>
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+
+					<tr>
+					  <td class="left-text-pad right-text-pad" 
+						  style="background-color:#ffffff; padding-top:10px; height:100px;">
+						  
+						<p style="font-size:12px; margin-bottom: 6px;">
+						  <strong>
+							<a class="link" 
+							   href="https://www.worldnomads.com/travel-safety/Germany/Ticket-Scams-Fake-Inspectors-and-Pickpockets?utm_campaign=nomadsnews-1-sep&utm_medium=email&utm_source=worldnomads&utm_content=nomadsnews">
+							  Oktoberfest Travel Safety 
+							</a>
+						  </strong>
+						</p>
+						  
+						<p style="font-size:12px;"> 
+						  Survive ticket scams, fake inspectors etc. 
+						</p>
+						  
+					  </td>
+					  <td class="expander"></td>
+					</tr>
+					  
+				  </table>
+				</td>
+				<!-- PICK 3 END -->
+			
+				  
+			  </tr>
+			</table>
+			<!-- Pick of the week END -->
+			
+          
+        
+      </td>
+    </tr>
+  </table> 
+<!-- Content END -->
+          
+          
+
+				<table class="container content-area">
+					<tr>
+					  <td>
+
+						<!-- footer  -->
+						<table class="row footer">
+						  <tr>
+							<td class="last">
+							  <table class="twelve columns">
+								<tr>
+								  <td style="background: #343333; margin-bottom: 0;">
+									<center>
+									  <h4 class="center">
+									    We&rsquo;re  a social bunch, join in:
+									  </h4>
+									</center>
+								  </td>
+								  <td class="expander"></td>
+								</tr>
+							  </table>
+							</td>
+						  </tr>
+						</table>
+
+					  </td>
+					</tr>
+				  </table>
+			
+				  <table class="container content-area">
+					<tr>
+					  <td>
+
+						<!-- footer  -->
+						<table class="row footer" 
+							   style="background-color: #464743;">
+						  <tr>
+							<td class="wrapper last offset-by-one">
+							  <table class="ten columns">
+								<tr>
+									
+								  <td>
+									<center>
+										
+									  <a href="http://www.facebook.com/worldnomads" 
+										 target="_blank" 
+										 class="social-element">
+										  
+										  <img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-faceboook.png" 
+											   alt="Facebook" />
+									  </a>
+									  <a href="http://twitter.com/WorldNomads" 
+										 target="_blank" 
+										 class="social-element">
+										  
+										  <img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-twitter.png" 
+											   alt="Twitter" />
+									  </a>
+									  <a href="http://instagram.com/worldnomads" 
+										 target="_blank" 
+										 class="social-element">
+										  
+										  <img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-instagram.png" 
+											   alt="Instagram" />
+									  </a>
+									  <a href="http://www.youtube.com/user/WorldNomadsTV" 
+										 target="_blank" 
+										 class="social-element">
+										  
+										  <img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-youtube.png" 
+											   alt="Youtube" />
+									  </a>
+									  <a href="https://plus.google.com/102411813669197613553/posts" 
+										 target="_blank" 
+										 class="social-element">
+										  
+										  <img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-google-plus.png" 
+											   alt="Google Plus" />
+									  </a>
+									  <a href="http://www.flickr.com/groups/worldnomads/" 
+										 target="_blank" 
+										 class="social-element">
+										  
+										  <img src="http://www.worldnomads.com/Media/Default/email-images/default/wn-flickr.png" 
+											   alt="Fickr" />
+									  </a>
+										
+									</center>
+								  </td>
+								  <td class="expander"></td>
+									
+								</tr>
+							  </table>         
+							</td>
+						  </tr>
+						</table>
+
+					  </td>
+					</tr>
+				  </table>
+					
+				  
+			</center>  
+          </td>
+       </tr>
+   </table>
+   
+</body>  
+</html>
