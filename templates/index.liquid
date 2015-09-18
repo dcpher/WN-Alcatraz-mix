@@ -2,13 +2,22 @@
 
 <!-- Hero Content Panel Start -->
 <div class="hero-content-panel" id="home">
-  <div class="row">  
+  <div class="row small-collapse medium-uncollapse">  
+  <div class="small-12 medium-4 large-4 columns left">
+      <div id="homeheropromo">
+        <!-- Promotion -->
+        <h2>Explore your boundaries</h2></a>
+        <p class="intro"><a href="/travel-insurance/" style="font-size: 1.4rem; line-height: 1.8rem; color: #ffffff;">Travel insurance</a> for independent travellers. Buy, extend &amp; claim online, even after you’ve left home.</p>
+        <!-- Promotion END -->
+      </div>
+    </div>  
+    
     <div class="small-12 medium-7 large-6 columns right">
       <div id="wnqqcalculator" class="white">
-        <h1>Get your travel insurance</h1>
+        <h1 style="font-size: 28px;">Travel Insurance. Simple &amp; flexible.</h1>
         <script async='' src='//cdn.worldnomads.net/scripts/custom/wng.cachedGetPartnerWidgetResponse.js?loadWithPanelExpanded=true&excludeStyles=true&extractCampaignCodeFromUrl=true'></script>
         <div id='wn-insurance-quote-editor'></div>
-        <div class="trustedby">
+       <div class="trustedby">
           <p>Trusted by:</p>
           <a href="http://www.lonelyplanet.com/travel-insurance" target="_blank"><img src="http://www.worldnomads.com/Media/Default/TravelInsuranceImages/PartnerLogos/lonley-planet-logo-dark.png" alt="Lonely Planet" class="lp" /></a>
           <img src="http://www.worldnomads.com/Media/Default/TravelInsuranceImages/PartnerLogos/nat-geo-logo-dark.png" alt="Nat Geo Adventure"  class="natgeo" />
@@ -18,21 +27,7 @@
         </div>
       </div>
     </div>
-    <div class="small-12 medium-4 large-4 columns left">
-      <div id="homeheropromo">
-        <!-- Promotion -->
-        <ul class="breadcrumb">
-          <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/learn" itemprop="url"><span itemprop="title">Learn</span></a></li>
-          <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/learn/travel-film/travel-film-scholarship-2015" itemprop="url"><span itemprop="title">Travel Film 2015</span></a></li>
-        </ul>
-        
-        <a href="http://www.worldnomads.com/learn/travel-film/travel-film-scholarship-2015">
-        <h2>Go on a filmmaking assignment to Colombia!</h2></a>
-        <p class="intro">Plus be mentored by professional filmmaker,<br/> Brian Rapsey.</p>
-        <a class="cta-button-primary grey" href="//www.worldnomads.com/learn/travel-film/travel-film-scholarship-2015">Apply Now</a>
-        <!-- Promotion END -->
-      </div>
-    </div>
+    
   </div>
 </div>
 <!-- Hero Content Panel End -->       
@@ -42,24 +37,30 @@
   /* Add link to Desktop Image */
   @media all and (min-width: 860px) {
     #home {
-      background-image: url('/Media/Default/hero/travel-film-2015-large.jpg');
-      background-position: center;
+      background-image: url('/Media/Default/HomePageImages/hp-lombok-hero-full.jpg');
+      background-size: cover;
+      background-position: center left;
       min-height: 600px;
     }
+    #homeheropromo { margin-top: 140px;}
   }
   /* Add link to Tablet Image */
   @media all and (max-width: 860px) {
     #home {
-      background-image: url('/Media/Default/hero/travel-film-2015-medium.jpg');
-      min-height: 440px;
+      background-image: url('/Media/Default/HomePageImages/hp-lombok-hero-tablet.jpg');
+      min-height: 640px;
     }
+    #homeheropromo { margin-top: 140px;}
   }
   /* Add link to Mobile Image */
   @media all and (max-width: 640px) {
     #home {
-      background-image: url('/Media/Default/hero/travel-film-2015-small.jpg');
-      min-height: 1060px;
+      background-image: url('/Media/Default/HomePageImages/hp-lombok-hero-mobile.jpg');
+      min-height: 1400px;
+      background-position: top left;
     }
+    #homeheropromo { margin-top: 30px;}
+    #wnqqcalculator { margin-top: 10px;}
   }
 
 </style>
@@ -71,7 +72,7 @@
   <div class="row">
     <div class="small-12 large-10 large-centered column">
       <div class="section">
-          <h3>Discover insights, stories &amp; answers for your trip:</h3>
+          <h3>Discover insights, stories &amp; answers for your trip</h3>
           <script>
             (function() {
               var cx = '016598410852319007988:ymzl3vno0va';
@@ -84,9 +85,11 @@
               s.parentNode.insertBefore(gcse, s);
             })();
 
+            /* Add placeholder element on load */
             $("body").on('DOMNodeInserted', 'input[id="gsc-i-id1"]', function(){
-              $(this).attr("placeholder", "eg: Thailand, Motorbikes, Photography");
+                $(this).attr("placeholder", "eg: Thailand, Motorbikes, Photography");
             })
+
 
           </script>
           <gcse:searchbox-only></gcse:searchbox-only>
@@ -94,11 +97,8 @@
     </div>
   </div>
 </div>
-
-<script>
-
-</script>
 <!-- Search Panel End -->
+
 
 
 <!-- Content Area Start -->

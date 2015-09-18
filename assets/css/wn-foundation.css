@@ -114,7 +114,7 @@ select {
 .row {
   width: 95%;
   margin: 0 auto;
-  max-width: 84.375rem; }
+  max-width: 71.875rem; }
   .row:before, .row:after {
     content: " ";
     display: table; }
