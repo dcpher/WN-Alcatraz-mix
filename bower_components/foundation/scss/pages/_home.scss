@@ -14,6 +14,12 @@
 
         .promoPanel-media {
             position: relative;
+			min-height: 195px;
+			
+			@media #{$medium-up} {
+            	min-height: auto;
+        	}
+
         }
 
         .iconBadge {
@@ -36,15 +42,25 @@
         }
 
         &-cta {
-            margin: 20px 0;
+			margin: 10px 0 20px 0;
+			
+			@media #{$large-up} {
+            	margin: 0;
+        	}
         }
 
         &-benefits {
-            margin-top: 30px;
+            display: none;
+			margin-top: 30px;
             font-size: 12px;
+			
+			@media #{$large-up} {
+            	display: block;
+        	}
 
             > li {
                 width: auto;
+				padding-bottom: 0;
             }
         }
 
@@ -54,5 +70,7 @@
             height: 21px;
             margin-right: 5px;
         }
+		
+		
     }
 }

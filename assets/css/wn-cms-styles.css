@@ -2006,3 +2006,94 @@ div.grey-pattern {
     padding: 1rem 0; }
   #article-content blockquote.tweet-quote button.base-button {
     margin-bottom: 0; }
+
+.promoPanel {
+  display: table;
+  width: 100%;
+  background-color: #ededed;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover; }
+  .promoPanel-media, .promoPanel-content {
+    display: block;
+    padding: 20px; }
+  .promoPanel-content {
+    background-color: rgba(68, 70, 66, 0.9);
+    color: #ffffff; }
+    @media only screen and (min-width:40.063em) {
+      .promoPanel-content {
+        display: table-cell;
+        vertical-align: middle;
+        width: 70%; } }
+    @media only screen and (min-width:64.063em) {
+      .promoPanel-content {
+        width: 50%; } }
+
+.iconBadge {
+  width: 66px;
+  height: 66px;
+  background-color: rgba(68, 70, 66, 0.9); }
+  .iconBadge--primary {
+    background-color: rgba(41, 122, 198, 0.9); }
+  .iconBadge--secondary {
+    background-color: rgba(255, 156, 0, 0.9); }
+  .iconBadge--tertiary {
+    background-color: rgba(222, 83, 70, 0.9); }
+  .iconBadge-content {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    color: #ffffff;
+    font-size: 9px;
+    text-transform: uppercase;
+    text-align: center; }
+    .iconBadge-content > img {
+      margin-bottom: 5px; }
+
+/* Add link to Desktop Image */
+.home-headerPromo .promoPanel {
+  margin-bottom: 20px;
+  background-image: url('/Media/Default/promo/nepal.jpg'); }
+.home-headerPromo .promoPanel-media {
+  position: relative;
+  min-height: 195px; }
+  @media only screen and (min-width:40.063em) {
+    .home-headerPromo .promoPanel-media {
+      min-height: auto; } }
+.home-headerPromo .iconBadge {
+  position: absolute;
+  top: 0;
+  left: 0; }
+.home-headerPromo .iconBadge-content {
+  width: 30px;
+  height: 40px; }
+.home-headerPromo .breadcrumb {
+  margin-top: 20px; }
+.home-headerPromo-title {
+  color: #ffffff; }
+.home-headerPromo-cta {
+  margin: 10px 0 20px 0; }
+  @media only screen and (min-width:64.063em) {
+    .home-headerPromo-cta {
+      margin: 0; } }
+.home-headerPromo-benefits {
+  display: none;
+  margin-top: 30px;
+  font-size: 12px; }
+  @media only screen and (min-width:64.063em) {
+    .home-headerPromo-benefits {
+      display: block; } }
+  .home-headerPromo-benefits > li {
+    width: auto;
+    padding-bottom: 0; }
+.home-headerPromo-benefitsIcon {
+  width: 27px;
+  max-width: 27px;
+  height: 21px;
+  margin-right: 5px; }
