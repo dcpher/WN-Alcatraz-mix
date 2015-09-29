@@ -1,0 +1,30 @@
+// promoPanel - SMACCS based module
+
+.promoPanel {
+    display: table;
+    width: 100%;
+    background-color: $color-light-grey;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% auto;
+
+    &-media,
+    &-content {
+        display: block;
+        padding: $default-padding;
+    }
+
+    &-content {
+        background-color: rgba($color-dark-grey, 0.9);
+        color: $color-white;
+        @media #{$medium-up} {
+            display: table-cell;
+            vertical-align: middle;
+            width: 70%;
+        }
+        @media #{$large-up} {
+            width: 50%;
+        }
+    }
+
+}

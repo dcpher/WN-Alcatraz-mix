@@ -1,0 +1,60 @@
+  /* Add link to Desktop Image */
+// .grey{
+// background-color: #464743;
+// }
+
+.home {
+
+    &-headerPromo {
+
+        .promoPanel {
+            margin-bottom: 20px;
+            background-image: url('/Media/Default/promo/nepal.jpg');
+        }
+
+        .promoPanel-media {
+            position: relative;
+        }
+
+        .iconBadge {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .iconBadge-icon {
+            width: 31px;
+            height: 25px;
+            background-image: url('/Media/Default/promo/photo.png');
+            background-repeat: no-repeat;
+        }
+
+        .breadcrumb {
+            margin-top: 20px;
+        }
+
+        &-title {
+            color: $color-white;
+        }
+
+        &-cta {
+            margin: 20px 0;
+        }
+
+        &-benefits {
+            margin-top: 30px;
+            font-size: 12px;
+
+            > li {
+                width: auto;
+            }
+        }
+
+        &-benefitsIcon {
+            width: 27px;
+            max-width: 27px;
+            height: 21px;
+            margin-right: 5px;
+        }
+    }
+}
