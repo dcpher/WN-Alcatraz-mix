@@ -2062,7 +2062,7 @@ div.grey-pattern {
   background-image: url('/Media/Default/promo/nepal.jpg'); }
 .home-headerPromo .promoPanel-media {
   position: relative;
-  min-height: 195px; }
+  min-height: 280px; }
   @media only screen and (min-width:40.063em) {
     .home-headerPromo .promoPanel-media {
       min-height: auto; } }
