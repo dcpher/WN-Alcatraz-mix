@@ -1,0 +1,26 @@
+// ABTest - Trust Pilot Widget: 21.10.15
+
+.insurance {
+
+    &-trustPilot {
+
+        &-desktop {
+            display: none;
+
+            @media #{$medium-up} {
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        &-mobile {
+            display: block;
+
+            @media #{$medium-up} {
+                display: none;
+            }
+        }
+
+    }
+
+}
