@@ -1,0 +1,135 @@
+
+
+{% block content %} 
+<!-- Hero Content Panel Start -->
+<div class="header-panel blue-panel" id="campaign">
+  <div class="row" id="article-header">  
+    <div class="small-12 medium-6 large-6 columns">
+      <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <ul class="breadcrumb">
+          <li><a href="/">World Nomads</a></li>
+          <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/travel-insurance" itemprop="url"><span itemprop="title">Travel Insurance</span></a></li>
+        </ul>
+      </div>
+      <h1>Save 10% on your travel insurance</h1>
+      <p class="highlight">with the promo code <strong>GOPHOTO!</strong></p>
+    </div>    
+
+  </div>
+</div>
+<!-- Hero Content Panel End -->   
+
+<!-- QQW Panel Start -->
+<div class="content-panel" id="">
+  <div class="row">
+    <div class="small-12 medium-7 column">
+      <h3>Don’t let anything get in the way of your next adventure.</h3>
+      <p>Get covered for the things you love to do when you travel.</p>
+      <p>Trusted by:</p>
+      
+      <p></p>
+    </div>
+    <div class="small-12 medium-5 column">
+      
+      <div id="wnqqcalculator" class="blue">
+        <h1>Get a quote</h1>
+        <script async='' src='//cdn.worldnomads.net/scripts/custom/wng.cachedGetPartnerWidgetResponse.js?loadWithPanelExpanded=true&excludeStyles=true&extractCampaignCodeFromUrl=true'></script>
+        <div id='wn-insurance-quote-editor'></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- QQW Panel End -->
+
+   
+<!-- 3 Panel Links -->
+<div class="content-panel" id="">
+  <div class="row">
+    <div class="small-12 medium-4 column">
+      <h4>Make a difference when you travel</h4>
+      <p>Help fund community development projects when you buy travel insurance with us.</p>
+    </div>
+    <div class="small-12 medium-4 column">
+      <h4>Ask the travel community</h4>
+      <p>Have a travel question? Tap into the travel smarts from locals and other nomads.</p>
+    </div>
+    <div class="small-12 medium-4 column">
+      <h4>Explore your world with confidence</h4>
+      <p>Get the latest advice, alerts and essential travel information for your next trip.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Background Header Image CSS Start  -->
+<style>
+  /* Add link to Desktop Image */
+@media all and (min-width: 860px) {
+  #campaign {
+    background-image: url('http://www.worldnomads.com/Media/Default/Partners/gapyear/backpackers-hiking-full.jpg');
+    background-position: top center;
+    min-height: 400px;
+    padding-bottom: 40px;
+  }
+}
+/* Add link to Tablet Image */
+@media all and (max-width: 860px) {
+  #campaign {
+    background-image: url('http://www.worldnomads.com/Media/Default/Partners/gapyear/backpackers-hiking-tablet.jpg');
+    min-height: 440px;
+     padding-bottom: 40px;
+    padding-bottom: 40px;
+ }
+}
+/* Add link to Mobile Image */
+@media all and (max-width: 640px) {
+  #campaign {
+    background-image: url('http://www.worldnomads.com/Media/Default/Partners/gapyear/backpackers-hiking-mobile.jpg');
+    padding-bottom: 150px;
+  }
+}
+
+/* QQW Styles */
+#wnqqcalculator.blue {
+  background: #297ac6;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+#campaign #wnqqcalculator {
+  margin-top: 110px;
+}
+.hero-content-panel p, .hero-content-panel a {
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+#wnqqcalculator #qqc .input-group.country-of-residence input, #wnqqcalculator #qqc .input-group.departure-date input, #wnqqcalculator #qqc .input-group.destination input, #wnqqcalculator #qqc .input-group.province input, #wnqqcalculator #qqc .input-group.return-date input, #wnqqcalculator #qqc .input-group.traveller-age input {
+  border: 1px solid #a4a4a4;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#wnqqcalculator.blue h1 {
+  line-height: 32px;
+  font-size: 32px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+
+  
+@media all and (max-width: 640px) {
+  #wnqqcalculator {
+    margin-top: 50px;
+  }
+}
+ 
+</style>
+<!-- Background Header Image CSS End -->
+
+<!-- Main Content Area End -->
+
+{% endblock %}
