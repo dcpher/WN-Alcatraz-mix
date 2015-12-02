@@ -1,9 +1,69 @@
+{% block content %}
+
+<style>
+/*  Set header default styles incase everything breaks LOL */
+  div.film { display: none; }
+    /* Add link to Desktop Image */
+  @media all and (min-width: 860px) {
+    #campaign {
+      background-image: url('http://www.worldnomads.com/Media/Default/Partners/gapyear/backpackers-hiking-full.jpg');
+      background-position: center center; background-repeat: no-repeat; background-size: cover; min-height: 400px; padding-bottom: 40px;
+    }
+  }
+  /* Add link to Tablet Image */
+  @media all and (max-width: 860px) {
+    #campaign {
+      background-image: url('http://www.worldnomads.com/Media/Default/Partners/gapyear/backpackers-hiking-tablet.jpg');
+      min-height: 440px; padding-bottom: 40px; padding-bottom: 40px;
+   }
+  }
+  /* Add link to Mobile Image */
+  @media all and (max-width: 640px) {
+    #campaign {
+      background-image: url('http://www.worldnomads.com/Media/Default/Partners/gapyear/backpackers-hiking-mobile.jpg');
+      padding-bottom: 150px;
+    }
+  }
+</style>
+
+<!-- PHOTO Campaign Header Style -->
+<style class="photo campaign-style">
+  @media all and (min-width: 40em) {
+    #campaign { background-image: url('');}
+  }
+  @media all and (max-width: 64em) {
+    #campaign { background-image: url('');}
+  }
+  @media all and (max-width: 40em) {
+    #campaign { background-image: url('');}
+  }
+  div.photo { display: block; }
+  div.film { display: none; }
+  #benefits-bar { background: #297ac6 !important no-repeat center center; background-size: cover; }
+  #wnqqcalculator, #benefits-bar { background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_blue.jpg) !important;}
+</style>
+
+<!-- FILM Campaign Header Style -->
+<style class="film campaign-style">
+  @media all and (min-width: 40em) {
+    #campaign { background-image: url('');}
+  }
+  @media all and (max-width: 64em) {
+    #campaign { background-image: url('');}
+  }
+  @media all and (max-width: 40em) {
+    #campaign { background-image: url('');}
+  }
+  div.film { display: block; }
+  div.photo { display: none; }
+  #benefits-bar { background: #61398b !important no-repeat center center; background-size: cover; }
+  #wnqqcalculator, #benefits-bar { background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_purple.jpg) !important;}
+</style>
 
 
-{% block content %} 
 <!-- Hero Content Panel Start -->
-<div class="header-panel blue-panel" id="campaign">
-  <div class="row" id="article-header">  
+<div class="header-panel dark-grey-panel" id="campaign">
+  <div class="row" id="article-header">
     <div class="small-12 medium-6 large-6 columns">
       <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
         <ul class="breadcrumb">
@@ -11,16 +71,38 @@
           <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/travel-insurance" itemprop="url"><span itemprop="title">Travel Insurance</span></a></li>
         </ul>
       </div>
-      <h1>Save 10% on your travel insurance</h1>
-      <p class="highlight">with the promo code <strong>GOPHOTO!</strong></p>
+      <div class="photo">
+        <h1>Save 10% on your travel insurance</h1>
+        <p class="highlight">with the promo code <strong>GOPHOTO!</strong></p>
+      </div>
+      <div class="film">
+        <h1>Save 10% on your travel insurance</h1>
+        <p class="highlight">with the promo code <strong>GOFILM!</strong></p>
+      </div>
+
     </div>
 
   </div>
 </div>
 <!-- Hero Content Panel End -->
 
-<!-- Benefits Bar -->
 
+<!-- Header Image switch -->
+<script>
+  $(function() {
+    var $destStyleTags = $("style.campaign-style");
+    var targetHash = window.location.hash;
+    var targetClass = targetHash.substring(1, targetHash.length).toLowerCase();
+    $destStyleTags.each(function() {
+      var $this = $(this);
+      if (!$this.hasClass(targetClass)) {
+        $this.remove();
+      }
+    });
+  });
+</script>
+
+<!-- Benefits Bar -->
 <div class="light blue" id="benefits-bar">
   <div class="row">
     <ul class="large-block-grid-4 medium-block-grid-4 small-block-grid-2">
@@ -38,7 +120,12 @@
   <div class="row">
     <div class="small-12 medium-6 large-7 column">
       <h3>Make sure you pack your travel insurance &amp; get covered for the things you love to do when you travel.</h3>
-      <p>Make sure you pack your travel insurance &amp; get covered for the things you love to do when you travel.</p>
+      <p>World Nomads provides coverage for:</p>
+      <ul class="square">
+        <li>over 200 of your favourite adventures sports and activities</li>
+        <li>your digital gear including cameras, laptops and smartphones</li>
+        <li>when accidents, serious illnesses and certain events disrupt your travels</li>
+      </ul>
       <p>&nbsp;</p>
       <p>Trusted by:</p>
       <ul class="large-block-grid-5 medium-block-grid-3 small-block-grid-4">
@@ -115,31 +202,7 @@
 
 <!-- Background Header Image CSS Start  -->
 <style>
-  /* Add link to Desktop Image */
-@media all and (min-width: 860px) {
-  #campaign {
-    background-image: url('http://www.worldnomads.com/Media/Default/Partners/gapyear/backpackers-hiking-full.jpg');
-    background-position: top center;
-    min-height: 400px;
-    padding-bottom: 40px;
-  }
-}
-/* Add link to Tablet Image */
-@media all and (max-width: 860px) {
-  #campaign {
-    background-image: url('http://www.worldnomads.com/Media/Default/Partners/gapyear/backpackers-hiking-tablet.jpg');
-    min-height: 440px;
-     padding-bottom: 40px;
-    padding-bottom: 40px;
- }
-}
-/* Add link to Mobile Image */
-@media all and (max-width: 640px) {
-  #campaign {
-    background-image: url('http://www.worldnomads.com/Media/Default/Partners/gapyear/backpackers-hiking-mobile.jpg');
-    padding-bottom: 150px;
-  }
-}
+
 
 /* QQW Styles */
 #qqw-content-panel {
@@ -181,6 +244,10 @@
 .feature-box .bottom {
   min-height: 100px;
 }
+
+  ul.square {
+    list-style: square outside none;
+  }
 </style>
 <!-- Background Header Image CSS End -->
 
