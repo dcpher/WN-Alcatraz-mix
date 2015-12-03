@@ -2,7 +2,7 @@
 
 <style>
 /*  Set header default styles incase everything breaks LOL */
-  div.film { display: none; }
+  p.film, p.food, p.write, p.curious, p.wild { display: none; }
     /* Add link to Desktop Image */
   @media all and (min-width: 860px) {
     #campaign {
@@ -37,9 +37,9 @@
   @media all and (max-width: 40em) {
     #campaign { background-image: url('');}
   }
-  div.photo { display: block; }
-  div.film { display: none; }
-  #benefits-bar { background: #297ac6 !important no-repeat center center; background-size: cover; }
+  p.photo { display: block; }
+  p.film, p.food, p.write, p.curious, p.wild { display: none; }
+  #benefits-bar { background: no-repeat center center #297ac6 !important; background-size: cover; }
   #wnqqcalculator, #benefits-bar { background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_blue.jpg) !important;}
 </style>
 
@@ -54,12 +54,80 @@
   @media all and (max-width: 40em) {
     #campaign { background-image: url('');}
   }
-  div.film { display: block; }
-  div.photo { display: none; }
-  #benefits-bar { background: #61398b !important no-repeat center center; background-size: cover; }
+  p.film { display: block; }
+  p.photo, p.food, p.write, p.curious, p.wild { display: none; }
+  #benefits-bar { background: no-repeat center center #61398b !important; background-size: cover; }
   #wnqqcalculator, #benefits-bar { background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_purple.jpg) !important;}
 </style>
 
+<!-- FOOD Campaign Header Style -->
+<style class="food campaign-style">
+  @media all and (min-width: 40em) {
+    #campaign { background-image: url('');}
+  }
+  @media all and (max-width: 64em) {
+    #campaign { background-image: url('');}
+  }
+  @media all and (max-width: 40em) {
+    #campaign { background-image: url('');}
+  }
+  p.food { display: block; }
+  p.photo, p.film, p.write, p.curious, p.wild { display: none; }
+  #benefits-bar { background: no-repeat center center#de5346 !important; background-size: cover; }
+  #wnqqcalculator, #benefits-bar { background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_red.jpg) !important;}
+</style>
+
+
+<!-- WRITE Campaign Header Style -->
+<style class="write campaign-style">
+  @media all and (min-width: 40em) {
+    #campaign { background-image: url('');}
+  }
+  @media all and (max-width: 64em) {
+    #campaign { background-image: url('');}
+  }
+  @media all and (max-width: 40em) {
+    #campaign { background-image: url('');}
+  }
+  p.write { display: block; }
+  p.photo, p.film, p.food, p.curious, p.wild { display: none; }
+  #benefits-bar { background: no-repeat center center #60b7a9 !important; background-size: cover; }
+  #wnqqcalculator, #benefits-bar { background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_teal.jpg) !important;}
+</style>
+
+<!-- CURIOUS Campaign Header Style -->
+<style class="curious campaign-style">
+  @media all and (min-width: 40em) {
+    #campaign { background-image: url('');}
+  }
+  @media all and (max-width: 64em) {
+    #campaign { background-image: url('');}
+  }
+  @media all and (max-width: 40em) {
+    #campaign { background-image: url('');}
+  }
+  p.curious { display: block; }
+  p.photo, p.film, p.food, p.write, p.wild { display: none; }
+  #benefits-bar { background: no-repeat center center #61398b !important; background-size: cover; }
+  #wnqqcalculator, #benefits-bar { background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_purple.jpg) !important;}
+</style>
+
+<!-- WILD Campaign Header Style -->
+<style class="wild campaign-style">
+  @media all and (min-width: 40em) {
+    #campaign { background-image: url('');}
+  }
+  @media all and (max-width: 64em) {
+    #campaign { background-image: url('');}
+  }
+  @media all and (max-width: 40em) {
+    #campaign { background-image: url('');}
+  }
+  p.wild { display: block; }
+  p.photo, p.film, p.food, p.write, p.curious { display: none; }
+  #benefits-bar { background: no-repeat center center #297ac6 !important; background-size: cover; }
+  #wnqqcalculator, #benefits-bar { background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_blue.jpg) !important;}
+</style>
 
 <!-- Hero Content Panel Start -->
 <div class="header-panel dark-grey-panel" id="campaign">
@@ -71,13 +139,13 @@
           <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/travel-insurance" itemprop="url"><span itemprop="title">Travel Insurance</span></a></li>
         </ul>
       </div>
-      <div class="photo">
-        <h1>Save 10% on your travel insurance</h1>
-        <p class="highlight">with the promo code <strong>GOPHOTO!</strong></p>
-      </div>
-      <div class="film">
-        <h1>Save 10% on your travel insurance</h1>
-        <p class="highlight">with the promo code <strong>GOFILM!</strong></p>
+      <h1>Save 10% on your travel insurance</h1>
+      <p class="highlight photo">with the promo code <strong>GOPHOTO!</strong></p>
+      <p class="highlight film">with the promo code <strong>GOFILM!</strong></p>
+      <p class="highlight food">with the promo code <strong>GOEAT!</strong></p>
+      <p class="highlight write">with the promo code <strong>GOWRITE!</strong></p>
+      <p class="highlight curious">with the promo code <strong>BECURIOUS!</strong></p>
+      <p class="highlight wild">with the promo code <strong>BEWILD!</strong></p>
       </div>
 
     </div>
