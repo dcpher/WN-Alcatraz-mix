@@ -1,0 +1,272 @@
+.section-inner {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.styleGuide {
+    padding-top: 90px;
+    padding-bottom:40px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    // Base overrides: custom until implemented across the site
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 44px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    h4, h5, h6 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+
+    small {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .panel {
+        margin-bottom: 0;
+    }
+
+    &-head {
+        @extend .section-inner;
+    }
+
+    &-menu {
+        margin-left: 0;
+        margin-bottom: 0;
+
+        > li {
+            display: inline-block;
+            margin-right: 4px;
+
+            &:after {
+                margin-left: 4px;
+                content: '|';
+            }
+
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &-intro {
+        @extend .section-inner;
+        background-color: $color-light-grey;
+    }
+
+    &-introCopy {
+        margin-bottom: 30px;
+    }
+
+    .styleGuide-brandbook,
+    .styleGuide-logotypes {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    &-logos {
+        @extend .section-inner;
+        background-color: $color-dark-grey;
+    }
+
+    &-logosTitle,
+    &-logosCopy {
+        color: $color-white;
+    }
+
+    &-logosCta {
+        margin-bottom: 10px;
+    }
+
+    &-logosHoriz {
+        max-width: 456px;
+        margin-top: 40px;
+    }
+
+    &-logosVert {
+        max-width: 259px;
+        margin-top: 40px;
+    }
+
+    &-logosCopy {
+        margin-top: 16px;
+        color: $color-white;
+
+        strong {
+            display: block;
+        }
+    }
+
+    &-colors {
+        @extend .section-inner;
+    }
+
+    .styleGuide-swatches {
+        margin-top: 40px;
+
+        .Swatch {
+            margin-bottom: 24px;
+        }
+
+        .Swatch-details {
+            min-width: 164px;
+        }
+    }
+
+    &-manhatten {
+        .Swatch-colour {
+            background-color: $color-dark-grey;
+        }
+    }
+
+    &-egyptian {
+        .Swatch-colour {
+            background-color: $color-orange;
+        }
+    }
+
+    &-carnivale {
+        .Swatch-colour {
+            background-color: $color-red;
+        }
+    }
+
+    &-twilight {
+        .Swatch-colour {
+            background-color: $color-purple;
+        }
+    }
+
+    &-island {
+        .Swatch-colour {
+            background-color: $color-teal;
+        }
+    }
+
+    &-tokyo {
+        .Swatch-colour {
+            background-color: $color-yellow;
+        }
+    }
+
+    &-text {
+        .Swatch-colour {
+            background-color: $color-text;
+        }
+    }
+
+    &-wnblue {
+        .Swatch-colour {
+            background-color: $color-blue;
+        }
+    }
+
+    &-type {
+        @extend .section-inner;
+        background-color: $color-light-grey;
+    }
+
+    &-typeCta {
+        margin-bottom: 30px;
+    }
+
+    .styleGuide-typeElement {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 4px;
+    }
+
+    &-pattern {
+        @extend .section-inner;
+    }
+
+    .styleGuide-patternExample {
+        margin-top: 50px;
+
+        > img {
+            width: 100px;
+            height: 100px;
+            margin-right: 16px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .styleGuide-patternScreen {
+        max-width: 256px;
+        margin-top: 30px;
+    }
+
+    &-photo {
+        @extend .section-inner;
+        background-color: $color-dark-grey;
+    }
+
+    .styleGuide-photoCta {
+        margin-bottom: 30px;
+    }
+
+    .styleGuide-photoWrapper {
+        margin-bottom: 40px;
+    }
+
+    &-photoTitle,
+    &-photoCopy {
+        color: $color-white;
+    }
+
+    &-photoImg {
+        margin-bottom: 16px;
+    }
+
+    &-example {
+        @extend .section-inner;
+    }
+
+    &-exampleCta {
+        margin-bottom: 30px;
+    }
+
+    &-exampleImg {
+        margin-bottom: 8px;
+
+        > img {
+            max-width: 170px;
+            border: 1px solid $color-black;
+        }
+    }
+
+    .styleGuide-exampleCta {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
