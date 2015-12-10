@@ -1,0 +1,328 @@
+{% block content %}
+
+<style>
+/*  Set header default styles incase everything breaks LOL */
+  p.film, p.food, p.write, p.photo, p.wild { display: none; }
+    /* Add link to Desktop Image */
+  @media all and (min-width: 860px) {
+    #campaign {
+      background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/curiousdesktop.jpg');
+      background-position: top center; background-repeat: no-repeat; background-size: cover; min-height: 500px; padding-bottom: 40px;
+    }
+  }
+  /* Add link to Tablet Image */
+  @media all and (max-width: 860px) {
+    #campaign {
+      background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/curioustablet.jpg');
+      min-height: 440px; padding-bottom: 40px; padding-bottom: 40px;
+   }
+  }
+  /* Add link to Mobile Image */
+  @media all and (max-width: 640px) {
+    #campaign {
+      background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/curiousmobile.jpg');
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 500px;
+      padding-bottom: 150px;
+    }
+  }
+</style>
+
+<!-- PHOTO Campaign Header Style -->
+<style class="photo campaign-style">
+  @media all and (min-width: 40em) {
+    #campaign {  background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/photodesktop.jpg'); background-position: center center;}
+  }
+  @media all and (max-width: 64em) {
+    #campaign {  background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/phototablet.jpg');}
+  }
+  @media all and (max-width: 40em) {
+    #campaign { background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/photomobile.jpg'); }
+  }
+  p.photo { display: block; }
+  p.film, p.food, p.write, p.curious, p.wild { display: none; }
+  #benefits-bar { background: no-repeat center center #297ac6 !important; background-size: cover; }
+  #wnqqcalculator, #benefits-bar { background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_blue.jpg) !important;}
+</style>
+
+<!-- FILM Campaign Header Style -->
+<style class="film campaign-style">
+  @media all and (min-width: 40em) {
+    #campaign {  background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/filmdesktop.jpg'); background-position: center center; }
+  }
+  @media all and (max-width: 64em) {
+    #campaign {  background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/filmtablet.jpg'); }
+  }
+  @media all and (max-width: 40em) {
+    #campaign { background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/filmmobile.jpg'); }
+  }
+  p.film { display: block; }
+  p.photo, p.food, p.write, p.curious, p.wild { display: none; }
+  #benefits-bar { background: no-repeat center center #61398b !important; background-size: cover; }
+  #wnqqcalculator, #benefits-bar { background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_purple.jpg) !important;}
+</style>
+
+<!-- FOOD Campaign Header Style -->
+<style class="food campaign-style">
+  @media all and (min-width: 40em) {
+    #campaign {  background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/fooddesktop.jpg'); }
+  }
+  @media all and (max-width: 64em) {
+    #campaign {  background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/foodtablet.jpg'); }
+  }
+  @media all and (max-width: 40em) {
+    #campaign {  background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/foodmobile.jpg'); }
+  }
+  p.food { display: block; }
+  p.photo, p.film, p.write, p.curious, p.wild { display: none; }
+  #benefits-bar { background: no-repeat center center#de5346 !important; background-size: cover; }
+  #wnqqcalculator, #benefits-bar { background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_red.jpg) !important;}
+</style>
+
+
+<!-- WRITE Campaign Header Style -->
+<style class="write campaign-style">
+  @media all and (min-width: 40em) {
+    #campaign {  background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/writingdesktop.jpg'); }
+  }
+  @media all and (max-width: 64em) {
+    #campaign {  background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/writingtablet.jpg'); }
+  }
+  @media all and (max-width: 40em) {
+    #campaign {  background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/writingmobile.jpg'); background-position: center; }
+  }
+  p.write { display: block; }
+  p.photo, p.film, p.food, p.curious, p.wild { display: none; }
+  #benefits-bar { background: no-repeat center center #60b7a9 !important; background-size: cover; }
+  #wnqqcalculator, #benefits-bar { background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_teal.jpg) !important;}
+</style>
+
+<!-- CURIOUS Campaign Header Style -->
+<style class="curious campaign-style">
+  @media all and (min-width: 40em) {
+    #campaign {  background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/curiousdesktop.jpg'); }
+  }
+  @media all and (max-width: 64em) {
+    #campaign {  background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/curioustablet.jpg'); }
+  }
+  @media all and (max-width: 40em) {
+    #campaign { background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/curiousmobile.jpg'); background-position: center; }
+  }
+  p.curious { display: block; }
+  p.photo, p.film, p.food, p.write, p.wild { display: none; }
+  #benefits-bar { background: no-repeat center center #61398b !important; background-size: cover; }
+  #wnqqcalculator, #benefits-bar { background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_purple.jpg) !important;}
+</style>
+
+<!-- WILD Campaign Header Style -->
+<style class="wild campaign-style">
+  @media all and (min-width: 40em) {
+    #campaign {  background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/wilddesktop.jpg'); }
+  }
+  @media all and (max-width: 64em) {
+    #campaign {  background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/wildtablet.jpg'); }
+  }
+  @media all and (max-width: 40em) {
+    #campaign { background-image: url('http://www.worldnomads.com/Media/Default/campaigns/Dec2015/wildmobile.jpg'); }
+  }
+  p.wild { display: block; }
+  p.photo, p.film, p.food, p.write, p.curious { display: none; }
+  #benefits-bar { background: no-repeat center center #297ac6 !important; background-size: cover; }
+  #wnqqcalculator, #benefits-bar { background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_blue.jpg) !important;}
+</style>
+
+<!-- Hero Content Panel Start -->
+<div class="header-panel dark-grey-panel" id="campaign">
+  <div class="row" id="article-header">
+    <div class="small-12 medium-6 large-6 columns">
+      <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <ul class="breadcrumb">
+          <li><a href="/">World Nomads</a></li>
+          <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/travel-insurance" itemprop="url"><span itemprop="title">Travel Insurance</span></a></li>
+        </ul>
+      </div>
+      <h1>Save 10% on your travel insurance</h1>
+      <p class="highlight photo">with the promo code <strong>GOPHOTO!</strong></p>
+      <p class="highlight film">with the promo code <strong>GOFILM!</strong></p>
+      <p class="highlight food">with the promo code <strong>GOEAT!</strong></p>
+      <p class="highlight write">with the promo code <strong>GOWRITE!</strong></p>
+      <p class="highlight curious">with the promo code <strong>BECURIOUS!</strong></p>
+      <p class="highlight wild">with the promo code <strong>BEWILD!</strong></p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- Hero Content Panel End -->
+
+
+<!-- Header Image switch -->
+<script>
+  $(function() {
+    var $destStyleTags = $("style.campaign-style");
+    var targetHash = window.location.hash;
+    var targetClass = targetHash.substring(1, targetHash.length).toLowerCase();
+    $destStyleTags.each(function() {
+      var $this = $(this);
+      if (!$this.hasClass(targetClass)) {
+        $this.remove();
+      }
+    });
+  });
+</script>
+
+<!-- Benefits Bar -->
+<div class="light blue" id="benefits-bar">
+  <div class="row">
+    <ul class="large-block-grid-4 medium-block-grid-4 small-block-grid-2">
+
+      <li class="evacuation-icon"><a href="/travel-insurance/travel-insurance-abroad">Buy when already overseas</a></li>
+      <li class="interruption-icon"><a href="/travel-insurance/extend-travel-insurance">Extend when your plans change</a></li>
+      <li class="activities-icon"><a href="/travel-insurance/adventure-activities">200+ adventure sports &amp; activities covered</a></li>
+      <li class="medical-icon"><a href="24hr-emergency-assistance">24/7 Emergency Assistance</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- QQW Panel Start -->
+<div class="content-panel" id="qqw-content-panel">
+  <div class="row">
+    <div class="small-12 medium-6 large-7 column">
+      <h3>Make sure you pack your travel insurance &amp; get covered for the things you love to do when you travel.</h3>
+      <p>World Nomads provides coverage for:</p>
+      <ul class="square">
+        <li>over 200 of your favourite adventures sports and activities</li>
+        <li>your digital gear including cameras, laptops and smartphones</li>
+        <li>when accidents, serious illnesses and certain events disrupt your travels</li>
+      </ul>
+      <p>&nbsp;</p>
+      <p>Trusted by:</p>
+      <ul class="large-block-grid-5 medium-block-grid-3 small-block-grid-4">
+        <li class="text-center">
+          <a href="http://www.lonelyplanet.com/travel-insurance" target="_blank" class="auto-size-img"><img alt="lonely planet logo" src="/Media/Default/TravelInsuranceImages/australia/lonley-planet-blue.png" class="auto-size-img"></a>
+        </li>
+        <li class="text-center">
+          <a href="http://www.roughguides.com/travel-insurance/" target="_blank"><img alt="rough guides logo" src="/Media/Default/TravelInsuranceImages/australia/rough-guides.png" class="auto-size-img"></a>
+        </li>
+        <li class="text-center">
+          <img alt="intepid logo" src="/Media/Default/TravelInsuranceImages/australia/intrepid.png" class="auto-size-img">
+        </li>
+      </ul>
+    </div>
+    <div class="small-12 medium-6 large-5 column">
+
+      <div id="wnqqcalculator" class="blue-panel blue-pattern">
+        <h1>Get a quote</h1>
+        <script async='' src='//cdn.worldnomads.net/scripts/custom/wng.cachedGetPartnerWidgetResponse.js?loadWithPanelExpanded=true&excludeStyles=true&extractCampaignCodeFromUrl=true'></script>
+        <div id='wn-insurance-quote-editor'></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- QQW Panel End -->
+
+
+<!-- 3 Panel Links -->
+<div class="row panels-wrapper">
+  <div class="large-4 medium-4 small-12 columns">
+    <div class="feature-box" style="background-image: url('//cdn.worldnomads.net/Media/Default/HomePageImages/jan14/Footprints-Feature-450x440.jpg');">
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://www.worldnomads.com/learn/travel-film/">Footprints</a>
+        </li>
+      </ul>
+      <a href="http://www.worldnomads.com/learn/travel-film/travel-film-scholarship-2015"><h4>Make a difference when you travel</h4></a>
+      <div class="bottom orange">
+        <p><a href="http://www.worldnomads.com/learn/travel-film/travel-film-scholarship-2015">Help fund community  projects when you buy our travel insurance.</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="large-4 medium-4 small-12 columns">
+    <div class="feature-box" style="background-image: url('http://cdn.worldnomads.net/Media/Default/HomePageImages/jan14/Stories-Feature-450x440.jpg');">
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://www.worldnomads.com/learn/travel-film/">Community</a>
+        </li>
+      </ul>
+      <a href="http://www.worldnomads.com/learn/travel-film/travel-film-scholarship-2015"><h4>Ask the travel community</h4></a>
+      <div class="bottom purple">
+        <p><a href="http://www.worldnomads.com/learn/travel-film/travel-film-scholarship-2015">Have a travel question? Tap into the travel smarts from locals and other nomads.</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="large-4 medium-4 small-12 columns">
+    <div class="feature-box" style="background-image: url('/Media/Default/campaigns/dec-2015/saftey-feature-450x440.jpg');">
+      <ul class="breadcrumb">
+        <li>
+          <a href="http://www.worldnomads.com/learn/travel-film/">Travel Safety</a>
+        </li>
+      </ul>
+      <a href="http://www.worldnomads.com/learn/travel-film/travel-film-scholarship-2015"><h4>Explore your world with confidence</h4></a>
+      <div class="bottom red">
+        <p><a href="http://www.worldnomads.com/learn/travel-film/travel-film-scholarship-2015">Get the latest advice, alerts and essential travel information for your next trip.</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Background Header Image CSS Start  -->
+<style>
+
+
+/* QQW Styles */
+#qqw-content-panel {
+  margin: 40px 0px;
+}
+.hero-content-panel p, .hero-content-panel a {
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+#wnqqcalculator #qqc .input-group.country-of-residence input, #wnqqcalculator #qqc .input-group.departure-date input, #wnqqcalculator #qqc .input-group.destination input, #wnqqcalculator #qqc .input-group.province input, #wnqqcalculator #qqc .input-group.return-date input, #wnqqcalculator #qqc .input-group.traveller-age input {
+  border: 1px solid #a4a4a4;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#wnqqcalculator h1 {
+  line-height: 32px;
+  font-size: 32px;
+  font-weight: normal;
+  color: #ffffff;
+}
+@media all and (max-width: 640px) {
+  #wnqqcalculator {
+    margin-top: 50px;
+  }
+}
+/* Benefits Bar */
+#benefits-bar .activities-icon {
+  padding-left: 4rem;
+  padding-right: 1rem;
+  padding-bottom: 0;
+  background-position: 5px -10px;
+  background-repeat: no-repeat;
+  min-height: 50px;
+  background-image: url('/Media/Default/campaigns/dec-2015/activities-icon.png');
+}
+/* Feature box styles */
+.feature-box .bottom {
+  min-height: 100px;
+}
+
+  ul.square {
+    list-style: square outside none;
+  }
+</style>
+<!-- Background Header Image CSS End -->
+
+<!-- Main Content Area End -->
+
+{% endblock %}
