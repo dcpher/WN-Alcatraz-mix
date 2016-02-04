@@ -2872,6 +2872,10 @@ footer .disclaimer {
     padding: 12px 50px 12px 24px; }
     .base-button.large:after, button.large:after, .button.large:after {
       top: 12px; }
+  .base-button.small, button.small, .button.small {
+    line-height: 1;
+    padding: 9px 30px 9px 12px;
+    font-size: 14px; }
   .base-button.expand, button.expand, .button.expand {
     width: 100%;
     padding: 4px 44px 4px 15px; }

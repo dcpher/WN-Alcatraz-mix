@@ -3562,6 +3562,10 @@ div.faq h4 {
     padding: 12px 50px 12px 24px; }
     .base-button.large:after, button.large:after, .button.large:after {
       top: 12px; }
+  .base-button.small, button.small, .button.small {
+    line-height: 1;
+    padding: 9px 30px 9px 12px;
+    font-size: 14px; }
   .base-button.expand, button.expand, .button.expand {
     width: 100%;
     padding: 4px 44px 4px 15px; }
@@ -4492,6 +4496,25 @@ div.grey-pattern {
     .iconBadge-content > img {
       margin-bottom: 5px; }
 
+.Swatch {
+  display: inline-block;
+  margin-right: 32px; }
+  .Swatch-colour, .Swatch-details {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 8px; }
+  .Swatch-colour {
+    width: 112px;
+    height: 112px;
+    margin-right: 16px; }
+  .Swatch-details {
+    margin-left: 0; }
+    .Swatch-details > li {
+      margin-bottom: 0; }
+      .Swatch-details > li:first-child {
+        margin-bottom: 8px;
+        font-weight: 600; }
+
 /* Add link to Desktop Image */
 .home-headerPromo .promoPanel {
   margin-bottom: 20px;
@@ -4533,6 +4556,141 @@ div.grey-pattern {
   max-width: 27px;
   height: 21px;
   margin-right: 5px; }
+
+.section-inner, .styleGuide-head, .styleGuide-intro, .styleGuide-logos, .styleGuide-colors, .styleGuide-type, .styleGuide-pattern, .styleGuide-photo, .styleGuide-example {
+  padding-top: 40px;
+  padding-bottom: 60px; }
+
+.styleGuide {
+  padding-top: 90px;
+  padding-bottom: 40px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .styleGuide h1 {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 24px; }
+  .styleGuide h2 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 24px;
+    margin-bottom: 24px; }
+  .styleGuide h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px; }
+  .styleGuide h4, .styleGuide h5, .styleGuide h6 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 8px; }
+  .styleGuide p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 8px;
+    margin-bottom: 16px; }
+  .styleGuide small {
+    font-size: 13px;
+    line-height: 16px; }
+  .styleGuide .panel {
+    margin-bottom: 0; }
+  .styleGuide-menu {
+    margin-left: 0;
+    margin-bottom: 0; }
+    .styleGuide-menu > li {
+      display: inline-block;
+      margin-right: 4px; }
+      .styleGuide-menu > li:after {
+        margin-left: 4px;
+        content: '|'; }
+      .styleGuide-menu > li:last-child:after {
+        display: none; }
+  .styleGuide-intro {
+    background-color: #ededed; }
+  .styleGuide-introCopy {
+    margin-bottom: 30px; }
+  .styleGuide .styleGuide-brandbook, .styleGuide .styleGuide-logotypes {
+    margin-right: 10px;
+    margin-bottom: 10px; }
+  .styleGuide-logos {
+    background-color: #444642; }
+  .styleGuide-logosTitle, .styleGuide-logosCopy {
+    color: #ffffff; }
+  .styleGuide-logosCta {
+    margin-bottom: 10px; }
+  .styleGuide-logosHoriz {
+    max-width: 456px;
+    margin-top: 40px; }
+  .styleGuide-logosVert {
+    max-width: 259px;
+    margin-top: 40px; }
+  .styleGuide-logosCopy {
+    margin-top: 16px;
+    color: #ffffff; }
+    .styleGuide-logosCopy strong {
+      display: block; }
+  .styleGuide .styleGuide-swatches {
+    margin-top: 40px; }
+    .styleGuide .styleGuide-swatches .Swatch {
+      margin-bottom: 24px; }
+    .styleGuide .styleGuide-swatches .Swatch-details {
+      min-width: 164px; }
+  .styleGuide-manhatten .Swatch-colour {
+    background-color: #444642; }
+  .styleGuide-egyptian .Swatch-colour {
+    background-color: #ff9c00; }
+  .styleGuide-carnivale .Swatch-colour {
+    background-color: #de5346; }
+  .styleGuide-twilight .Swatch-colour {
+    background-color: #61398b; }
+  .styleGuide-island .Swatch-colour {
+    background-color: #40c1ba; }
+  .styleGuide-tokyo .Swatch-colour {
+    background-color: #F8DB46; }
+  .styleGuide-text .Swatch-colour {
+    background-color: #222222; }
+  .styleGuide-wnblue .Swatch-colour {
+    background-color: #297ac6; }
+  .styleGuide-type {
+    background-color: #ededed; }
+  .styleGuide-typeCta {
+    margin-bottom: 30px; }
+  .styleGuide .styleGuide-typeElement {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 4px; }
+  .styleGuide .styleGuide-patternExample {
+    margin-top: 50px; }
+    .styleGuide .styleGuide-patternExample > img {
+      width: 100px;
+      height: 100px;
+      margin-right: 16px;
+      margin-bottom: 16px; }
+  .styleGuide .styleGuide-patternScreen {
+    max-width: 256px;
+    margin-top: 30px; }
+  .styleGuide-photo {
+    background-color: #444642; }
+  .styleGuide .styleGuide-photoCta {
+    margin-bottom: 30px; }
+  .styleGuide .styleGuide-photoWrapper {
+    margin-bottom: 40px; }
+  .styleGuide-photoTitle, .styleGuide-photoCopy {
+    color: #ffffff; }
+  .styleGuide-photoImg {
+    margin-bottom: 16px; }
+  .styleGuide-exampleCta {
+    margin-bottom: 30px; }
+  .styleGuide-exampleImg {
+    margin-bottom: 8px; }
+    .styleGuide-exampleImg > img {
+      max-width: 170px;
+      border: 1px solid #000000; }
+  .styleGuide .styleGuide-exampleCta {
+    margin-top: 20px;
+    margin-bottom: 30px; }
 
 .insurance-trustPilot-desktop {
   display: none; }
