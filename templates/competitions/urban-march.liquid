@@ -1,30 +1,9 @@
 
 {% block content %}
 
-<!-- Header -->
-<div class="header-panel red-panel" id="header-panel">
-  <div class="row" id="article-header">
-    <div class="small-12 medium-6 large-6 columns">
-      <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-        <ul class="breadcrumb">
-          <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/learn" itemprop="url"><span itemprop="title">Competitions</span></a></li>
-        </ul>
-      </div>
-      <h1>Win a European urban adventure</h1>
-      <p class="highlight">Get out of gridlock and go walk the grid in one of Europe’s most iconic cities</p>
-      <form action="#form" method="get">
-      <button class="base-button orange">Enter now</button>
-      </form>
-
-        <p class="small">This is open to US residents only.</p>
-
-    </div>
-
-  </div>
-</div>
-
+<!-- PAGE STYLES -->
 <style>
-
+/* ---- Header Section ---- */
 #article-content ul.breadcrumb {
   margin-top: 0px;
 }
@@ -43,14 +22,14 @@
     line-height: 1.2;
     font-weight: 100;
     -webkit-font-smoothing: antialiased;
-
   }
-    #article-header p.small {
+
+  #article-header p.small {
     color:#ffffff;
     margin-top: 60px;
-
-    }
+  }
 }
+
 @media all and (max-width: 860px) {
   #header-panel {
     background-image: url('/Media/Default/competitions/urban-march/header-image-medium.jpg');
@@ -58,18 +37,461 @@
     background-position: center top;
   }
 }
+
 @media all and (max-width: 500px) {
   #header-panel {
     background-image: url('/Media/Default/competitions/urban-march/header-image-small.jpg');
     background-position: center top;
   }
+}
 
+/* ---- Features Section ---- */
+.feature-box {
+  min-height: 250px;
+}
 
+.feature-box .bottom {
+  min-height: 40px
+}
+
+.feature-box.paris {
+  background-image: url('/Media/Default/competitions/urban-march/feature-box-1.jpg');
+  background-color: #999999;
+}
+
+.feature-box.london {
+  background-image: url('/Media/Default/competitions/urban-march/feature-box-2.jpg');
+  background-color: #999999;
+}
+
+.feature-box.rome {
+  background-image: url('/Media/Default/competitions/urban-march/feature-box-3.jpg');
+  background-color: #999999;
+}
+
+.feature-box.barcelona {
+  background-image: url('/Media/Default/competitions/urban-march/feature-box-4.jpg');
+  background-color: #999999;
+}
+
+.feature-box.berlin {
+  background-image: url('/Media/Default/competitions/urban-march/feature-box-5.jpg');
+  background-color: #999999;
+}
+
+.feature-box .bottom p, .feature-box-right-panel .bottom p {
+  margin-bottom:0;
+}
+.feature-box .bottom p a:after, .feature-box-right-panel .bottom p a:after {
+  font-family: WNI;
+  content: '\e60d';
+  margin: 0 2px;
+  display: inline;
+}
+
+/* ---- Countdown Widget ---- */
+#sidepannel #countbox #days, #sidepannel #countbox #hours, #sidepannel #countbox #mins { color: #de5346; }
+
+.importantdate .date { background-color: #de5346; }
+
+#partnership ul li{
+  padding:0;
+}
+
+#partnership .panel {
+  padding: 0.45rem 1.25rem 0 1.25rem;
+}
+
+#partnership p.small{
+  font-size:  12px;
+}
+
+.panels-wrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* ---- Entry Form Section ---- */
+#form .row .row{
+  margin-top :0.5rem;
+  margin-bottom :0.5rem;
+}
+
+form .small-12 {
+  margin: 0 0 10px 0;
+}
+
+.form {
+  background-color: #f4f4f4;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+/* Steps Styles */
+.steps0, .steps1 {
+  background-color: #f8ddda;
+}
+
+.steps2 {
+  background-color: #f2bab5;
+}
+
+.steps3 {
+  background-color: #eb9890;
+}
+
+.steps0, .steps1, .steps2, .steps3 {
+  margin-bottom: 1.25rem;
+  padding: 0rem;
+  color: #333;
+  max-height: 90px;
+  margin-bottom: 0px;
+}
+
+.steps0 .row, .steps1 .row, .steps2 .row, .steps3 .row{
+  padding: 1.6rem 3rem 0.5rem;
+  height: 90px;
+}
+
+.steps1 .row .large-3 p, .steps2 .row .large-3 p, .steps3 .row .large-3 p{
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 2.4rem;
+  margin-bottom: 0;
+}
+
+.steps2::before{
+  content: url(/Media/Default/competitions/urban-march/arrow-1.png);
+  float: left;
+  width: 30px;
+  height: 90px;
+}
+
+.steps3::before{
+  content: url(/Media/Default/competitions/urban-march/arrow-2.png);
+  float: left;
+  width: 30px;
+  height: 90px;
+}
+
+.steps {
+  overflow:hidden;
+}
+
+.first {
+  margin-top: 3rem!important;
+  margin-bottom: 2rem!important;
+}
+
+.form h3 {
+  margin: 4rem 0 2rem;
+  font-size: 3em;
+}
+
+.tables{
+  display: table;
+  width: 100%;
+}
+
+ .table-1{
+  display: table-cell;
+  padding-right: 75px;
+  height: 50px;
+}
+
+ .table-2{
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
+
+ .table-1 span{
+  vertical-align: middle;
+}
+
+ .checkbox .table-1 {
+  padding-right: 10px;
+ }
+
+ .checkbox .table-2 {
+  vertical-align: top;
+ }
+
+.arrow .table-1 span{
+  background-image: url('/Media/Default/competitions/urban-march/arrow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 35px;
+  min-width: 50px;
+  position: absolute;
+  vertical-align: middle!important;
+  padding: 0.5rem 0.8rem;
+  font-size: 1.55em;
+  color: #ffffff;
+}
+
+.tick .table-1 span{
+  background-image: url('/Media/Default/competitions/urban-march/tick.png');
+  background-size: contain;
+  min-height: 50px;
+  min-width: 50px;
+  position: absolute;
+  vertical-align: middle;
+  margin-top: 6px;
+}
+
+.successmessage .tables {
+  margin-top:30px;
+}
+
+.trips, .social {
+  padding-left: 0!important;
+}
+
+.trips .strong, .social .strong{
+  padding: 1rem 0 1rem!important;
+}
+
+.social #sharetools-long, #sharetools-long #share-icons, #sharetools-long div {
+   padding-top:0px;
+   margin-top:0px!important;
+   margin-bottom:0px!important;
+}
+
+.con.feature-box {
+  min-height: 100px;
+}
+
+.con.feature-box .bottom {
+  min-height: 20px;
+  padding: 10px 0 0px 0;
+}
+
+/* City Map buttons */
+.con.feature-box.paris {
+  background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-cuba.jpg');
+  background-color: #999999;
+}
+
+.con.feature-box.london {
+  background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-transylvania.jpg');
+  background-color: #999999;
+}
+
+.con.feature-box.rome {
+  background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-india.jpg');
+  background-color: #999999;
+}
+.con.feature-box.barcelona {
+  background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-india.jpg');
+  background-color: #999999;
+}
+.con.feature-box.berlin {
+  background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-india.jpg');
+  background-color: #999999;
+}
+
+select {
+  height: 41px;
+}
+
+textarea{
+  min-height:100px;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 9px 12px;
+  font-family: Ubuntu;
+  font-weight: 300;
+  border: 1px solid #cccccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+input#travelling-yes, input#travelling-no {
+  margin: 10px 10px 0 0;
+}
+
+.left {
+  margin: 7px 15px 0 0;
+}
+
+#dob select {
+  font-size: 15px;
+  padding:0 0 0 10px;
+  width:31%;
+}
+
+@media all and (max-width: 1225px) {
+  .steps0 .row, .steps1 .row, .steps2 .row, .steps3 .row {
+    padding: 1.5rem 1rem 0.5rem 2rem;
+  }
+}
+
+@media all and (max-width: 1025px) {
+  .steps{
+    padding-bottom: 20px;
+  }
+
+  .steps2::before, .steps3::before {
+    display: none;
+  }
+
+  .steps0{
+    background-color: #ffffff;
+  }
+
+  .steps0, .steps1, .steps2, .steps3, .steps0 .row, .steps1 .row, .steps2 .row, .steps3 .row {
+    max-height: 50px;
+    height: 50px;
+  }
+
+  .steps0 .row, .steps1 .row, .steps2 .row, .steps3 .row{
+    padding: 0rem 1rem;
+  }
+
+  .number {
+    font-size: 2em!important;
+    margin-top: 5px!important;
+  }
+
+  .steps p {
+    margin-top: 14px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .arrow .table-1 span{
+    margin-top:5px;
+  }
+
+  .table-1{
+    padding-right: 64px;
+  }
+
+  .tick .table-1 span{
+    margin-top: -10px;
+  }
+
+  span.arrow-number {
+    padding: 0.2rem 0.7rem;
+    font-size: 1.25em;
+  }
+
+  .first {
+    margin-top: 2rem!important;
+    margin-bottom: 2rem!important;
+  }
+
+  .trips .strong, .social .strong {
+    padding: 1rem 0 1rem!important;
+  }
+}
+
+@media all and (max-width: 500px) {
+
+  .steps0, .steps1, .steps2, .steps3, .steps0 .row, .steps1 .row, .steps2 .row, .steps3 .row {
+    max-height: 60px;
+    height: 60px;
+  }
+
+  .tick .table-1 span{
+    margin-top: 6px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .steps p, .numbers {
+    margin-top: 8px;
+  }
+}
+
+#locationselect label > input, #extraselect label > input {
+  visibility: hidden;
+  position: absolute;
+}
+
+#locationselect label > input + img, #extraselect label > input + img {
+  cursor:pointer;
+  border:2px solid transparent;
+}
+
+#locationselect label > input:checked + img, #extraselect label > input:checked + img{
+  border:2px solid #de5346;
+}
+
+@media all and (max-width: 1025px) {
+  div#sidePanel {
+    display:none!important;
+  }
+}
+
+/* ---- Mobile Email Reminder ---- */
+.mobilesignup {
+  display: none;
+}
+
+@media all and (max-width: 500px) {
+  .mobilesignup {
+    display: block;
+    width: 100%;
+    clear: both;
+    background: url('http://cdn.worldnomads.net/Content/styles/i/wn/backgrounds/hero_bg_color_red.jpg');
+    position: fixed;
+    padding-bottom: 20px;
+    bottom: 0;
+    margin-bottom: 0;
+    z-index: 5000
+  }
+
+  .mobilesignup h3 {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 20px;
+    padding-bottom: 8px;
+  }
+
+  .mobilesignup a.mobileclose {
+    color: #ffffff;
+    float: right;
+  }
+
+  .mobileclose {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "WNI";
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding: 12px 0;
+  }
 }
 </style>
-<!-- Header END -->
+<!-- END PAGE STYLES -->
 
-<!-- Panel 1 -->
+<!-- PAGE HTML -->
+<!-- Header -->
+<div class="header-panel red-panel" id="header-panel">
+  <div class="row" id="article-header">
+    <div class="small-12 medium-6 large-6 columns">
+      <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <ul class="breadcrumb">
+          <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="/learn" itemprop="url"><span itemprop="title">Competitions</span></a>
+          </li>
+        </ul>
+      </div>
+      <h1>Win a European urban adventure</h1>
+      <p class="highlight">Get out of gridlock and go walk the grid in one of Europe’s most iconic cities</p>
+      <form action="#form" method="get">
+        <button class="base-button orange">Enter now</button>
+      </form>
+      <p class="small">This is open to US residents only.</p>
+    </div>
+  </div>
+</div>
+<!-- End Header -->
+
+<!-- Social Shares -->
 <div id="sharetools-long">
   <div class="row">
     <div class="small-12 columns">
@@ -91,216 +513,128 @@
     </div>
   </div>
 </div>
-<!-- Panel 1 END -->
-
-
-<!-- Panel 2 -->
+<!-- End Social Shares -->
 
 <div class="row" id="article-content">
   <div class="large-8 medium-8 small-12 columns">
+
+    <!-- Introduction Content -->
     <h2>Call it strolling, ambling, traipsing, hiking, trekking, tramping or walking, but no matter what you call it, getting to know a city like a local is best done on foot.</h2>
-
     <p class="highlight">This March, let <a href="">World Nomads</a> and our friends at Fodor’s Travel put you through you and a companion through your paces with a chance to win a 5-night/ 6-day trip to one of five of Europe’s most iconic cities: London, Berlin, Paris, Barcelona or Rome.</p>
-
     <p>Armed with Fodor’s “10 Great Walks in Our Favorite Cities”, the lucky pair will take to the streets to peer into the city’s soul and feel its history from the echoing footfall of the past generations that walked the same streets.</p>
-
     <p>And together with Toad &amp; Co apparel and the walking shoes by Co X, you will be kitted out head to toe for a seamless transition from a day of pounding the pavement to a stylish night on the town!</p>
 
-    <p></p>
-
-
-    <style>
-
-    .feature-box {
-      min-height: 250px;
-    }
-    .feature-box .bottom {
-      min-height: 40px
-    }
-    .feature-box.paris {
-      background-image: url('/Media/Default/competitions/urban-march/feature-box-1.jpg');
-      background-color: #999999;
-    }
-    .feature-box.london {
-      background-image: url('/Media/Default/competitions/urban-march/feature-box-2.jpg');
-      background-color: #999999;
-    }
-    .feature-box.rome {
-      background-image: url('/Media/Default/competitions/urban-march/feature-box-3.jpg');
-      background-color: #999999;
-    }
-    .feature-box.barcelona {
-      background-image: url('/Media/Default/competitions/urban-march/feature-box-4.jpg');
-      background-color: #999999;
-    }
-    .feature-box.berlin {
-      background-image: url('/Media/Default/competitions/urban-march/feature-box-5.jpg');
-      background-color: #999999;
-    }
-
-	.feature-box .bottom p, .feature-box-right-panel .bottom p {
-		margin-bottom:0;
-	}
-	.feature-box .bottom p a:after, .feature-box-right-panel .bottom p a:after {
-  		font-family: WNI;
-  		content: '\e60d';
-  		margin: 0 2px;
-  		display: inline;
-	}
-
-    /* countdown style */
-      #sidepannel #countbox #days, #sidepannel #countbox #hours, #sidepannel #countbox #mins { color: #de5346; }
-      .importantdate .date { background-color: #de5346; }
-
-      #partnership ul li{
-      padding:0;
-      }
-
-      #partnership .panel {
-      padding: 0.45rem 1.25rem 0 1.25rem;
-      }
-
-      #partnership p.small{
-        font-size:  12px;
-      }
-
-    .panels-wrapper {
-      margin-top: 40px; 
-      margin-bottom: 40px; 
-    }
-    </style>
-
-
+    <!-- Featured Cities -->
     <div class="row panels-wrapper">
       <div class="large-4 medium-12 small-12 columns">
-
         <div class="feature-box paris">
             <ul class="breadcrumb">
             </ul>
             <a href=""><h4>Paris</h4></a>
             <div class="bottom red">
-              <p><a href="#paris">The Left Bank </a></p>
+              <p><a href="#paris">The Left Bank</a></p>
             </div>
         </div>
       </div>
-
       <div class="large-4 medium-12 small-12 columns">
         <div class="feature-box london">
           <ul class="breadcrumb">
           </ul>
-
           <a href=""><h4>London</h4></a>
           <div class="bottom red">
             <p><a href="#london">Crowning Glories<span></span></a></p>
           </div>
         </div>
       </div>
-
       <div class="large-4 medium-12 small-12 columns">
         <div class="feature-box rome">
           <ul class="breadcrumb">
           </ul>
-
           <a href=""><h4>Rome</h4></a>
           <div class="bottom red">
             <p><a href="#rome">Historic Heart<span></span></a></p>
           </div>
         </div>
       </div>
-
       <div class="large-4 medium-12 small-12 columns">
         <div class="feature-box barcelona">
           <ul class="breadcrumb">
           </ul>
-
           <a href=""><h4>Barcelona</h4></a>
           <div class="bottom red">
             <p><a href="#rome">La Rambla<span></span></a></p>
           </div>
         </div>
       </div>
-
       <div class="large-4 medium-12 small-12 end columns">
         <div class="feature-box berlin">
           <ul class="breadcrumb">
           </ul>
-
           <a href=""><h4>Berlin</h4></a>
           <div class="bottom red">
             <p><a href="#rome">Berlin Wall<span></span></a></p>
           </div>
         </div>
       </div>
-
     </div>
+    <!-- End Featured Cities -->
 
-     <p>So don’t drag your feet.  Everyone who enters can download Fodor’s “10 Great Walks in Our Favorite Cities” for FREE which has not only five great itineraries of these European cities but also five bonus US cities, for those who like to Urban March closer to home:</p>
-    <p></p>
-     <p>This is open to US residents only. To learn about other great opportunities, subscribe to Nomads News. </p>
+    <p>So don’t drag your feet.  Everyone who enters can download Fodor’s “10 Great Walks in Our Favorite Cities” for FREE which has not only five great itineraries of these European cities but also five bonus US cities, for those who like to Urban March closer to home:</p>
+    <p>This is open to US residents only. To learn about other great opportunities, subscribe to Nomads News. </p>
   </div>
-  
-   <script type="text/javascript">
-    var year = 2016; 
-    var month = 03; 
-    var day = 31;
-    var hour= 17; 
-    var min= 0; 
-    var sec= 0;
-  </script>
-  <script type="text/javascript" src="//www.worldnomads.com/Media/Default/scripts/js/counter-countdown.js"></script>
+  <!-- End Introduction Content -->
 
+  <!-- Countdown Widget -->
   <div class="small-12 medium-4 large-3 large-offset-1 columns">
     <div class="panel" id="sidepannel">
       <h4>Entries close in...</h4>
       <div id="countbox"></div>
       <p class="small">Entries close March 31, 2016 at 5PM <a target="_blank" href="http://www.timeanddate.com/time/zones/est">(PT)</a></p>
     </div>
-
+    <!-- End Countdown Widget -->
+    <!-- Partners Widget -->
     <div class="panel" id="partnership">
       <h4>In partnership with:</h4>
       <div class="row panel">
-         <ul class="large-block-grid-3 small-block-grid-2">
-            <li><a href="http://">
-                <img src="/Media/Default/competitions/urban-march/big_logo_fodors.gif" alt="Fodor's" /></a></li>
-            <li><a href="http://www.worldnomads.com/"  target="_blank"><img src="/Media/Default/competitions/urban-march/big_logo_worldnomads.gif" alt="World Nomads" /></a></li>
-            <li><a href="http://"  target="_blank"><img src="/Media/Default/competitions/urban-march/big_logo_toad-co.gif" alt="Toad & Co" /></a></li>
-           </ul>
+        <ul class="large-block-grid-3 small-block-grid-2">
+          <li>
+            <a href="http://">
+              <img src="/Media/Default/competitions/urban-march/big_logo_fodors.gif" alt="Fodor's" />
+            </a>
+          </li>
+          <li>
+            <a href="http://www.worldnomads.com/">
+              <img src="/Media/Default/competitions/urban-march/big_logo_worldnomads.gif" alt="World Nomads" />
+            </a>
+          </li>
+          <li>
+            <a href="http://">
+              <img src="/Media/Default/competitions/urban-march/big_logo_toad-co.gif" alt="Toad & Co" />
+            </a>
+          </li>
+         </ul>
       </div>
     </div>
   </div>
+  <!-- End Partners Widget -->
+
+  <!-- Email Subscribe Widget -->
   <div class="first large-3 medium-12 small-12 columns">
-	<div class="panel red-panel red-pattern">
+  	<div class="panel red-panel red-pattern">
       <h4>Not ready to enter yet? </h4>
       <p>Sign up to receive our reminder email 1 week before the entry deadline.</p>
       <form class="sidereminder" action="http://worldnomadsgroup.createsend.com/t/y/s/zdjbh/" method="post" id="subForm">
-          <input id="fieldEmail" name="cm-zdjbh-zdjbh" type="email"placeholder="Enter your email" />
-          <input id="fieldqkicj" name="cm-f-qkicj" type="hidden" value="yes" />
-          <input id="fieldqkicy" name="cm-f-qkicy" type="hidden" value="yes" />
-          <button style="margin-top:0.4rem;"class="base-button orange">Enter</button>
-        </form>
-
-        <script>
-              $(function () {
-                $('.sidereminder').submit(function (e) {
-                  var form = $(this);
-                  $.getJSON(this.action + "?callback=?", form.serialize(), function (data) {
-                    if (data.Status === 400) {
-                     form.find('.error').remove();
-                      form.append("&amp;lt;p class='error'&amp;gt;" + data.Message + "&amp;lt;/p&amp;gt;");
-                  } else { // 200
-                            wng.googleAnalytics.trackEvent('Competition', 'Reminder');
-                            form.html("Thank you, we will email so you don't forget to enter.");
-                    }
-                });
-                e.preventDefault();
-              });
-            });
-        </script>
+        <input id="fieldEmail" name="cm-zdjbh-zdjbh" type="email"placeholder="Enter your email" />
+        <input id="fieldqkicj" name="cm-f-qkicj" type="hidden" value="yes" />
+        <input id="fieldqkicy" name="cm-f-qkicy" type="hidden" value="yes" />
+        <button style="margin-top:0.4rem;"class="base-button orange">Enter</button>
+      </form>
     </div>
+    <!-- Email Subscribe Widget -->
 
+    <!-- Important Dates Widget -->
     <div id="sidePanel" class="panel">
       <h4>Important dates</h4>
-      <!-- Date -->
       <div class="importantdate">
         <div class="date">
           <div>31</div>
@@ -310,9 +644,6 @@
           <h5>Urban March campaign close</h5>
         </div>
       </div>
-      <!-- Date END -->
-
-      <!-- Date -->
       <div class="importantdate">
         <div class="date">
           <div>25</div>
@@ -322,394 +653,16 @@
           <h5>Winner announcement</h5>
         </div>
       </div>
-      <!-- Date END -->
-
     </div>
+    <!-- Important Dates Widget -->
+
   </div>
 </div>
-<!-- Panel 2 END -->
 
-
-<!-- Panel 3 -->
-   <style>
-
-
-/* Form */
-
-    #form .row .row{
-      margin-top :0.5rem;
-      margin-bottom :0.5rem;
-    }
-
-    form .small-12 {
-      margin: 0 0 10px 0;
-    }
-    .form {
-      background-color: #f4f4f4;
-      overflow: hidden;
-	  padding-bottom: 20px;
-    }
-
-     /*  Steps Styles   */
-    .steps0, .steps1 {
-      background-color: #f8ddda;
-    }
-    .steps2 {
-      background-color: #f2bab5;
-    }
-    .steps3 {
-      background-color: #eb9890;
-    }
-    .steps0, .steps1, .steps2, .steps3 {
-        margin-bottom: 1.25rem;
-        padding: 0rem;
-        color: #333;
-        max-height: 90px;
-        margin-bottom: 0px;
-     }
-    .steps0 .row, .steps1 .row, .steps2 .row, .steps3 .row{
-        padding: 1.6rem 3rem 0.5rem;
-        height: 90px;
-     }
-    .steps1 .row .large-3 p, .steps2 .row .large-3 p, .steps3 .row .large-3 p{
-        font-size: 3em;
-        font-weight: 300;
-        line-height: 2.4rem;
-        margin-bottom: 0;
-     }
-    .steps2::before{
-      content: url(/Media/Default/competitions/urban-march/arrow-1.png);
-      float: left;
-      width: 30px;
-      height: 90px;
-    }
-    .steps3::before{
-      content: url(/Media/Default/competitions/urban-march/arrow-2.png);
-      float: left;
-      width: 30px;
-      height: 90px;
-    }
-    .steps {
-      overflow:hidden;
-    }
-
-    .first {
-      margin-top: 3rem!important;
-      margin-bottom: 2rem!important;
-    }
-
-    .form h3 {
-      margin: 4rem 0 2rem;
-      font-size: 3em;
-    }
-
-    .tables{
-     display: table;
-     width: 100%;
-    }
-
-     .table-1{
-     display: table-cell;
-     padding-right: 75px;
-     height: 50px;
-    }
-
-     .table-2{
-     display: table-cell;
-     width: 100%;
-     vertical-align: middle;
-    }
-
-     .table-1 span{
-     vertical-align: middle;
-    }
-
-     .checkbox .table-1 {
-       padding-right: 10px;
-     }
-
-     .checkbox .table-2 {
-      vertical-align: top;
-     }
-
-    .arrow .table-1 span{
-      background-image: url('/Media/Default/competitions/urban-march/arrow.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      min-height: 35px;
-      min-width: 50px;
-      position: absolute;
-      vertical-align: middle!important;
-      padding: 0.5rem 0.8rem;
-      font-size: 1.55em;
-      color: #ffffff;
-    }
-
-    .tick .table-1 span{
-      background-image: url('/Media/Default/competitions/urban-march/tick.png');
-      background-size: contain;
-      min-height: 50px;
-      min-width: 50px;
-      position: absolute;
-      vertical-align: middle;
-      margin-top: 6px;
-    }
-	.successmessage .tables {
-   	  margin-top:30px;
-	}
-
-     .trips, .social {
-      padding-left: 0!important;
-    }
-
-    .trips .strong, .social .strong{
-      padding: 1rem 0 1rem!important;
-    }
-
-     .social #sharetools-long, #sharetools-long #share-icons, #sharetools-long div {
-       padding-top:0px;
-       margin-top:0px!important;
-       margin-bottom:0px!important;
-     }
-
-    .con.feature-box {
-      min-height: 100px;
-    }
-    .con.feature-box .bottom {
-      min-height: 20px;
-      padding: 10px 0 0px 0;
-    }
-
-
-    .con.feature-box.paris {
-      background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-cuba.jpg');
-      background-color: #999999;
-    }
-
-    .con.feature-box.london {
-      background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-transylvania.jpg');
-      background-color: #999999;
-    }
-
-    .con.feature-box.rome {
-      background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-india.jpg');
-      background-color: #999999;
-    }
-    .con.feature-box.barcelona {
-      background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-india.jpg');
-      background-color: #999999;
-    }
-    .con.feature-box.berlin {
-      background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-india.jpg');
-      background-color: #999999;
-    }
-
-     select {
-     height: 41px;
-     }
-
-     textarea{
-       min-height:100px;
-       font-size: 18px;
-       line-height: 20px;
-       padding: 9px 12px;
-       font-family: Ubuntu;
-       font-weight: 300;
-       border: 1px solid #cccccc;
-	   margin-top: 10px;
-	   margin-bottom: 20px;
-     }
-	 
-	   input#travelling-yes, input#travelling-no {
-    	margin: 10px 10px 0 0;
-	   }
-	   
-	   .left {
-	     margin: 7px 15px 0 0;
-	   }
-	   
-	 #dob select {
-	   font-size: 15px;
-       padding:0 0 0 10px;
-       width:31%;
-	 }
-     
-     
-     @media all and (max-width: 1225px) {
-       
-        .steps0 .row, .steps1 .row, .steps2 .row, .steps3 .row{
-        padding: 1.5rem 1rem 0.5rem 2rem;
-       
-        }
-     }
-     
-     @media all and (max-width: 1025px) {
-       
-        
-        .steps{
-          padding-bottom: 20px;
-        }
-        
-       
-       .steps2::before, .steps3::before {
-          display: none;
-        }
-        .steps0{
-          background-color: #ffffff;
-        }
-       
-       .steps0, .steps1, .steps2, .steps3, .steps0 .row, .steps1 .row, .steps2 .row, .steps3 .row {
-         max-height: 50px;
-         height: 50px;
-       }
-       
-       .steps0 .row, .steps1 .row, .steps2 .row, .steps3 .row{
-    
-          padding: 0rem 1rem;
-        
-       }
-        .number{
-    
-          font-size: 2em!important;
-          margin-top: 5px!important;
-        
-        }
-       
-       .steps p {
-          margin-top: 14px;
-       }
-      
-     }
-     
-      @media all and (max-width: 700px) {
-        
-        .arrow .table-1 span{
-         margin-top:5px; 
-        }
-        
-        .table-1{
-        padding-right: 64px;
-        }
-        
-        .tick .table-1 span{
-        margin-top: -10px;
-        }
-
-        span.arrow-number {
-          padding: 0.2rem 0.7rem;
-          font-size: 1.25em;
-        }
-        
-        .first {
-        margin-top: 2rem!important;
-        margin-bottom: 2rem!important;
-        }
-        
-        .trips .strong, .social .strong {
-          padding: 1rem 0 1rem!important;
-        }
-        
-      }
-     
-        @media all and (max-width: 500px) {
-       
-         .steps0, .steps1, .steps2, .steps3, .steps0 .row, .steps1 .row, .steps2 .row, .steps3 .row {
-         max-height: 60px;
-         height: 60px;
-        }
-      
-          
-        .tick .table-1 span{
-        margin-top: 6px;
-        }
-          
-      }
-     
-        @media all and (max-width: 400px) {
-       
-        .steps p, .numbers {
-          margin-top: 8px;
-        }
-
-          
-      }
-    </style>
-
-  
-
-
-
+<!-- Entry Form Section -->
 <div id="form" class="row first">
-
-<script>
-  // Datepicker for When are they travelling next
-  $(function() {
-
-      var dateNow = new Date();
-      var dateNowDay = dateNow.getUTCDate();
-      var dateNowMonth = dateNow.getUTCMonth() + 1;
-      var dateNowYear = dateNow.getUTCFullYear();
-      var $whenSelects = $(".when-are-they-travelling select");
-      var $whenDay = $whenSelects.eq(1); // WTF why is it in this order
-      var $whenMonth = $whenSelects.eq(0);
-      var $whenYear = $whenSelects.eq(2);
-      var $whenInput = $(".when-datepicker");
-
-      $whenDay.val(dateNowDay);
-      $whenMonth.val(dateNowMonth);
-      $whenYear.val(dateNowYear);
-
-      $whenInput.datePickerForSelects(
-        $whenDay,
-        $whenMonth,
-        $whenYear
-      );
-
-  });
-
-
-  // Are you travelling toggle
-  $(function() {
-
-      var $ttnDiv = $(".travelling-to-next").show();
-      var $wattDiv = $(".when-are-they-travelling").show();
-      var $tRadios = $(".travelling-radio");
-      var $tRadioYes = $("#travelling-yes").prop("checked", true);
-      var $tRadioNo = $("#travelling-no");
-
-      $tRadios.on("change", function() {
-        var $this = $(this);
-        var targetId = $this.attr("id");
-        if (targetId == "travelling-yes") {
-          // YES
-          $ttnDiv.show();
-          $wattDiv.show();
-        } else if (targetId == "travelling-no") {
-          // NO
-          $ttnDiv.hide();
-          $wattDiv.hide();
-        }
-      });
-
-  });
-</script>
-<style>
-#locationselect label > input, #extraselect label > input { 
-  visibility: hidden; 
-  position: absolute; 
-}
-#locationselect label > input + img, #extraselect label > input + img { /* IMAGE STYLES */
-  cursor:pointer;
-  border:2px solid transparent;
-}
-#locationselect label > input:checked + img, #extraselect label > input:checked + img{ 
-  border:2px solid #de5346;
-}
-</style>
-
-
   <form class="application-form"  action="http://worldnomadsgroup.createsend.com/t/y/s/zdjbl/" method="post" id="subForm">
-    <!-- Steps -->
+    <!-- Steps Overview -->
     <div class="large-12 columns">
       <div class="steps">
         <div class="large-3 medium-12 columns steps0">
@@ -755,13 +708,13 @@
         </div>
       </div>
     </div>
-    <!-- Steps END -->
+    <!-- End Steps Overview -->
 
+    <!-- Entry Form -->
     <div class="small-12 columns">
       <div class="form">
         <div class="large-offset-1 large-10 columns">
           <h2 class="first small-12">Ready to enter?</h2>
-
           <ul class='accordian small-12'>
             <li class='content-container'>
               <div class='content row'>
@@ -777,13 +730,13 @@
                   <ul class="small-block-grid-3 medium-block-grid-5">
                     <li>
                       <label>
-                        <input id="fieldqkihrk" name="cm-f-qkihrk" type="radio" value="London" class="radiolist" />
+                        <input id="fieldqkihrk" name="cm-f-qthtyl" type="radio" value="London" class="radiolist" />
                         <img src="/Media/Default/competitions/urban-march/london-map.jpg" />
                       </label>
                     </li>
                     <li>
                       <label>
-                        <input id="fieldqkihru" name="cm-f-qkihru" type="radio" value="Berlin" class="radiolist" />
+                        <input id="fieldqkihru" name="cm-f-qthtyl" type="radio" value="Berlin" class="radiolist" />
                         <img src="/Media/Default/competitions/urban-march/berlin-map.jpg" />
                       </label>
                     </li>
@@ -840,38 +793,10 @@
                   <input class="hidden-concat" id="fieldqkihjt" name="cm-f-qkihjt" type="hidden" />
                   <input class="hidden-concat" id="fieldqkihji" name="cm-f-qkihji" type="hidden" />
                   <!-- Hidden fields 1- 15 END -->
-
-                  <script>
-                    $(function() {
-                      var queryCharLim = 100;
-                      var $concatInputs = $("input.hidden-concat");
-                      var $textareaAdvDesc = $("textarea.raw-adventure-description");
-
-                      $textareaAdvDesc.on("change", function(e) {
-                        var $this = $(this);
-                        var currentText = $this.val();
-                        var iterator = 1;
-
-                        $concatInputs.each(function() {
-                          $(this).attr("value", "");
-                        });
-
-                        for (var i = 0; (i * queryCharLim) < currentText.length; i++) {
-                          var from = i * queryCharLim;
-                          var to = (i + 1) * queryCharLim;
-                          var subset = currentText.substr(from, queryCharLim);
-                          $concatInputs.eq(i).val(subset);
-                        }
-
-                      });
-                    });
-                  </script>
-
                 </div>
                 <button class='open-next-accordian base-button orange right'>Next</button>
               </div>
             </li>
-
             <li class='content-container'>
               <div class='content' style="display: none;">
                 <div class="row">
@@ -884,10 +809,8 @@
                     </span>
                   </div>
                 </div>
-
-                  <div class="large-offset-1 large-10">
-                <div class="row">
-
+                <div class="large-offset-1 large-10">
+                  <div class="row">
                     <div class="small-12 medium-4 columns">
                       <label>Email</label>
                       <input id="fieldEmail" name="cm-zdjbl-zdjbl" type="email" placeholder="Email" />
@@ -904,18 +827,16 @@
                       <label class="small-12">Date of Birth</label>
                       <div class="small-12" style="margin-top: 0px;">
                         <select id="fieldqkichdy" name="cm-fd-qkich-dy" class="small-3 columns"><option value="">DD</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
-
                         <select id="fieldqkich" name="cm-fd-qkich-mn" class="small-3 columns"><option value="">MM</option><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select>
-
                         <select id="fieldqkichyr" name="cm-fd-qkich-yr" class="small-4 columns end"><option value="">YYYY</option><option value="1901">1901</option><option value="1902">1902</option><option value="1903">1903</option><option value="1904">1904</option><option value="1905">1905</option><option value="1906">1906</option><option value="1907">1907</option><option value="1908">1908</option><option value="1909">1909</option><option value="1910">1910</option><option value="1911">1911</option><option value="1912">1912</option><option value="1913">1913</option><option value="1914">1914</option><option value="1915">1915</option><option value="1916">1916</option><option value="1917">1917</option><option value="1918">1918</option><option value="1919">1919</option><option value="1920">1920</option><option value="1921">1921</option><option value="1922">1922</option><option value="1923">1923</option><option value="1924">1924</option><option value="1925">1925</option><option value="1926">1926</option><option value="1927">1927</option><option value="1928">1928</option><option value="1929">1929</option><option value="1930">1930</option><option value="1931">1931</option><option value="1932">1932</option><option value="1933">1933</option><option value="1934">1934</option><option value="1935">1935</option><option value="1936">1936</option><option value="1937">1937</option><option value="1938">1938</option><option value="1939">1939</option><option value="1940">1940</option><option value="1941">1941</option><option value="1942">1942</option><option value="1943">1943</option><option value="1944">1944</option><option value="1945">1945</option><option value="1946">1946</option><option value="1947">1947</option><option value="1948">1948</option><option value="1949">1949</option><option value="1950">1950</option><option value="1951">1951</option><option value="1952">1952</option><option value="1953">1953</option><option value="1954">1954</option><option value="1955">1955</option><option value="1956">1956</option><option value="1957">1957</option><option value="1958">1958</option><option value="1959">1959</option><option value="1960">1960</option><option value="1961">1961</option><option value="1962">1962</option><option value="1963">1963</option><option value="1964">1964</option><option value="1965">1965</option><option value="1966">1966</option><option value="1967">1967</option><option value="1968">1968</option><option value="1969">1969</option><option value="1970">1970</option><option value="1971">1971</option><option value="1972">1972</option><option value="1973">1973</option><option value="1974">1974</option><option value="1975">1975</option><option value="1976">1976</option><option value="1977">1977</option><option value="1978">1978</option><option value="1979">1979</option><option value="1980">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option></select>
                       </div>
                     </div>
                     <div class="columns medium-4 small-12">
                       <label>Country of residence</label>
                       <select id="fieldqkuily" name="cm-fo-qkuily">
-                          <option value="">Please select</option>
-                          <option value="961505">Canada</option>
-                          <option value="961705">United States of America</option>
+                        <option value="">Please select</option>
+                        <option value="961505">Canada</option>
+                        <option value="961705">United States of America</option>
                       </select>
                     </div>
                     <div class="columns medium-4 small-12">
@@ -1000,7 +921,6 @@
                       <label>Instagram</label>
                       <input id="fieldqkiqj" name="cm-f-qkiqj" type="text" placeholder="@instagram" />
                     </div>
-
                     <div class="small-12" style="clear:both; overflow: hidden;">
                       <div class="columns medium-4 small-12 holiday-check">
                         <label class="large-12">Any other trips in the next year?</label>
@@ -1271,69 +1191,178 @@
                         </select>
                       </div>
 
-                        <div class="columns medium-4 small-12 when-are-they-travelling">
-                          <label>When are you going?</label>
-                          <select id="fieldqkihrh" name="cm-fd-qkihrh-mn"><option value=""></option><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select>
-                          <select id="fieldqkihrhdy" name="cm-fd-qkihrh-dy"><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
-                          <select id="fieldqkihrhyr" name="cm-fd-qkihrh-yr"><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option></select>
-                        </div>
+                      <div class="columns medium-4 small-12 when-are-they-travelling">
+                        <label>When are you going?</label>
+                        <select id="fieldqkihrh" name="cm-fd-qkihrh-mn"><option value=""></option><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select>
+                        <select id="fieldqkihrhdy" name="cm-fd-qkihrh-dy"><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+                        <select id="fieldqkihrhyr" name="cm-fd-qkihrh-yr"><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option></select>
                       </div>
 
                       <hr class="large-12">
                       <div class="large-12 columns checkbox tables">
-                        <p class="table-1"><input  id="fieldqkihtr" name="cm-f-qkihtr" type="checkbox"><label for="checkbox1"></p><p class="table-2">I have read &amp; accepted the <a href="http://www.worldnomads.com/competitions/urban-march-terms-conditions">Terms and Conditions</a></label></p>
+                        <p class="table-1">
+                          <input id="fieldqkihtr" name="cm-f-qkihtr" type="checkbox">
+                          <label for="checkbox1">
+                        </p>
+                        <p class="table-2">I have read &amp; accepted the <a href="http://www.worldnomads.com/competitions/urban-march-terms-conditions">Terms and Conditions</a>
+                          </label>
+                        </p>
                       </div>
                       <div class="large-12 columns">
                         <button type="submit" class="base-button orange">Enter</button>
                       </div>
                     </div>
-
-
-
                   </div>
                 </div>
-                </div>
-
-
               </div>
             </li>
           </ul>
-
-
         </div>
       </div>
     </div>
-
-
-
-
-
-
   </form>
-  <script>
-        $(function () {
-          $('.application-form').submit(function (e) {
-            var form = $(this);
-            $.getJSON(this.action + "?callback=?", form.serialize(), function (data) {
-              if (data.Status === 400) {
-               form.find('.error').remove();
-                form.append("&amp;lt;p class='error'&amp;gt;" + data.Message + "&amp;lt;/p&amp;gt;");
-            } else { // 200
-                      form.html("<div class='successmessage'> <div class='small-12 columns'> <div class='form'> <div class='large-offset-1 large-10 columns'> <div class='row'> <div class='large-12 columns'> <div class='row'> <div class='small-12 columns tick tables'> <span class='table-1'><span class=''></span></span> <span class='table-2'><h2 class=''>Thank's for entering!</h2></span> </div></div><div class='row'> <div class='large-offset-1 large-10 columns'> <h4>The winner of this trip will be announced April 25th.</h4> <h5>Download your marching orders from Fodor’s to explore on foot these iconic European and five bonus US cities! Or read it later (check your email!)</h5> <p></p></div></div><div class='row'><div class='large-offset-1 small-12 large-5 columns'> <div class=''> <a href='#form' class='base-button orange expand'>Download your Free Fodor's Guide</a> </div></div></div><hr class='large-offset-1 large-10 columns'> <div class='row'> <div class='large-offset-1 large-10 columns'> <div class='social'> <h5 class='strong'>Tell a friend about this spine-tingling competition!</h5> <div id='sharetools-long'> <div class='row'> <div class='small-12 columns'> <div id='socialarea'> <div id='share-icons'> <a class='socialicon facebook' target='_blank'><span>Share on Facebook</span>&#xe607;</a><a class='socialicon twitter' target='_blank'><span>Share on Twitter</span>&#xe602;</a><a class='socialicon pinterest'>&#xe603;</a><a class='socialicon gplus' target='_blank'>&#xe605;</a><a class='socialicon linkedin' target='_blank'><img src='//www.worldnomads.com/Media/Default/shareimages/linkedin-share-icon.png'></a><a class='socialicon stumbleupon' target='_blank'><img src='//www.worldnomads.com/Media/Default/shareimages/stumble-share-icon.png'></a><a class='socialicon plus'></a> </div></div></div></div></div></div></div></div></div></div></div></div></div></div>");
-                      $(window).scrollTop($('#form').position().top);
-              }
-          });
-          e.preventDefault();
-        });
-      });
-  </script>
-
-
+  <!-- End Entry Form -->
 </div>
+<!-- End Entry Form Section -->
 
+<!-- Mobile Email Reminder -->
+<div class="mobilesignup">
+  <div class="row">
+    <a class="mobileclose" href="#">&#xe641;</a>
+    <h3>We know this is going to be hard to complete on a mobile device, why not enter your email and we will send you a link so you don't forget to enter this great oppourtunity.</h3>
+    <form class="scholarship-mobile"  action="http://worldnomadsgroup.createsend.com/t/y/s/zdjbi/" method="post" id="subForm">
+      <input d="fieldEmail" name="cm-zdjbi-zdjbi" type="email" placeholder="Enter your email" required style="width: 60%;" />
+      <button class="base-button orange" style="width: 38%; margin-left: 2%;">Submit</button>
+    </form>
+  </div>
+</div>
+<!-- Mobile Bit END -->
+<!-- END PAGE HTML -->
 
+<!-- PAGE SCRIPTS -->
+<script type="text/javascript">
+  // Countdown timer target
+  var year = 2016;
+  var month = 03;
+  var day = 31;
+  var hour= 17;
+  var min= 0;
+  var sec= 0;
+</script>
+<script type="text/javascript" src="//www.worldnomads.com/Media/Default/scripts/js/counter-countdown.js"></script>
 
+<script>
+  // Email reminder form
+  $(function () {
+    $('.sidereminder').submit(function (e) {
+        var form = $(this);
+        $.getJSON(this.action + "?callback=?", form.serialize(), function (data) {
+          if (data.Status === 400) {
+           form.find('.error').remove();
+            form.append("&amp;lt;p class='error'&amp;gt;" + data.Message + "&amp;lt;/p&amp;gt;");
+        }
+        else { // 200
+          wng.googleAnalytics.trackEvent('Competition', 'Reminder');
+          form.html("Thank you, we will email so you don't forget to enter.");
+        }
+      });
+      e.preventDefault();
+    });
+  });
+</script>
 
+<script>
+  // Datepicker for when are they travelling next
+  $(function() {
+    var dateNow = new Date();
+    var dateNowDay = dateNow.getUTCDate();
+    var dateNowMonth = dateNow.getUTCMonth() + 1;
+    var dateNowYear = dateNow.getUTCFullYear();
+    var $whenSelects = $(".when-are-they-travelling select");
+    var $whenDay = $whenSelects.eq(1); // WTF why is it in this order
+    var $whenMonth = $whenSelects.eq(0);
+    var $whenYear = $whenSelects.eq(2);
+    var $whenInput = $(".when-datepicker");
+
+    $whenDay.val(dateNowDay);
+    $whenMonth.val(dateNowMonth);
+    $whenYear.val(dateNowYear);
+
+    $whenInput.datePickerForSelects(
+      $whenDay,
+      $whenMonth,
+      $whenYear
+    );
+  });
+
+  // Are you travelling toggle
+  $(function() {
+    var $ttnDiv = $(".travelling-to-next").show();
+    var $wattDiv = $(".when-are-they-travelling").show();
+    var $tRadios = $(".travelling-radio");
+    var $tRadioYes = $("#travelling-yes").prop("checked", true);
+    var $tRadioNo = $("#travelling-no");
+
+    $tRadios.on("change", function() {
+      var $this = $(this);
+      var targetId = $this.attr("id");
+      if (targetId == "travelling-yes") {
+        // YES
+        $ttnDiv.show();
+        $wattDiv.show();
+      } else if (targetId == "travelling-no") {
+        // NO
+        $ttnDiv.hide();
+        $wattDiv.hide();
+      }
+    });
+  });
+</script>
+<script>
+  // Campaign monitor field concatenation
+  $(function() {
+    var queryCharLim = 100;
+    var $concatInputs = $("input.hidden-concat");
+    var $textareaAdvDesc = $("textarea.raw-adventure-description");
+
+    $textareaAdvDesc.on("change", function(e) {
+      var $this = $(this);
+      var currentText = $this.val();
+      var iterator = 1;
+
+      $concatInputs.each(function() {
+        $(this).attr("value", "");
+      });
+
+      for (var i = 0; (i * queryCharLim) < currentText.length; i++) {
+        var from = i * queryCharLim;
+        var to = (i + 1) * queryCharLim;
+        var subset = currentText.substr(from, queryCharLim);
+        $concatInputs.eq(i).val(subset);
+      }
+
+    });
+  });
+</script>
+<script>
+// Entry form success submit
+$(function () {
+  $('.application-form').submit(function (e) {
+    var form = $(this);
+    $.getJSON(this.action + "?callback=?", form.serialize(), function (data) {
+      if (data.Status === 400) {
+        form.find('.error').remove();
+        form.append("&amp;lt;p class='error'&amp;gt;" + data.Message + "&amp;lt;/p&amp;gt;");
+      }
+      else { // 200
+        form.html("<div class='successmessage'> <div class='small-12 columns'> <div class='form'> <div class='large-offset-1 large-10 columns'> <div class='row'> <div class='large-12 columns'> <div class='row'> <div class='small-12 columns tick tables'> <span class='table-1'><span class=''></span></span> <span class='table-2'><h2 class=''>Thank's for entering!</h2></span> </div></div><div class='row'> <div class='large-offset-1 large-10 columns'> <h4>The winner of this trip will be announced April 25th.</h4> <h5>Download your marching orders from Fodor’s to explore on foot these iconic European and five bonus US cities! Or read it later (check your email!)</h5> <p></p></div></div><div class='row'><div class='large-offset-1 small-12 large-5 columns'> <div class=''> <a href='#form' class='base-button orange expand'>Download your Free Fodor's Guide</a> </div></div></div><hr class='large-offset-1 large-10 columns'> <div class='row'> <div class='large-offset-1 large-10 columns'> <div class='social'> <h5 class='strong'>Tell a friend about this spine-tingling competition!</h5> <div id='sharetools-long'> <div class='row'> <div class='small-12 columns'> <div id='socialarea'> <div id='share-icons'> <a class='socialicon facebook' target='_blank'><span>Share on Facebook</span>&#xe607;</a><a class='socialicon twitter' target='_blank'><span>Share on Twitter</span>&#xe602;</a><a class='socialicon pinterest'>&#xe603;</a><a class='socialicon gplus' target='_blank'>&#xe605;</a><a class='socialicon linkedin' target='_blank'><img src='//www.worldnomads.com/Media/Default/shareimages/linkedin-share-icon.png'></a><a class='socialicon stumbleupon' target='_blank'><img src='//www.worldnomads.com/Media/Default/shareimages/stumble-share-icon.png'></a><a class='socialicon plus'></a> </div></div></div></div></div></div></div></div></div></div></div></div></div></div>");
+        $(window).scrollTop($('#form').position().top);
+      }
+    });
+    e.preventDefault();
+  });
+});
+</script>
 
 <script>
 var radioStatus = false;
@@ -1347,9 +1376,6 @@ $.each($('input[type=radio]'),function(){
     })
 })
 </script>
-
-
-
 <script src="//www.worldnomads.com/Scripts/jquery/datepicker/jquery.datePicker.js"></script>
 <script src="//www.worldnomads.com/Scripts/jquery/datepicker/jquery.datePickerForSelects.js"></script>
 <script id="cm-datepicker-scripts">
@@ -1358,11 +1384,11 @@ $.each($('input[type=radio]'),function(){
     var $datePickerDay = $("#fieldqkihrhdy");
     var $datePickerMonth = $("#fieldqkihrh");
     var $datePickerYear = $("#fieldqkihrhyr");
-    
+
     $datePickerDay.children("option[value='" + dateNow.getDate() + "']").prop('selected', true);
     $datePickerMonth.children("option[value='" + (dateNow.getMonth() + 1) + "']").prop('selected', true);
     $datePickerYear.children("option[value='" + dateNow.getUTCFullYear() + "']").prop('selected', true);
-    
+
     var $datePickerInput = $('<input/>', {
         'type': 'text',
         'class': 'cm-datepicker'
@@ -1372,198 +1398,107 @@ $.each($('input[type=radio]'),function(){
     // on the input (when jQuery version >= 1.8)
     .attr('autocomplete', 'off')
     .insertAfter($datePickerYear);
-    
+
     $datePickerInput.datePickerForSelects($datePickerDay, $datePickerMonth, $datePickerYear, {numberOfMonths: 1});
   });
 </script>
 
-<!-- Accordian Script -->
 <script>
-$(function() {
-  var $accordian = $(".accordian");
-  var $contentDivs = $accordian.find(".content");
-  var $nextButtons = $contentDivs.find(".open-next-accordian");
+  // Accordian Script
+  $(function() {
+    var $accordian = $(".accordian");
+    var $contentDivs = $accordian.find(".content");
+    var $nextButtons = $contentDivs.find(".open-next-accordian");
 
-  $nextButtons.on("click", function(e) {
-    var $this = $(this).hide();
-    var $targetContentContainer = $this.parents(".content-container").next();
-    var $targetContent = $targetContentContainer.find(".content");
+    $nextButtons.on("click", function(e) {
+      var $this = $(this).hide();
+      var $targetContentContainer = $this.parents(".content-container").next();
+      var $targetContent = $targetContentContainer.find(".content");
 
-    $this.parents(".content-container").find(".step-count").hide();
-    $targetContent.show();
+      $this.parents(".content-container").find(".step-count").hide();
+      $targetContent.show();
 
-    e.preventDefault();
+      e.preventDefault();
+    });
   });
-});
 </script>
 
-<!-- Panel 3 END -->
+<script>
+  // Mobile Email Form
+  $(function () {
+    $('.scholarship-mobile').submit(function (e) {
+      var form = $(this);
+      $.getJSON(this.action + "?callback=?", form.serialize(), function (data) {
+        if (data.Status === 400) {
+          form.find('.error').remove();
+          form.append("&amp;lt;p class='error'&amp;gt;" + data.Message + "&amp;lt;/p&amp;gt;");
+        }
+        else { // 200
+          wng.googleAnalytics.trackEvent('Competition', 'Mobile Reminder');
+          form.html("Thank you, we will email so you dont forget to enter.");
+        }
+      });
+      e.preventDefault();
+    });
+  });
+</script>
 
-<!-- Panel 4 -->
-
-   <style>
-    #cuba, #transylvania, #india{
-      margin: 0 0 60px 0;
+<script>
+// Share Counter Script
+  jQuery.sharedCount = function(url, fn) {
+    url = encodeURIComponent(url || location.href);
+    var domain = "//free.sharedcount.com/"; /* SET DOMAIN */
+    var apikey = "8e4b7187bcfca463ceeca1577105f710bf47edd1" /*API KEY HERE*/
+    var arg = {
+      data: {
+        url : url,
+        apikey : apikey
+      },
+      url: domain,
+      cache: true,
+      dataType: "json"
+    };
+    if ('withCredentials' in new XMLHttpRequest) {
+      arg.success = fn;
     }
-     
-   @media all and (max-width: 1025px) {
-     
-     div#sidePanel {
-      display:none!important;
+    else {
+      var cb = "sc_" + url.replace(/\W/g, '');
+      window[cb] = fn;
+      arg.jsonpCallback = cb;
+      arg.dataType += "p";
+    }
+    return jQuery.ajax(arg);
+  };
 
-     }
-   }
+  jQuery(document).ready(function($){
+    var targetUrl = "http://" + location.host + location.pathname;
 
-    </style>
+    $.sharedCount(targetUrl, function(data){
+      var totalShares = data.Twitter + data.Facebook.like_count + data.GooglePlusOne + data.Facebook.share_count + data.Pinterest + data.LinkedIn + data.StumbleUpon;
+      if (totalShares <= 1) {
+        totalShares = 1;
+      }
+      $("#tweetscount").text(data.Twitter);
+      $("#likescount").text(data.Facebook.like_count);
+      $("#facebooksharecount").text(data.Facebook.share_count);
+      $("#plusonescount").text(data.GooglePlusOne);
+      $("#stumbleuponcount").text(data.StumbleUpon);
+      $("#pintrestcount").text(data.Pinterest);
+      $("#linkedincount").text(data.LinkedIn);
+      $("#total").text(totalShares);
+      $("#sharedcount").fadeIn();
 
-
-
-
-
-
-<!-- Panel 4 END -->
-
-<!-- Mobile Bit -->
-
-<div class="mobilesignup">
-  <div class="row">
-    <a class="mobileclose" href="#">&#xe641;</a>
-    <h3>We know this is going to be hard to complete on a mobile device, why not enter your email and we will send you a link so you don't forget to enter this great oppourtunity.</h3>
-    <form class="scholarship-mobile"  action="http://worldnomadsgroup.createsend.com/t/y/s/zdjbi/" method="post" id="subForm">
-          <input d="fieldEmail" name="cm-zdjbi-zdjbi" type="email" placeholder="Enter your email" required style="width: 60%;" />
-          <button class="base-button orange" style="width: 38%; margin-left: 2%;">Submit</button>
-        </form>
-
-        <script>
-              $(function () {
-                $('.scholarship-mobile').submit(function (e) {
-                  var form = $(this);
-                  $.getJSON(this.action + "?callback=?", form.serialize(), function (data) {
-                    if (data.Status === 400) {
-                     form.find('.error').remove();
-                      form.append("&amp;lt;p class='error'&amp;gt;" + data.Message + "&amp;lt;/p&amp;gt;");
-                  } else { // 200
-                            wng.googleAnalytics.trackEvent('Competition', 'Mobile Reminder');
-                            form.html("Thank you, we will email so you dont forget to enter.");
-                    }
-                });
-                e.preventDefault();
-              });
-            });
-        </script>
-
-  </div>
-<script>
-$( ".mobilesignup" ).show();
-$( "a.mobileclose" ).click(function( event ) {
-  event.preventDefault();
-  $( ".mobilesignup" ).hide();
-});
-</script>
-</div>
-<style>
-.mobilesignup {
-  display: none;
-}
-@media all and (max-width: 500px) {
-  .mobilesignup {
-  display: block;
-  width: 100%;
-  clear: both;
-  background: url('http://cdn.worldnomads.net/Content/styles/i/wn/backgrounds/hero_bg_color_red.jpg');
-  position: fixed;
-  padding-bottom: 20px;
-  bottom: 0;
-  margin-bottom: 0;
-  z-index: 5000
-}
-.mobilesignup h3 {
-  font-size: 16px;
-  color: #ffffff;
-  line-height: 20px;
-  padding-bottom: 8px;
-}
-.mobilesignup a.mobileclose {
-  color: #ffffff;
-  float: right;
-}
-.mobileclose {
-  color: #fff;
-  text-decoration: none;
-  font-size: 24px;
-  font-family: "WNI";
-  line-height: 24px;
-  margin-bottom: 10px;
-  padding: 12px 0;
-}
-}
-</style>
-
-<!-- Mobile Bit END -->
-
-
-
-
-<script>
-jQuery.sharedCount = function(url, fn) {
- url = encodeURIComponent(url || location.href);
- var domain = "//free.sharedcount.com/"; /* SET DOMAIN */
- var apikey = "8e4b7187bcfca463ceeca1577105f710bf47edd1" /*API KEY HERE*/
- var arg = {
-  data: {
-   url : url,
-   apikey : apikey
-  },
-  url: domain,
-  cache: true,
-  dataType: "json"
- };
- if ('withCredentials' in new XMLHttpRequest) {
-  arg.success = fn;
- }
- else {
-  var cb = "sc_" + url.replace(/\W/g, '');
-  window[cb] = fn;
-  arg.jsonpCallback = cb;
-  arg.dataType += "p";
- }
- return jQuery.ajax(arg);
-};
-
-jQuery(document).ready(function($){
- var targetUrl = "http://" + location.host + location.pathname;
-
- $.sharedCount(targetUrl, function(data){
-  var totalShares = data.Twitter + data.Facebook.like_count + data.GooglePlusOne + data.Facebook.share_count + data.Pinterest + data.LinkedIn + data.StumbleUpon;
-  if (totalShares <= 1) {
-   totalShares = 1;
-  }
-  $("#tweetscount").text(data.Twitter);    
-  $("#likescount").text(data.Facebook.like_count);
-  $("#facebooksharecount").text(data.Facebook.share_count);
-  $("#plusonescount").text(data.GooglePlusOne);
-  $("#stumbleuponcount").text(data.StumbleUpon);
-  $("#pintrestcount").text(data.Pinterest);
-  $("#linkedincount").text(data.LinkedIn);
-  $("#total").text(totalShares);
-  $("#sharedcount").fadeIn();
-
- });
-});
+    });
+  });
 </script>
 
 <script>
-
   // Build the target srcs for the icons on click.
   var socialMedialUrl          = window.location;
-  
   var facebookParamU           = "http://www.worldnomads.com/competitions/urban-march";
-
   var twitterParamText         = "Enter the @WorldNomads competition for a chance to win a spine-tingling trip. http://www.worldnomads.com/competitions/urban-march #triportreat";
-
   var pinParamDescription      = "Win a Trip or Treat for 2 this Halloween";
   var pinParamMedia            = "http://www.worldnomads.com/Media/Default/Competitions/urban-march/Share/WN-urban-march-Pinterest-600x400-share.jpg";
-  
   var linkedParamTitle         = "Win a Trip or Treat for 2 this Halloween";
   var linkedParamDescription   = "Check out the @WorldNomads #TripOrTreat contest for a chance to win a @Intrepid spine-tingling trip & fly with @BootsnAll. http://www.worldnomads.com/competitions/urban-march";
 
@@ -1576,7 +1511,7 @@ jQuery(document).ready(function($){
       $plus.toggleClass("open");
     });
   });
-  
+
   $(function() {
     var $si = $(".socialicon");
     var targetUrl = "";
@@ -1591,7 +1526,7 @@ jQuery(document).ready(function($){
         window.open(targetUrl, 'name', 'width=600,height=400');
       }
       else if ($this.hasClass("pinterest")) {
-        targetUrl = "http://pinterest.com/pin/create/button?description=" + pinParamDescription + "&media=" + pinParamMedia; + "&url=" + socialMedialUrl; 
+        targetUrl = "http://pinterest.com/pin/create/button?description=" + pinParamDescription + "&media=" + pinParamMedia; + "&url=" + socialMedialUrl;
         window.open(targetUrl, 'name', 'width=755,height=400,scrollbars=no');
       }
       else if ($this.hasClass("gplus")) {
@@ -1610,5 +1545,12 @@ jQuery(document).ready(function($){
   });
 </script>
 
+<script>
+  $( "a.mobileclose" ).click(function( event ) {
+    event.preventDefault();
+    $( ".mobilesignup" ).hide();
+  });
+</script>
+<!-- END PAGE SCRIPTS -->
 
 {% endblock %}
