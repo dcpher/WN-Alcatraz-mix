@@ -210,12 +210,14 @@ form .small-12 {
   vertical-align: middle;
 }
 
- .checkbox .table-1 {
-  padding-right: 10px;
+ .checkbox .table-1, .checkbox .table-2 {
+  height: 24px;
+  display: block;
  }
 
  .checkbox .table-2 {
   vertical-align: top;
+  height: 50px;
  }
 
 .arrow .table-1 span{
@@ -1212,11 +1214,18 @@ input#travelling-yes, input#travelling-no {
                       <div class="large-12 columns checkbox tables">
                         <p class="table-1">
                           <input id="fieldqkihtr" name="cm-f-qkihtr" type="checkbox">
-                          <label for="checkbox1">
-                        </p>
-                        <p class="table-2">I have read &amp; accepted the <a href="http://www.worldnomads.com/competitions/urban-march-terms-conditions">Terms and Conditions</a>
+                          <label for="fieldqkihtr">
+                            I have read &amp; accepted the <a href="http://www.worldnomads.com/competitions/urban-march-terms-conditions">Terms and Conditions</a>
                           </label>
                         </p>
+
+                        <p class="table-2">
+                          <input id="checkbox2" name="cm-f-" type="checkbox">
+                          <label for="checkbox2">
+                            I am 18 years old or over
+                          </label>
+                        </p>
+
                       </div>
                       <div class="large-12 columns">
                         <button type="submit" class="base-button orange">Enter</button>
@@ -1366,7 +1375,7 @@ $(function () {
         form.append("&amp;lt;p class='error'&amp;gt;" + data.Message + "&amp;lt;/p&amp;gt;");
       }
       else { // 200
-        form.html("<div class='successmessage'> <div class='small-12 columns'> <div class='form'> <div class='large-offset-1 large-10 columns'> <div class='row'> <div class='large-12 columns'> <div class='row'> <div class='small-12 columns tick tables'> <span class='table-1'><span class=''></span></span> <span class='table-2'><h2 class=''>Thank's for entering!</h2></span> </div></div><div class='row'> <div class='large-offset-1 large-10 columns'> <h4>The winner of this trip will be announced April 25th.</h4> <h5>Download your marching orders from Fodor’s to explore on foot these iconic European and five bonus US cities! Or read it later (check your email!)</h5> <p></p></div></div><div class='row'><div class='large-offset-1 small-12 large-5 columns'> <div class=''> <a href='#form' class='base-button orange expand'>Download your Free Fodor's Guide</a> </div></div></div><hr class='large-offset-1 large-10 columns'> <div class='row'> <div class='large-offset-1 large-10 columns'> <div class='social'> <h5 class='strong'>Tell a friend about this spine-tingling competition!</h5> <div id='sharetools-long'> <div class='row'> <div class='small-12 columns'> <div id='socialarea'> <div id='share-icons'> <a class='socialicon facebook' target='_blank'><span>Share on Facebook</span>&#xe607;</a><a class='socialicon twitter' target='_blank'><span>Share on Twitter</span>&#xe602;</a><a class='socialicon pinterest'>&#xe603;</a><a class='socialicon gplus' target='_blank'>&#xe605;</a><a class='socialicon linkedin' target='_blank'><img src='//www.worldnomads.com/Media/Default/shareimages/linkedin-share-icon.png'></a><a class='socialicon stumbleupon' target='_blank'><img src='//www.worldnomads.com/Media/Default/shareimages/stumble-share-icon.png'></a><a class='socialicon plus'></a> </div></div></div></div></div></div></div></div></div></div></div></div></div></div>");
+        form.html("<div class='successmessage'> <div class='small-12 columns'> <div class='form'> <div class='large-offset-1 large-10 columns'> <div class='row'> <div class='large-12 columns'> <div class='row'> <div class='small-12 columns tick tables'> <span class='table-1'><span class=''></span></span> <span class='table-2'><h2 class=''>Thank's for entering!</h2></span> </div></div><div class='row'> <div class='large-offset-1 large-10 columns'> <h4>The winner of this trip will be announced April 25th.</h4> <h5>Download your marching orders from Fodor’s to explore on foot these iconic European and five bonus US cities! Or read it later (check your email!)</h5> <p></p></div></div><div class='row'><div class='large-offset-1 small-12 large-5 columns'> <div class=''> <a href='#form' class='base-button orange expand'>Download your Free Fodor's Guide</a> </div></div></div><hr class='large-offset-1 large-10 columns'> <div class='row'> <div class='large-offset-1 large-10 columns'> <div class='social'> <h5 class='strong'>Tell a friend about this competition!</h5> <div id='sharetools-long'> <div class='row'> <div class='small-12 columns'> <div id='socialarea'> <div id='share-icons'> <a class='socialicon facebook' target='_blank'><span>Share on Facebook</span>&#xe607;</a><a class='socialicon twitter' target='_blank'><span>Share on Twitter</span>&#xe602;</a><a class='socialicon pinterest'>&#xe603;</a><a class='socialicon gplus' target='_blank'>&#xe605;</a><a class='socialicon linkedin' target='_blank'><img src='//www.worldnomads.com/Media/Default/shareimages/linkedin-share-icon.png'></a><a class='socialicon stumbleupon' target='_blank'><img src='//www.worldnomads.com/Media/Default/shareimages/stumble-share-icon.png'></a><a class='socialicon plus'></a> </div></div></div></div></div></div></div></div></div></div></div></div></div></div>");
         $(window).scrollTop($('#form').position().top);
       }
     });
