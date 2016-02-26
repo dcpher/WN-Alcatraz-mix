@@ -10,7 +10,7 @@
 
 @media all and (min-width: 860px) {
   #header-panel {
-    background-image: url('/Media/Default/competitions/urban-march/Feature-Component-Full.jpg');
+    background-image: url('/Media/Default/competitions/urban-march/hero-urbanmarch-desktop.jpg');
     background-color: #999999;
     background-size: cover;
     background-position: top center;
@@ -32,7 +32,7 @@
 
 @media all and (max-width: 1024px) {
   #header-panel {
-    background-image: url('/Media/Default/competitions/urban-march/Feature-Component-Tablet.jpg');
+    background-image: url('/Media/Default/competitions/urban-march/hero-urbanmarch-tablet.jpg');
     min-height: 500px;
     background-position: center top;
   }
@@ -46,6 +46,16 @@
   }
 }
 
+/* -- content heading H2 -- */
+.urbanMarch-contentHeading a {
+  font-size: inherit;
+}
+
+/* -- destinationContent Below Form */
+.destinationContent {
+  margin: 0 0 60px 0;
+}
+
 /* ---- Features Section ---- */
 .feature-box {
   min-height: 250px;
@@ -56,27 +66,27 @@
 }
 
 .feature-box.paris {
-  background-image: url('/Media/Default/competitions/urban-march/WN-urban-march-FB_0004_Feature-Component_Paris.jpg');
+  background-image: url('/Media/Default/competitions/urban-march/featureComponent-450x440-paris.jpg');
   background-color: #999999;
 }
 
 .feature-box.london {
-  background-image: url('/Media/Default/competitions/urban-march/WN-urban-march-FB_0000_Feature-Component_London.jpg');
+  background-image: url('/Media/Default/competitions/urban-march/featureComponent-450x440-london.jpg');
   background-color: #999999;
 }
 
 .feature-box.rome {
-  background-image: url('/Media/Default/competitions/urban-march/WN-urban-march-FB_0001_Feature-Component_Rome.jpg');
+  background-image: url('/Media/Default/competitions/urban-march/featureComponent-450x440-rome.jpg');
   background-color: #999999;
 }
 
 .feature-box.barcelona {
-  background-image: url('/Media/Default/competitions/urban-march/WN-urban-march-FB_0003_Feature-Component_Barcelona.jpg');
+  background-image: url('/Media/Default/competitions/urban-march/featureComponent-450x440-barcelona.jpg');
   background-color: #999999;
 }
 
 .feature-box.berlin {
-  background-image: url('/Media/Default/competitions/urban-march/WN-urban-march-FB_0002_Feature-Component_Berlin.jpg');
+  background-image: url('/Media/Default/competitions/urban-march/featureComponent-450x440-berlin.jpg');
   background-color: #999999;
 }
 
@@ -162,14 +172,14 @@ form .small-12 {
 }
 
 .steps2::before{
-  content: url(/Media/Default/competitions/urban-march/arrow-1.png);
+  content: url(/Media/Default/competitions/urban-march/formHeaderArrow-1.png);
   float: left;
   width: 30px;
   height: 90px;
 }
 
 .steps3::before{
-  content: url(/Media/Default/competitions/urban-march/arrow-2.png);
+  content: url(/Media/Default/competitions/urban-march/formHeaderArrow-2.png);
   float: left;
   width: 30px;
   height: 90px;
@@ -221,7 +231,7 @@ form .small-12 {
  }
 
 .arrow .table-1 span{
-  background-image: url('/Media/Default/competitions/urban-march/arrow.png');
+  background-image: url('/Media/Default/competitions/urban-march/formContentArrow.png');
   background-size: contain;
   background-repeat: no-repeat;
   min-height: 35px;
@@ -272,25 +282,25 @@ form .small-12 {
 
 /* City Map buttons */
 .con.feature-box.paris {
-  background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-cuba.jpg');
+  background-image: url('/Media/Default/competitions/urban-march/.jpg');
   background-color: #999999;
 }
 
 .con.feature-box.london {
-  background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-transylvania.jpg');
+  background-image: url('/Media/Default/competitions/urban-march/.jpg');
   background-color: #999999;
 }
 
 .con.feature-box.rome {
-  background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-india.jpg');
+  background-image: url('/Media/Default/competitions/urban-march/.jpg');
   background-color: #999999;
 }
 .con.feature-box.barcelona {
-  background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-india.jpg');
+  background-image: url('/Media/Default/competitions/urban-march/.jpg');
   background-color: #999999;
 }
 .con.feature-box.berlin {
-  background-image: url('/Media/Default/competitions/urban-march/confirmation-feature-box-india.jpg');
+  background-image: url('/Media/Default/competitions/urban-march/.jpg');
   background-color: #999999;
 }
 
@@ -526,18 +536,14 @@ input#travelling-yes, input#travelling-no {
   <div class="large-8 medium-8 small-12 columns">
 
     <!-- Introduction Content -->
-    <h2>Win a 5-night/6-day trip to one of Europe’s most iconic cities: London, Berlin, Paris, Barcelona or Rome with <a href="">World Nomads</a> and Fodor’s Travel.</h2> 
-    
+    <h2 class="urbanMarch-contentHeading">Win a 5-night/6-day trip to one of Europe’s most iconic cities: London, Berlin, Paris, Barcelona or Rome with <a href="">World Nomads</a> and Fodor’s Travel.</h2>
+
     <p class="highlight">Armed with Fodor’s “10 Great Walks in Our Favorite Cities,” the lucky pair will take to the streets to experience the sights, sounds and excitement of a great European city.</p>
-      
-<!--
-    <h2>This March, let <a href="">World Nomads</a> and our friends at Fodor’s Travel let you and a companion put your best foot forward with a chance to win a 5-night/6-day trip to one of Europe’s most iconic cities: London, Berlin, Paris, Barcelona or Rome.</h2>
-    <p class="highlight">Armed with Fodor’s “10 Great Walks in Our Favorite Cities,” the lucky pair will take to the streets to experience the sights, sounds and excitement of a great European city, where living history is around every corner.</p>
--->
+
     <p>From London’s Thames Path and Rome’s Spanish Steps to Barcelona’s La Rambla, the siren song of the city beckons you to get out of the gridlock and hit the bricks for an urban walkabout. Call it strolling, ambling, traipsing, hiking, trekking, tramping or walking, but no matter what you call it, getting to know a city like a local is best done on foot.</p>
-    <p>And thanks to some fabulous apparel from Toad & Co., you will be geared out head to toe for a seamless transition from a day of pounding the pavement to a stylish night on the town.</p>
-      <p>Also, just by entering the contest you can download Fodor’s “10 Great Walks in Our Favorite Cities,” which not only has five great itineraries for these European cities but also tours for five bonus US cities, for those who like to Urban March closer to home. Everyone’s a winner, so don’t drag your feet.</p> 
-  
+    <p>And thanks to some fabulous apparel from Toad &amp; Co., you will be geared out head to toe for a seamless transition from a day of pounding the pavement to a stylish night on the town.</p>
+      <p>Also, just by entering the contest you can download Fodor’s “10 Great Walks in Our Favorite Cities,” which not only has five great itineraries for these European cities but also tours for five bonus US cities, for those who like to Urban March closer to home. Everyone’s a winner, so don’t drag your feet.</p>
+
     <!-- Featured Cities -->
     <div class="row panels-wrapper">
       <div class="large-4 medium-12 small-12 columns">
@@ -546,7 +552,7 @@ input#travelling-yes, input#travelling-no {
             </ul>
             <a href=""><h4>Paris</h4></a>
             <div class="bottom red">
-              <p><a href="#paris">The Left Bank</a></p>
+              <p><a href="#destinationContent-paris">The Left Bank</a></p>
             </div>
         </div>
       </div>
@@ -556,7 +562,7 @@ input#travelling-yes, input#travelling-no {
           </ul>
           <a href=""><h4>London</h4></a>
           <div class="bottom red">
-            <p><a href="#london">Crowning Glories<span></span></a></p>
+            <p><a href="#destinationContent-london">Crowning Glories<span></span></a></p>
           </div>
         </div>
       </div>
@@ -566,7 +572,7 @@ input#travelling-yes, input#travelling-no {
           </ul>
           <a href=""><h4>Rome</h4></a>
           <div class="bottom red">
-            <p><a href="#rome">Historic Heart<span></span></a></p>
+            <p><a href="#destinationContent-rome">Historic Heart<span></span></a></p>
           </div>
         </div>
       </div>
@@ -576,7 +582,7 @@ input#travelling-yes, input#travelling-no {
           </ul>
           <a href=""><h4>Barcelona</h4></a>
           <div class="bottom red">
-            <p><a href="#rome">La Rambla<span></span></a></p>
+            <p><a href="#destinationContent-barcelona">La Rambla<span></span></a></p>
           </div>
         </div>
       </div>
@@ -586,7 +592,7 @@ input#travelling-yes, input#travelling-no {
           </ul>
           <a href=""><h4>Berlin</h4></a>
           <div class="bottom red">
-            <p><a href="#rome">Berlin Wall<span></span></a></p>
+            <p><a href="#destinationContent-berlin">Berlin Wall<span></span></a></p>
           </div>
         </div>
       </div>
@@ -1243,6 +1249,92 @@ input#travelling-yes, input#travelling-no {
   <!-- End Entry Form -->
 </div>
 <!-- End Entry Form Section -->
+
+
+<!-- Start below form Content Section -->
+
+<div class="row">
+  <div class="large-8 medium-8 small-12 columns">
+      <div>
+      <h2 class="first">Get the details about all the cities.</h2>
+      </div>
+
+      <div id="destinationContent-paris" class="destinationContent">
+        <p><img src="/Media/Default/competitions/urban-march/destinationContent-paris.jpg" /></p>
+        <h3>Paris</h3>
+        <p>With its grand boulevards, stunning monuments, lively café scene, and epic museums, Paris is a dream destination and one of the world’s most romantic cities. Writers and artists have been drawn to Paris for generations, leaving in their wake a city that’s effortlessly cool and endlessly fascinating. From the Louvre to the latest Michelin-starred dining hot spot, the City of Light is where culture is celebrated and trendsetting is de rigueur.
+        </p>
+        <div class="row">
+			<div class="small-12 large-4 columns">
+			   <div class="applynowarea">
+				  <a href="#form" class="base-button orange expand">Enter for Paris</a>
+			   </div>
+			</div>
+        </div>
+      </div>
+
+      <div id="destinationContent-london" class="destinationContent">
+            <p><img src="/Media/Default/competitions/urban-march/destinationContent-london.jpg" /></p>
+            <h3>London</h3>
+            <p>From Shakespeare to the Sex Pistols, Lady Di to Downton Abbey, we colonials just can’t seem to get enough of all things English. And the vibrant, cosmopolitan city of London is where it’s all at: Thethrilling architecture, living history, fantastic shopping, world-renowned theater, and a music scene that always seems one step ahead. God save the queen ... we mean it, man.
+            </p>
+            <div class="row">
+				<div class="small-12 large-5 columns">
+				   <div class="applynowarea">
+					  <a href="#form" class="base-button orange expand">Enter for London</a>
+				   </div>
+				</div>
+            </div>
+        </div>
+
+      <div id="destinationContent-rome" class="destinationContent">
+            <p><img src="/Media/Default/competitions/urban-march/destinationContent-rome.jpg" /></p>
+            <h3>Rome</h3>
+            <p>There’s no cool like Italian cool. After all, they’ve had almost 3,000 years to perfect la dolce vita. With its ancient ruins, cutting-edge fashion and design, exquisite cuisine, and mind-blowing art collections, Rome truly is the Eternal City. And when in Rome do as the Romans do: Solve the world’s problems over a cup of espresso at a charming café.
+            </p>
+            <div class="row">
+                <div class="small-12 large-4 columns">
+                   <div class="applynowarea">
+                     <a href="#form" class="base-button orange expand">Enter for Rome</a>
+                   </div>
+                </div>
+            </div>
+      </div>
+
+      <div id="destinationContent-barcelona" class="destinationContent">
+            <p><img src="/Media/Default/competitions/urban-march/destinationContent-barcelona.jpg" /></p>
+            <h3>Barcelona</h3>
+            <p>Any city that can claim Salvador Dalí, Pablo Picasso, Joan Miró, and Antoni Gaudí as its own has to have something special going on. And vivacious Barcelona definitely delivers. Gaudi’s architectural freak-outs, the surrealist masterpieces, sparkling beaches, nonstop nightlife and tapas for days make the Catalan capital one of the world’s most enduring and enchanting cities.
+            </p>
+            <div class="row">
+                <div class="small-12 large-4 columns">
+                   <div class="applynowarea">
+                     <a href="#form" class="base-button orange expand">Enter for Barcelona</a>
+                   </div>
+                </div>
+            </div>
+      </div>
+
+      <div id="destinationContent-berlin" class="destinationContent">
+            <p><img src="/Media/Default/competitions/urban-march/destinationContent-berlin.jpg" /></p>
+            <h3>Berlin</h3>
+            <p>Both low and high culture collide in this hip, energetic city, with colorful street art and pulsing, all-night dance clubs rubbing shoulders with fairy-tale palaces and opera performances. A gay friendly destination noted for its festivals, museums, galleries, monuments and memorials, Berlin has reinvented itself since the fall of the wall as one of Europe’s hottest cities.
+            </p>
+            <div class="row">
+                <div class="small-12 large-4 columns">
+                   <div class="applynowarea">
+                     <a href="#form" class="base-button orange expand">Enter for Berlin</a>
+                   </div>
+                </div>
+            </div>
+      </div>
+
+  </div>
+</div>
+
+<!-- End below form Content Section -->
+
+
 
 <!-- Mobile Email Reminder -->
 <div class="mobilesignup">
