@@ -230,6 +230,12 @@ form .small-12 {
   height: 50px;
  }
 
+ .form .form-input-content {
+    display: block;
+    padding-top: 8px;
+    font-weight: 400;
+ }
+
 .arrow .table-1 span{
   background-image: url('/Media/Default/competitions/urban-march/formContentArrow.png');
   background-size: contain;
@@ -851,14 +857,18 @@ input#travelling-yes, input#travelling-no {
                     </div>
                     <div class="columns medium-4 small-12">
                       <label>Country of residence</label>
+                      <!--
                       <select id="fieldqkuily" name="cm-fo-qkuily">
                         <option value="">Please select</option>
                         <option value="961505">Canada</option>
                         <option value="961705">United States of America</option>
                       </select>
+                      -->
+                      <!--  Need to add a hidden field for US Residents  -->
+                      <label class="form-input-content">United States of America</label>
                     </div>
                     <div class="columns medium-4 small-12">
-                      <label>State/Providence</label>
+                      <label>State</label>
                       <select id="fieldqkiqr" name="cm-fo-qkiqr">
                         <option value="">Please select</option>
                         <option value="957913">Alabama</option>
@@ -912,6 +922,7 @@ input#travelling-yes, input#travelling-no {
                         <option value="957919">West Virginia</option>
                         <option value="957920">Wisconsin</option>
                         <option value="957921">Wyoming</option>
+<!--
                         <option value="958370">Nunavut</option>
                         <option value="958371">Quebec</option>
                         <option value="958372">Northwest Territories</option>
@@ -925,6 +936,7 @@ input#travelling-yes, input#travelling-no {
                         <option value="958381">New Brunswick</option>
                         <option value="958382">Nova Scotia</option>
                         <option value="958376">Prince Edward Island</option>
+-->
                       </select>
                     </div>
                     <div class="columns medium-4 small-12">
@@ -1231,6 +1243,8 @@ input#travelling-yes, input#travelling-no {
                             I am 18 years old or over
                           </label>
                         </p>
+
+                        <p class="small">Please be aware, all information collected for the 2016 Urban March Contest will be shared with our business partners, Fodor’s Travel and Toad &amp; Co, and such information may be used for Fodor’s Travel’s and Toad &amp; Co’s own business purposes, as described in their respective <a href="http://www.fodors.com/about/privacy/index.cfm">Fodors Privacy Policy</a> and <a href="http://www.toadandco.com/service/privacy-policy.html">Toad &amp; Co Privacy Policy</a></p>
 
                       </div>
                       <div class="large-12 columns">
