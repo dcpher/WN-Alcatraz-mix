@@ -1,0 +1,169 @@
+{% block content %}
+
+<!-- STYLES -->
+<style>
+#header-panel h1, #header-panel p.highlight {
+  color: #ffffff;
+  max-width: 100%;
+}
+@media all and (min-width: 860px) {
+#article-content ul.breadcrumb {
+  margin-top: 0px;
+}
+@media all and (min-width: 860px) {
+  #header-panel {
+    background-image: url('/Media/Default/competitions/urban-march/hero-urbanmarch-desktop.jpg');
+    background-color: #999999;
+    background-size: cover;
+    background-position: top center;
+    min-height: 500px;
+  }
+
+  #article-header p.highlight {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+  }
+@media all and (max-width: 1024px) {
+  #header-panel {
+    background-image: url('/Media/Default/competitions/urban-march/hero-urbanmarch-tablet.jpg');
+    min-height: 500px;
+    background-position: center top;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #header-panel {
+    background-image: url('/Media/Default/competitions/urban-march/hero_urbanmarch_mobile.jpg');
+    background-position: center bottom;
+    min-height: 680px;
+  }
+}
+</style>
+<!-- STYLES End -->
+
+
+
+<!-- Header -->
+
+<div class="hero-content-panel" id="header-panel">
+  <div class="row">
+    <div class="small-12 medium-8 large-6 columns">
+      <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <ul class="breadcrumb">
+          <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="/"><span itemprop="title">World Nomads</span></a>
+          </li>
+          <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="/competitions/"><span itemprop="title">Competitions</span></a>
+          </li>
+          <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="/competitions/urban-march"><span itemprop="title">Urban March</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="small-12 medium-10 large-8 columns left">
+      <h1>Urban March Competition: Terms &amp; Conditions</h1>
+      <p class="highlight">
+        <button class="base-button orange">Enter Now</button>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Header End -->
+
+
+
+<!-- Content Start -->
+<div class="row" id="article-content">
+
+<!-- Left column content start -->
+  <div class="large-8 medium-8 small-12 columns">
+    <h2>World Nomads Urban March Contest</h2>
+    <h3>OFFICIAL RULES</h3>
+    <p>Important:  Please read these rules before entering this contest (the “Contest”).</p>
+    <p>By participating in this Contest, you agree to be bound by these Official Rules and represent that you satisfy all of the eligibility requirements below.</p>
+
+
+    <ol type="1">
+      <li>Sponsor:  Contest is sponsored by World Nomads Inc. (“Sponsor”) of 1120 NW Couch St, 10th Floor, Portland Oregon 97209. NO PURCHASE OR PAYMENT NECESSARY TO ENTER.</li>
+      <li>Eligibility:  Contest is open only to residents of the 50 United States and the District of Columbia who are 1) at least age 18 (or the age of majority in their jurisdiction, whichever is older) at the time of entry and 2) are eligible for travel insurance from Sponsor.  Directors, officers and employees of Sponsor and Fodor’s Travel, a division of Penguin Random House LLC (“Fodor’s Travel”) and Toad & Co. (“Toad & Co.”), and any of their respective parent companies, affiliate companies, subsidiaries, agents, professional advisors, and advertising and promotional agencies, and immediate family members of each  are not eligible to win any prizes. </li>
+      <li></li>
+      <li></li>
+    </ol>
+  </div>
+<!-- Left column content end -->
+
+
+<!-- Right column start -->
+  <!-- Countdown Widget -->
+  <div class="small-12 medium-4 large-3 large-offset-1 columns">
+    <div class="panel" id="sidepannel">
+      <h4>Entries close in...</h4>
+      <div id="countbox"></div>
+      <p class="small">Entries close March 31, 2016 at 11:59:59pm <a target="_blank" href="http://www.timeanddate.com/time/zones/est">(ET)</a></p>
+    </div>
+    <!-- End Countdown Widget -->
+    <!-- Partners Widget -->
+    <div class="panel" id="partnership">
+      <h4>In partnership with:</h4>
+      <div class="row panel">
+        <ul class="large-block-grid-3 small-block-grid-3">
+          <li>
+            <a href="http://www.fodors.com/" target="_blank">
+              <img src="/Media/Default/competitions/urban-march/big_logo_fodors.gif" alt="Fodor's" />
+            </a>
+          </li>
+          <li>
+            <a href="//www.worldnomads.com/travel-insurance" target="_blank">
+              <img src="/Media/Default/competitions/urban-march/big_logo_worldnomads.gif" alt="World Nomads" />
+            </a>
+          </li>
+          <li>
+            <a href="http://www.toadandco.com/" target="_blank">
+              <img src="/Media/Default/competitions/urban-march/big_logo_toad-co.gif" alt="Toad & Co" />
+            </a>
+          </li>
+         </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End Partners Widget -->
+
+
+    <!-- Important Dates Widget -->
+  <div class="small-12 medium-4 large-3 large-offset-1 columns">
+    <div id="sidePanel" class="panel">
+      <h4>Important dates</h4>
+      <div class="importantdate">
+        <div class="date">
+          <div>31</div>
+          <span>Mar</span>
+        </div>
+        <div class="info">
+          <h5>Urban March campaign close</h5>
+        </div>
+      </div>
+      <div class="importantdate">
+        <div class="date">
+          <div>25</div>
+          <span>Apr</span>
+        </div>
+        <div class="info">
+          <h5>Winner announcement</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Important Dates Widget -->
+  </div>  
+<!-- Right column end -->
+
+</div>
+<!-- Content End -->
+
+
+{% endblock %}
