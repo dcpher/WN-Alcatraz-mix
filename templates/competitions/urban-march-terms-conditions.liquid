@@ -40,6 +40,56 @@
     min-height: 680px;
   }
 }
+
+/* ---- Countdown Widget ---- */
+#sidepannel #countbox #days, #sidepannel #countbox #hours, #sidepannel #countbox #mins { color: #de5346; }
+
+.importantdate .date { background-color: #de5346; }
+
+#partnership ul li{
+  padding:0;
+}
+
+#partnership .panel {
+  padding: 0.45rem 1.25rem 0 1.25rem;
+}
+
+#partnership p.small{
+  font-size:  12px;
+}
+
+.panels-wrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Terms & Conditions List Styles */
+
+ol {
+    list-style: outside;
+}
+ol > li {
+  margin-bottom: 1rem;
+}
+ol.decimal {
+  list-style: decimal;
+}
+ol.alpha {
+    counter-reset: list;
+    margin: 0;
+}
+ol.alpha > li {
+    list-style: none;
+    position: relative;
+    left: 1.4rem;
+    margin-bottom: 0.25rem;
+}
+ol.alpha > li:before {
+    counter-increment: list;
+    content: counter(list, lower-alpha) ") ";
+    position: absolute;
+    left: -1.4rem;
+}
 </style>
 <!-- STYLES End -->
 
@@ -64,7 +114,7 @@
         </ul>
       </div>
     </div>
-    <div class="small-12 medium-10 large-8 columns left">
+    <div class="small-12 medium-6 large-8 columns left">
       <h1>Urban March Competition: Terms &amp; Conditions</h1>
       <p class="highlight">
         <button class="base-button orange">Enter Now</button>
@@ -89,36 +139,39 @@
     <p>By participating in this Contest, you agree to be bound by these Official Rules and represent that you satisfy all of the eligibility requirements below.</p>
 
 
-    <ol type="1">
+    <ol class="decimal">
       <li>Sponsor:  Contest is sponsored by World Nomads Inc. (“Sponsor”) of 1120 NW Couch St, 10th Floor, Portland Oregon 97209. NO PURCHASE OR PAYMENT NECESSARY TO ENTER.</li>
+
       <li>Eligibility:  Contest is open only to residents of the 50 United States and the District of Columbia who are 1) at least age 18 (or the age of majority in their jurisdiction, whichever is older) at the time of entry and 2) are eligible for travel insurance from Sponsor.  Directors, officers and employees of Sponsor and Fodor’s Travel, a division of Penguin Random House LLC (“Fodor’s Travel”) and Toad &amp; Co. (“Toad &amp; Co.”), and any of their respective parent companies, affiliate companies, subsidiaries, agents, professional advisors, and advertising and promotional agencies, and immediate family members of each  are not eligible to win any prizes. </li>
-      <li>Contest Period:  The Contest period is from 12:00:01 am ET on March 3, 2016 to 11:59:59pm ET on March 31, 2016 (the "Contest Period"). Sponsor’s computer is the official timekeeping device for the Contest.  All entries must be received during the Contest Period, and meet other requirements in these Official Rules, to be eligible to win a prize.
-</li>
-      <li>How to Enter:  To enter, during the Contest Period, visit the contest entry page at www.worldnomads.com/competitions/urban-march and follow the instructions to submit the following items: 
-</li>
-    
-      <li>Provide your personal details and the following information as requested:
-</li>
-      <ol type="a">
-      <li>First name, Last name</li>
-      <li>Age</li>
-      <li>Zipcode</li>
-      <li>State</li>
-      <li>Socials: twitter, Instagram</li>
-      <li>Email</li>
-      <li>Where are you traveling in the next 12 months?</li>
-      <li>When are you likely traveling next?</li>
-       </ol> 
-      <li>Nominate one of the following five cities: Barcelona, Berlin, London, Paris, or Rome;</li>
-      <li>In 100 words or less, tell us about why and/or how the city you nominated most inspires you to get out of gridlock and go walk the grid in one of Europe’s most iconic cities.</li>
-      <li>Tell us when and where you next plan to travel.</li>
-    
-        <p>The information, nomination, and description you provide is referred to below as your “Submission.”</p>
 
-<p>By posting your Submission, you agree to conform to the Guidelines and Restrictions listed below. The Sponsor reserves the right, in its sole discretion, to disqualify any entrant if Sponsor believes that the Submission does not comply with these Guidelines and Restrictions.</p>
+      <li>Contest Period:  The Contest period is from 12:00:01 am ET on March 3, 2016 to 11:59:59pm ET on March 31, 2016 (the "Contest Period"). Sponsor’s computer is the official timekeeping device for the Contest.  All entries must be received during the Contest Period, and meet other requirements in these Official Rules, to be eligible to win a prize.</li>
 
-<p>Limit:  One (1) entry per person during the Contest Period. The odds of winning will depend on the number and quality of entries received during the Contest Period.  Any attempts to obtain additional entries, including through multiple or duplicate accounts will result in disqualification.</p>
-    
+      <li>How to Enter:  To enter, during the Contest Period, visit the contest entry page at www.worldnomads.com/competitions/urban-march and follow the instructions to submit the following items:
+
+      <ol class="decimal">
+        <li>Provide your personal details and the following information as requested:
+          <ol class="alpha">
+            <li>First name, Last name</li>
+            <li>Age</li>
+            <li>Zipcode</li>
+            <li>State</li>
+            <li>Socials: twitter, Instagram</li>
+            <li>Email</li>
+            <li>Where are you traveling in the next 12 months?</li>
+            <li>When are you likely traveling next?</li>
+          </ol>
+        </li>
+        <li>Nominate one of the following five cities: Barcelona, Berlin, London, Paris, or Rome;</li>
+        <li>In 100 words or less, tell us about why and/or how the city you nominated most inspires you to get out of gridlock and go walk the grid in one of Europe’s most iconic cities.</li>
+        <li>Tell us when and where you next plan to travel.</li>
+      </ol>
+
+      <p>The information, nomination, and description you provide is referred to below as your “Submission.”</p>
+
+      <p>By posting your Submission, you agree to conform to the Guidelines and Restrictions listed below. The Sponsor reserves the right, in its sole discretion, to disqualify any entrant if Sponsor believes that the Submission does not comply with these Guidelines and Restrictions.</p>
+
+      <p>Limit:  One (1) entry per person during the Contest Period. The odds of winning will depend on the number and quality of entries received during the Contest Period.  Any attempts to obtain additional entries, including through multiple or duplicate accounts will result in disqualification.</p>
+      </li>
     </ol>
   </div>
 <!-- Left column content end -->
@@ -190,5 +243,18 @@
 </div>
 <!-- Content End -->
 
+<!-- PAGE SCRIPTS -->
+<script type="text/javascript">
+  // Countdown timer target
+  var year = 2016;
+  var month = 03;
+  var day = 31;
+  var hour= 17;
+  var min= 0;
+  var sec= 0;
+</script>
+<script type="text/javascript" src="//www.worldnomads.com/Media/Default/scripts/js/counter-countdown.js"></script>
+
+<!-- Page Scripts End -->
 
 {% endblock %}
