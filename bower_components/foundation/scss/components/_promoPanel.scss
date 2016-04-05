@@ -1,6 +1,7 @@
 // promoPanel - SMACCS based module
 
 .promoPanel {
+    position: relative;
     display: table;
     width: 100%;
     background-color: $color-light-grey;
@@ -8,15 +9,64 @@
     background-position: top left;
     background-size: cover;
 
+    &--subfeature {
+        .promoPanel-media {
+            min-height: 80px;
+        }
+
+        .promoPanel-media,
+        .promoPanel-content {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &--primary {
+        .promoPanel-content {
+            background-color: rgba($color-primary, 0.9);
+        }
+    }
+
+    &--secondary {
+        .promoPanel-content {
+            background-color: rgba($color-secondary, 0.9);
+        }
+    }
+
+    &--tertiary {
+        .promoPanel-content {
+            background-color: rgba($color-tertiary, 0.9);
+        }
+    }
+
+    &--quarternary {
+        .promoPanel-content {
+            background-color: rgba($color-quarternary, 0.9);
+        }
+    }
+
+    &--quinary {
+        .promoPanel-content {
+            background-color: rgba($color-quinary, 0.9);
+        }
+    }
+
     &-media,
     &-content {
         display: block;
         padding: $default-padding;
     }
 
+    &-media {
+        @media #{$medium-up} {
+            display: table-cell;
+        }
+    }
+
     &-content {
         background-color: rgba($color-dark-grey, 0.9);
         color: $color-white;
+
         @media #{$medium-up} {
             display: table-cell;
             vertical-align: middle;
@@ -27,4 +77,20 @@
         }
     }
 
+    .promoPanel-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &-copy {
+        color: $color-white;
+    }
+
+    &-title {
+        display: block;
+        font-size: 1.75rem;
+        line-height: 1.1;
+        margin-bottom: .5rem;
+    }
 }

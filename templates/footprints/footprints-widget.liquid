@@ -1,0 +1,118 @@
+{% block content %}
+
+<style type="text/css">
+    .zone-header, .zone-footer {
+        display: none !important;
+    }
+
+    .head {
+        margin: 0;
+        padding: 0;
+    }
+
+    .head img, .footer img {
+        display: block !important;
+        width: 1680px !important;
+    }
+
+    .fpWidget {
+        margin: 0;
+        width: 1680px;
+        padding: 80px 0;
+        background-color: #f8f8f8;
+        text-align: center;
+    }
+
+    .fpWidget-inner {
+        display: inline-block;
+        width: 1020px;
+    }
+
+    .fpWidget-table {
+        width: 100%;
+    }
+
+    .fpWidget-table td {
+        text-align: center;
+        width: 33.333%;
+    }
+
+    .fpWidget-figure {
+        display: block;
+        font-size: 60px;
+        color: #bbbbbb;
+        margin-top: 30px;
+    }
+
+    .fpWidget-subtitle {
+        margin: 40px 0 20px;
+    }
+</style>
+<div class="head">
+    <img src="/Media/Default/FootprintsImages/lp-screen-01.png"/>
+</div>
+<div class="fpWidget">
+        <div class="fpWidget-inner">
+            <h1>Lonely Planet travellers change lives</h1>
+            <p class="fpWidget-copy">Since 2006, Lonely Planet travellers have helped changed lives. When you purchase travel insurance through WorldNomads.com, you can support a Footprints Network project to help alleviate poverty around the world.</p>
+            <h3 class="fpWidget-subtitle"><strong>Lonely Planet travellers have,</strong></h3>
+            <table class="fpWidget-table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>Donated times</p>
+                            <span class="fpWidget-figure" id="donation-count">83,047</span>
+                        </td>
+                        <td>
+                            <p>Funded community projects</p>
+                            <span class="fpWidget-figure" id="project-count">102</span>
+                        </td>
+                        <td>
+                            <p>Raised for poverty alleviation</p>
+                            <span class="fpWidget-figure" id="donation-amount">$176,028</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <img src="/Media/Default/FootprintsImages/lp-screen-02.png"/>
+</div>
+
+<script type="text/javascript">
+    var footprintsAPI = "http://fpapp-api-fp.prd.wng.local/v1/donations/count";
+
+    $.getJSON(footprintsAPI, function (json) {
+
+        // Set the variables from the results array
+        var donation-count = json.results[0].donationCount;
+        console.log('Donations : ', donation-count);
+
+        var donation-amount = json.results[0].donationAmount;
+        console.log('Amount : ', donation-amount);
+
+        var project-count = json.results[0].projectCount;
+        console.log('Projects : ', project-count);
+
+        // Set the table td text
+        $('#donation-count').text(donation-count);
+        $('#donation-amount').text(donation-amount);
+        $('#project-count').text(project-count);
+    });
+
+    // Caching the link jquery object
+    // var $myLink = $('a.myLink');
+
+    // // Set the links properties
+    // $myLink.prop({
+    //     href: geocodingAPI,
+    //     title: 'Click on this link to open in a new window.'
+    // }).click(function (e) {
+    //     e.preventDefault();
+    //     window.open(this.href, '_blank');
+    // });
+</script>
+
+{% endblock %}

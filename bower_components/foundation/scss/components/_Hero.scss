@@ -1,0 +1,12 @@
+.Hero {
+    padding-bottom: 40px;
+    background-color: $color-dark-grey;
+
+    @media #{$medium-up} {
+        padding-bottom: 80px;
+    }
+
+    &-copy {
+        color: $color-white;
+    }
+}

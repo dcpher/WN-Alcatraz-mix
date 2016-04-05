@@ -1,0 +1,197 @@
+.learn-hero {
+    background: url(/Media/Default/scholarships/wn-scholarships-index-herobg.jpg) no-repeat top center;
+    background-size: cover;
+
+    .learn-breadcrumb {
+        margin-top: 90px;
+
+        @media #{$medium-up} {
+            margin-top: 120px;
+        }
+    }
+}
+
+.learn {
+    &-promo-featured {
+        .learn-promo-featured-breadcrumb {
+            &.breadcrumb {
+                @media #{$small-only} {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .promoPanel-media {
+            min-height: 120px;
+
+            @media #{$medium-up} {
+                min-height: 200px;
+            }
+        }
+    }
+
+    &-cta {
+        margin-top: 20px;
+    }
+
+    &-subfeature-01 {
+        background-image: url(/Media/Default/scholarships/wn-scholarships-promo-1.jpg);
+    }
+
+    &-subfeature-02 {
+        background-image: url(/Media/Default/scholarships/wn-scholarships-promo-2.jpg);
+    }
+
+    &-subfeature-03 {
+        background-image: url(/Media/Default/scholarships/wn-scholarships-promo-3.jpg);
+    }
+
+    &-subfeature-04 {
+        background-image: url(/Media/Default/scholarships/wn-scholarships-promo-4.jpg);
+    }
+}
+
+.learn-promo {
+    margin-top: 30px;
+
+    .breadcrumb {
+        margin-top: 20px;
+    }
+
+    &-subfeature {
+        margin-bottom: 30px;
+
+        .promoPanel-media {
+            min-height: 120px;
+
+                @media #{$medium-up} {
+                    min-height: 180px;
+                }
+        }
+
+        @media #{$medium-up} {
+            .promoPanel-content {
+                min-height: 174px;
+            }
+        }
+
+        @media #{$large-up} {
+            .promoPanel-content {
+                min-height: 200px;
+            }
+        }
+    }
+
+    &-featured {
+        margin-bottom: 30px;
+        background-image: url(/Media/Default/promo/nepal.jpg);
+    }
+
+    &-title {
+        &:hover {
+            color: $color-white;
+            text-decoration: underline;
+        }
+    }
+
+    .learn-promo-link {
+        color: $color-white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.learn-copy {
+    &-subscribe {
+        margin-top: 30px;
+        padding: 25px 15px;
+
+        @media #{$medium-up} {
+            margin-top: 50px;
+        }
+
+        &-title {
+            margin-top: 0;
+            margin-bottom: .8rem;
+        }
+
+        &-input {
+            margin-bottom: 20px;
+        }
+
+        &-options {
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+
+            > li {
+                display: inline-block;
+                width: 45%;
+                min-width: 120px;
+            }
+        }
+
+        &-submit {
+            margin-top: 20px;
+        }
+    }
+}
+
+.learn-testimonial {
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: $color-purple;
+
+    &-quote {
+        border-left: 0;
+        padding-left: 0;
+        color: $color-white;
+        font-size: 1.2rem;
+        line-height: 1.3em;
+
+        &-link {
+            color: $color-white;
+
+            &:visited {
+                color: $color-white;
+            }
+
+            &:hover {
+                color: $color-white;
+                text-decoration: underline;
+            }
+        }
+
+        &::before {
+            display: block;
+            margin-bottom: -15px;
+            font-size: 3.5rem;
+            font-family: Sans-Serif;
+            content: "\201C \201D";
+        }
+
+        @media #{$medium-up} {
+            font-size: 1.5rem;
+
+            &::before {
+                font-size: 4.5rem;
+            }
+        }
+    }
+
+    .learn-testimonial-profile {
+        width: 51px;
+        margin-right: 15px;
+        vertical-align: middle;
+    }
+
+    &-author {
+        display: inline-block;
+        color: $color-white;
+        vertical-align: middle;
+    }
+}
