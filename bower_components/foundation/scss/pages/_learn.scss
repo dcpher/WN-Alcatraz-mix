@@ -1,5 +1,5 @@
 .learn-hero {
-    background: url(/Media/Default/scholarships/wn-scholarships-index-herobg.jpg) no-repeat top center;
+    background: url('/Media/Default/scholarships/wn-scholarships-index-herobg.jpg') no-repeat top center;
     background-size: cover;
 
     .learn-breadcrumb {
@@ -60,12 +60,13 @@
 
     &-subfeature {
         margin-bottom: 30px;
+        background-position: center center;
 
         .promoPanel-media {
             min-height: 120px;
 
                 @media #{$medium-up} {
-                    min-height: 180px;
+                    min-height: 200px;
                 }
         }
 
@@ -84,7 +85,7 @@
 
     &-featured {
         margin-bottom: 30px;
-        background-image: url(/Media/Default/promo/nepal.jpg);
+        background-image: url('/Media/Default/LearnImages/food2016/promopanel_food.jpg');
     }
 
     &-title {
