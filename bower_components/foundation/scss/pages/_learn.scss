@@ -56,11 +56,21 @@
 
     .breadcrumb {
         margin-top: 20px;
+
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
     &-subfeature {
         margin-bottom: 30px;
-        background-position: center center;
+        background-position: top center;
+
+        @media #{$medium-up} {
+            background-position: center center;
+        }
 
         .promoPanel-media {
             min-height: 120px;
@@ -72,13 +82,13 @@
 
         @media #{$medium-up} {
             .promoPanel-content {
-                min-height: 174px;
+                min-height: 224px;
             }
         }
 
         @media #{$large-up} {
             .promoPanel-content {
-                min-height: 200px;
+                min-height: 248px;
             }
         }
     }
@@ -88,19 +98,12 @@
         background-image: url('/Media/Default/LearnImages/food2016/promopanel_food.jpg');
     }
 
-    &-title {
-        &:hover {
-            color: $color-white;
-            text-decoration: underline;
-        }
-    }
-
     .learn-promo-link {
         color: $color-white;
+    }
 
-        &:hover {
-            text-decoration: underline;
-        }
+    &-cta {
+        margin-top: 15px;
     }
 }
 

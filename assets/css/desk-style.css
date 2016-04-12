@@ -2846,10 +2846,9 @@ footer .disclaimer {
   -ms-border-radius: 3px;
   border-radius: 3px;
   font-size: 1.125rem;
-  line-height: 32px;
   font-weight: 300;
   color: #ffffff;
-  padding: 4px 44px 4px 15px;
+  padding: 6px 44px 7px 15px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   position: relative;
@@ -2869,7 +2868,7 @@ footer .disclaimer {
     text-decoration: none; }
   .base-button.large, button.large, .button.large {
     font-size: 1.5rem;
-    padding: 12px 50px 12px 24px; }
+    padding: 8px 50px 8px 24px; }
     .base-button.large:after, button.large:after, .button.large:after {
       top: 12px; }
   .base-button.small, button.small, .button.small {
@@ -3000,8 +2999,42 @@ footer .disclaimer {
       background: -ms-linear-gradient(top, #4f2f72 0%, #40265c 100%);
       background: linear-gradient(to bottom, #4f2f72 0%, #40265c 100%);
       border: 1px solid #2f1b43; }
+  .base-button.white, button.white, .button.white {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+    border: 1px solid #e6e6e6;
+    border: 1px solid #e6e6e6;
+    color: #222222;
+    text-shadow: none; }
+    .base-button.white:hover, button.white:hover, .button.white:hover {
+      background: #e6e6e6;
+      background: -moz-linear-gradient(top, #ededed 0%, #dedede 100%);
+      background: -webkit-linear-gradient(top, #ededed 0%, #dedede 100%);
+      background: -o-linear-gradient(top, #ededed 0%, #dedede 100%);
+      background: -ms-linear-gradient(top, #ededed 0%, #dedede 100%);
+      background: linear-gradient(to bottom, #ededed 0%, #dedede 100%);
+      border: 1px solid #cccccc; }
   .base-buttona, .base-buttona:visited, .base-button a, .base-button a:visited, buttona, buttona:visited, button a, button a:visited, .buttona, .buttona:visited, .button a, .button a:visited {
     color: #ffffff; }
+
+.base-button.base-button--alt {
+  padding-left: 18px;
+  padding-right: 18px;
+  background: none;
+  transition: all 0.08s ease-in-out; }
+  .base-button.base-button--alt:after {
+    content: none; }
+  .base-button.base-button--alt.white {
+    border: 1px solid #ffffff;
+    color: #ffffff; }
+    .base-button.base-button--alt.white:hover {
+      background: #ffffff;
+      border: 1px solid #ffffff;
+      color: #222222; }
 
 .cta-button-primary {
   -webkit-border-radius: 3px;
@@ -3012,7 +3045,7 @@ footer .disclaimer {
   line-height: 32px;
   font-weight: 300;
   color: #ffffff;
-  padding: 4px 44px 4px 15px;
+  padding-left: 4px 44px 4px 15px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   position: relative;
