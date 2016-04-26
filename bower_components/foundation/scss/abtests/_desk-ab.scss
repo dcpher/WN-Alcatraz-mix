@@ -1,0 +1,55 @@
+.desk-ab {
+    &-subnav {
+        display: block;
+        margin-top: 0;
+        padding-top: 65px;
+        margin-bottom: -40px;
+        background-color: $color-blue;
+
+        &Inner {
+            width: 95%;
+            margin: 0 auto;
+            max-width: 71.875rem;
+            padding: 20px .9375rem;
+        }
+
+        &Title {
+            display: inline-block;
+            color: $color-white;
+            margin: 0 20px 0 0;
+        }
+
+        &Title,
+        &Cta {
+            vertical-align: middle;
+        }
+    }
+
+    &-banner {
+        margin-bottom: 40px;
+        padding: 45px;
+        background: $color-dark-grey url('https://www.worldnomads.com/Media/Default/desk/abtest/desk-ab-banner-bg.jpg') no-repeat center center;
+        background-size: cover;
+
+        &Title {
+            max-width: 340px;
+            margin: 0 0 20px 0;
+            display: inline-block;
+            color: $color-white;
+        }
+    }
+
+    &-postArticle {
+        margin-top: 20px;
+
+        .desk-ab-postArticleTitle {
+            display: inline-block;
+            margin: 0 20px 0 0;
+        }
+
+        &Title,
+        &Cta {
+            vertical-align: middle;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.reveal-desk {
+    &-qqc {
+        max-width: 740px;
+
+        #qqc {
+            margin-top: 0;
+            margin-bottom: 0;
+
+            h1 {
+                display: none;
+            }
+        }
+
+        .qqc-container {
+            .qqc-background {
+                background: transparent;
+                padding: 0;
+            }
+        }
+
+        &-title {
+            margin-bottom: 0;
+            color: $color-white;
+        }
+
+        .close-reveal-modal {
+            top: 2px;
+            right: 10px;
+            color: $color-white;
+            opacity: 0.5;
+            font-size: 2.2rem;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.autocomplete {
+    &.wn-insurance-quote-editor {
+        z-index: 1006;
+    }
+}

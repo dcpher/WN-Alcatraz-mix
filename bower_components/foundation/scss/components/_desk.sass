@@ -1,45 +1,49 @@
 // desk styles
 body
   position: inherit
-  
+
+// HACKS, HACKS EVERYWHERE!
+.content
+  position: unset
+
 #main
   @include grid-row()
   //margin-top: rem-calc(32)
   margin-top: rem-calc(90)
-  
-    
+
+
   // header style blue panel with search box
   #header-content
     @include panel($bg: $color-blue, $adjust: true)
     margin-bottom: rem-calc(32)
-    
+
     .csc-header-panel
       @include grid-row($behavior: nest)
-        
-      .csc-title  
+
+      .csc-title
         @include grid-column(12)
-            
+
       .search-bar
         @include grid-row($behavior:nest-collapse)
         padding: 0 rem-calc(12)
-        
+
         .search-terms
           @include grid-column(7)
           //min-height: 52px
           margin-bottom: 0
-          
+
         .search-submit
           //margin-top: rem-calc(12)
-          
+
     .change-country-of-residence
-      a, a:visited 
-        color: $color-inverse          
-    
+      a, a:visited
+        color: $color-inverse
+
   #main-content
     @include grid-column(9)
     @media #{$medium-only}
       @include grid-column(8)
-      
+
     // Alert Box For Current events
     .current-events
       @include panel($bg: lighten($color-red, 20), $adjust: true)
@@ -53,7 +57,7 @@ body
         .article
           a
             color: $color-white
-     
+
     // Index page Topic List
     .browse-by-topic
       .topics
@@ -84,13 +88,13 @@ body
                 color: $color-mid-grey
                 margin-right: rem-calc(8)
                 margin-left: rem-calc(-20)
-  
+
   // Right hand column contact info styles
   .aside
     @include grid-column(3)
     @media #{$medium-only}
       @include grid-column(4)
-    
+
     // Small search panel to appear on Q&A pages
     .small-search-bar
       @include panel($bg: $color-blue, $adjust: true)
@@ -99,10 +103,10 @@ body
       .small-search-submit
         margin-top: rem-calc(8)
         width: 100%
-      
+
     .talk-to-us, .emergencies, .contact-us
       margin-bottom: rem-calc(32)
-      
+
     p
       margin-bottom: rem-calc(4)
     .talk-to-us
@@ -112,8 +116,8 @@ body
           font-weight: 300
         dd
           color: $color-mid-grey
-    
-    // desk contact icon list 
+
+    // desk contact icon list
     ul.desk-contact-list
       margin-top: rem-calc(10)
       margin-left: 0
@@ -124,7 +128,7 @@ body
         margin-left: rem-calc(0)
         margin-bottom: rem-calc(6)
         a
-        .fa          
+        .fa
           color: $color-white
           font-size: rem-calc(16)
           padding-top: rem-calc(7)
@@ -134,11 +138,11 @@ body
           height: rem-calc(30)
           background-color: $color-blue
           margin-right: 8px
-          
+
         &:hover
-          .fa 
+          .fa
             background-color: $color-blue
-   
+
   // Article styles
   .article
     h3
@@ -159,7 +163,7 @@ body
     .author
       margin-top: rem-calc(16)
       margin-bottom: rem-calc(32)
-      
+
     .rate-article
       margin-top: rem-calc(32)
       div
@@ -184,12 +188,12 @@ body
         content: '\f077'
       .rate-link-down a:before
         content: '\f078'
-  time    
+  time
     &.last-updated
       color: $color-mid-grey
       display: block
       margin: rem-calc(32) 0
-          
+
   // Question Styles
   .question-details, .question-answers
     margin-bottom: rem-calc(32)
@@ -227,17 +231,17 @@ body
           .score, .increment:before, .decrement:before
             text-align: center
             display: block
-            
+
           .increment:before, .decrement:before
             visibility: visible
             font: normal normal normal 14px/1 FontAwesome
-            
-          .increment:before 
+
+          .increment:before
             content: '\f077'
           .decrement:before
             content: '\f078'
-          
-        // list stles inside answers  
+
+        // list stles inside answers
         ul
           list-style: disc
           margin-bottom: rem-calc(16)
@@ -245,9 +249,9 @@ body
           margin-right: rem-calc(44)
           li
             margin-bottom: rem-calc(8)
-          
-          
-    
+
+
+
   // All Questions or Article styles
   .questions-or-articles, .search-results
     nav
@@ -290,7 +294,7 @@ body
           display: inline-block
           margin-top: 0
           margin-bottom: rem-calc(20)
-    
+
   #paginate_block
     margin-bottom: rem-calc(32)
     .pagination
@@ -307,20 +311,20 @@ body
       .current
         color: $color-white
         background-color: $color-blue
-      
-          
+
+
   // small view
   @media #{$small-only}
     margin-top: rem-calc(90)
     #header-content
       // Adding -10 to make the panel go full-width
       margin: 0 rem-calc(-10)
-      
+
       .csc-header-panel
-        .csc-title  
+        .csc-title
           @include grid-column(12)
         .search-bar
-          
+
           .search-terms
             @include grid-column(12)
             min-height: 52px
@@ -331,7 +335,7 @@ body
 
     #main-content
       @include grid-column(12)
-        
+
       .current-events
         // Adding -22 to make the panel go full-width
         margin: 0 rem-calc(-22)
@@ -343,6 +347,6 @@ body
     .aside
       @include grid-column(12)
 
-  
-  
-    
+
+
+
