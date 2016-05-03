@@ -4564,34 +4564,6 @@ div.grey-pattern {
   .iconBadge-fill {
     fill: #ffffff; }
 
-.Swatch {
-  display: inline-block;
-  margin-right: 32px; }
-  .Swatch-colour, .Swatch-details {
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 8px; }
-  .Swatch-colour {
-    width: 112px;
-    height: 112px;
-    margin-right: 16px; }
-  .Swatch-details {
-    margin-left: 0; }
-    .Swatch-details > li {
-      margin-bottom: 0; }
-      .Swatch-details > li:first-child {
-        margin-bottom: 8px;
-        font-weight: 600; }
-
-.Hero {
-  padding-bottom: 40px;
-  background-color: #444642; }
-  @media only screen and (min-width:40.063em) {
-    .Hero {
-      padding-bottom: 80px; } }
-  .Hero-copy {
-    color: #ffffff; }
-
 /* Add link to Desktop Image */
 .home-headerPromo .promoPanel {
   margin-bottom: 20px;
@@ -4888,6 +4860,34 @@ div.grey-pattern {
     display: inline-block;
     color: #ffffff;
     vertical-align: middle; }
+
+.Hero {
+  padding-bottom: 40px;
+  background-color: #444642; }
+  @media only screen and (min-width:40.063em) {
+    .Hero {
+      padding-bottom: 80px; } }
+  .Hero-copy {
+    color: #ffffff; }
+
+.Swatch {
+  display: inline-block;
+  margin-right: 32px; }
+  .Swatch-colour, .Swatch-details {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 8px; }
+  .Swatch-colour {
+    width: 112px;
+    height: 112px;
+    margin-right: 16px; }
+  .Swatch-details {
+    margin-left: 0; }
+    .Swatch-details > li {
+      margin-bottom: 0; }
+      .Swatch-details > li:first-child {
+        margin-bottom: 8px;
+        font-weight: 600; }
 
 .insurance-trustPilot-desktop {
   display: none; }

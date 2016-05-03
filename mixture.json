@@ -7,12 +7,11 @@
   "lintScripts": false,
   "modelSource": null,
   "preprocessorLocations": [
-    "bower_components/foundation/scss",
-    "assets"
+    "bower_components/foundation/scss"
   ],
   "preprocessorScriptOutput": "assets/js",
   "preprocessorStyleOutput": "assets/css",
-  "projectDescription": "The most advanced responsive front-end framework in the world.",
+  "projectDescription": "World Nomads",
   "projectName": "WN-Alcatraz-mix",
   "publishedId": null,
   "sass": {

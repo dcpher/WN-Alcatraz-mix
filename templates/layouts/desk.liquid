@@ -1,218 +1,423 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link href="https://cdn.desk.com/assets/portal_jqueryui_only-ae2078f5d9247e97c310caf0c453b7d9.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.desk.com/assets/vendor-c0a3f0c532dd6db2d09875a0ea69a8b0.js" type="text/javascript"></script>
+  <script src="https://cdn.desk.com/assets/customer_widget-044efc6df9c5a6cdfe09ae38cde0fa38.js" type="text/javascript"></script>
+  <script src="https://cdn.desk.com/assets/portal-64ebf160cc70fb427575eca8a323cfaa.js" type="text/javascript"></script>
+  <script src="https://cdn.desk.com/assets/portal/desk.public_event_logger-b261b5d6041d73051bbb6db8fe304281.js" type="text/javascript"></script>
+  <script src="https://www.google.com/jsapi?key=ABQIAAAAQO2RPu5r12mVC40HMDIFHRQqrBpdv_jP_dFl8Cw_MxS37sDB3xTXnsXso23z1ROPVCqEVVv6cqz_cA" type="text/javascript"></script>
+  <script src="https://cdn.desk.com/assets/tracking-fa783f3c0c6abfbb760eb8ead6cb554e.js" type="text/javascript"></script>
+  <script src="//webassets.desk.com/assets/js/analytics/deskanalytics.js" type="text/javascript"></script>
+  <script src="https://cdn.desk.com/assets/tracking/settings/production-158454f93db4467614c0b03dd247b5b0.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+  <meta content="fuU1SIciJMsbsNXFTIg42YKprImP/7SUrQqJsha+yiM=" name="csrf-token" />
+  <meta name="site_id" content="88622" />
+  <meta name="env" content="production" />
+  <meta name="public_events_server" content="events.deskapi.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel='icon' type='image/png' href='http://cdn.worldnomads.net/Themes/Nomads/Images/favicon.png' />
 
-<head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-<!--    <script async="" src="Themes/Nomads/scripts/gtm.js"></script> -->
-<!--    <script async="" src="Themes/Nomads/scripts/analytics.js"></script> -->
-    <script type="text/javascript">
-window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.net","licenseKey":"","applicationID":"","transactionName":"YgYGYUJWXRUFVRJfWFtMMUdZGGEJC0I=","queueTime":0,"applicationTime":410,"ttGuid":"E7D9C20B2B352BD7","agent":""}
-    </script>
-    <script type="text/javascript"></script>
-    <script type="text/javascript">
-window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.net","licenseKey":"","applicationID":"","transactionName":"YgYGYUJWXRUFVRJfWFtMLEFER3sHClIKU0UaLBZWWFZBAkp7EFUZZwwRQVVEHTUMUwpaZVoWEFAbf0cSFHcVT1lWKwVbVFtWFA==","queueTime":0,"applicationTime":232,"ttGuid":"2B11F41CE21E7724","agent":""}
-    </script>
-    <script type="text/javascript"></script>
-    <meta content="Travel, Travel Safety, Travel Insurance" name="classification">
-    <meta content="General" name="Rating">
-    <meta content="Global" name="distribution">
-    <meta content="World Nomads" name="author">
-    <meta content="index,follow" name="ROBOTS">
-    <meta content="Copyright (c) 2004-2015 World Nomads" name="Copyright">
-    <meta content="no" http-equiv="imagetoolbar">
-    <meta content="true" name="MSSmartTagsPreventParsing">
-    <meta content="5 Days" name="revisit-after">
-    <meta content="Living Document" name="doc-class">
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport"><!-- Just IE? -->
-    <!--[if IE]><link rel="shortcut icon" href="/static/Themes/Nomads/Images/favicon.ico"><![endif]-->
+  <title>Travel Insurance - Portal | World Nomads</title>
 
-    <script src="/Themes/Nomads/scripts/jquery.min.js" type="text/javascript"></script>
+  <!-- Responsive CSS link -->
+  <link href="//cdn.worldnomads.net/Themes/Nomads/Styles/cms_screen.wn.min.css" rel="stylesheet" type="text/css">
+  <link  rel='stylesheet' type='text/css' href="/assets/css/desk-style.css">
 
-    <script src="/Themes/Nomads/scripts/jquery.videoBG.js" type="text/javascript"></script>
-    {% block header %}
-	<title>{% block title %}World Nomads - Explore Your Boundaries{% endblock %}</title>
-	{% endblock header %}
-    <!--[if (gte IE 6)&(lte IE 8)]>
-    <script src="/static/Themes/Nomads/scripts/selectivizr.js" type="text/javascript"></script>
-    <![endif]-->
+  <!-- Ubuntu Font -->
+  <link href='//fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+  <!-- Font Awesome Icons (http://fortawesome.github.io/) -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    <script src="/Themes/Nomads/scripts/fastclick.js" type="text/javascript"></script> 
-    <script src="/Themes/Nomads/scripts/tooltip.js" type="text/javascript"></script>
-    <script src="/Themes/Nomads/scripts/popover.js" type="text/javascript"></script>
-    <script src="/Themes/Nomads/scripts/spin.js" type="text/javascript"></script>
-    <style type="text/css">
-</style>
-    <script src="/Themes/Nomads/scripts/wng.animations.js" type="text/javascript"></script>
-    <script src="/Themes/Nomads/scripts/wng.responsive-cms.js" type="text/javascript"></script>
-    <script src="/Themes/Nomads/scripts/wng.googleAnalytics.js" type="text/javascript"></script>
-    <script src="/Themes/Nomads/scripts/wng.googleAnalytics.wnSpecificCustomDimensionsOrMetrics.js" type="text/javascript"></script>
-    <script src="/Themes/Nomads/scripts/modernizr.js" type="text/javascript"></script>
-    <meta content="Orchard" name="generator">
-    <meta content="Travel insurance for independent travellers from more than 150 countries. Trusted by Lonely Planet - buy, extend &amp; claim online. 24hr worldwide assistance." name="description">
-    <meta content="IE=edge,chrome=1" name="X-UA-Compatible">
+  <!-- Shared JS and CSS that makes the multi domain WN Desk stuff work -->
+  <link href="https://www.worldnomads.com/Media/Default/CSS/desk/wnDesk.css" rel='stylesheet' type='text/css' />
+  <script src="https://www.worldnomads.com/Media/Default/js/desk/wnDeskSupportingData.js" type="text/javascript"></script>
+  <script src="https://www.worldnomads.com/Media/Default/js/desk/jquery.wnDesk.js" type="text/javascript"></script>
 
+  <script>
+  var wng = wng || {};
 
-<script type='text/javascript' src='http://www.worldnomads.com/Scripts/jquery/autocomplete/jquery.autocomplete.js'></script>
-<script type='text/javascript' src='http://www.worldnomads.com/Scripts/jquery/datepicker/jquery.datepicker.js'></script>
-<script type='text/javascript' src='http://www.worldnomads.com/Scripts/jquery/datepicker/jquery.datepickerforselects.js'></script>
+  wng.responsive = (function (undefined) {
 
+    "use strict";
 
-  
-<!-- CSS Links -->
-    <link href="/Themes/Nomads/Styles/cms_screen.wn.css" rel="stylesheet" type="text/css">
-    {{ "assets/css/wn-cms-styles.css" | asset_url | stylesheet_tag }}
-    {{ "assets/css/desk-style.css" | asset_url | stylesheet_tag }}
-    <link href="/Themes/Nomads/Images/favicon.png" rel="icon">
-  
-<!--  Google  -->
-    <meta content="n48hFS7WNg2ocmkEZvrfSQyivpnQrhKwljVQNHiqy4k" name="google-site-verification">
-    <script>
-  // TODO: Update module to do this so that it isn't hardcoded into every environment.
-      wng.googleAnalytics('UA-177811-32', 'GTM-NB4DJG');
-    </script>
+    var initFastClick = function () {
+      FastClick.attach(document.body);
+    };
+
+    var
+      menuToggle = function () {
+        $(".nav-toggle").bind("click", function () {
+          $(".content > .nav").toggleClass("open");
+        });
+      };
+
+    var
+      initCallout = function () {
+        var $sideNav = $(".side-nav");
+        var $sideNavWithArrow = $(".side-nav, .side-nav-arrow");
+        var $sideNavSignIn = $(".side-nav-sign-in");
+        var $sideNavSignInForm = $(".side-nav-sign-in-form");
+        var $sideNavToggle = $(".side-nav-toggle");
+        var $sideNavClosePanel = $(".side-nav-close-panel");
+        var $loginLink = $sideNavSignIn.find('.existing-member, .login');
+        var isSslRedirectRequired = window.location.protocol == "https:" ? false : true;
+
+        var $menuToggles = $(
+          ".side-nav-toggle, " +
+          ".side-nav-inner-toggle, " +
+          ".side-nav-close-panel");
+
+        var expandSignIn = function () {
+          if (isSslRedirectRequired) {
+            if ($loginLink.length > 0) {
+              window.location.href = $loginLink.attr('href');
+              return false;
+            }
+          }
+          $sideNavSignInForm.addClass("open");
+          return true;
+        };
+
+        $loginLink.bind("click", function (e) {
+          if (!isSslRedirectRequired) {
+            e.preventDefault();
+          }
+        });
+
+        var turnOn = function (openSignInBool, noAnimation) {
+          var animationLength = noAnimation ? 0 : 200;
+          $sideNavWithArrow.css({ "opacity": 0, "display": "block" });
+          var continueMenuExpansion = true;
+          if (openSignInBool) {
+            continueMenuExpansion = expandSignIn();
+          }
+          if (continueMenuExpansion) {
+            $sideNavWithArrow.animate({ opacity: 1 }, animationLength, function () {
+              $sideNav.addClass("open");
+              $sideNav.removeClass("closed");
+              $sideNavToggle.addClass("open");
+              $sideNavSignIn.addClass("open");
+              $sideNavClosePanel.addClass("open");
+            });
+          }
+        };
+
+        var turnOff = function () {
+          $sideNavWithArrow.animate({ opacity: 0 }, 200, function () {
+            $sideNavWithArrow.css("display", "none");
+            $sideNav.addClass("closed");
+            $sideNav.removeClass("open");
+            $sideNavToggle.removeClass("open");
+            $sideNavSignIn.removeClass("open");
+            $sideNavClosePanel.removeClass("open");
+            $sideNavSignInForm.removeClass("open");
+          });
+        };
+
+        $menuToggles.bind("click", function (e) {
+          if ($sideNav.hasClass("closed")) {
+            turnOn();
+          } else if ($sideNav.hasClass("open")) {
+            turnOff();
+          }
+        });
+
+        $sideNavSignIn.bind("click", function () {
+          if (!isSslRedirectRequired) {
+            if ($sideNav.hasClass("closed")) {
+              turnOn(true);
+            } else {
+              expandSignIn();
+            }
+          }
+        });
+
+        $(window).bind("load resize scroll", function (e) {
+          if ($sideNav.hasClass("open")) {
+            var ulHeight = $(".side-nav .side-nav-list").filter(":visible").eq(0).height();
+            var scrollTop = $(this).scrollTop();
+
+            if (scrollTop > ulHeight) {
+              turnOff();
+            }
+            // using $media-query-skinny-landscape-width
+            // from SASS variables in core.
+            var matchMedia = window.matchMedia || window.msMatchMedia;
+            if (matchMedia && !matchMedia("(max-width: 660px)").matches) {
+              var bodyHeight = $("body").css("height");
+              $sideNav.css("height", bodyHeight);
+            }
+          }
+
+          /// so hacky need work with the global-messages state
+          if ($sideNav.hasClass("start-with-sign-in-open")
+            && $.trim($('.global-message').text()).length == 0) {
+            $sideNav.removeClass("start-with-sign-in-open");
+            turnOn(false, true);
+            expandSignIn();
+          }
+
+        });
+      };
+
+    return {
+      menuToggle: menuToggle,
+      initCallout: initCallout,
+      initFastClick: initFastClick
+    };
+
+  }());
+
+  $(function () {
+    wng.responsive.menuToggle();
+    wng.responsive.initCallout();
+    // wng.responsive.initBenefitsWidget();
+    // wng.responsive.initFastClick();
+  });
+
+  </script>
+
 </head>
+<body>
+  <div id="flash" class="flash_html">
+    <div class="agent_notifier_msg a-flash flash_notice"></div>
+  </div>
 
-<body class="cms borderless" data-feedly-mini="yes">
-    <div class="content">
-        <div class="full-width-block-index-page" id="layout-wrapper">
-            <div class="zone zone-header">
-                <article class="widget-testnav widget-header widget-kosmos-nav-widget widget">
-                    <div class="sticky-header" data-threshold="300">
-                        <a class="logo" href="http://www.worldnomads.com">World Nomads</a>
-                    </div>
+  <!-- Country of Residence modal: disabled for local static -->
+  <!-- <script>
+    $(function() {
+      $.wnDesk.requireCountryOfResidence();
+      $('.change-country-of-residence').wnDeskCountryOfResidenceSelect();
+    });
+  </script> -->
 
-                    <div class="side-nav closed">
-                        <div class="signed-out">
-                            <div class="side-nav-list">
-                                <ul>
-                                    <li class="side-nav-sign-in-form">
-                                        <form action="https://www.worldnomads.com/Member/SignIn" method="post">
-                                            <div class="input-group full-width no-label">
-                                                <input id="AuthenticationRequestDto_EmailAddress" name="AuthenticationRequestDto.EmailAddress" placeholder="Email address" type="text" value="">
-                                            </div>
-
-                                            <div class="input-group full-width no-label">
-                                                <input id="AuthenticationRequestDto_Password" name="AuthenticationRequestDto.Password" placeholder="Password" type="password">
-                                            </div>
-
-                                            <div class="actions">
-                                                <div class="input-group">
-                                                    <input id="after-sign-in-return-url" name="returnUrl" type="hidden"> <button class="button-primary">Sign in</button>
-                                                </div>
-
-                                                <div class="input-group forgotten-password">
-                                                    <a class="load-by-ajax" data-analytics-id="popup-forgot-password" href="http://www.worldnomads.com/Member/ForgotPassword">Forgotten password?</a>
-                                                </div>
-
-                                                <div class="input-group verify-guest">
-                                                    <div class="verify-guest-query">
-                                                        Bought as a guest? <a data-analytics-id="verify-guest" href="http://www.worldnomads.com/Member/VerifyGuest">Create an account</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="session-tokens"></div>
-                                        </form>
-                                    </li>
-                                </ul>
-
-                                <ul>
-                                    <li>
-                                        <a class="side-nav-a" href="http://www.worldnomads.com/travel-insurance"><span class="icon"></span> <label>Travel Insurance</label> <span class="description tablet-up">Simple &amp; flexible travel insurance for your next adventure.</span></a>
-                                    </li>
-
-                                    <li>
-                                        <a class="side-nav-a" href="http://www.worldnomads.com/travel-safety"><span class="icon"></span> <label>Travel Smart</label> <span class="description tablet-up">Insights to help you navigate the risks &amp; find the safer path.</span></a>
-                                    </li>
-
-                                    <li>
-                                        <a class="side-nav-a" href="http://www.worldnomads.com/learn"><span class="icon"></span> <label>Scholarships</label> <span class="description tablet-up">Opportunities to travel &amp; create.</span></a>
-                                    </li>
-
-                                    <li>
-                                        <a class="side-nav-a" href="http://answers.worldnomads.com/"><span class="icon"></span> <label>Community</label> <span class="description tablet-up">Tap into the knowledge of other travellers or share your expertise.</span></a>
-                                    </li>
-
-                                    <li>
-                                        <a class="side-nav-a" href="http://www.worldnomads.com/make-a-difference"><span class="icon"></span> <label>Change Lives</label> <span class="description tablet-up">Discover how travellers have helped change peoples lives.</span></a>
-                                    </li>
-
-                                    <li>
-                                        <a class="side-nav-a" href="http://www.worldnomads.com/stories"><span class="icon"></span> <label>Share Stories</label> <span class="description tablet-up">Travel stories to excite, inspire and share.</span></a>
-                                    </li>
-
-                                    <li>
-                                        <a class="side-nav-a" href="http://service.worldnomads.com/"><span class="icon"></span> <label>Help Desk</label> <span class="description tablet-up">Everything you need to know. We're here to help.</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="bottom-links">
-                                <ul></ul>
-                            </div>
+  <div id='zcompany-support-portal'>
+    <div class='zheader-container'>
+      <div class='zheader'>
+        <div class="zone zone-header">
+          <article class="widget-testnav widget-header widget-kosmos-nav-widget widget">
+            <div class="sticky-header" data-threshold="300">
+              <a class="logo" href="http:///">World Nomads</a>
+            </div>
+            <div class="side-nav closed">
+              <div class="signed-out">
+                <div class="side-nav-list">
+                  <ul>
+                    <li class="side-nav-sign-in-form">
+                      <form action="https://www.worldnomads.com/Home/SignIn" method="post">
+                        <div class="input-group full-width no-label">
+                          <input id="AuthenticationRequestDto_EmailAddress" name="AuthenticationRequestDto.EmailAddress" placeholder="Email address" type="text" value="">
                         </div>
-                    </div>
-
-                    <div class="side-nav-arrow"></div>
-
-                    <div class="side-nav-toggle">
-                        <span></span>
-                    </div>
-
-                    <div class="side-nav-sign-in">
-                        <a class="login" href="https://www.worldnomads.com/Member/OpenSignIn">Sign In</a> <span class="existing-member">Existing Member?</span>
-                    </div>
-
-                    <div class="side-nav-close-panel"></div>
-
-                    <ul class="top-links">
-                        <li>
-                            <a href="http://service.worldnomads.com/">Help Desk</a>
-                        </li>
-
-                        <li class="hide-first">
-                            <a href="http://www.worldnomads.com/make-a-difference">Change Lives</a>
-                        </li>
-
-                        <li class="hide-first">
-                            <a href="http://answers.worldnomads.com/">Community</a>
-                        </li>
-
-                        <li class="hide-second">
-                            <a href="http://www.worldnomads.com/learn">Scholarships</a>
-                        </li>
-
-                        <li>
-                            <a href="http://www.worldnomads.com/travel-safety">Travel Smart</a>
-                        </li>
-
-                        <li>
-                            <a href="http://www.worldnomads.com/travel-insurance">Travel Insurance</a>
-                        </li>
-                    </ul>
-                </article>
+                        <div class="input-group full-width no-label">
+                          <input id="AuthenticationRequestDto_Password" name="AuthenticationRequestDto.Password" placeholder="Password" type="password">
+                        </div>
+                        <div class="actions">
+                          <div class="input-group">
+                            <input id="after-sign-in-return-url" name="returnUrl" type="hidden"> <button class="button-primary">Sign in</button>
+                          </div>
+                          <div class="input-group forgotten-password">
+                            <a class="load-by-ajax" data-analytics-id="popup-forgot-password" href="http://www.worldnomads.com/Member/ForgotPassword">Forgotten password?</a>
+                          </div>
+                          <div class="input-group verify-guest">
+                            <div class="verify-guest-query">
+                              Bought as a guest? <a data-analytics-id="verify-guest" href="http://www.worldnomads.com/Member/VerifyGuest">Create an account</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="session-tokens"></div>
+                      </form>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a class="side-nav-a" href="http:///travel-insurance/"><span class="icon">&#xe617;</span> <label>Travel Insurance</label> <span class=
+                      "description tablet-up">Simple &amp; flexible travel insurance for your next adventure.</span></a>
+                    </li>
+                    <li>
+                      <a class="side-nav-a" href="http://www.worldnomads.com/travel-safety"><span class="icon">&#xe644;</span> <label>Travel Smart</label> <span class=
+                      "description tablet-up">Insights to help you navigate the risks &amp; find the safer path.</span></a>
+                    </li>
+                    <li>
+                      <a class="side-nav-a" href="http://www.worldnomads.com/learn"><span class="icon">&#xe629;</span> <label>Scholarships</label> <span class=
+                      "description tablet-up">Opportunities to travel &amp; create.</span></a>
+                    </li>
+                    <li>
+                      <a class="side-nav-a" href="http://answers.worldnomads.com"><span class="icon">&#xe645;</span> <label>Community</label> <span class="description tablet-up">Tap
+                      into the knowledge of other travellers or share your expertise.</span></a>
+                    </li>
+                    <li>
+                      <a class="side-nav-a" href="http://www.worldnomads.com/make-a-difference"><span class="icon">&#xe635;</span> <label>Change Lives</label> <span class=
+                      "description tablet-up">Discover how travellers have helped change peoples lives.</span></a>
+                    </li>
+                    <li>
+                      <a class="side-nav-a" href="http://www.worldnomads.com/stories"><span class="icon">&#xe629;</span> <label>Share Stories</label> <span class=
+                      "description tablet-up">Travel stories to excite, inspire and share.</span></a>
+                    </li>
+                    <li>
+                      <a class="side-nav-a" href="http://service.worldnomads.com"><span class="icon">&#xe63e;</span> <label>Help Desk</label> <span class=
+                      "description tablet-up">Everything you need to know. We're here to help.</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="bottom-links">
+                  <ul></ul>
+                </div>
+              </div>
             </div>
-
-            <div class="zone zone-content">
-              
-	{% block content %}
-		Main content
-	{% endblock content %}
-      
+            <div class="side-nav-arrow"></div>
+            <div class="side-nav-toggle">
+              <span></span>
             </div>
-
-            {% include "footer" %}
+            <div class="side-nav-sign-in">
+              <a class="login" href="http://www.worldnomads.com/Home/OpenSignIn">Sign In</a> <span class="existing-member">Existing Member?</span>
+            </div>
+            <div class="side-nav-close-panel"></div>
+            <ul class="top-links">
+              <li>
+                <a href="http://service.worldnomads.com">Help Desk</a>
+              </li>
+              <li class="hide-first">
+                <a href="http://www.worldnomads.com/make-a-difference">Change Lives</a>
+              </li>
+              <li class="hide-first">
+                <a href="http://answers.worldnomads.com">Community</a>
+              </li>
+              <li class="hide-second">
+                <a href="http://www.worldnomads.com/learn">Scholarships</a>
+              </li>
+              <li>
+                <a href="http://www.worldnomads.com/travel-safety">Travel Smart</a>
+              </li>
+              <li>
+                <a href="http:///travel-insurance/">Travel Insurance</a>
+              </li>
+            </ul>
+          </article>
         </div>
+      </div>
     </div>
+    <div id='main' role='main'>
 
-    <div id="window-resizer-tooltip" style="display: block;">
-        <a href="http://www.worldnomads.com/#" title="Edit settings"></a><span class="tooltipTitle">Window size:</span> <span class="tooltipWidth" id="winWidth">1430</span> x <span class="tooltipHeight" id="winHeight">873</span><br>
-        <span class="tooltipTitle">Viewport size:</span> <span class="tooltipWidth" id="vpWidth">1430</span> x <span class="tooltipHeight" id="vpHeight">734</span>
+      {% block content %}
+
+      {% endblock content %}
+
+      <aside class='aside'>
+        <div class='small-search-bar'>
+          <h5>Search our Articles</h5>
+          <form action='/customer/portal/articles/search?t=646842' method='get' id='support-search' class='support-search-small'>
+            <div class="searchbar-small">
+              <input class='search-box' maxlength='100' name='q' type='text' value='' placeholder='Enter search terms' />
+              <button type='submit' class='base-button grey small-search-submit'>Search</button>
+              <input type='hidden' name='t' value='646842'/> <input type='hidden' name='b_id' value='4646'/>
+              <i class='icon-search'></i>
+            </div>
+          </form>
+        </div>
+        <!-- GS -->
+        <section class='contact-us panel'>
+          <h4>Contact us</h4>
+          <p>Can't find the answer you're looking for?</p>
+          <div>
+            <a href="/customer/portal/emails/new" class="base-button blue">Contact Us</a>
+          </div>
+        </section>
+      </aside>
     </div>
+  </div>
+  <!-- Facebook Like Button -->
+  <div id="fb-root"></div>
 
-    <div id="feedly-mini" title="feedly Mini tookit"></div>
+  <div is='footer'>
+    <footer>
+      <div class="footer-background">
+        <div class="footer generic">
+          <a href="http:///">
+            <div class="logo"></div>
+          </a>
+          <div class="map">
+            <ul class="world-nomads">
+              <li class="title">World Nomads</li>
+              <li><a href="http:///travel-insurance/">Travel Insurance</a></li>
+              <li><a href="http:///travel-insurance/">Get a Quote</a></li>
+              <li><a href="http://www.worldnomads.com/travel-safety">Travel Smart</a></li>
+              <li><a href="http://answers.worldnomads.com">Explore</a></li>
+              <li><a href="http://www.worldnomads.com/learn">Learn</a></li>
+              <li><a href="http://www.worldnomads.com/make-a-difference">Changing Lives</a></li>
+              <li><a href="http://www.worldnomads.com/stories">Share Stories</a></li>
+            </ul>
+            <ul class="about-us">
+              <li class="title">About Us</li>
+              <li><a href="http://www.worldnomads.com/who-we-are">Who we are</a></li>
+              <li><a href="http://www.worldnomads.com/in-the-news">In the News</a></li>
+              <li><a href="https://partner.worldnomads.com/">Partners</a></li>
+              <li><a href="http://www.worldnomads.com/sitemap">Site map</a></li>
+              <li><a href="http://www.worldnomads.com/terms-of-use">Terms of use</a></li>
+              <li><a href="http://www.worldnomads.com/privacy">Privacy</a></li>
+            </ul>
+            <ul class="need-help">
+              <li class="title">Need Help?</li>
+              <li><a href="http://www.worldnomads.com/emergencies">Help &amp; Emergencies</a></li>
+              <li><a href="http://www.worldnomads.com/travel-insurance-claims">Make a claim</a></li>
+              <li><a href="http://service.worldnomads.com">Help Desk</a></li>
+              <li><a href="http://service.worldnomads.com">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="membership">
+            Already a member? <a href="http://www.worldnomads.com/Member">Sign In</a>
+          </div>
+          <ul class="social">
+            <li class="title">Follow us on</li>
+            <li class="twitter"><a href="https://twitter.com/worldnomads" target="_blank"></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/worldnomads" target="_blank"></a></li>
+            <li class="youtube"><a href="http://www.youtube.com/user/WorldNomadsTV" target="_blank"></a></li>
+            <li class="flickr"><a href="https://www.flickr.com/groups/worldnomads/" target="_blank"></a></li>
+            <li class="instagram"><a href="http://instagram.com/worldnomads/" target="_blank"></a></li>
+            <li class="vimeo"><a href="http://vimeo.com/worldnomadstv" target="_blank"></a></li>
+            <li class="pinterest"><a href="http://www.pinterest.com/worldnomads/" target="_blank"></a></li>
+          </ul>
+        </div>
+        <div class="disclaimer">
+          <!-- Google Review Code https://developers.google.com/structured-data/rich-snippets/reviews -->
+
+          <div itemscope="" itemtype="http://data-vocabulary.org/Review">
+            <p><span>&ldquo;The perfect choice for independent travellers&ldquo;</span></p>
+            <p>World Nomads <span itemprop="itemreviewed">Travel Insurance</span> was reviewed by <span itemprop="reviewer">Reviews.com</span> on <time itemprop="dtreviewed" datetime="2014-01-16">16 Jan 2014</time> and rated <span itemprop="rating">4 stars</span></p>
+          </div>
+          WorldNomads.com Pty Limited (ABN 62 127 485 198 AR 343027) is an Authorised Representative of Cerberus Special Risks Pty Limited (ABN 81 115 932 173 AFSL 308461), and markets and distributes insurance products of Bupa Denmark (Bupa Global Travel), branch of Bupa Insurance Limited, 15-19 Bloomsbury Way, London, WC1A 2BA (No. 3956433). World Nomads Limited Company (05443592) is an Appointed Representative of Millstream Underwriting Limited, 145 Leadenhall St, London EC3V 4QT (FCA 308584). World Nomads (Canada) Ltd (BC0700178, ON-1708111, SK-101206919, MB-853797942) is a licensed agent for AIG Insurance Company of Canada, 145 Wellington Street West, Toronto, ON, M5J 1H8. World Nomads, Inc. (15854422), in CA dba World Nomads Travel Insurance Services (0I46621), provides Insurance underwritten by Nationwide Mutual Insurance Company and affiliated companies, Columbus, OH. All of the information we provide about travel insurance is a brief, general summary. It doesn't take into account your personal situation, what you want or might need. Before you buy, it's important to consider what product is right for you and you should carefully read all policy documents, including the Policy Wording/Product Disclosure Statement/Certificate/Policy/Product Guide, to understand what's covered, what's not covered and the limits, terms and conditions which may apply.
+          <!-- license  -->
+          <a href='http://www.desk.com'>Customer service software</a> powered by Desk.com
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- External Variables for Portal Header -->
+  <div id="desk-external-variables-header" class="desk-external-variables">
+    <div id="read_only"></div>
+    <div id="site-default_mailbox">claims@worldnomads.com</div>
+    <div id="desk_javascript_host">https://cdn.desk.com/</div>
+    <div id="twitter_enabled">false</div>
+    <div id="twitter_username">desk</div>
+    <div id="system-snippets-loading">Loading</div>
+    <div id="system-snippets-seconds_ago">seconds ago</div>
+    <div id="system-snippets-a_minute_ago">a minute ago</div>
+    <div id="system-snippets-minutes_ago">minutes ago</div>
+    <div id="system-snippets-an_hour_ago">an hour ago</div>
+    <div id="system-snippets-hours_ago">hours ago</div>
+    <div id="system-snippets-a_day_ago">a day ago</div>
+    <div id="system-snippets-days_ago">days ago</div>
+    <div id="system-snippets-about">about</div>
+    <div id="enable_gs">false</div>
+    <div id="system-snippets-invalid_characters_found">Invalid characters found</div>
+    <div id="site-search_autocomplete_articles_url">/customer/en/portal/articles/autocomplete</div>
+    <div id="search-term"></div>
+    <script type="text/javascript" src="https://cdn.desk.com/portal/desk.portal.shared.js"></script>
+    <script type="text/javascript" src="https://cdn.desk.com/portal/desk.portal.header.js"></script>
+    <script type="text/javascript" src="https://cdn.desk.com/portal/desk.portal.body.layout_footer.js"></script>
+  </div>
 </body>
 </html>

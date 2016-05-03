@@ -3721,6 +3721,14 @@ body {
         width: 100%;
         float: left; } }
 
+footer .disclaimer p, footer .disclaimer div {
+  margin: 0;
+  display: inline; }
+
+p {
+  font-size: 18px;
+  line-height: 26px; }
+
 .reveal-desk-qqc {
   max-width: 740px; }
   .reveal-desk-qqc #qqc {
@@ -3749,7 +3757,7 @@ body {
 .desk-ab-subnav {
   display: block;
   margin-top: 0;
-  padding-top: 65px;
+  padding-top: 45px;
   margin-bottom: -40px;
   background-color: #297ac6; }
   .desk-ab-subnavInner {

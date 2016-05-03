@@ -1,0 +1,171 @@
+// World Nomads Header Side Nav module
+
+.SideNav {
+    position: absolute;
+    top: $header-height;
+    right: 0;
+    width: 100%;
+    background-color: $color-mono-xxxlight;
+    box-shadow: -2px 0 10px 0 rgba($color-mono-xxdark, .25);
+    z-index: $zindex-sidenav;
+
+    &::before {
+        display: block;
+        position: absolute;
+        right: 29px;
+        top: -9px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 10px;
+        border-color: transparent transparent $color-mono-xxxlight;
+        content: '';
+    }
+
+    &.SideNav-is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    @media screen and (min-width: 640px) {
+        top: 0;
+        width: 320px;
+        opacity: 1;
+        transition: opacity .2s ease-in-out;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &-header {
+        display: none;
+        padding: 13px 20px;
+        overflow: hidden;
+
+        .NavToggle {
+            float: right;
+            color: $font-color;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+        @media screen and (min-width: 640px) {
+            display: block;
+        }
+    }
+
+    &-navItem {
+        float: left;
+        padding: 8px 0;
+        height: 40px;
+        color: $font-color;
+        font-weight: $font-weight-bold;
+        transition: color .1s ease-in-out;
+
+        &:hover {
+            color: $color-primary;
+            text-decoration: none;
+        }
+
+        &:focus {
+            outline: 5px auto $color-mono-xxxlight;
+        }
+    }
+
+    &-member {
+        background: $color-mono-dark;
+        color: $color-mono-xxxlight;
+
+        > li {
+            border-top: 1px solid $color-mono-xlight;
+        }
+
+        &-greeting {
+            padding: 10px 20px;
+        }
+
+        .SideNav-member-link {
+            padding: 16px 16px 16px 60px;
+            color: inherit;
+        }
+
+        .SideNav-contentTitle,
+        .SideNav-icon {
+            color: inherit;
+        }
+
+        .SideNav-member-settings {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: inherit;
+        }
+    }
+
+    &-signIn {
+        float: right;
+        margin-right: 20px;
+    }
+
+    &-content {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style: none;
+
+        > li {
+            display: block;
+            border-top: $border-default;
+        }
+    }
+
+    &-contentItem {
+        position: relative;
+        display: block;
+        padding: 14px 16px 14px 60px;
+        transition: background-color .1s ease-in-out;
+
+        &:hover {
+            background-color: $color-tertiary;
+            color: $color-mono-xxxlight;
+            text-decoration: none;
+
+            .SideNav-contentTitle,
+            .SideNav-icon {
+                color: $color-mono-xxxlight;
+            }
+        }
+
+        @media screen and (min-width: 640px) {
+            padding: 16px 16px 24px 60px;
+        }
+    }
+
+    &-icon {
+        position: absolute;
+        left: 18px;
+        top: 22px;
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+        color: $font-color;
+    }
+
+    &-contentTitle {
+        margin-bottom: rem-calc(10);
+        font-size: $font-size-lge;
+        font-weight: $font-weight;
+        color: $font-color;
+    }
+
+    &-contentCopy {
+        display: none;
+        line-height: 1.3;
+
+        @media screen and (min-width: 640px) {
+            display: block;
+        }
+    }
+}

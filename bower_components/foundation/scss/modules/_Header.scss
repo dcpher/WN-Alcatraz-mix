@@ -1,0 +1,75 @@
+// World Nomads Primary Header module
+
+$nav-padding: 13px;
+
+.Header {
+    position: relative;
+    width: 100%;
+    height: $header-height;
+    padding: $nav-padding 15px;
+    background-color: rgba($color-mono-xxdark, .5);
+    z-index: $zindex-header;
+
+    @media screen and (min-width: 340px) {
+        padding: $nav-padding 20px;
+    }
+
+    &-logo {
+        margin-top: 2px;
+    }
+
+    &-nav {
+        position: absolute;
+        right: 20px;
+        top: $nav-padding;
+        bottom: $nav-padding;
+        margin: auto;
+        font-weight: $font-weight-bold;
+
+        &Item {
+            display: none;
+            float: left;
+            margin-right: 20px;
+            padding: 8px 0;
+            height: 40px;
+            color: $color-mono-xxxlight;
+            transition: color .1s ease-in-out;
+
+            &:hover {
+                color: $color-primary;
+                text-decoration: none;
+            }
+
+            &:focus {
+                outline: 5px auto $color-mono-xxxlight;
+            }
+
+            &.is-mobile {
+                display: inline-block;
+                margin-right: 5px;
+
+                @media screen and (min-width: 340px) {
+                    margin-right: 20px;
+                }
+            }
+
+            @media screen and (min-width: 750px) {
+                &.is-small {
+                    display: inline-block;
+                }
+            }
+
+            @media screen and (min-width: 832px) {
+                &.is-medium {
+                    display: inline-block;
+                }
+            }
+
+            @media screen and (min-width: 1020px) {
+                &.is-large {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

@@ -1,404 +1,428 @@
 {% layout "desk" %}
-{% block title %}Customer Service Information from TID{% endblock %}
+{% block title %}Travel Insurance - Portal | World Nomads{% endblock %}
 {% block content %}
 
-
+<!--begin:portal_body-->
 <!--begin:page_index-->
-
-
-<div id='main' role='main' class="container">  
-  
-<div id='support-header'>
+<div id="desk-external-variables-page_index" class="desk-external-variables">
+  <div id="system-snippets-just_moderated"></div>
+</div>
+<div id='header-content'>
   <div class="csc-header-panel">
     <div class="csc-title">
-      <h1>Help Desk</h1>
-      <p class='lead'>Answers to your travel insurance questions. Search what others have already asked or ask your own question.
+      <h2>Help Desk</h2>
+      <p class='intro'>Answers to all your travel insurance questions.</p>
+      <p class='change-country-of-residence'>
+        This information is for residents of <span class='country-of-residence-name'>World Nomads Service Centre</span> only.
       </p>
-      <div class='change-country-of-residence'>
-        This information is for residents of World Nomads Service Centre only.
-      </div>
-      
     </div>
-    <div class='searchbar-large search-bar'>
-      <form action='/customer/portal/articles/search' method='get' id='support-search' class='support-search-big '>
-          <input type='text' class='search search-terms' name='q' maxlength='100' value='' placeholder='Have a Question?  Ask or enter a search term here.'/>
-          <input type='hidden' name='t' value='557563'/> <input type='hidden' name='b_id' value='4646'/>
-          <input type='submit' class='button button-xlarge search-submit' value='Search' />
+    <div class='search-bar'>
+      <form action='/customer/portal/articles/search' method='get' id='support-search' class='support-search-big'>
+        <input class='search search-terms' maxlength='100' name='q' placeholder='Have a Question?  Ask or enter a search term here.' type='text' value=''>
+        <input type='hidden' name='t' value='646842'/> <input type='hidden' name='b_id' value='4646'/>
+        <button class='base-button grey search-submit' type='submit'>Search</button>
       </form>
     </div>
   </div>
 </div>
+<!-- Displaying a description of the article in the autocomplete search results -->
+<script>
+// $('#q').bind('autocompleteopen', function() {
 
+//   $(".ui-autocomplete li.ui-menu-item").each(function( index ) {
 
-<section id='main-content'>    
+//      var article = $(this).find('.article-autocomplete-body').text();
 
-  <section class='current-events'>
-    <h6>
-      Current Events:
-    </h6>
-
-    <ul class='articles'>
-
-        <li class='article'>
-          <a href='/customer/portal/articles/1915562-tropical-cyclone-pam-march-2015'>Tropical Cyclone Pam March 2015</a>
-        </li>
-
-    </ul>
-  </section>
-
-  <div class='support-body' id='main-content'>
-    <!-- Hide the 'tabbing' until we are displaying both articles and questions
-    <ul class="nav-tabs">
-      <li class="active"><h5><a href="/">Articles</a></h5></li>
-    </ul>
-    -->
-    
-   
-   <section class='browse-by-topic'>
-
-    
+//      if(article.indexOf("#") !== -1) {
+//        var string = article.split('#');
+//        var description = string[0];
+//        $(this).find('.article-autocomplete-body').text(description);
+//      }
+//   });
+// });
+</script>
+<div class='support-body' id='main-content'>
+  <section class='browse-by-topic'>
     <ul class='topics'>
-      
-        
-          <li class='topic odd'>
-            <section>
-              <h4>What&#x27;s covered &amp; not covered</h4>
-
-              
-                <section class='list-articles'>
-                  <header>
-                    <h5>
-                      Top Articles<small>8</small>
-                    </h5>
-                  </header>
-
-                  <ul class='articles'>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1088000-medical-transport-evacuation-repatriation?t=557563'>Medical transport, evacuation &amp; repatriation</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1063055-delayed-and-missed-flights?t=557563'>Delayed and missed flights</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1672733-activities-sports-and-adventures-list?t=557563'>Activities, sports and adventures list</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1063056-overseas-medical-treatment-hospitalisation?t=557563'>Overseas medical treatment &amp; hospitalisation</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1641814-valuable-specified-items?t=557563'>Valuable Specified Items</a>
-                      </li>
-                    
-                  </ul>
-                  <a href='/customer/portal/topics/428946-what-s-covered-not-covered/articles?t=557563'>View all</a>
-                </section>
-              
-
-              
-            </section>
-          </li>
-        
-      
-        
-          <li class='topic even'>
-            <section>
-              <h4>Buying a policy</h4>
-
-              
-                <section class='list-articles'>
-                  <header>
-                    <h5>
-                      Top Articles<small>13</small>
-                    </h5>
-                  </header>
-
-                  <ul class='articles'>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1063080-what-is-my-country-of-residence-?t=557563'>What is my country of residence?</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1897500-what-countries-do-you-cover-?t=557563'>What countries do you cover?</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1063162-can-i-buy-a-policy-while-i-am-already-overseas-?t=557563'>Can I buy a policy while I am already overseas?</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1897502-is-the-price-quoted-per-person-or-for-everyone-on-the-policy-?t=557563'>Is the price quoted per person or for everyone on the policy...</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1844007-what-countries-or-regions-do-i-choose-to-get-a-quote-?t=557563'>What countries or regions do I choose to get a quote?</a>
-                      </li>
-                    
-                  </ul>
-                  <a href='/customer/portal/topics/435943-buying-a-policy/articles?t=557563'>View all</a>
-                </section>
-              
-
-              
-            </section>
-          </li>
-        
-      
-        
-          <li class='topic odd'>
-            <section>
-              <h4>Am I covered if...?</h4>
-
-              
-                <section class='list-articles'>
-                  <header>
-                    <h5>
-                      Top Articles<small>18</small>
-                    </h5>
-                  </header>
-
-                  <ul class='articles'>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1087699--i-m-hiking-or-trekking?t=557563'>...I&#x27;m hiking or trekking</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/962317--my-passport-s-been-stolen-lost-?t=557563'>...my passport&#x27;s been stolen/lost?</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/962320--my-bags-are-delayed-?t=557563'>...my bags are delayed?</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/962332--my-cash-has-been-stolen-?t=557563'>... my cash has been stolen?</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1063154--i-m-on-a-working-holiday?t=557563'>...I&#x27;m on a working holiday</a>
-                      </li>
-                    
-                  </ul>
-                  <a href='/customer/portal/topics/428950-am-i-covered-if-/articles?t=557563'>View all</a>
-                </section>
-              
-
-              
-            </section>
-          </li>
-        
-      
-        
-          <li class='topic even'>
-            <section>
-              <h4>Your policy</h4>
-
-              
-                <section class='list-articles'>
-                  <header>
-                    <h5>
-                      Top Articles<small>3</small>
-                    </h5>
-                  </header>
-
-                  <ul class='articles'>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1063163-making-changes?t=557563'>Making changes</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1063093-extending-and-buying-more-cover?t=557563'>Extending and buying more cover</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1120259-where-is-my-policy-certificate-?t=557563'>Where is my policy certificate?</a>
-                      </li>
-                    
-                  </ul>
-                  <a href='/customer/portal/topics/478877-your-policy/articles?t=557563'>View all</a>
-                </section>
-              
-
-              
-            </section>
-          </li>
-        
-      
-        
-          <li class='topic odd'>
-            <section>
-              <h4>Making claims</h4>
-
-              
-                <section class='list-articles'>
-                  <header>
-                    <h5>
-                      Top Articles<small>12</small>
-                    </h5>
-                  </header>
-
-                  <ul class='articles'>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/945605-how-to-make-a-claim?t=557563'>How to make a claim</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1063178-what-is-the-policy-excess-deductible-?t=557563'>What is the policy excess / deductible?</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1133097-how-to-contact-the-claims-team?t=557563'>How to contact the claims team</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1677466-can-i-make-a-claim-while-i-m-away-?t=557563'>Can I make a claim while I&#x27;m away?</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1677467-can-i-wait-until-i-get-home-to-make-a-claim-?t=557563'>Can I wait until I get home to make a claim?</a>
-                      </li>
-                    
-                  </ul>
-                  <a href='/customer/portal/topics/428951-making-claims/articles?t=557563'>View all</a>
-                </section>
-              
-
-              
-            </section>
-          </li>
-        
-      
-        
-          <li class='topic even'>
-            <section>
-              <h4>Help &amp; Emergencies</h4>
-
-              
-                <section class='list-articles'>
-                  <header>
-                    <h5>
-                      Top Articles<small>3</small>
-                    </h5>
-                  </header>
-
-                  <ul class='articles'>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/723000-who-do-i-call-for-emergency-help-?t=557563'>Who do I call for emergency help?</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/962313-i-need-a-hospital-or-doctor?t=557563'>I need a hospital or doctor</a>
-                      </li>
-                    
-                      <li class='article'>
-                        <a href='/customer/portal/articles/1133197-can-someone-speak-my-language-?t=557563'>Can someone speak my language?</a>
-                      </li>
-                    
-                  </ul>
-                  <a href='/customer/portal/topics/330534-help-emergencies/articles?t=557563'>View all</a>
-                </section>
-              
-
-              
-            </section>
-          </li>
-        
-      
+      <li class='topic odd'>
+        <section>
+          <h4>Recent Events</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>
+                Top Articles<small>2</small>
+              </h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/2027929-visiting-and-trekking-nepal-post-earthquake%E2%80%93-is-it-safe-?t=646842'>Visiting and trekking Nepal post earthquake– is it safe?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/2322938-am-i-covered-for-zika-virus-?t=646842'>Am I covered for Zika Virus?</a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/819085-recent-events/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
+      <li class='topic even'>
+        <section>
+          <h4>What&#x27;s covered &amp; what&#x27;s not</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>Top Articles<small>8</small></h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1088000-medical-transport-evacuation-repatriation?t=646842'>Medical transport, evacuation &amp; repatriation</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1063055-delayed-and-missed-flights?t=646842'>Delayed and missed flights</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1672733-activities-sports-and-adventures-covered?t=646842'>Activities, sports and adventures covered</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1063056-overseas-medical-treatment-hospitalisation?t=646842'>Overseas medical treatment &amp; hospitalisation</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1641814-high-value-specified-items?t=646842'>High Value Specified Items</a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/428946-what-s-covered-what-s-not/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
+      <li class='topic odd'>
+        <section>
+          <h4>Buying a policy</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>Top Articles<small>13</small></h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1063080-what-is-my-country-of-residence-?t=646842'>What is my country of residence?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1063162-can-i-buy-a-policy-while-i-am-already-overseas-?t=646842'>Can I buy a policy while I am already overseas?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1844007-what-countries-or-regions-do-i-choose-to-get-a-quote-?t=646842'>What countries or regions do I choose to get a quote?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1897503-are-there-any-waiting-periods-?t=646842'>Are there any waiting periods?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1648861-how-it-works-adventure-sports-activities-and-experiences?t=646842'>How it works: Adventure sports, activities and experiences</a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/435943-buying-a-policy/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
+      <li class='topic even'>
+        <section>
+          <h4>Am I covered if ...?</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>Top Articles<small>19</small></h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1677462-am-i-covered-if-i-m-pregnant-?t=646842'>Am I covered if I&#x27;m pregnant?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1087699-am-i-covered-if-i-m-hiking-or-trekking-?t=646842'>Am I covered if I&#x27;m hiking or trekking?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1655828-am-i-covered-if-i-have-a-pre-existing-medical-condition-?t=646842'>Am I covered if I have a pre-existing medical condition?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1677457-am-i-covered-if-i-need-to-cancel-reschedule-my-trip-before-departure-?t=646842'>Am I covered if I need to cancel / reschedule my trip before...</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1677463-am-i-covered-if-i-m-travelling-on-a-one-way-ticket-?t=646842'>Am I covered if I&#x27;m travelling on a one-way ticket?</a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/428950-am-i-covered-if-/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
+      <li class='topic odd'>
+        <section>
+          <h4>Your policy</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>Top Articles<small>3</small></h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1063163-making-changes?t=646842'>Making changes</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1063093-extending-and-buying-more-cover?t=646842'>Extending and buying more cover</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1120259-where-is-my-policy-certificate-?t=646842'>Where is my policy certificate?</a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/478877-your-policy/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
+      <li class='topic even'>
+        <section>
+          <h4>Making claims</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>Top Articles<small>11</small></h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/945605-how-to-make-a-claim?t=646842'>How to make a claim</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1063178-what-is-the-policy-excess-deductible-?t=646842'>What is the policy excess / deductible?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1133097-how-to-contact-the-claims-team?t=646842'>How to contact the claims team</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1677466-can-i-make-a-claim-while-i-m-away-?t=646842'>Can I make a claim while I&#x27;m away?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1677467-can-i-wait-until-i-get-home-to-make-a-claim-?t=646842'>Can I wait until I get home to make a claim?</a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/428951-making-claims/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
+      <li class='topic odd'>
+        <section>
+          <h4>Help &amp; Emergencies</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>Top Articles<small>3</small></h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/723000-who-do-i-call-for-emergency-help-?t=646842'>Who do I call for emergency help?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/962313-i-need-a-hospital-or-doctor?t=646842'>I need a hospital or doctor</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1133197-can-someone-speak-my-language-?t=646842'>Can someone speak my language?</a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/330534-help-emergencies/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
+      <li class='topic even'>
+        <section>
+          <h4>Login help</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>
+                Top Articles<small>4</small>
+              </h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/722989-why-join-world-nomads-?t=646842'>Why join World Nomads?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/722990-i-ve-lost-my-password?t=646842'>I&#x27;ve lost my password</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1120559-i-can-t-login?t=646842'>I can&#x27;t login</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1120272-i-want-to-subscribe-to-your-newsletter?t=646842'>I want to subscribe to your newsletter</a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/326570-login-help/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
+      <li class='topic odd'>
+        <section>
+          <h4>Help Change Lives</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>Top Articles<small>5</small></h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1114876-what-is-footprints-?t=646842'>What is &#x27;Footprints&#x27;?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/722993-how-can-i-donate-?t=646842'>How can I donate?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1114877-how-do-i-know-my-money-will-be-used-for-what-it-was-given-?t=646842'>How do I know my money will be used for what it was given?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1114878-why-did-world-nomads-start-footprints-?t=646842'>Why did World Nomads start Footprints?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1114880-who-manages-the-footprints-organisation-?t=646842'>Who manages the Footprints organisation?</a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/330533-help-change-lives/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
+      <li class='topic even'>
+        <section>
+          <h4>Mobile apps</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>
+                Top Articles<small>2</small>
+              </h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/722992-what-are-the-language-guide-apps-?t=646842'>What are the language guide apps?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1119232-what-is-the-ask-a-nomad-app-?t=646842'>What is the Ask A Nomad app?</a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/330532-mobile-apps/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
+      <li class='topic odd'>
+        <section>
+          <h4>Travel Scholarships</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>
+                Top Articles<small>7</small>
+              </h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1118871-who-can-enter-the-scholarship-?t=646842'>Who can enter the scholarship?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1118870-do-i-need-a-passport-to-enter-a-scholarship-?t=646842'>Do I need a passport to enter a scholarship? </a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1118872-what-expenses-does-the-scholarship-winner-have-to-pay-for-?t=646842'>What expenses does the scholarship winner have to pay for? </a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1118873-tell-me-about-the-scholarship-deadlines-?t=646842'>Tell me about the scholarship deadlines.</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1118875-how-many-winners-are-chosen-?t=646842'>How many winners are chosen? </a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/314978-travel-scholarships/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
+      <li class='topic even'>
+        <section>
+          <h4>Travel blogs</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>
+                Top Articles<small>6</small>
+              </h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1120228-what-is-a-world-nomads-journal-?t=646842'>What is a World Nomads Journal?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1691761-where-do-i-go-to-update-my-blog-?t=646842'>Where do I go to update my blog?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1120264-how-do-i-upload-pictures-?t=646842'>How do I upload pictures?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1120230-how-do-i-rotate-photographs-in-my-journal-galleries-?t=646842'>How do I rotate photographs in my journal galleries?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1120269-how-do-i-get-rid-of-spam-in-my-blog-?t=646842'>How do I get rid of spam in my blog?</a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/314980-travel-blogs/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
+      <li class='topic odd'>
+        <section>
+          <h4>Ask a Nomad</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>Top Articles<small>3</small></h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1120293-what-is-ask-a-nomad-?t=646842'>What is Ask A Nomad?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1120310-how-do-i-use-it-while-i-m-travelling-?t=646842'>How do I use it while I&#x27;m travelling?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1120318-who-writes-the-answers-?t=646842'>Who writes the answers?</a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/503513-ask-a-nomad/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
+      <li class='topic even'>
+        <section>
+          <h4>Is it safe ...</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>Top Articles<small>2</small></h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1120268-where-can-i-get-the-latest-travel-safety-information-?t=646842'>Where can I get the latest travel safety information?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1220504-is-it-safe-to-go-to-egypt-?t=646842'>Is it safe to go to Egypt?</a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/435944-is-it-safe-/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
+      <li class='topic odd'>
+        <section>
+          <h4>Partner with World Nomads</h4>
+          <section class='list-articles'>
+            <header>
+              <h5>Top Articles<small>2</small></h5>
+            </header>
+            <ul class='articles'>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1120101-as-a-business-how-do-i-partner-with-world-nomads-?t=646842'>As a business, how do I partner with World Nomads?</a>
+              </li>
+              <li class='article'>
+                <a href='/customer/en/portal/articles/1120124-as-a-traveller-how-can-i-work-with-world-nomads-?t=646842'>As a traveller, how can I work with World Nomads?</a>
+              </li>
+            </ul>
+            <a href='/customer/en/portal/topics/503454-partner-with-world-nomads/articles?t=646842'>View all</a>
+          </section>
+        </section>
+      </li>
     </ul>
-    
-  </section>   
-      
+  </section>
 </div>
-
-   
-    
- 
-    
-  <!-- GS -->
-  
-  <!-- GS -->
-
-
-
-<script type="text/javascript" src="http://assets01.desk.com/portal/desk.portal.body.page_index.js"></script>    
-
-    <!--end:page_index-->
-
+<!-- GS -->
+<!-- GS -->
+<script type="text/javascript" src="https://cdn.desk.com/portal/desk.portal.body.page_index.js"></script>
+<!--end:page_index-->
 <!--end:portal_body-->
-      
-  
-
-
-
-
-</section>
-  
-
-<aside class='sidebar'>
-              
-  <section class='talk-to-us'>
-    <h4>
-      Talk to us
-    </h4>
-    <dl class='contact-number'>
-      <dt>From Australia</dt>
-      <dd>1300 843 843 &nbsp; (1300 TID TID)</dd>
-
-      <dt>From Overseas</dt>
-      <dd>+61 2 8263 0483</dd>
-    </dl>
-  
-    <dl class="open-hrs">
-      <dt>
-        Monday to Friday
-      </dt>
-      <dd>
-        8:00am - 8:00pm
-      </dd>
-      <dt>
-        Saturday and Sunday
-      </dt>
-      <dd>
-        10:00am - 2:00pm
-      </dd>
-    </dl>
-  </section>
-
-  <section class='emergencies'>
-    <h4>Emergencies</h4>
-    <p>Call +61 2 9234 3123</p>
-    <a href="http://www.travelinsurancedirect.com.au/in-an-emergency">more details</a> 
-  </section>
-  
-  <section class='contact-us'>
-    <h4>Contact us</h4>
-    
-    <ul class="desk-contact-list">
-      
-        <li><a href="/customer/portal/emails/new" data-tooltip aria-haspopup="true" class="has-tip [tip-bottom] [radius round]" title="Our customer service team will respond to you privately."><span class="fa fa-envelope"></span>Email us</a></li>
-      
-        <li><a href="/customer/portal/questions/new" data-tooltip aria-haspopup="true" class="has-tip [tip-bottom] [radius round]" title="This will be visible on the public forum for the benefit of everyone."><span class="fa  fa-comment"></span>Post a question</a></li>
-      
-        <li><a href="https://www.facebook.com/TIDaustralia"><span class="fa fa-facebook"></span>Facebook</a></li>
-
-        <li><a href="https://twitter.com/TIDaustralia"><span class="fa fa-twitter"></span>Twitter</a></li>
-
-        <li><a href="https://plus.google.com/+travelinsurancedirect"><span class="fa fa-google-plus"></span>Google+</a></li>
-
-      </ul>
-  </section>
-  
-  
-</aside>
-</div>
-
 {% endblock %}

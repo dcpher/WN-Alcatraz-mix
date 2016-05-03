@@ -1,0 +1,260 @@
+#desk-external-variables-header { display: none; }
+.change-country-of-residence .country-of-residence-name { font-weight: 400; color: #ff9900; }
+
+
+/* The modal popup to prompt for country of residence */
+.country-of-residence-select-modal-cover { background-color: rgba(0,0,0,.5); width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 1500; }
+.country-of-residence-select-modal { border: 1px solid #eee; top: 100px; left: 50%; padding: 20px; background: #fff; width: 600px; margin-left: -300px; z-index: 1510; box-sizing: border-box; position: fixed; }
+.country-of-residence-select-modal a { cursor: pointer; }
+.country-of-residence-select-modal h3 { font-family: 'Ubuntu'; font-size: 20px; line-height: 30px; margin-bottom: 20px; }
+.country-of-residence-select-modal .input-group { width: 100%; min-height: 0; }
+.country-of-residence-select-modal .input-group select { margin-bottom: 0; width: 300px; }
+.country-of-residence-select-modal legend { font-size: 16px; line-height: 16px; margin-bottom: 10px; font-weight: 400; }
+.country-of-residence-select-modal label.radio-group { margin-bottom: 3px; cursor: pointer; }
+.country-of-residence-select-modal label.radio-group input { margin-right: 10px; float: left; }
+.country-of-residence-select-modal .show-country-of-residence-info { font-size: 14px; }
+.country-of-residence-select-modal .country-of-residence-info { font-size: 14px; color: black; margin-bottom: 0; }
+.country-of-residence-select-modal .country-of-residence-info em { font-weight: 400; }
+.country-of-residence-select-modal .country-of-residence-info ul { margin-bottom: 10px; }
+.country-of-residence-select-modal .country-of-residence-info li { list-style: disc; margin-left: 15px; margin-top: 3px; }
+.country-of-residence-select-modal .close { float: right; }
+
+@media screen and (max-width: 620px) {
+  .country-of-residence-select-modal { width: auto; left: 10px; right: 10px; top: 10px; margin-left: 0;  }
+}
+
+@media screen and (max-width: 374px) {
+  .country-of-residence-select-modal .country-of-residence-info { font-size: 13px; line-height: 16px; }
+}
+
+
+/* The button to change country of residence */ 
+.change-country-of-residence a { cursor: pointer; }
+.change-country-of-residence .flag { width: 16px; height: 11px; display: inline-block; margin-left: 4px; }
+
+
+/* Parent form that loads the iframe */
+form.contact-us-manager { overflow: hidden; }
+form.contact-us-manager .step { margin-bottom: 20px; overflow: hidden; } /* TODO: Replace overflow hiddens with append clear element */
+form.contact-us-manager .step h3 { font-size: 24px; line-height: 100%; margin: 0 0 20px; font-weight: 300; color: #222; }
+form.contact-us-manager .step h4 { font-size: 16px; font-weight: 500; margin-bottom: 8px; }
+form.contact-us-manager .input-group { width: 100%; min-height: 0; }
+form.contact-us-manager .input-group select { width: 220px; }
+form.contact-us-manager .input-group .hint a { clear: left; display: block; margin-top: 10px; font-size: 13px; cursor: pointer; }
+form.contact-us-manager legend { font-size: 13px; line-height: 13px; font-weight: 500; color: #8c8c8c; margin-bottom: 5px; }
+form.contact-us-manager label.radio-group { margin-bottom: 3px; }
+form.contact-us-manager label.radio-group input { margin-right: 10px; float: left; }
+form.contact-us-manager fieldset { margin-bottom: 17px; }
+form.contact-us-manager #underwriterinfo span { display: inline-block; }
+form.contact-us-manager #underwriterinfo span.contact-number { width: 160px; }
+form.contact-us-manager #underwriterinfo span.contact-label { font-weight: 500; width: 80px;  }
+form.contact-us-manager #underwriterinfo span.contact-secondary { font-weight: 500; }
+
+iframe.embedded-contact-form { width: 50%; float: left; overflow: hidden; }
+
+/* The embedded form that is loaded by the iframe */
+form.contact-us { width: 100%; }
+form.contact-us .input-group { width: 100%; min-height: 0; }
+form.contact-us textarea { -webkit-box-shadow: rgba(153, 153, 153, 0.2) 0px 0px 5px; -moz-box-shadow: rgba(153, 153, 153, 0.2) 0px 0px 5px; box-shadow: rgba(153, 153, 153, 0.2) 0px 0px 5px; -webkit-box-shadow: rgba(153, 153, 153, 0.2) 1px 2px 8px inset; -moz-box-shadow: rgba(153, 153, 153, 0.2) 1px 2px 8px inset; box-shadow: rgba(153, 153, 153, 0.2) 1px 2px 8px inset; display: inline; float: left; box-sizing: border-box; clear: both; width: 100%; border: 1px solid #eeeeee; outline: none; padding: 6px 10px; color: black; border-radius: 0px; font-size: 18px; line-height: 20px; padding: 9px 12px; font-family: Ubuntu; font-weight: 300; border: 1px solid #cccccc;}
+form.contact-us textarea:focus { border-color: #3dc0c8; }
+form.contact-us .input-group.same label { display: inline; margin-left: 10px; font-size: 16px; font-weight: 300; }
+form.contact-us textarea.input-validation-error { border-color: #df1f1c !important; }
+form.contact-us label.input-validation-error { color: #df1f1c !important; }
+
+/* The search results that are loaded beside the contact form */
+.contact-form-search-results { width: 50%; float: left; }
+.contact-form-search-results .results { margin-left: 35px; padding: 20px; border-width: 0 0 0 5px; border-color: #3dc0c8; border-style: solid; position: relative; background-color: #f8f8f8; }
+.contact-form-search-results .results:before { content: ""; display: block; width: 0; height: 0; position: absolute; top: 85px; left: -20px; border-right: 15px solid #3dc0c8; border-top: 15px solid transparent; border-bottom: 15px solid transparent; }
+.contact-form-search-results h3 { font-size: 24px; line-height: 24px; margin-bottom: 15px; font-weight: 300; color: #222; }
+.contact-form-search-results .search-result { display: block; font-family: "Ubuntu","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; margin-top: 15px; }
+.contact-form-search-results .search-result .article-autocomplete-subject { display: block; font-size: 16px; line-height: 20px; color: #297ac6; font-weight: 500; }
+.contact-form-search-results .search-result .article-autocomplete-body { display: block; font-size: 16px; line-height: 20px; color: #666; max-height: 40px; overflow: hidden; }
+.contact-form-search-results .search-result:hover { text-decoration: none; }
+.contact-form-search-results .search-result:hover .article-autocomplete-subject { text-decoration: underline; }
+.contact-form-search-results .search-result:hover .article-autocomplete-body { text-decoration: none; }
+
+/* The embedded form should be full width on smaller screens  */
+@media screen and (max-width: 500px) {
+  iframe.embedded-contact-form { width: 100%; }
+  .contact-form-search-results { display: none; }
+}
+
+
+/* The modal popup to prompt for country of residence */
+.country-of-residence-select-modal-cover { background-color: rgba(0,0,0,.5); width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 1500; }
+.country-of-residence-select-modal { border: 1px solid #eee; top: 100px; left: 50%; padding: 20px; background: #fff; width: 600px; margin-left: -300px; z-index: 1510; box-sizing: border-box; position: fixed; }
+.country-of-residence-select-modal a { cursor: pointer; }
+.country-of-residence-select-modal h3 { font-family: 'Ubuntu'; font-size: 20px; line-height: 30px; margin-bottom: 20px; }
+.country-of-residence-select-modal .input-group { width: 100%; min-height: 0; }
+.country-of-residence-select-modal .input-group select { margin-bottom: 0; width: 300px; }
+.country-of-residence-select-modal legend { font-size: 16px; line-height: 16px; margin-bottom: 10px; font-weight: 400; }
+.country-of-residence-select-modal label.radio-group { margin-bottom: 3px; cursor: pointer; }
+.country-of-residence-select-modal label.radio-group input { margin-right: 10px; float: left; }
+.country-of-residence-select-modal .show-country-of-residence-info { font-size: 14px; }
+.country-of-residence-select-modal .country-of-residence-info { font-size: 14px; color: black; margin-bottom: 0; }
+.country-of-residence-select-modal .country-of-residence-info em { font-weight: 400; }
+.country-of-residence-select-modal .country-of-residence-info ul { margin-bottom: 10px; }
+.country-of-residence-select-modal .country-of-residence-info li { list-style: disc; margin-left: 15px; margin-top: 3px; }
+.country-of-residence-select-modal .close { float: right; }
+
+@media screen and (max-width: 620px) {
+  .country-of-residence-select-modal { width: auto; left: 10px; right: 10px; top: 10px; margin-left: 0;  }
+}
+
+@media screen and (max-width: 374px) {
+  .country-of-residence-select-modal .country-of-residence-info { font-size: 13px; line-height: 16px; }
+}
+
+/* The button to change country of residence */ 
+.change-country-of-residence a { cursor: pointer; }
+
+/* Initial styling for non-insurance topics iframe - have to give it big height incase the height correction code doesn't kick in on older browsers*/
+.topics-from-non-insurance { width: 100%; height: 2000px; } 
+
+.content.dashboard {overflow: hidden; }
+
+/* Tweak to styling of search results */
+ul.questions-and-articles { margin-left: 0; }
+
+/* Flags */
+
+.flag.AND {background: url("https://www.worldnomads.com/images/flags/ad.gif") no-repeat 0 50%;}
+.flag.ANT {background: url("https://www.worldnomads.com/images/flags/aq.gif") no-repeat 0 50%;}
+.flag.ARG {background: url("https://www.worldnomads.com/images/flags/ar.gif") no-repeat 0 50%;}
+.flag.ARM {background: url("https://www.worldnomads.com/images/flags/am.gif") no-repeat 0 50%;}
+.flag.ABW {background: url("https://www.worldnomads.com/images/flags/aw.gif") no-repeat 0 50%;}
+.flag.AUS {background: url("https://www.worldnomads.com/images/flags/au.gif") no-repeat 0 50%;}
+.flag.AUT {background: url("https://www.worldnomads.com/images/flags/at.gif") no-repeat 0 50%;}
+.flag.AZE {background: url("https://www.worldnomads.com/images/flags/az.gif") no-repeat 0 50%;}
+.flag.BHS {background: url("https://www.worldnomads.com/images/flags/bs.gif") no-repeat 0 50%;}
+.flag.BHR {background: url("https://www.worldnomads.com/images/flags/bh.gif") no-repeat 0 50%;}
+.flag.BGD {background: url("https://www.worldnomads.com/images/flags/bd.gif") no-repeat 0 50%;}
+.flag.BRB {background: url("https://www.worldnomads.com/images/flags/bb.gif") no-repeat 0 50%;}
+.flag.BLR {background: url("https://www.worldnomads.com/images/flags/by.gif") no-repeat 0 50%;}
+.flag.BEL {background: url("https://www.worldnomads.com/images/flags/be.gif") no-repeat 0 50%;}
+.flag.BLZ {background: url("https://www.worldnomads.com/images/flags/bz.gif") no-repeat 0 50%;}
+.flag.BMU {background: url("https://www.worldnomads.com/images/flags/bm.gif") no-repeat 0 50%;}
+.flag.BTN {background: url("https://www.worldnomads.com/images/flags/bt.gif") no-repeat 0 50%;}
+.flag.BOL {background: url("https://www.worldnomads.com/images/flags/bo.gif") no-repeat 0 50%;}
+.flag.BES {background: url("https://www.worldnomads.com/images/flags/world.gif") no-repeat 0 50%;}
+.flag.BIH {background: url("https://www.worldnomads.com/images/flags/ba.gif") no-repeat 0 50%;}
+.flag.BWA {background: url("https://www.worldnomads.com/images/flags/bw.gif") no-repeat 0 50%;}
+.flag.BRA {background: url("https://www.worldnomads.com/images/flags/br.gif") no-repeat 0 50%;}
+.flag.BRN {background: url("https://www.worldnomads.com/images/flags/bn.gif") no-repeat 0 50%;}
+.flag.BGR {background: url("https://www.worldnomads.com/images/flags/bg.gif") no-repeat 0 50%;}
+.flag.KHM {background: url("https://www.worldnomads.com/images/flags/kh.gif") no-repeat 0 50%;}
+.flag.CMR {background: url("https://www.worldnomads.com/images/flags/cm.gif") no-repeat 0 50%;}
+.flag.CAN {background: url("https://www.worldnomads.com/images/flags/ca.gif") no-repeat 0 50%;}
+.flag.CYM {background: url("https://www.worldnomads.com/images/flags/world.gif") no-repeat 0 50%;}
+.flag.CHL {background: url("https://www.worldnomads.com/images/flags/cl.gif") no-repeat 0 50%;}
+.flag.CHN {background: url("https://www.worldnomads.com/images/flags/cn.gif") no-repeat 0 50%;}
+.flag.COL {background: url("https://www.worldnomads.com/images/flags/co.gif") no-repeat 0 50%;}
+.flag.CRI {background: url("https://www.worldnomads.com/images/flags/cr.gif") no-repeat 0 50%;}
+.flag.HRV {background: url("https://www.worldnomads.com/images/flags/hr.gif") no-repeat 0 50%;}
+.flag.CUB {background: url("https://www.worldnomads.com/images/flags/cu.gif") no-repeat 0 50%;}
+.flag.CUV {background: url("https://www.worldnomads.com/images/flags/world.gif") no-repeat 0 50%;}
+.flag.CYP {background: url("https://www.worldnomads.com/images/flags/cy.gif") no-repeat 0 50%;}
+.flag.CZE {background: url("https://www.worldnomads.com/images/flags/cz.gif") no-repeat 0 50%;}
+.flag.DNK {background: url("https://www.worldnomads.com/images/flags/dk.gif") no-repeat 0 50%;}
+.flag.DOM {background: url("https://www.worldnomads.com/images/flags/do.gif") no-repeat 0 50%;}
+.flag.ECU {background: url("https://www.worldnomads.com/images/flags/ec.gif") no-repeat 0 50%;}
+.flag.EGY {background: url("https://www.worldnomads.com/images/flags/eg.gif") no-repeat 0 50%;}
+.flag.SLV {background: url("https://www.worldnomads.com/images/flags/sm.gif") no-repeat 0 50%;}
+.flag.EST {background: url("https://www.worldnomads.com/images/flags/ee.gif") no-repeat 0 50%;}
+.flag.FLK {background: url("https://www.worldnomads.com/images/flags/ms.gif") no-repeat 0 50%;}
+.flag.FJI {background: url("https://www.worldnomads.com/images/flags/fj.gif") no-repeat 0 50%;}
+.flag.FIN {background: url("https://www.worldnomads.com/images/flags/fi.gif") no-repeat 0 50%;}
+.flag.FRA {background: url("https://www.worldnomads.com/images/flags/fr.gif") no-repeat 0 50%;}
+.flag.PYF {background: url("https://www.worldnomads.com/images/flags/pf.gif") no-repeat 0 50%;}
+.flag.GEO {background: url("https://www.worldnomads.com/images/flags/ge.gif") no-repeat 0 50%;}
+.flag.DEU {background: url("https://www.worldnomads.com/images/flags/de.gif") no-repeat 0 50%;}
+.flag.GIB {background: url("https://www.worldnomads.com/images/flags/gi.gif") no-repeat 0 50%;}
+.flag.GRC {background: url("https://www.worldnomads.com/images/flags/gr.gif") no-repeat 0 50%;}
+.flag.GRL {background: url("https://www.worldnomads.com/images/flags/gl.gif") no-repeat 0 50%;}
+.flag.GLP {background: url("https://www.worldnomads.com/images/flags/gp.gif") no-repeat 0 50%;}
+.flag.GUM {background: url("https://www.worldnomads.com/images/flags/gu.gif") no-repeat 0 50%;}
+.flag.GTM {background: url("https://www.worldnomads.com/images/flags/gt.gif") no-repeat 0 50%;}
+.flag.HND {background: url("https://www.worldnomads.com/images/flags/hn.gif") no-repeat 0 50%;}
+.flag.HKG {background: url("https://www.worldnomads.com/images/flags/hk.gif") no-repeat 0 50%;}
+.flag.HUN {background: url("https://www.worldnomads.com/images/flags/hu.gif") no-repeat 0 50%;}
+.flag.ISL {background: url("https://www.worldnomads.com/images/flags/is.gif") no-repeat 0 50%;}
+.flag.IND {background: url("https://www.worldnomads.com/images/flags/in.gif") no-repeat 0 50%;}
+.flag.IDN {background: url("https://www.worldnomads.com/images/flags/id.gif") no-repeat 0 50%;}
+.flag.IRN {background: url("https://www.worldnomads.com/images/flags/ir.gif") no-repeat 0 50%;}
+.flag.IRL {background: url("https://www.worldnomads.com/images/flags/ie.gif") no-repeat 0 50%;}
+.flag.ISR {background: url("https://www.worldnomads.com/images/flags/il.gif") no-repeat 0 50%;}
+.flag.ITA {background: url("https://www.worldnomads.com/images/flags/it.gif") no-repeat 0 50%;}
+.flag.JAM {background: url("https://www.worldnomads.com/images/flags/jm.gif") no-repeat 0 50%;}
+.flag.JPN {background: url("https://www.worldnomads.com/images/flags/jp.gif") no-repeat 0 50%;}
+.flag.KAZ {background: url("https://www.worldnomads.com/images/flags/kz.gif") no-repeat 0 50%;}
+.flag.KWT, .flag.KEN {background: url("https://www.worldnomads.com/images/flags/kw.gif") no-repeat 0 50%;}
+.flag.KGZ {background: url("https://www.worldnomads.com/images/flags/kg.gif") no-repeat 0 50%;}
+.flag.LAO {background: url("https://www.worldnomads.com/images/flags/la.gif") no-repeat 0 50%;}
+.flag.LVA {background: url("https://www.worldnomads.com/images/flags/lv.gif") no-repeat 0 50%;}
+.flag.LIE {background: url("https://www.worldnomads.com/images/flags/li.gif") no-repeat 0 50%;}
+.flag.LTU {background: url("https://www.worldnomads.com/images/flags/lt.gif") no-repeat 0 50%;}
+.flag.LUX {background: url("https://www.worldnomads.com/images/flags/lu.gif") no-repeat 0 50%;}
+.flag.MAC {background: url("https://www.worldnomads.com/images/flags/mo.gif") no-repeat 0 50%;}
+.flag.MKD {background: url("https://www.worldnomads.com/images/flags/mk.gif") no-repeat 0 50%;}
+.flag.MDG {background: url("https://www.worldnomads.com/images/flags/mg.gif") no-repeat 0 50%;}
+.flag.MYS {background: url("https://www.worldnomads.com/images/flags/my.gif") no-repeat 0 50%;}
+.flag.MDV {background: url("https://www.worldnomads.com/images/flags/mv.gif") no-repeat 0 50%;}
+.flag.MLT {background: url("https://www.worldnomads.com/images/flags/mt.gif") no-repeat 0 50%;}
+.flag.MUS {background: url("https://www.worldnomads.com/images/flags/mu.gif") no-repeat 0 50%;}
+.flag.MEX {background: url("https://www.worldnomads.com/images/flags/mx.gif") no-repeat 0 50%;}
+.flag.MDA {background: url("https://www.worldnomads.com/images/flags/md.gif") no-repeat 0 50%;}
+.flag.MCO {background: url("https://www.worldnomads.com/images/flags/mc.gif") no-repeat 0 50%;}
+.flag.MNG {background: url("https://www.worldnomads.com/images/flags/mn.gif") no-repeat 0 50%;}
+.flag.MAR {background: url("https://www.worldnomads.com/images/flags/ma.gif") no-repeat 0 50%;}
+.flag.NPL {background: url("https://www.worldnomads.com/images/flags/np.gif") no-repeat 0 50%;}
+.flag.NLD {background: url("https://www.worldnomads.com/images/flags/nl.gif") no-repeat 0 50%;}
+.flag.NCL {background: url("https://www.worldnomads.com/images/flags/nc.gif") no-repeat 0 50%;}
+.flag.NZL, .flag.NZ {background: url("https://www.worldnomads.com/images/flags/nz.gif") no-repeat 0 50%;}
+.flag.NIC {background: url("https://www.worldnomads.com/images/flags/ni.gif") no-repeat 0 50%;}
+.flag.NOR {background: url("https://www.worldnomads.com/images/flags/no.gif") no-repeat 0 50%;}
+.flag.OMN {background: url("https://www.worldnomads.com/images/flags/om.gif") no-repeat 0 50%;}
+.flag.PAK {background: url("https://www.worldnomads.com/images/flags/pk.gif") no-repeat 0 50%;}
+.flag.PLW {background: url("https://www.worldnomads.com/images/flags/pw.gif") no-repeat 0 50%;}
+.flag.PAN {background: url("https://www.worldnomads.com/images/flags/pa.gif") no-repeat 0 50%;}
+.flag.PNG {background: url("https://www.worldnomads.com/images/flags/pg.gif") no-repeat 0 50%;}
+.flag.PRY {background: url("https://www.worldnomads.com/images/flags/py.gif") no-repeat 0 50%;}
+.flag.PER {background: url("https://www.worldnomads.com/images/flags/pe.gif") no-repeat 0 50%;}
+.flag.PHL {background: url("https://www.worldnomads.com/images/flags/ph.gif") no-repeat 0 50%;}
+.flag.POL {background: url("https://www.worldnomads.com/images/flags/pl.gif") no-repeat 0 50%;}
+.flag.PRT {background: url("https://www.worldnomads.com/images/flags/pt.gif") no-repeat 0 50%;}
+.flag.PRI {background: url("https://www.worldnomads.com/images/flags/pr.gif") no-repeat 0 50%;}
+.flag.QAT {background: url("https://www.worldnomads.com/images/flags/qu.gif") no-repeat 0 50%;}
+.flag.ROU {background: url("https://www.worldnomads.com/images/flags/ro.gif") no-repeat 0 50%;}
+.flag.RUS {background: url("https://www.worldnomads.com/images/flags/ru.gif") no-repeat 0 50%;}
+.flag.WSM {background: url("https://www.worldnomads.com/images/flags/ws.gif") no-repeat 0 50%;}
+.flag.SMR {background: url("https://www.worldnomads.com/images/flags/sm.gif") no-repeat 0 50%;}
+.flag.SAU {background: url("https://www.worldnomads.com/images/flags/sa.gif") no-repeat 0 50%;}
+.flag.SGP {background: url("https://www.worldnomads.com/images/flags/sg.gif") no-repeat 0 50%;}
+.flag.SXM {background: url("https://www.worldnomads.com/images/flags/world.gif") no-repeat 0 50%;}
+.flag.SVK {background: url("https://www.worldnomads.com/images/flags/sk.gif") no-repeat 0 50%;}
+.flag.SVN {background: url("https://www.worldnomads.com/images/flags/si.gif") no-repeat 0 50%;}
+.flag.SLB {background: url("https://www.worldnomads.com/images/flags/sb.gif") no-repeat 0 50%;}
+.flag.ZAF {background: url("https://www.worldnomads.com/images/flags/za.gif") no-repeat 0 50%;}
+.flag.KOR {background: url("https://www.worldnomads.com/images/flags/kr.gif") no-repeat 0 50%;}
+.flag.ESP {background: url("https://www.worldnomads.com/images/flags/es.gif") no-repeat 0 50%;}
+.flag.LKA {background: url("https://www.worldnomads.com/images/flags/lk.gif") no-repeat 0 50%;}
+.flag.SWE {background: url("https://www.worldnomads.com/images/flags/se.gif") no-repeat 0 50%;}
+.flag.CHE {background: url("https://www.worldnomads.com/images/flags/ch.gif") no-repeat 0 50%;}
+.flag.TWN {background: url("https://www.worldnomads.com/images/flags/tw.gif") no-repeat 0 50%;}
+.flag.TJK {background: url("https://www.worldnomads.com/images/flags/tj.gif") no-repeat 0 50%;}
+.flag.THA {background: url("https://www.worldnomads.com/images/flags/th.gif") no-repeat 0 50%;}
+.flag.TON {background: url("https://www.worldnomads.com/images/flags/to.gif") no-repeat 0 50%;}
+.flag.TTO {background: url("https://www.worldnomads.com/images/flags/tt.gif") no-repeat 0 50%;}
+.flag.TUN {background: url("https://www.worldnomads.com/images/flags/tn.gif") no-repeat 0 50%;}
+.flag.TUR {background: url("https://www.worldnomads.com/images/flags/tr.gif") no-repeat 0 50%;}
+.flag.TKM {background: url("https://www.worldnomads.com/images/flags/tm.gif") no-repeat 0 50%;}
+.flag.UKR {background: url("https://www.worldnomads.com/images/flags/ua.gif") no-repeat 0 50%;}
+.flag.ARE,.flag.UAE {background: url("https://www.worldnomads.com/images/flags/ae.gif") no-repeat 0 50%;}
+.flag.GBR {background: url("https://www.worldnomads.com/images/flags/gb.gif") no-repeat 0 50%;}
+.flag.URY {background: url("https://www.worldnomads.com/images/flags/uy.gif") no-repeat 0 50%;}
+.flag.USA, .flag.US {background: url("https://www.worldnomads.com/images/flags/us.gif") no-repeat 0 50%;}
+.flag.UZB {background: url("https://www.worldnomads.com/images/flags/uz.gif") no-repeat 0 50%;}
+.flag.VUT {background: url("https://www.worldnomads.com/images/flags/vu.gif") no-repeat 0 50%;}
+.flag.VEN {background: url("https://www.worldnomads.com/images/flags/ve.gif") no-repeat 0 50%;}
+.flag.VNM {background: url("https://www.worldnomads.com/images/flags/vn.gif") no-repeat 0 50%;}
+.flag.VGB {background: url("https://www.worldnomads.com/images/flags/vg.gif") no-repeat 0 50%;}
