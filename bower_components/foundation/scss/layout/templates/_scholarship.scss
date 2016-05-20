@@ -1,0 +1,144 @@
+// WN Scholarship page layout template
+
+.scholarships {
+    &-subTitle {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+
+    &-content {
+        margin-bottom: 3rem;
+
+        &-title {
+            margin-top: 0;
+        }
+    }
+
+    &-MediaObject {
+        margin-bottom: 0.5rem;
+
+        &-image {
+            display: table-cell;
+            vertical-align: top;
+        }
+        &-body {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        &-title {
+            margin-top: 0;
+        }
+    }
+
+    &-partners {
+        &-partnerBox {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+        &-list {
+            li {
+                padding-right: 2rem;
+                float: left;
+
+                .partnerLogo {
+                    width: auto;
+                    max-height: 70px;
+                }
+            }
+        }
+    }
+
+    &-breakout {
+        padding: 1rem;
+
+        @media only screen and (min-width: 40.063em) {
+            padding: 2rem;
+        }
+
+        &-title {
+            margin-top: 0;
+        }
+
+        &-button {
+            margin-right: 1rem;
+            float: left;
+        }
+    }
+
+    &-subscribe {
+        padding: 1rem;
+
+        @media only screen and (min-width: 40.063em) {
+            padding: 2rem;
+        }
+
+         &-icon {
+            display: none;
+
+            @media only screen and (min-width: 40.063em) {
+                display: table-cell;
+            }
+        }
+        &-title {
+            margin-bottom: 0.5rem;
+        }
+
+        &-label {
+            margin-bottom: 0.5rem;
+        }
+         &-form {
+            &-input {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+    &-subscribe-wide {
+
+        &-form {
+            &-submit {
+                height: 41px;
+
+                &:after {
+                    top: 9px;
+                }
+            }
+        }
+    }
+    &-panel {
+        padding: 1rem;
+    }
+    &-mobilesignup {
+        display: block;
+        width: 100%;
+        clear: both;
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 0;
+        z-index: 5000;
+
+        @media only screen and (min-width: 40.063em) {
+            display: none;
+        }
+        &-title {
+            color: $color-white;
+            margin-top: 2rem;
+        }
+        &-mobileclose {
+            color: $color-white;
+            float: right;
+            text-decoration: none;
+            font-size: 24px;
+            font-family: "WNI";
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+
+

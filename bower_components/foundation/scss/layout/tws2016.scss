@@ -1,0 +1,194 @@
+// Theme
+@import '../theme/variables';
+
+// Modules
+
+// Layout
+@import 'templates/scholarship';
+
+.tws2016 {
+    &-hero {
+        background: url('/Media/Default/LearnImages/writing2016/WN_TWS2016_Hero_Mobile_V01.jpg') no-repeat center center;
+            background-size: cover;
+            margin-bottom: 0;
+
+        @media only screen and (min-width: 55em) {
+            background: url('/Media/Default/LearnImages/writing2016/WN_TWS2016_Hero_Desktop_V02.jpg') no-repeat bottom center;
+            background-size: cover;
+            margin-bottom: 0;
+
+        }
+
+        @media only screen and (min-width: 40.063em) and (max-width: 55em) {
+            background: url('/Media/Default/LearnImages/writing2016/WN_TWS2016_Hero_tablet_V01.jpg') no-repeat bottom center;
+        }
+
+        &-sponsor {
+            float: right;
+            margin-top: 280px;
+            display: none;
+
+            @media only screen and (min-width: 40.063em) {
+                display: block;
+            }
+        }
+    }
+
+    &-button {
+        margin-top: 1.5rem;
+    }
+
+    &-icon-medium {
+        width: 60px;
+        height: 60px;
+    }
+    &-icon-narrow {
+        width: 40px;
+        height: 60px;
+    }
+    &-sprite {
+        background-image: url("/Media/Default/LearnImages/writing2016/icons/tws2016_sprite.png");
+        background-size: 248px, 248px;
+        background-repeat:no-repeat;
+        float: left;
+
+        &-writing {
+            background-position: -60px -66px;
+        }
+        &-pin {
+            background-position: -125px -70px;
+        }
+        &-house {
+            background-position: -187px -70px;
+        }
+        &-insurance {
+            background-position: -1px -132px;
+        }
+        &-lightbulb {
+            background-position: -80px -132px;
+        }
+        &-1 {
+            background-position: 0px -10px;
+        }
+        &-2 {
+            background-position: -62px -10px;
+        }
+        &-3 {
+            background-position: -124px -10px;
+        }
+        &-tick {
+            background-position: -188px -10px;
+        }
+        &-faq {
+            background-position: -0px -70px;
+        }
+    }
+
+    &-intro {
+        &-title {
+            margin-top: 0;
+        }
+        &-video {
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+
+            &-placeholder:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &-subscribe-label {
+        color: $color-dark-grey;
+    }
+
+    &-subscribe-wide {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &-list {
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        margin-left: 0;
+
+        li {
+            margin-bottom: 2rem;
+        }
+    }
+    &-faq {
+        &-copy {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &-breakout {
+        background: $color-light-grey;
+        margin-bottom: 3rem;
+    }
+
+    &-subfeature-01 {
+        background-image: url(/Media/Default/LearnImages/writing2016/wn-tws2016-promo-1.jpg);
+    }
+
+    &-subfeature-02 {
+        background-image: url(/Media/Default/LearnImages/writing2016/wn-tws2016-promo-2.jpg);
+    }
+
+    &-subfeature-03 {
+        background-image: url(/Media/Default/LearnImages/writing2016/wn-tws2016-promo-3.jpg);
+    }
+
+    &-subfeature-04 {
+        background-image: url(/Media/Default/LearnImages/writing2016/wn-tws2016-promo-4.jpg);
+    }
+
+    &-promo {
+        margin-top: 30px;
+
+        &-subfeature {
+            margin-bottom: 30px;
+            background-position: top center;
+
+            @media only screen and (min-width: 40.063em) {
+                background-position: center center;
+            }
+
+            .promoPanel-media {
+                min-height: 120px;
+
+                    @media only screen and (min-width: 40.063em) {
+                        min-height: 200px;
+                    }
+            }
+
+            @media only screen and (min-width: 40.063em) {
+                .promoPanel-content {
+                    min-height: 224px;
+                }
+            }
+
+            @media only screen and (min-width: 64.063em) {
+                .promoPanel-content {
+                    min-height: 248px;
+                }
+            }
+        }
+        &-link {
+            color: $color-white;
+        }
+    }
+    //Sidebar
+    /* countdown style */
+    &-panel {
+        #days, #hours, #mins {
+            color: $color-teal;
+        }
+
+        .importantdate .date {
+            background-color: $color-teal;
+        }
+    }
+
+}
+
+

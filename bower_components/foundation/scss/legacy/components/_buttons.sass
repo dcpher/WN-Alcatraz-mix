@@ -101,6 +101,7 @@
     padding-right: 18px
     background: none
     transition: all 0.08s ease-in-out
+    text-shadow: none
 
     &:after
       content: none;
@@ -113,6 +114,15 @@
         background: $color-white
         border: 1px solid $color-white
         color: $color-text
+
+    &.grey
+      border: 1px solid $color-text
+      color: $color-text
+
+      &:hover
+        background: $color-text
+        border: 1px solid $color-text
+        color: $color-white
 
 
 

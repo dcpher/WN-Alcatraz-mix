@@ -1,9 +1,17 @@
 .Hero {
+    padding-top: 100px;
     padding-bottom: 40px;
     background-color: $color-dark-grey;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     @media #{$medium-up} {
+        padding-top: 120px;
         padding-bottom: 80px;
+    }
+
+    .Hero-breadcrumb {
+        margin: 0;
     }
 
     &-copy {

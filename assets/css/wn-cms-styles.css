@@ -3536,10 +3536,9 @@ div.faq h4 {
   -ms-border-radius: 3px;
   border-radius: 3px;
   font-size: 1.125rem;
-  line-height: 32px;
   font-weight: 300;
   color: #ffffff;
-  padding: 4px 44px 4px 15px;
+  padding: 6px 44px 7px 15px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   position: relative;
@@ -3559,7 +3558,7 @@ div.faq h4 {
     text-decoration: none; }
   .base-button.large, button.large, .button.large {
     font-size: 1.5rem;
-    padding: 12px 50px 12px 24px; }
+    padding: 8px 50px 8px 24px; }
     .base-button.large:after, button.large:after, .button.large:after {
       top: 12px; }
   .base-button.small, button.small, .button.small {
@@ -3690,8 +3689,50 @@ div.faq h4 {
       background: -ms-linear-gradient(top, #4f2f72 0%, #40265c 100%);
       background: linear-gradient(to bottom, #4f2f72 0%, #40265c 100%);
       border: 1px solid #2f1b43; }
+  .base-button.white, button.white, .button.white {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+    border: 1px solid #e6e6e6;
+    border: 1px solid #e6e6e6;
+    color: #222222;
+    text-shadow: none; }
+    .base-button.white:hover, button.white:hover, .button.white:hover {
+      background: #e6e6e6;
+      background: -moz-linear-gradient(top, #ededed 0%, #dedede 100%);
+      background: -webkit-linear-gradient(top, #ededed 0%, #dedede 100%);
+      background: -o-linear-gradient(top, #ededed 0%, #dedede 100%);
+      background: -ms-linear-gradient(top, #ededed 0%, #dedede 100%);
+      background: linear-gradient(to bottom, #ededed 0%, #dedede 100%);
+      border: 1px solid #cccccc; }
   .base-buttona, .base-buttona:visited, .base-button a, .base-button a:visited, buttona, buttona:visited, button a, button a:visited, .buttona, .buttona:visited, .button a, .button a:visited {
     color: #ffffff; }
+
+.base-button.base-button--alt {
+  padding-left: 18px;
+  padding-right: 18px;
+  background: none;
+  transition: all 0.08s ease-in-out;
+  text-shadow: none; }
+  .base-button.base-button--alt:after {
+    content: none; }
+  .base-button.base-button--alt.white {
+    border: 1px solid #ffffff;
+    color: #ffffff; }
+    .base-button.base-button--alt.white:hover {
+      background: #ffffff;
+      border: 1px solid #ffffff;
+      color: #222222; }
+  .base-button.base-button--alt.grey {
+    border: 1px solid #222222;
+    color: #222222; }
+    .base-button.base-button--alt.grey:hover {
+      background: #222222;
+      border: 1px solid #222222;
+      color: #ffffff; }
 
 .cta-button-primary {
   -webkit-border-radius: 3px;
@@ -3702,7 +3743,7 @@ div.faq h4 {
   line-height: 32px;
   font-weight: 300;
   color: #ffffff;
-  padding: 4px 44px 4px 15px;
+  padding-left: 4px 44px 4px 15px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   position: relative;
@@ -4448,15 +4489,34 @@ div.grey-pattern {
     margin-bottom: 0; }
 
 .promoPanel {
+  position: relative;
   display: table;
   width: 100%;
   background-color: #ededed;
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover; }
+  .promoPanel--subfeature .promoPanel-media {
+    min-height: 80px; }
+  .promoPanel--subfeature .promoPanel-media, .promoPanel--subfeature .promoPanel-content {
+    display: block;
+    width: 100%; }
+  .promoPanel--primary .promoPanel-content {
+    background-color: rgba(255, 156, 0, 0.9); }
+  .promoPanel--secondary .promoPanel-content {
+    background-color: rgba(41, 122, 198, 0.9); }
+  .promoPanel--tertiary .promoPanel-content {
+    background-color: rgba(64, 193, 186, 0.9); }
+  .promoPanel--quarternary .promoPanel-content {
+    background-color: rgba(97, 57, 139, 0.9); }
+  .promoPanel--quinary .promoPanel-content {
+    background-color: rgba(222, 83, 70, 0.9); }
   .promoPanel-media, .promoPanel-content {
     display: block;
     padding: 20px; }
+  @media only screen and (min-width:40.063em) {
+    .promoPanel-media {
+      display: table-cell; } }
   .promoPanel-content {
     background-color: rgba(68, 70, 66, 0.9);
     color: #ffffff; }
@@ -4468,52 +4528,51 @@ div.grey-pattern {
     @media only screen and (min-width:64.063em) {
       .promoPanel-content {
         width: 50%; } }
+  .promoPanel .promoPanel-icon {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .promoPanel-copy {
+    color: #ffffff; }
+  .promoPanel-title {
+    display: block;
+    font-size: 1.75rem;
+    line-height: 1.1;
+    margin-bottom: .5rem; }
+  .promoPanel-cta {
+    margin-top: 1rem; }
 
 .iconBadge {
+  position: relative;
+  display: table;
   width: 66px;
   height: 66px;
   background-color: rgba(68, 70, 66, 0.9); }
   .iconBadge--primary {
-    background-color: rgba(41, 122, 198, 0.9); }
-  .iconBadge--secondary {
     background-color: rgba(255, 156, 0, 0.9); }
+  .iconBadge--secondary {
+    background-color: rgba(41, 122, 198, 0.9); }
   .iconBadge--tertiary {
+    background-color: rgba(64, 193, 186, 0.9); }
+  .iconBadge--quarternary {
+    background-color: rgba(97, 57, 139, 0.9); }
+  .iconBadge--quinary {
     background-color: rgba(222, 83, 70, 0.9); }
   .iconBadge-content {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 30px;
-    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
     margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
     color: #ffffff;
     font-size: 9px;
     text-transform: uppercase;
     text-align: center; }
-    .iconBadge-content > img {
-      margin-bottom: 5px; }
-
-.Swatch {
-  display: inline-block;
-  margin-right: 32px; }
-  .Swatch-colour, .Swatch-details {
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 8px; }
-  .Swatch-colour {
-    width: 112px;
-    height: 112px;
-    margin-right: 16px; }
-  .Swatch-details {
-    margin-left: 0; }
-    .Swatch-details > li {
-      margin-bottom: 0; }
-      .Swatch-details > li:first-child {
-        margin-bottom: 8px;
-        font-weight: 600; }
+  .iconBadge-icon {
+    max-width: 30px; }
+  .iconBadge-fill {
+    fill: #ffffff; }
 
 /* Add link to Desktop Image */
 .home-headerPromo .promoPanel {
@@ -4691,6 +4750,160 @@ div.grey-pattern {
   .styleGuide .styleGuide-exampleCta {
     margin-top: 20px;
     margin-bottom: 30px; }
+
+.learn-hero {
+  background: url('/Media/Default/scholarships/wn-scholarships-index-herobg.jpg') no-repeat top center;
+  background-size: cover; }
+  .learn-hero .learn-breadcrumb {
+    margin-top: 90px; }
+    @media only screen and (min-width:40.063em) {
+      .learn-hero .learn-breadcrumb {
+        margin-top: 120px; } }
+
+@media only screen and (max-width: 40em) {
+  .learn-promo-featured .learn-promo-featured-breadcrumb.breadcrumb {
+    margin-top: 0; } }
+.learn-promo-featured .promoPanel-media {
+  min-height: 120px; }
+  @media only screen and (min-width:40.063em) {
+    .learn-promo-featured .promoPanel-media {
+      min-height: 200px; } }
+.learn-cta {
+  margin-top: 20px; }
+.learn-subfeature-01 {
+  background-image: url(/Media/Default/scholarships/wn-scholarships-promo-1.jpg); }
+.learn-subfeature-02 {
+  background-image: url(/Media/Default/scholarships/wn-scholarships-promo-2.jpg); }
+.learn-subfeature-03 {
+  background-image: url(/Media/Default/scholarships/wn-scholarships-promo-3.jpg); }
+.learn-subfeature-04 {
+  background-image: url(/Media/Default/scholarships/wn-scholarships-promo-4.jpg); }
+
+.learn-promo {
+  margin-top: 30px; }
+  .learn-promo .breadcrumb {
+    margin-top: 20px; }
+    .learn-promo .breadcrumb a:hover {
+      text-decoration: underline; }
+  .learn-promo-subfeature {
+    margin-bottom: 30px;
+    background-position: top center; }
+    @media only screen and (min-width:40.063em) {
+      .learn-promo-subfeature {
+        background-position: center center; } }
+    .learn-promo-subfeature .promoPanel-media {
+      min-height: 120px; }
+      @media only screen and (min-width:40.063em) {
+        .learn-promo-subfeature .promoPanel-media {
+          min-height: 200px; } }
+    @media only screen and (min-width:40.063em) {
+      .learn-promo-subfeature .promoPanel-content {
+        min-height: 224px; } }
+    @media only screen and (min-width:64.063em) {
+      .learn-promo-subfeature .promoPanel-content {
+        min-height: 248px; } }
+  .learn-promo-featured {
+    margin-bottom: 30px;
+    background-image: url('/Media/Default/LearnImages/writing2016/promopanel_writing.jpg'); }
+  .learn-promo .learn-promo-link {
+    color: #ffffff; }
+  .learn-promo-cta {
+    margin-top: 15px; }
+
+.learn-copy-subscribe {
+  margin-top: 30px;
+  padding: 25px 15px; }
+  @media only screen and (min-width:40.063em) {
+    .learn-copy-subscribe {
+      margin-top: 50px; } }
+  .learn-copy-subscribe-title {
+    margin-top: 0;
+    margin-bottom: .8rem; }
+  .learn-copy-subscribe-input {
+    margin-bottom: 20px; }
+  .learn-copy-subscribe-options {
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+    .learn-copy-subscribe-options > li {
+      display: inline-block;
+      width: 45%;
+      min-width: 120px; }
+  .learn-copy-subscribe-submit {
+    margin-top: 20px; }
+
+.learn-testimonial {
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background-color: #61398b; }
+  .learn-testimonial-quote {
+    border-left: 0;
+    padding-left: 0;
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.3em; }
+    .learn-testimonial-quote-link {
+      color: #ffffff; }
+      .learn-testimonial-quote-link:visited {
+        color: #ffffff; }
+      .learn-testimonial-quote-link:hover {
+        color: #ffffff;
+        text-decoration: underline; }
+    .learn-testimonial-quote::before {
+      display: block;
+      margin-bottom: -15px;
+      font-size: 3.5rem;
+      font-family: Sans-Serif;
+      content: "\201C \201D"; }
+    @media only screen and (min-width:40.063em) {
+      .learn-testimonial-quote {
+        font-size: 1.5rem; }
+        .learn-testimonial-quote::before {
+          font-size: 4.5rem; } }
+  .learn-testimonial .learn-testimonial-profile {
+    width: 51px;
+    margin-right: 15px;
+    vertical-align: middle; }
+  .learn-testimonial-author {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle; }
+
+.Hero {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background-color: #444642;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media only screen and (min-width:40.063em) {
+    .Hero {
+      padding-top: 120px;
+      padding-bottom: 80px; } }
+  .Hero .Hero-breadcrumb {
+    margin: 0; }
+  .Hero-copy {
+    color: #ffffff; }
+
+.Swatch {
+  display: inline-block;
+  margin-right: 32px; }
+  .Swatch-colour, .Swatch-details {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 8px; }
+  .Swatch-colour {
+    width: 112px;
+    height: 112px;
+    margin-right: 16px; }
+  .Swatch-details {
+    margin-left: 0; }
+    .Swatch-details > li {
+      margin-bottom: 0; }
+      .Swatch-details > li:first-child {
+        margin-bottom: 8px;
+        font-weight: 600; }
 
 .insurance-trustPilot-desktop {
   display: none; }
