@@ -4755,10 +4755,7 @@ div.grey-pattern {
   background: url('/Media/Default/scholarships/wn-scholarships-index-herobg.jpg') no-repeat top center;
   background-size: cover; }
   .learn-hero .learn-breadcrumb {
-    margin-top: 90px; }
-    @media only screen and (min-width:40.063em) {
-      .learn-hero .learn-breadcrumb {
-        margin-top: 120px; } }
+    margin-top: 0; }
 
 @media only screen and (max-width: 40em) {
   .learn-promo-featured .learn-promo-featured-breadcrumb.breadcrumb {
