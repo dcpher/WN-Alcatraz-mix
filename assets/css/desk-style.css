@@ -3137,7 +3137,8 @@ footer .disclaimer {
   padding-left: 18px;
   padding-right: 18px;
   background: none;
-  transition: all 0.08s ease-in-out; }
+  transition: all 0.08s ease-in-out;
+  text-shadow: none; }
   .base-button.base-button--alt:after {
     content: none; }
   .base-button.base-button--alt.white {
@@ -3147,6 +3148,13 @@ footer .disclaimer {
       background: #ffffff;
       border: 1px solid #ffffff;
       color: #222222; }
+  .base-button.base-button--alt.grey {
+    border: 1px solid #222222;
+    color: #222222; }
+    .base-button.base-button--alt.grey:hover {
+      background: #222222;
+      border: 1px solid #222222;
+      color: #ffffff; }
 
 .cta-button-primary {
   -webkit-border-radius: 3px;

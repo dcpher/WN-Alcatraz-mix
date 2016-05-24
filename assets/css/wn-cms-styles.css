@@ -3715,7 +3715,8 @@ div.faq h4 {
   padding-left: 18px;
   padding-right: 18px;
   background: none;
-  transition: all 0.08s ease-in-out; }
+  transition: all 0.08s ease-in-out;
+  text-shadow: none; }
   .base-button.base-button--alt:after {
     content: none; }
   .base-button.base-button--alt.white {
@@ -3725,6 +3726,13 @@ div.faq h4 {
       background: #ffffff;
       border: 1px solid #ffffff;
       color: #222222; }
+  .base-button.base-button--alt.grey {
+    border: 1px solid #222222;
+    color: #222222; }
+    .base-button.base-button--alt.grey:hover {
+      background: #222222;
+      border: 1px solid #222222;
+      color: #ffffff; }
 
 .cta-button-primary {
   -webkit-border-radius: 3px;
@@ -4531,6 +4539,8 @@ div.grey-pattern {
     font-size: 1.75rem;
     line-height: 1.1;
     margin-bottom: .5rem; }
+  .promoPanel-cta {
+    margin-top: 1rem; }
 
 .iconBadge {
   position: relative;
@@ -4745,10 +4755,7 @@ div.grey-pattern {
   background: url('/Media/Default/scholarships/wn-scholarships-index-herobg.jpg') no-repeat top center;
   background-size: cover; }
   .learn-hero .learn-breadcrumb {
-    margin-top: 90px; }
-    @media only screen and (min-width:40.063em) {
-      .learn-hero .learn-breadcrumb {
-        margin-top: 120px; } }
+    margin-top: 0; }
 
 @media only screen and (max-width: 40em) {
   .learn-promo-featured .learn-promo-featured-breadcrumb.breadcrumb {
@@ -4794,7 +4801,7 @@ div.grey-pattern {
         min-height: 248px; } }
   .learn-promo-featured {
     margin-bottom: 30px;
-    background-image: url('/Media/Default/LearnImages/food2016/promopanel_food.jpg'); }
+    background-image: url('/Media/Default/LearnImages/writing2016/promopanel_writing.jpg'); }
   .learn-promo .learn-promo-link {
     color: #ffffff; }
   .learn-promo-cta {
@@ -4862,11 +4869,17 @@ div.grey-pattern {
     vertical-align: middle; }
 
 .Hero {
+  padding-top: 100px;
   padding-bottom: 40px;
-  background-color: #444642; }
+  background-color: #444642;
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media only screen and (min-width:40.063em) {
     .Hero {
+      padding-top: 120px;
       padding-bottom: 80px; } }
+  .Hero .Hero-breadcrumb {
+    margin: 0; }
   .Hero-copy {
     color: #ffffff; }
 

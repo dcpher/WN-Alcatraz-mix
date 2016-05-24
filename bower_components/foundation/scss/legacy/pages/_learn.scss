@@ -3,11 +3,7 @@
     background-size: cover;
 
     .learn-breadcrumb {
-        margin-top: 90px;
-
-        @media #{$medium-up} {
-            margin-top: 120px;
-        }
+        margin-top: 0;
     }
 }
 
@@ -95,7 +91,7 @@
 
     &-featured {
         margin-bottom: 30px;
-        background-image: url('/Media/Default/LearnImages/food2016/promopanel_food.jpg');
+        background-image: url('/Media/Default/LearnImages/writing2016/promopanel_writing.jpg');
     }
 
     .learn-promo-link {
