@@ -57,7 +57,7 @@
       </h2>
 
       <div class="body">
-        I have just spent time in Cardio ward with an arrhythmia , I have been sent home with medication and follow up to determine cause. Can  I still get cover, what documentation is required from hospital/doctors in order for me to be covered. I booked my holiday last Thursday and was going to arrange travel insurance on the weekend.
+        I have just spent time in Cardio ward with an arrhythmia --- Travel Insurance --- , I have been sent home with medication and follow up to determine cause. Can  I still get cover, what documentation is required from hospital/doctors in order for me to be covered. I booked my holiday last Thursday and was going to arrange --- travel insurance --- on the weekend.
       </div>
 
       <aside>
@@ -106,7 +106,9 @@ c) you are awaiting specialist opinion;</li>
                   </div>
 
                   <aside>
-                    <span class="gravatar"><img class="gravatar" alt="" width="50" height="50" src="https://secure.gravatar.com/avatar/aca2ab44dc87ff7c055a6b26209e8676?rating=PG&amp;size=50&amp;default=https%3A%2F%2Fd218iqt4mo6adh.cloudfront.net%2Fassets%2Funknown_user_50-521aae04e00222d7dd814e72d7d869d0.png"></span>
+                    <span class="gravatar">
+                      <!-- <img class="gravatar" alt="" width="50" height="50" src="https://secure.gravatar.com/avatar/aca2ab44dc87ff7c055a6b26209e8676?rating=PG&amp;size=50&amp;default=https%3A%2F%2Fd218iqt4mo6adh.cloudfront.net%2Fassets%2Funknown_user_50-521aae04e00222d7dd814e72d7d869d0.png"> -->
+                    </span>
 
 
 
@@ -117,10 +119,19 @@ c) you are awaiting specialist opinion;</li>
                 </li>
 
             </ul>
+
+            <!-- AB Variation 01 -->
             <div class="desk-ab desk-ab-postArticle panel">
               <h4 class="desk-ab-postArticleTitle">Need Travel Insurance for your next trip?</h4>
-              <button class="desk-ab-postArticleCta base-button orange" data-reveal-id="myModal">Get a price</button>
+              <button class="desk-ab-postArticleCta base-button orange" data-reveal-id="qqcModal">Get a price</button>
             </div>
+
+            <!-- AB Variation 02 -->
+            <!-- <div class="desk-ab desk-ab-postArticle panel">
+              <h4 class="desk-ab-postArticleTitle">Need Travel Insurance for your next trip?</h4>
+              <a class="desk-ab-postArticleCta base-button orange" href="https://www.worldnomads.com/travel-insurance/">Get a price</a>
+            </div> -->
+
           </section>
 
       </div>
@@ -248,6 +259,52 @@ c) you are awaiting specialist opinion;</li>
 <script type="text/javascript" src="/bower_components/foundation/js/foundation/foundation.reveal.js"></script>
 <script type="text/javascript">
   $(document).foundation();
+</script>
+
+<script type="text/javascript">
+  // AB Test: Inline contextual link
+  function findAndReplace(searchText, replacement, searchNode) {
+    if (!searchText || typeof replacement === 'undefined') {
+        // Throw error here if you want...
+        return;
+    }
+    var regex = typeof searchText === 'string' ?
+                new RegExp(searchText, 'g') : searchText,
+        childNodes = (searchNode || document.body).childNodes,
+        cnLength = childNodes.length,
+        excludes = 'html,head,style,title,link,meta,script,object,iframe,h1,h2,h3,h4,h5,h6,a';
+    while (cnLength--) {
+        var currentNode = childNodes[cnLength];
+        if (currentNode.nodeType === 1 &&
+            (excludes + ',').indexOf(currentNode.nodeName.toLowerCase() + ',') === -1) {
+            arguments.callee(searchText, replacement, currentNode);
+        }
+        if (currentNode.nodeType !== 3 || !regex.test(currentNode.data) ) {
+            continue;
+        }
+        var parent = currentNode.parentNode,
+            frag = (function(){
+                var html = currentNode.data.replace(regex, replacement),
+                    wrap = document.createElement('div'),
+                    frag = document.createDocumentFragment();
+                wrap.innerHTML = html;
+                while (wrap.firstChild) {
+                    frag.appendChild(wrap.firstChild);
+                }
+                return frag;
+            })();
+        parent.insertBefore(frag, currentNode);
+        parent.removeChild(currentNode);
+    }
+  }
+
+  // AB Variation 01
+  findAndReplace('Travel Insurance', '<a href="https://www.worldnomads.com/travel-insurance/">Travel Insurance</a>', document.getElementById('main-content'));
+  findAndReplace('travel insurance', '<a href="https://www.worldnomads.com/travel-insurance/">travel insurance</a>', document.getElementById('main-content'));
+
+  // AB Variation 02
+  // findAndReplace('Travel Insurance', '<a data-reveal-id="qqcModal">Travel Insurance</a>', document.getElementById('main-content'));
+  // findAndReplace('travel insurance', '<a data-reveal-id="qqcModal">travel insurance</a>', document.getElementById('main-content'));
 </script>
 
 {% endblock %}
